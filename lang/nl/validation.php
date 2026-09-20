@@ -187,6 +187,7 @@ return [
     */
 
     'attributes' => [
+        'subject'          => 'onderwerp',
         // Sans ces libelles, les messages affichaient le nom technique du champ.
         'name'             => 'volledige naam',
         'email'            => 'e-mailadres',

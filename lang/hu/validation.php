@@ -187,6 +187,7 @@ return [
     */
 
     'attributes' => [
+        'subject'          => 'tárgy',
         // Sans ces libelles, les messages affichaient le nom technique du champ.
         'name'             => 'teljes név',
         'email'            => 'e-mail cím',

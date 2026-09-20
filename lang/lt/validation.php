@@ -187,6 +187,7 @@ return [
     */
 
     'attributes' => [
+        'subject'          => 'tema',
         // Sans ces libelles, les messages affichaient le nom technique du champ.
         'name'             => 'vardas ir pavardė',
         'email'            => 'el. pašto adresas',

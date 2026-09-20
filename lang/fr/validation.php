@@ -187,6 +187,7 @@ return [
     */
 
     'attributes' => [
+        'subject'          => 'objet',
         // Sans ces libelles, les messages affichaient le nom technique du champ
         // (« The id photo recto field… »), illisible pour un visiteur.
         'name'           => 'nom et prénoms',

@@ -24,107 +24,12 @@
     </div>
 </div>
 
-{{-- Info bar --}}
-<div class="contact-info-bar">
-    <div class="container">
-        <div class="row g-3 gutter-y-20">
-            <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-duration="800ms" data-wow-delay="0ms">
-                <div class="contact-info-card">
-                    <div class="contact-info-card__icon"><i class="fas fa-map-marker-alt"></i></div>
-                    <div>
-                        <p class="contact-info-card__title">{{ __('contact.address_title') }}</p>
-                        @forelse ($addresses as $address)
-                        <p class="contact-info-card__value" style="margin-bottom:.35rem">{{ $address }}</p>
-                        @empty
-                        <p class="contact-info-card__value">—</p>
-                        @endforelse
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-duration="800ms" data-wow-delay="80ms">
-                <div class="contact-info-card">
-                    <div class="contact-info-card__icon"><i class="fas fa-phone-alt"></i></div>
-                    <div>
-                        <p class="contact-info-card__title">{{ __('contact.phone_title') }}</p>
-                        @forelse ($phones as $phone)
-                        <p class="contact-info-card__value" style="margin-bottom:.35rem"><a href="tel:{{ preg_replace('/[^\d+]/', '', $phone) }}">{{ $phone }}</a></p>
-                        @empty
-                        <p class="contact-info-card__value">—</p>
-                        @endforelse
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-duration="800ms" data-wow-delay="160ms">
-                <div class="contact-info-card">
-                    <div class="contact-info-card__icon"><i class="fas fa-envelope"></i></div>
-                    <div>
-                        <p class="contact-info-card__title">{{ __('contact.mail_title') }}</p>
-                        @if($siteContact->email)
-                        <p class="contact-info-card__value"><a href="mailto:{{ $siteContact->email }}">{{ $siteContact->email }}</a></p>
-                        @else
-                        <p class="contact-info-card__value">—</p>
-                        @endif
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-
-{{-- Form + Image panel --}}
 <section class="py-24 bg-white">
     <div class="container">
-        <div class="row g-4 gutter-y-40 align-items-stretch">
-
-            {{-- Image panel --}}
-            <div class="col-lg-5 wow fadeInLeft" data-wow-duration="900ms">
-                <div class="contact-image-panel">
-                    <img src="{{ asset('assets/images/resources/contact-1-1.jpg') }}"
-                         alt="Contact {{ $siteContact->name }}" class="contact-image-panel__img">
-                    <div class="contact-image-panel__info">
-                        <div class="contact-panel__company">
-                            <h3>{{ $siteContact->name }}</h3>
-                            <p>{{ __('contact.detail_desc') }}</p>
-                        </div>
-                        @if ($addresses->first())
-                        <div class="contact-panel__item">
-                            <div class="contact-panel__item-icon"><i class="fas fa-map-marker-alt"></i></div>
-                            <div>
-                                <span class="contact-panel__item-label">{{ __('contact.address_title') }}</span>
-                                <span class="contact-panel__item-value">{{ $addresses->first() }}</span>
-                            </div>
-                        </div>
-                        @endif
-                        @if ($phones->first())
-                        <div class="contact-panel__item">
-                            <div class="contact-panel__item-icon"><i class="fas fa-phone-alt"></i></div>
-                            <div>
-                                <span class="contact-panel__item-label">{{ __('contact.phone_title') }}</span>
-                                <a href="tel:{{ preg_replace('/[^\d+]/', '', $phones->first()) }}" class="contact-panel__item-value">{{ $phones->first() }}</a>
-                            </div>
-                        </div>
-                        @endif
-                        @if ($siteContact->email)
-                        <div class="contact-panel__item">
-                            <div class="contact-panel__item-icon"><i class="fas fa-envelope"></i></div>
-                            <div>
-                                <span class="contact-panel__item-label">{{ __('contact.mail_title') }}</span>
-                                <a href="mailto:{{ $siteContact->email }}" class="contact-panel__item-value">{{ $siteContact->email }}</a>
-                            </div>
-                        </div>
-                        @endif
-                        <div class="contact-panel__social">
-                            @foreach ($socialLinks as $link)
-                            <a href="{{ $link->url }}" aria-label="{{ $link->label }}" @if(str_starts_with($link->url, 'http')) target="_blank" rel="noopener" @endif><i class="{{ $link->icon_class }}"></i></a>
-                            @endforeach
-                        </div>
-                    </div>
-                </div>
-            </div>
-
+        <div class="row g-4 gutter-y-40 align-items-start">
             {{-- Contact form --}}
-            <div class="col-lg-7 wow fadeInRight" data-wow-duration="900ms" data-wow-delay="150ms">
-                <div class="form-card h-100">
+            <div class="col-lg-7 wow fadeInLeft" data-wow-duration="900ms">
+                <div class="form-card">
                     <div class="section-label mb-2">{{ __('contact.form_title') }}</div>
                     <h2 class="section-title mb-6">{{ __('contact.detail_title') }}</h2>
 
@@ -186,6 +91,70 @@
                             </div>
                         </div>
                     </form>
+                </div>
+            </div>
+
+            {{-- Coordonnees : cartes empilees, sans photo, comme le modele --}}
+            <div class="col-lg-5 wow fadeInRight" data-wow-duration="900ms" data-wow-delay="150ms">
+                <div class="contact-cards">
+
+                    @if ($addresses->isNotEmpty())
+                    <div class="contact-card">
+                        <div class="contact-card__icon"><i class="fas fa-map-marker-alt"></i></div>
+                        <div>
+                            <p class="contact-card__title">{{ __('contact.address_title') }}</p>
+                            @foreach ($addresses as $adresse)
+                            <p class="contact-card__value">{{ $adresse }}</p>
+                            @endforeach
+                        </div>
+                    </div>
+                    @endif
+
+                    @if ($phones->isNotEmpty())
+                    <div class="contact-card">
+                        <div class="contact-card__icon"><i class="fas fa-phone-alt"></i></div>
+                        <div>
+                            <p class="contact-card__title">{{ __('contact.phone_title') }}</p>
+                            @foreach ($phones as $telephone)
+                            <p class="contact-card__value">
+                                <a href="tel:{{ preg_replace('/[^\d+]/', '', $telephone) }}">{{ $telephone }}</a>
+                            </p>
+                            @endforeach
+                        </div>
+                    </div>
+                    @endif
+
+                    @if ($siteContact->email)
+                    <div class="contact-card">
+                        <div class="contact-card__icon"><i class="fas fa-envelope"></i></div>
+                        <div>
+                            <p class="contact-card__title">{{ __('contact.mail_title') }}</p>
+                            <p class="contact-card__value">
+                                <a href="mailto:{{ $siteContact->email }}">{{ $siteContact->email }}</a>
+                            </p>
+                        </div>
+                    </div>
+                    @endif
+
+                    <div class="contact-card">
+                        <div class="contact-card__icon"><i class="fas fa-building"></i></div>
+                        <div>
+                            <p class="contact-card__title">{{ $siteContact->name }}</p>
+                            <p class="contact-card__value contact-card__value--plain">{{ __('contact.detail_desc') }}</p>
+                        </div>
+                    </div>
+
+                    @if ($socialLinks->isNotEmpty())
+                    <div class="contact-cards__social">
+                        @foreach ($socialLinks as $link)
+                        <a href="{{ $link->url }}" aria-label="{{ $link->label }}"
+                           @if(str_starts_with($link->url, 'http')) target="_blank" rel="noopener" @endif>
+                            <i class="{{ $link->icon_class }}"></i>
+                        </a>
+                        @endforeach
+                    </div>
+                    @endif
+
                 </div>
             </div>
 

@@ -189,6 +189,7 @@ return [
     */
 
     'attributes' => [
+        'subject'          => 'suġġett',
         // Sans ces libelles, les messages affichaient le nom technique du champ.
         'name'             => 'isem sħiħ',
         'email'            => 'indirizz email',

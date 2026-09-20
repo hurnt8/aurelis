@@ -14,6 +14,7 @@ return [
     'string'          => 'Pole :attribute musi być ciągiem znaków.',
     'unique'          => 'Ta wartość :attribute jest już zajęta.',
     'attributes' => [
+        'subject'          => 'temat',
         // Sans ces libelles, les messages affichaient le nom technique du champ.
         'name'             => 'imię i nazwisko',
         'email'            => 'adres e-mail',
