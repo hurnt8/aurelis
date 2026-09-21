@@ -1620,7 +1620,7 @@ select.form-control { cursor: pointer; }
 }
 .hero-split__grid { display: grid; grid-template-columns: 1fr; }
 .hero-split__text {
-    padding: 3.5rem 1.5rem 3rem;
+    padding: 3.5rem .75rem 3rem 0;
     display: flex; flex-direction: column; justify-content: center;
 }
 .hero-split__media { position: relative; background: var(--navy-deep); }
@@ -1674,14 +1674,19 @@ select.form-control { cursor: pointer; }
     /* Le retrait gauche reproduit la gouttiere de .container-xl a chaque
        palier, pour que le texte tombe sur la meme colonne que les sections
        suivantes. La photo, elle, file jusqu au bord de l ecran. */
-    .hero-split__text { padding: 4.5rem 4rem 4.5rem max(1.5rem, calc((100vw - 960px) / 2 + 1.5rem)); }
+    .hero-split__text { padding: 4.5rem 4rem 4.5rem 0; }
 }
-@media (min-width: 1200px) {
-    .hero-split__text { padding-left: max(1.5rem, calc((100vw - 1140px) / 2 + 1.5rem)); }
-}
-@media (min-width: 1400px) {
-    .hero-split__text { padding-left: max(1.5rem, calc((100vw - 1320px) / 2 + 1.5rem)); }
-}
+
+/* Le retrait gauche du heros doit tomber exactement sur la colonne de
+   .container, que Tailwind plafonne par paliers (640 / 768 / 1024 / 1280)
+   avec une gouttiere Bootstrap de 12 px.
+   Le pourcentage porte sur .hero-split__grid : il se calcule alors sur la
+   largeur de .hero-split, soit la zone de contenu. Avec 100vw on comptait
+   aussi la barre de defilement et le titre tombait 7 px trop a droite. */
+@media (min-width:  640px) { .hero-split__grid { padding-left: max(.75rem, calc((100% -  640px) / 2 + .75rem)); } }
+@media (min-width:  768px) { .hero-split__grid { padding-left: max(.75rem, calc((100% -  768px) / 2 + .75rem)); } }
+@media (min-width: 1024px) { .hero-split__grid { padding-left: max(.75rem, calc((100% - 1024px) / 2 + .75rem)); } }
+@media (min-width: 1280px) { .hero-split__grid { padding-left: max(.75rem, calc((100% - 1280px) / 2 + .75rem)); } }
 
 /* ================================================================
    REFONTE — COMPOSANTS DU MODELE
@@ -1965,3 +1970,8 @@ select.form-control { cursor: pointer; }
 @media (max-width: 575px) {
     .contact-card { padding: 1.1rem 1.25rem; }
 }
+
+/* L en-tete doit partager la gouttiere de .container (12 px), sinon le logo et
+   le bouton tombent a l interieur de la colonne de contenu. La classe px-3 de
+   l en-tete ne produit pas cette valeur dans ce build : on la pose ici. */
+.site-header .max-w-screen-xl { padding-left: .75rem; padding-right: .75rem; }

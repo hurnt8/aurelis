@@ -4,7 +4,7 @@
 @endphp
 
 <header id="site-header" class="site-header fixed top-0 left-0 right-0 z-50 transition-all duration-300">
-    <div class="max-w-screen-xl mx-auto px-6 flex items-center justify-between h-20">
+    <div class="max-w-screen-xl mx-auto px-3 flex items-center justify-between h-20">
 
         <!-- Logo -->
         <a href="{{ route('home', ['locale' => $locale]) }}" class="flex items-center gap-3 flex-shrink-0">
@@ -103,7 +103,7 @@
          x-transition:leave-start="opacity-100 translate-y-0"
          x-transition:leave-end="opacity-0 -translate-y-2"
          class="lg:hidden mobile-menu border-t" style="display:none; position:relative; z-index:9999;">
-        <div class="max-w-screen-xl mx-auto px-6 py-4 space-y-1">
+        <div class="max-w-screen-xl mx-auto px-3 py-4 space-y-1">
             @foreach ($links as $link)
             @php
             $active = $link['route'] === 'services'
