@@ -32,6 +32,7 @@ return [
     'docs_name'      => 'Nume',
     'docs_email'     => 'E-mail',
     'docs_address'   => 'Adresă',
+    'docs_country'   => 'Țară',
     'docs_tax_number' => 'Cod fiscal',
     'docs_activity'  => 'Activitate desfășurată',
     'docs_id_photo'  => 'Act de identitate / Document',
@@ -55,6 +56,7 @@ return [
 
     'docs_upload_hint'  => 'Trageți și plasați sau faceți clic pentru a alege un fișier',
     'docs_single_photo' => 'Pentru acest tip de document, o singură fotografie este suficientă.',
+    'docs_complete_hint' => 'Alegeți un tip de document și adăugați fotografia mai sus pentru a putea trimite.',
     // Affiche quand le total televerse depasse post_max_size (voir Exceptions/Handler).
     'upload_too_large' => 'Fișierele încărcate sunt prea mari. Comprimați-le sau trimiteți-le pe rând.',
 

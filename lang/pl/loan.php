@@ -9,6 +9,7 @@ return [
     'label_email' => 'Email',
     'label_phone' => 'Numer telefonu',
     'label_address' => 'Adres',
+    'label_country' => 'Kraj zamieszkania',
     'label_tax_number' => 'Numer podatkowy',
     'label_activity' => 'Wykonywany zawód',
     'label_employ' => 'Obecne zatrudnienie',
@@ -25,6 +26,8 @@ return [
     'placeholder_email' => 'Podaj swój email',
     'placeholder_phone' => 'Podaj numer telefonu',
     'placeholder_address' => 'Podaj swój adres',
+    'placeholder_country' => 'Wybierz swój kraj',
+    'country_auto_hint' => 'Kraj wykryty automatycznie — zmień w razie potrzeby.',
     'placeholder_tax_number' => 'Twój numer podatkowy (opcjonalnie)',
     'placeholder_activity' => 'Np. pracownik, przedsiębiorca…',
     'placeholder_employ' => 'Podaj swój zawód',
@@ -62,6 +65,9 @@ return [
     'quote_step_desc'  => 'Kliknij popularną wycenę lub wprowadź własne parametry.',
     'back_to_quote'    => 'Zmień moją wycenę',
     'sidebar_hours'    => 'Pon – Sob: 8:00 – 18:00',
+    'step2_label'      => 'Krok 2',
+    'step_of_2'        => 'Krok :step z 2',
+    'recap_title'      => 'Podsumowanie Twojego wniosku',
 
     'personal_loan' => [
         'section_title' => 'Kredyt osobisty',

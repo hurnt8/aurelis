@@ -73,12 +73,50 @@
 .reason-title { font-size:.84rem; font-weight:700; color:var(--navy); margin-bottom:.15rem; }
 .reason-desc  { font-size:.75rem; color:#6b7280; line-height:1.45; margin:0; }
 
+.country-auto-note {
+    font-size: .74rem;
+    color: #1a8047;
+    margin-top: .35rem;
+    display: flex;
+    align-items: center;
+    gap: .3rem;
+}
 [x-cloak] { display:none !important; }
 </style>
 @endpush
 
 @push('scripts')
 <script>
+// Codes pays ISO 3166-1 (territoires habités uniquement — Antarctique et îles
+// inhabitées exclues, sans intérêt pour un pays de résidence).
+const CREDIXA_COUNTRY_CODES = [
+    'AD','AE','AF','AG','AI','AL','AM','AO','AR','AS','AT','AU','AW','AX','AZ',
+    'BA','BB','BD','BE','BF','BG','BH','BI','BJ','BL','BM','BN','BO','BQ','BR','BS','BT','BW','BY','BZ',
+    'CA','CC','CD','CF','CG','CH','CI','CK','CL','CM','CN','CO','CR','CU','CV','CW','CX','CY','CZ',
+    'DE','DJ','DK','DM','DO','DZ',
+    'EC','EE','EG','EH','ER','ES','ET',
+    'FI','FJ','FK','FM','FO','FR',
+    'GA','GB','GD','GE','GF','GG','GH','GI','GL','GM','GN','GP','GQ','GR','GT','GU','GW','GY',
+    'HK','HN','HR','HT','HU',
+    'ID','IE','IL','IM','IN','IO','IQ','IR','IS','IT',
+    'JE','JM','JO','JP',
+    'KE','KG','KH','KI','KM','KN','KP','KR','KW','KY','KZ',
+    'LA','LB','LC','LI','LK','LR','LS','LT','LU','LV','LY',
+    'MA','MC','MD','ME','MF','MG','MH','MK','ML','MM','MN','MO','MP','MQ','MR','MS','MT','MU','MV','MW','MX','MY','MZ',
+    'NA','NC','NE','NF','NG','NI','NL','NO','NP','NR','NU','NZ',
+    'OM',
+    'PA','PE','PF','PG','PH','PK','PL','PM','PN','PR','PS','PT','PW','PY',
+    'QA',
+    'RE','RO','RS','RU','RW',
+    'SA','SB','SC','SD','SE','SG','SH','SI','SK','SL','SM','SN','SO','SR','SS','ST','SV','SX','SY','SZ',
+    'TC','TD','TG','TH','TJ','TK','TL','TM','TN','TO','TR','TT','TV','TW','TZ',
+    'UA','UG','US','UY','UZ',
+    'VA','VC','VE','VG','VI','VN','VU',
+    'WF','WS',
+    'YE','YT',
+    'ZA','ZM','ZW',
+];
+
 document.addEventListener('alpine:init', () => {
     Alpine.data('loanForm', () => ({
         selCurrency: '{{ \App\Models\Currency::default() }}',
@@ -93,6 +131,62 @@ document.addEventListener('alpine:init', () => {
         monthsLabel: "{{ __('message.months') }}",
         monthAbbr:   "{{ __('message.month_abbr') }}",
         locale:      "{{ str_replace('_','-',app()->getLocale()) }}",
+
+        country: '{{ old('country', '') }}',
+        countries: [],
+        countryDetected: false,
+
+        init() {
+            this.buildCountries();
+            this.detectCountry();
+        },
+
+        buildCountries() {
+            let displayNames = null;
+            try { displayNames = new Intl.DisplayNames([this.locale, 'fr', 'en'], { type: 'region' }); }
+            catch (e) { displayNames = null; }
+
+            this.countries = CREDIXA_COUNTRY_CODES
+                .map(code => {
+                    let name = code;
+                    if (displayNames) {
+                        try { name = displayNames.of(code) || code; } catch (e) { /* garde le code */ }
+                    }
+                    return { code, name };
+                })
+                .sort((a, b) => a.name.localeCompare(b.name, this.locale));
+        },
+
+        async detectCountry() {
+            if (this.country) return; // déjà rempli (retour arrière / old())
+
+            // 1) Détection par IP (service gratuit, sans clé) — repli silencieux si indisponible.
+            try {
+                const controller = new AbortController();
+                const timer = setTimeout(() => controller.abort(), 3000);
+                const res = await fetch('https://get.geojs.io/v1/ip/country.json', { signal: controller.signal });
+                clearTimeout(timer);
+                if (res.ok) {
+                    const json = await res.json();
+                    const found = this.countries.find(c => c.code === (json.country || '').toUpperCase());
+                    if (found && !this.country) {
+                        this.country = found.name;
+                        this.countryDetected = true;
+                        return;
+                    }
+                }
+            } catch (e) { /* pas de réseau / service bloqué : on tente le repli navigateur */ }
+
+            // 2) Repli : langue du navigateur (ex. "pt-PT" → "PT").
+            if (!this.country) {
+                const nav = navigator.language || (navigator.languages && navigator.languages[0]) || '';
+                const region = nav.split('-')[1];
+                if (region) {
+                    const found = this.countries.find(c => c.code === region.toUpperCase());
+                    if (found) { this.country = found.name; this.countryDetected = true; }
+                }
+            }
+        },
 
         currencies: (() => {
             // Drapeau derive du code ISO 4217 : ses 2 premieres lettres correspondent
@@ -205,7 +299,7 @@ document.addEventListener('alpine:init', () => {
                     {{-- En-tête --}}
                     <div class="d-flex align-items-start justify-content-between flex-wrap gap-2 mb-4">
                         <div>
-                            <div class="section-label mb-1">@lang('loan.quote_step_label')</div>
+                            <div class="section-label mb-1">{{ __('loan.step_of_2', ['step' => 1]) }}</div>
                             <h3 style="font-family:'Playfair Display',serif;color:var(--navy);font-size:1.25rem;font-weight:700;margin:0 0 .15rem;">
                                 @lang('loan.quote_step_title')
                             </h3>
@@ -399,7 +493,24 @@ document.addEventListener('alpine:init', () => {
                                     @error('phone')<span class="form-error">{{ $message }}</span>@enderror
                                 </div>
                             </div>
-                            <div class="col-12">
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label>@lang('loan.label_country') <span style="color:var(--accent);">*</span></label>
+                                    <select name="country" x-model="country"
+                                            class="form-control" required>
+                                        <option value="">— @lang('loan.placeholder_country') —</option>
+                                        <template x-for="c in countries" :key="c.code">
+                                            <option :value="c.name" x-text="c.name"></option>
+                                        </template>
+                                    </select>
+                                    @error('country')<span class="form-error">{{ $message }}</span>@enderror
+                                    <p class="country-auto-note" x-show="countryDetected" x-cloak x-transition>
+                                        <i class="fas fa-location-crosshairs"></i>
+                                        @lang('loan.country_auto_hint')
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
                                 <div class="form-group">
                                     <label>@lang('contact.subject') <span style="color:var(--accent);">*</span></label>
                                     <select name="subject" class="form-control" required>

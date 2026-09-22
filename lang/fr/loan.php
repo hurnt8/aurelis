@@ -10,6 +10,7 @@ return [
     'label_email' => 'Email',
     'label_phone' => 'Numero de téléphone',
     'label_address' => 'Adresse',
+    'label_country' => 'Pays de résidence',
     'label_tax_number' => 'Numéro fiscal',
     'label_activity' => 'Activité exercée',
     'label_employ' => 'Emploi actuel',
@@ -26,6 +27,8 @@ return [
     'placeholder_email' => 'Entrer votre e-mail',
     'placeholder_phone' => 'Entrer votre numéro de téléphone',
     'placeholder_address' => 'Entrer votre adresse',
+    'placeholder_country' => 'Sélectionnez votre pays',
+    'country_auto_hint' => 'Pays détecté automatiquement — modifiez-le si besoin.',
     'placeholder_tax_number' => 'Votre numéro fiscal (optionnel)',
     'placeholder_activity' => 'Ex : salarié, commerçant…',
     'placeholder_employ' => 'Entrer votre profession',
@@ -63,6 +66,9 @@ return [
     'quote_step_desc'  => 'Cliquez sur un devis populaire ou saisissez vos propres paramètres.',
     'back_to_quote'    => 'Modifier mon devis',
     'sidebar_hours'    => 'Lun – Sam : 8h00 – 18h00',
+    'step2_label'      => 'Étape 2',
+    'step_of_2'        => 'Étape :step sur 2',
+    'recap_title'      => 'Récapitulatif de votre demande',
 
     // Personal Loan
     'personal_loan' => [

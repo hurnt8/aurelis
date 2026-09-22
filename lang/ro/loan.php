@@ -9,6 +9,7 @@ return [
     'label_email' => 'E-mail',
     'label_phone' => 'Număr de telefon',
     'label_address' => 'Adresă',
+    'label_country' => 'Țara de reședință',
     'label_tax_number' => 'Cod fiscal',
     'label_activity' => 'Activitate desfășurată',
     'label_employ' => 'Loc de muncă actual',
@@ -25,6 +26,8 @@ return [
     'placeholder_email' => 'Introduceți adresa dumneavoastră de e-mail',
     'placeholder_phone' => 'Introduceți numărul dumneavoastră de telefon',
     'placeholder_address' => 'Introduceți adresa dumneavoastră',
+    'placeholder_country' => 'Selectați țara dumneavoastră',
+    'country_auto_hint' => 'Țară detectată automat — modificați dacă este necesar.',
     'placeholder_tax_number' => 'Codul dvs. fiscal (opțional)',
     'placeholder_activity' => 'Ex.: angajat, comerciant…',
     'placeholder_employ' => 'Introduceți ocupația dumneavoastră',
@@ -62,6 +65,9 @@ return [
     'quote_step_desc'  => 'Faceți clic pe o ofertă populară sau introduceți propriii parametri.',
     'back_to_quote'    => 'Modifică oferta mea',
     'sidebar_hours'    => 'Lun – Sâm: 8:00 – 18:00',
+    'step2_label'      => 'Etapa 2',
+    'step_of_2'        => 'Etapa :step din 2',
+    'recap_title'      => 'Rezumatul cererii dumneavoastră',
 
     // Personal Loan
     'personal_loan' => [

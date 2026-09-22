@@ -9,6 +9,7 @@ return [
     'label_email' => 'Email',
     'label_phone' => 'Número de telefone',
     'label_address' => 'Endereço',
+    'label_country' => 'País de residência',
     'label_tax_number' => 'Número fiscal',
     'label_activity' => 'Profissão',
     'label_employ' => 'Emprego atual',
@@ -25,6 +26,8 @@ return [
     'placeholder_email' => 'Digite seu email',
     'placeholder_phone' => 'Digite seu número de telefone',
     'placeholder_address' => 'Digite seu endereço',
+    'placeholder_country' => 'Selecione o seu país',
+    'country_auto_hint' => 'País detetado automaticamente — altere se necessário.',
     'placeholder_tax_number' => 'O seu número fiscal (opcional)',
     'placeholder_activity' => 'Ex.: funcionário, trabalhador independente…',
     'placeholder_employ' => 'Digite sua profissão',
@@ -62,6 +65,9 @@ return [
     'quote_step_desc'  => 'Clique num orçamento popular ou introduza os seus próprios parâmetros.',
     'back_to_quote'    => 'Editar o meu orçamento',
     'sidebar_hours'    => 'Seg – Sáb: 8:00 – 18:00',
+    'step2_label'      => 'Etapa 2',
+    'step_of_2'        => 'Etapa :step de 2',
+    'recap_title'      => 'Resumo do seu pedido',
 
     'personal_loan' => [
         'section_title' => 'Empréstimo Pessoal',

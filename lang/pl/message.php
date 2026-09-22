@@ -32,6 +32,7 @@ return [
     'docs_name'      => 'Imię i nazwisko',
     'docs_email'     => 'Email',
     'docs_address'   => 'Adres',
+    'docs_country'   => 'Kraj',
     'docs_tax_number' => 'Numer podatkowy',
     'docs_activity'  => 'Wykonywany zawód',
     'docs_id_photo'  => 'Dokument tożsamości',
@@ -55,6 +56,7 @@ return [
 
     'docs_upload_hint'  => 'Przeciągnij i upuść lub kliknij, aby wybrać plik',
     'docs_single_photo' => 'W przypadku tego rodzaju dokumentu wystarczy jedno zdjęcie.',
+    'docs_complete_hint' => 'Wybierz rodzaj dokumentu i dodaj zdjęcie powyżej, aby móc wysłać.',
     // Affiche quand le total televerse depasse post_max_size (voir Exceptions/Handler).
     'upload_too_large' => 'Przesłane pliki są zbyt duże. Skompresuj je lub wyślij pojedynczo.',
 

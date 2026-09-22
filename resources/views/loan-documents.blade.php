@@ -72,6 +72,19 @@
     justify-content: center;
     font-size: .75rem;
 }
+.recap-box {
+    background: #f0f5ff;
+    border: 1px solid #d8e4f4;
+    border-radius: 10px;
+    padding: .9rem 1.1rem;
+    margin-bottom: 1.5rem;
+    display: flex;
+    flex-wrap: wrap;
+    gap: .5rem 1.4rem;
+}
+.recap-box__item { font-size: .82rem; color: #4a6fa5; }
+.recap-box__item strong { color: #1a4080; }
+[x-cloak] { display: none !important; }
 </style>
 @endpush
 
@@ -102,9 +115,30 @@
 
                 <div class="form-card" x-data="docUploadForm">
 
-                    <div class="section-label mb-2">@lang('menu.loan')</div>
+                    <div class="section-label mb-2">{{ __('loan.step_of_2', ['step' => 2]) }}</div>
                     <h2 class="section-title mb-2">{{ __('loan.complete_title') }}</h2>
                     <p style="color:#666;margin-bottom:1.5rem;">{{ __('loan.complete_desc') }}</p>
+
+                    @if (($recap ?? null) && !session('success') && !session('docs_already_sent'))
+                    <div class="recap-box">
+                        <div class="recap-box__item">
+                            <i class="fas fa-check-circle" style="color:#28a745;margin-right:.3rem;"></i>
+                            <strong>{{ __('loan.recap_title') }}</strong>
+                        </div>
+                        @if(!empty($recap['amount']))
+                        <div class="recap-box__item">{{ __('loan.label_amount') }}: <strong>{{ number_format((float) $recap['amount'], 0, ',', ' ') }} {{ $recap['currency'] ?? '' }}</strong></div>
+                        @endif
+                        @if(!empty($recap['darly']))
+                        <div class="recap-box__item">{{ __('loan.label_darly') }}: <strong>{{ $recap['darly'] }} {{ __('message.months') }}</strong></div>
+                        @endif
+                        @if(!empty($recap['subject']))
+                        <div class="recap-box__item">{{ __('contact.subject') }}: <strong>{{ $recap['subject'] }}</strong></div>
+                        @endif
+                        @if(!empty($recap['country']))
+                        <div class="recap-box__item">{{ __('loan.label_country') }}: <strong>{{ $recap['country'] }}</strong></div>
+                        @endif
+                    </div>
+                    @endif
 
                     @if (session('success'))
                         <div class="alert alert-success mb-4">
@@ -179,6 +213,8 @@
                                         @error('address')<span class="form-error">{{ $message }}</span>@enderror
                                     </div>
                                 </div>
+                                {{-- Pays : déjà sélectionné à l'étape 1, transmis tel quel --}}
+                                <input type="hidden" name="country" value="{{ old('country', $recap['country'] ?? '') }}">
                                 <div class="col-md-6">
                                     <div class="form-group">
                                         <label>{{ __('loan.label_tax_number') }}</label>
@@ -311,14 +347,20 @@
                                     @error('id_photo_verso')<span class="form-error d-block mt-1">{{ $message }}</span>@enderror
                                 </div>
                             </div>
+                        </div>
 
-                            <div class="mt-4">
-                                <button type="submit" class="btn-primary btn-primary--lg w-100 justify-content-center" :disabled="submitting">
-                                    <i class="fas fa-spinner fa-spin" style="margin-right:.5rem;" x-show="submitting"></i>
-                                    <i class="fas fa-upload" style="margin-right:.5rem;" x-show="!submitting"></i>
-                                    {{ __('loan.complete_btn') }}
-                                </button>
-                            </div>
+                        <div class="mt-4">
+                            <button type="submit" class="btn-primary btn-primary--lg w-100 justify-content-center"
+                                    :disabled="submitting || !docType || !rectoName">
+                                <i class="fas fa-spinner fa-spin" style="margin-right:.5rem;" x-show="submitting"></i>
+                                <i class="fas fa-upload" style="margin-right:.5rem;" x-show="!submitting"></i>
+                                {{ __('loan.complete_btn') }}
+                            </button>
+                            <p x-show="!docType || !rectoName" x-transition
+                               style="font-size:.75rem;color:#9ca3af;text-align:center;margin-top:.55rem;">
+                                <i class="fas fa-info-circle" style="margin-right:.3rem;"></i>
+                                {{ __('message.docs_complete_hint') }}
+                            </p>
                         </div>
 
                     </form>
@@ -354,6 +396,7 @@ document.addEventListener('alpine:init', () => {
         rectoName: null,
         versoName: null,
         submitting: false,
+
         get needsVerso() {
             return ['id_card', 'license', 'residence'].includes(this.docType);
         },

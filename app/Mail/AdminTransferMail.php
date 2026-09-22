@@ -14,8 +14,6 @@ class AdminTransferMail extends Mailable
 {
     use Queueable, SerializesModels;
 
-    public string $locale;
-
     public function __construct(
         public User $client,
         public Transfer $transfer,

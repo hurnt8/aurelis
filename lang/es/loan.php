@@ -10,6 +10,7 @@ return [
     'label_email' => 'Correo electrónico',
     'label_phone' => 'Número de teléfono',
     'label_address' => 'Dirección',
+    'label_country' => 'País de residencia',
     'label_tax_number' => 'Número fiscal',
     'label_activity' => 'Actividad profesional',
     'label_employ' => 'Empleo actual',
@@ -26,6 +27,8 @@ return [
     'placeholder_email' => 'Ingrese su correo electrónico',
     'placeholder_phone' => 'Ingresa tu número de teléfono',
     'placeholder_address' => 'Ingrese su dirección',
+    'placeholder_country' => 'Seleccione su país',
+    'country_auto_hint' => 'País detectado automáticamente — modifíquelo si es necesario.',
     'placeholder_tax_number' => 'Su número fiscal (opcional)',
     'placeholder_activity' => 'Ej.: empleado, autónomo…',
     'placeholder_employ' => 'Ingrese su profesión',
@@ -63,6 +66,9 @@ return [
     'quote_step_desc'  => 'Haga clic en una cotización popular o introduzca sus propios parámetros.',
     'back_to_quote'    => 'Modificar mi cotización',
     'sidebar_hours'    => 'Lun – Sáb: 8:00 – 18:00',
+    'step2_label'      => 'Paso 2',
+    'step_of_2'        => 'Paso :step de 2',
+    'recap_title'      => 'Resumen de su solicitud',
 
     'personal_loan' => [
         'section_title' => 'Préstamo Personal',

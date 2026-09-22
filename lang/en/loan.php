@@ -10,6 +10,7 @@ return [
     'label_email' => 'Email',
     'label_phone' => 'Phone number',
     'label_address' => 'Address',
+    'label_country' => 'Country of residence',
     'label_tax_number' => 'Tax number',
     'label_activity' => 'Occupation',
     'label_employ' => 'Current employment',
@@ -26,6 +27,8 @@ return [
     'placeholder_email' => 'Enter your email',
     'placeholder_phone' => 'Enter your phone number',
     'placeholder_address' => 'Enter your address',
+    'placeholder_country' => 'Select your country',
+    'country_auto_hint' => 'Country detected automatically — change it if needed.',
     'placeholder_tax_number' => 'Your tax number (optional)',
     'placeholder_activity' => 'e.g. employee, self-employed…',
     'placeholder_employ' => 'Enter your profession',
@@ -63,6 +66,9 @@ return [
     'quote_step_desc'  => 'Click a popular quote or enter your own parameters.',
     'back_to_quote'    => 'Edit my quote',
     'sidebar_hours'    => 'Mon – Sat: 8:00 AM – 6:00 PM',
+    'step2_label'      => 'Step 2',
+    'step_of_2'        => 'Step :step of 2',
+    'recap_title'      => 'Summary of your request',
 
     'personal_loan' => [
         'section_title' => 'Personal Loan',

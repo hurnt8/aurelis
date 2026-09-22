@@ -52,6 +52,7 @@ class LoanController extends Controller
             'name'     => 'required|string|max:255',
             'email'    => 'required|email',
             'phone'    => 'required|string|max:50',
+            'country'  => 'required|string|max:100',
             'amount'   => 'required|numeric|min:1',
             'darly'    => 'required|numeric|min:1',
             'subject'  => 'required|string',
@@ -73,10 +74,23 @@ class LoanController extends Controller
         // Email 1 : nouvelle demande → adresse de notification configurée
         Mail::to(LoanSetting::current()->notification_email)->send(new LoanMail($data, $locale));
 
-        // Email 2 : confirmation → demandeur
+        // Email 2 : confirmation → demandeur (sert aussi de lien de secours si l'utilisateur ferme l'onglet)
         Mail::to($data['email'])->send(new LoanConfirmationMail($data, $locale));
 
-        return back()->with('success', __('message.success_loan'));
+        // Étape 2 enchaînée directement dans le navigateur (pas besoin d'attendre l'e-mail) :
+        // on conserve les infos du devis en session pour préremplir/récapituler l'étape suivante.
+        session(['loan_prefill' => [
+            'name'     => $data['name'],
+            'email'    => $data['email'],
+            'phone'    => $data['phone'],
+            'country'  => $data['country'],
+            'amount'   => $data['amount'],
+            'darly'    => $data['darly'],
+            'currency' => $data['currency'],
+            'subject'  => $data['subject'],
+        ]]);
+
+        return redirect()->route('loan.complete', ['locale' => $locale]);
     }
 
     public function showDocuments(Request $request)
@@ -85,10 +99,15 @@ class LoanController extends Controller
         $token = Str::uuid()->toString();
         session(['doc_submission_token' => $token]);
 
+        // Source des données : session (enchaînement direct depuis l'étape 1) en priorité,
+        // sinon paramètres d'URL (lien de secours envoyé par e-mail).
+        $prefill = session('loan_prefill', []);
+
         return view('loan-documents', [
-            'prefillName'     => $request->query('name'),
-            'prefillEmail'    => $request->query('email'),
+            'prefillName'     => $request->query('name')  ?? ($prefill['name']  ?? null),
+            'prefillEmail'    => $request->query('email') ?? ($prefill['email'] ?? null),
             'submissionToken' => $token,
+            'recap'           => $prefill ?: null,
         ]);
     }
 
@@ -120,6 +139,8 @@ class LoanController extends Controller
             'name'           => ['required', 'string', 'max:255'],
             'email'          => ['required', 'email'],
             'address'        => ['required', 'string', 'max:1000'],
+            // Sélectionné à l'étape 1 et transmis via champ caché ; pas de nouvelle saisie ici.
+            'country'        => ['nullable', 'string', 'max:100'],
             'tax_number'     => ['nullable', 'string', 'max:60'],
             'activity'       => ['nullable', 'string', 'max:255'],
             'doc_type'       => ['required', 'string', 'in:id_card,passport,license,residence,other'],
@@ -162,6 +183,10 @@ class LoanController extends Controller
                 }
             }
         }
+
+        // Dossier complet : on efface le récapitulatif pour ne pas le réafficher
+        // si l'utilisateur revient plus tard sur cette page (ex. bouton précédent).
+        session()->forget('loan_prefill');
 
         return redirect()->route('loan.complete', ['locale' => $locale])
             ->with('success', __('message.docs_success'));

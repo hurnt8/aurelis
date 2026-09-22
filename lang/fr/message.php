@@ -32,6 +32,7 @@ return [
     'docs_name'      => 'Nom',
     'docs_email'     => 'Email',
     'docs_address'   => 'Adresse',
+    'docs_country'   => 'Pays',
     'docs_tax_number' => 'Numéro fiscal',
     'docs_activity'  => 'Activité exercée',
     'docs_id_photo'  => 'Pièce d\'identité / Document',
@@ -55,6 +56,7 @@ return [
 
     'docs_upload_hint'  => 'Glissez-déposez ou cliquez pour choisir un fichier',
     'docs_single_photo' => 'Pour ce type de document, une seule photo suffit.',
+    'docs_complete_hint' => 'Choisissez un type de document et ajoutez votre photo ci-dessus pour pouvoir envoyer.',
     // Affiche quand le total televerse depasse post_max_size (voir Exceptions/Handler).
     'upload_too_large' => 'Les fichiers envoyés sont trop volumineux. Merci de les compresser ou de les envoyer un par un.',
 
