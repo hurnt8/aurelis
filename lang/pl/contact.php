@@ -12,6 +12,7 @@ return [
     'placeholder_email' => 'Twój email',
     'placeholder_message' => 'Twoja wiadomość',
     'button' => 'Wyślij',
+    'sending' => 'Wysyłanie…',
     'subject' => 'Wybierz kredyt',
 
     'detail_title' => 'Pozostań z nami w kontakcie',

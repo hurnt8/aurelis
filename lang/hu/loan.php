@@ -10,6 +10,7 @@ return [
     'label_email' => 'E-mail',
     'label_phone' => 'Telefonszám',
     'label_address' => 'Cím',
+    'label_country' => 'Lakóhely szerinti ország',
     'label_tax_number' => 'Adószám',
     'label_activity' => 'Foglalkozás',
     'label_employ' => 'Jelenlegi foglalkoztatás',
@@ -26,6 +27,8 @@ return [
     'placeholder_email' => 'Adja meg e-mail címét',
     'placeholder_phone' => 'Adja meg telefonszámát',
     'placeholder_address' => 'Adja meg címét',
+    'placeholder_country' => 'Válassza ki országát',
+    'country_auto_hint' => 'Az ország automatikusan felismerve — szükség esetén módosítsa.',
     'placeholder_tax_number' => 'Az Ön adószáma (opcionális)',
     'placeholder_activity' => 'Pl.: alkalmazott, vállalkozó…',
     'placeholder_employ' => 'Adja meg a szakmáját',
@@ -33,6 +36,7 @@ return [
     'placeholder_amount' => 'Kívánt kölcsön összege (€)',
     'placeholder_objet' => 'Írd le röviden a kölcsön célját',
     'button' => 'Küldje el kérését',
+    'button_sending' => 'Küldés…',
 
     'quote_title'    => 'Az Ön becsült ajánlata',
     'quote_monthly'  => 'Becsült havi törlesztőrészlet',
@@ -63,6 +67,9 @@ return [
     'quote_step_desc'  => 'Kattintson egy népszerű ajánlatra, vagy adja meg saját paramétereit.',
     'back_to_quote'    => 'Ajánlatom módosítása',
     'sidebar_hours'    => 'H – Szo: 8:00 – 18:00',
+    'step2_label'      => '2. lépés',
+    'step_of_2'        => ':step. lépés / 2',
+    'recap_title'      => 'Kérelmének összefoglalása',
 
     'personal_loan' => [
         'section_title' => 'Személyi Kölcsön',

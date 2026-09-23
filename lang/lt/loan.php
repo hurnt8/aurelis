@@ -10,6 +10,7 @@ return [
     'label_email' => 'El. paštas',
     'label_phone' => 'Telefono numeris',
     'label_address' => 'Adresas',
+    'label_country' => 'Gyvenamoji šalis',
     'label_tax_number' => 'Mokesčių mokėtojo numeris',
     'label_activity' => 'Vykdoma veikla',
     'label_employ' => 'Dabartinis užimtumas',
@@ -26,6 +27,8 @@ return [
     'placeholder_email' => 'Įveskite savo el. pašto adresą',
     'placeholder_phone' => 'Įveskite savo telefono numerį',
     'placeholder_address' => 'Įveskite savo adresą',
+    'placeholder_country' => 'Pasirinkite savo šalį',
+    'country_auto_hint' => 'Šalis nustatyta automatiškai — jei reikia, pakeiskite.',
     'placeholder_tax_number' => 'Jūsų mokesčių mokėtojo numeris (neprivaloma)',
     'placeholder_activity' => 'Pvz.: darbuotojas, verslininkas…',
     'placeholder_employ' => 'Įveskite savo profesiją',
@@ -33,6 +36,7 @@ return [
     'placeholder_amount' => 'Norima paskolos suma (€)',
     'placeholder_objet' => 'Trumpai apibūdinkite savo paskolos tikslą',
     'button' => 'Siųsti savo užklausą',
+    'button_sending' => 'Siunčiama…',
 
     'quote_title'    => 'Jūsų preliminarus pasiūlymas',
     'quote_monthly'  => 'Numatoma mėnesinė įmoka',
@@ -63,6 +67,9 @@ return [
     'quote_step_desc'  => 'Spustelėkite populiarų pasiūlymą arba įveskite savo parametrus.',
     'back_to_quote'    => 'Keisti mano pasiūlymą',
     'sidebar_hours'    => 'Pr – Št: 8:00 – 18:00',
+    'step2_label'      => '2 žingsnis',
+    'step_of_2'        => ':step žingsnis iš 2',
+    'recap_title'      => 'Jūsų užklausos santrauka',
 
     'personal_loan' => [
         'section_title' => 'Asmeninė paskola',

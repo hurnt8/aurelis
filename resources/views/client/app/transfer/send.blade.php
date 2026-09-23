@@ -32,6 +32,25 @@
 }
 .send-notice i{color:#f59e0b;font-size:.85rem;margin-top:.1rem;flex-shrink:0}
 .send-notice-text{font-size:.75rem;color:var(--ca-text-3);line-height:1.5}
+
+/* ── Overlay de traitement (entre le clic "Envoyer" et la redirection) ── */
+.send-overlay{
+  position:fixed;inset:0;z-index:9998;
+  background:rgba(3,42,79,.92);
+  backdrop-filter:blur(2px);
+  display:flex;flex-direction:column;align-items:center;justify-content:center;
+  gap:1rem;padding:2rem;text-align:center;
+}
+.send-overlay__spinner{
+  width:48px;height:48px;border-radius:50%;
+  border:3px solid rgba(255,255,255,.2);
+  border-top-color:var(--ca-teal-l);
+  animation:send-overlay-spin .8s linear infinite;
+}
+@keyframes send-overlay-spin{to{transform:rotate(360deg)}}
+.send-overlay__title{color:#fff;font-weight:700;font-size:1rem}
+.send-overlay__hint{color:rgba(255,255,255,.65);font-size:.8rem;max-width:280px;line-height:1.5}
+[x-cloak]{display:none !important}
 </style>
 @endpush
 
@@ -52,7 +71,8 @@
   </div>
 
   {{-- Formulaire ── --}}
-  <form method="POST" action="{{ route('client.app.transfer.send.process') }}" id="sendForm">
+  <form method="POST" action="{{ route('client.app.transfer.send.process') }}" id="sendForm"
+        @submit="submitting = true">
     @csrf
 
     <div class="ca-form" style="margin-top:.25rem">
@@ -118,17 +138,34 @@
     {{-- Bouton envoyer ── --}}
     <div class="ca-btn-wrap">
       <button type="submit" class="ca-btn ca-btn--accent"
-              :disabled="numericValue <= 0 || numericValue > {{ $balance }}"
-              :style="(numericValue <= 0 || numericValue > {{ $balance }}) ? 'opacity:.45;pointer-events:none' : ''">
-        <i class="fas fa-paper-plane"></i>
-        {{ __('app.send_btn') }}
-        <span x-show="numericValue > 0 && numericValue <= {{ $balance }}">
-          — <span x-text="display"></span> {{ $user->currency ?? \App\Models\Currency::default() }}
-        </span>
+              :disabled="submitting || numericValue <= 0 || numericValue > {{ $balance }}"
+              :style="(submitting || numericValue <= 0 || numericValue > {{ $balance }}) ? 'opacity:.45;pointer-events:none' : ''">
+        <template x-if="!submitting">
+          <span>
+            <i class="fas fa-paper-plane"></i>
+            {{ __('app.send_btn') }}
+            <span x-show="numericValue > 0 && numericValue <= {{ $balance }}">
+              — <span x-text="display"></span> {{ $user->currency ?? \App\Models\Currency::default() }}
+            </span>
+          </span>
+        </template>
+        <template x-if="submitting">
+          <span>
+            <i class="fas fa-spinner fa-spin"></i>
+            {{ __('app.send_processing') }}
+          </span>
+        </template>
       </button>
     </div>
 
   </form>
+
+  {{-- Overlay de traitement — reste affiché jusqu'à la redirection serveur --}}
+  <div class="send-overlay" x-show="submitting" x-cloak x-transition.opacity>
+    <div class="send-overlay__spinner"></div>
+    <div class="send-overlay__title">{{ __('app.send_processing') }}</div>
+    <div class="send-overlay__hint">{{ __('app.send_processing_hint') }}</div>
+  </div>
 </div>
 
 @push('scripts')
@@ -141,6 +178,7 @@ function fmt(n) {
 document.addEventListener('alpine:init', () => {
   Alpine.data('keypad', (init) => ({
     raw: init || '',
+    submitting: false,
     get numericValue() { return parseFloat(this.raw) || 0; },
     get display() { return this.raw || '0'; },
     fmt(n) { return fmt(n); },

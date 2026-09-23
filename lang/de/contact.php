@@ -12,6 +12,7 @@ return [
     'placeholder_email' => 'Ihre E-Mail',
     'placeholder_message' => 'Ihre Nachricht',
     'button' => 'Senden',
+    'sending' => 'Wird gesendet…',
     'subject' => 'Darlehen auswählen',
 
     'detail_title' => 'Bleiben Sie mit uns in Kontakt',

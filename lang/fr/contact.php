@@ -12,6 +12,7 @@ return [
     'placeholder_email' => 'Votre email',
     'placeholder_message' => 'Votre Message',
     'button' => 'Envoyer',
+    'sending' => 'Envoi en cours…',
     'subject' => 'Sélectionner un prêt',
 
     'detail_title' => 'Gardez le contact avec nous ',

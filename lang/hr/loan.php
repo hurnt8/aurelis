@@ -36,6 +36,7 @@ return [
     'placeholder_amount' => 'Željeni iznos zajma (€)',
     'placeholder_objet' => 'Ukratko opišite svrhu vašeg kredita',
     'button' => 'Pošalji svoj zahtjev',
+    'button_sending' => 'Slanje…',
 
     'quote_title'    => 'Vaša okvirna ponuda',
     'quote_monthly'  => 'Procijenjena mjesečna rata',

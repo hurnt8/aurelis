@@ -12,6 +12,7 @@ return [
     'placeholder_email' => 'Az Ön e-mail címe',
     'placeholder_message' => 'Az Ön üzenete',
     'button' => 'Küldés',
+    'sending' => 'Küldés…',
     'subject' => 'Kölcsön kiválasztása',
 
     'detail_title' => 'Tartsa velünk a kapcsolatot',

@@ -12,6 +12,7 @@ return [
     'placeholder_email' => 'Uw e-mailadres',
     'placeholder_message' => 'Uw bericht',
     'button' => 'Verzenden',
+    'sending' => 'Verzenden…',
     'subject' => 'Selecteer een lening',
 
     'detail_title' => 'Blijf met ons in contact ',

@@ -12,6 +12,7 @@ return [
     'placeholder_email' => 'Adresa dumneavoastră de e-mail',
     'placeholder_message' => 'Mesajul dumneavoastră',
     'button' => 'Trimite',
+    'sending' => 'Se trimite…',
     'subject' => 'Selectați un împrumut',
 
     'detail_title' => 'Rămâneți în contact cu noi ',

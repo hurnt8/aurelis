@@ -119,6 +119,7 @@ const CREDIXA_COUNTRY_CODES = [
 
 document.addEventListener('alpine:init', () => {
     Alpine.data('loanForm', () => ({
+        submitting:  false,
         selCurrency: '{{ \App\Models\Currency::default() }}',
         selAmount:   null,
         customAmt:   '',
@@ -458,7 +459,7 @@ document.addEventListener('alpine:init', () => {
                     </div>
                     <p style="font-size:.79rem;color:#6b7280;margin-bottom:1.2rem;">@lang('loan.form_hint')</p>
 
-                    <form method="POST" action="{{ route('loan.request') }}">
+                    <form method="POST" action="{{ route('loan.request') }}" @submit="submitting = true">
                         @csrf
                         <input type="hidden" name="locale"   value="{{ app()->getLocale() }}">
                         <input type="hidden" name="amount"   :value="amount">
@@ -535,9 +536,10 @@ document.addEventListener('alpine:init', () => {
                                 </div>
                             </div>
                             <div class="col-12 mt-1">
-                                <button type="submit" class="btn-primary btn-primary--lg w-100 justify-content-center">
-                                    <i class="fas fa-paper-plane"></i>
-                                    @lang('loan.button')
+                                <button type="submit" class="btn-primary btn-primary--lg w-100 justify-content-center" :disabled="submitting">
+                                    <i class="fas fa-spinner fa-spin" x-show="submitting" x-cloak></i>
+                                    <i class="fas fa-paper-plane" x-show="!submitting"></i>
+                                    <span x-text="submitting ? '{{ __('loan.button_sending') }}' : '{{ __('loan.button') }}'"></span>
                                 </button>
                                 <p style="font-size:.71rem;color:#9ca3af;text-align:center;margin-top:.55rem;">
                                     <i class="fas fa-lock" style="margin-right:.3rem;"></i>

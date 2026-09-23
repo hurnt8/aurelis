@@ -36,6 +36,7 @@ return [
     'placeholder_amount' => 'Montant du prêt (€) souhaité',
     'placeholder_objet' => 'Décrivez brièvement l\'objet de votre prêt',
     'button' => 'Envoyer votre demande',
+    'button_sending' => 'Envoi en cours…',
 
     'quote_title'    => 'Votre devis estimatif',
     'quote_monthly'  => 'Mensualité estimée',

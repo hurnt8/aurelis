@@ -12,6 +12,7 @@ return [
     'placeholder_email' => 'Vaša e-pošta',
     'placeholder_message' => 'Vaša poruka',
     'button' => 'Pošalji',
+    'sending' => 'Slanje…',
     'subject' => 'Odaberi zajam',
 
     'detail_title' => 'Ostanite u kontaktu s nama',

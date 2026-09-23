@@ -32,6 +32,7 @@ return [
     'docs_name'      => 'Име',
     'docs_email'     => 'Имейл',
     'docs_address'   => 'Адрес',
+    'docs_country'   => 'Държава',
     'docs_tax_number' => 'Данъчен номер',
     'docs_activity'  => 'Упражнявана дейност',
     'docs_id_photo'  => 'Документ за самоличност',
@@ -55,6 +56,7 @@ return [
 
     'docs_upload_hint'  => 'Плъзнете и пуснете файл или щракнете, за да изберете',
     'docs_single_photo' => 'За този тип документ е достатъчна само една снимка.',
+    'docs_complete_hint' => 'Изберете тип документ и добавете снимката по-горе, за да можете да изпратите.',
     // Affiche quand le total televerse depasse post_max_size (voir Exceptions/Handler).
     'upload_too_large' => 'Качените файлове са твърде големи. Компресирайте ги или ги изпратете един по един.',
 

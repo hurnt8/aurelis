@@ -12,6 +12,7 @@ return [
     'placeholder_email' => 'Your email',
     'placeholder_message' => 'Your Message',
     'button' => 'Send',
+    'sending' => 'Sending…',
     'subject' => 'Select Loan',
 
     'detail_title' => 'Keep in touch with us',

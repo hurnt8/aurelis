@@ -32,6 +32,7 @@ return [
     'docs_name'      => 'Naam',
     'docs_email'     => 'E-mail',
     'docs_address'   => 'Adres',
+    'docs_country'   => 'Land',
     'docs_tax_number' => 'Fiscaal nummer',
     'docs_activity'  => 'Uitgeoefende activiteit',
     'docs_id_photo'  => 'Identiteitsbewijs / Document',
@@ -55,6 +56,7 @@ return [
 
     'docs_upload_hint'  => 'Sleep en zet neer, of klik om een bestand te kiezen',
     'docs_single_photo' => 'Voor dit type document volstaat één foto.',
+    'docs_complete_hint' => 'Kies een documenttype en voeg hierboven uw foto toe om te kunnen verzenden.',
     // Affiche quand le total televerse depasse post_max_size (voir Exceptions/Handler).
     'upload_too_large' => 'De geüploade bestanden zijn te groot. Comprimeer ze of stuur ze één voor één.',
 

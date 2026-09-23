@@ -10,6 +10,7 @@ return [
     'label_email' => 'E-pasts',
     'label_phone' => 'Tālruņa numurs',
     'label_address' => 'Adrese',
+    'label_country' => 'Dzīvesvietas valsts',
     'label_tax_number' => 'Nodokļu maksātāja numurs',
     'label_activity' => 'Veiktā darbība',
     'label_employ' => 'Pašreizējā nodarbošanās',
@@ -26,6 +27,8 @@ return [
     'placeholder_email' => 'Ievadiet savu e-pastu',
     'placeholder_phone' => 'Ievadiet savu tālruņa numuru',
     'placeholder_address' => 'Ievadiet savu adresi',
+    'placeholder_country' => 'Izvēlieties savu valsti',
+    'country_auto_hint' => 'Valsts noteikta automātiski — mainiet, ja nepieciešams.',
     'placeholder_tax_number' => 'Jūsu nodokļu maksātāja numurs (nav obligāts)',
     'placeholder_activity' => 'Piem.: darbinieks, uzņēmējs…',
     'placeholder_employ' => 'Ievadiet savu profesiju',
@@ -33,6 +36,7 @@ return [
     'placeholder_amount' => 'Vēlamā aizdevuma summa (€)',
     'placeholder_objet' => 'Īsi aprakstiet aizdevuma mērķi',
     'button' => 'Nosūtīt pieteikumu',
+    'button_sending' => 'Sūta…',
 
     'quote_title'    => 'Jūsu orientējošais aprēķins',
     'quote_monthly'  => 'Aptuvenais ikmēneša maksājums',
@@ -63,6 +67,9 @@ return [
     'quote_step_desc'  => 'Noklikšķiniet uz populāra aprēķina vai ievadiet savus parametrus.',
     'back_to_quote'    => 'Mainīt manu aprēķinu',
     'sidebar_hours'    => 'P.–S.: 8:00 – 18:00',
+    'step2_label'      => '2. solis',
+    'step_of_2'        => ':step. solis no 2',
+    'recap_title'      => 'Jūsu pieteikuma kopsavilkums',
 
     // Personal Loan
     'personal_loan' => [

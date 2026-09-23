@@ -32,6 +32,7 @@ return [
     'docs_name'      => 'Név',
     'docs_email'     => 'E-mail',
     'docs_address'   => 'Cím',
+    'docs_country'   => 'Ország',
     'docs_tax_number' => 'Adószám',
     'docs_activity'  => 'Foglalkozás',
     'docs_id_photo'  => 'Személyazonosító okmány / dokumentum',
@@ -55,6 +56,7 @@ return [
 
     'docs_upload_hint'  => 'Húzza ide, vagy kattintson a fájl kiválasztásához',
     'docs_single_photo' => 'Ehhez a dokumentumtípushoz egyetlen fénykép is elegendő.',
+    'docs_complete_hint' => 'Válasszon dokumentumtípust, és adja hozzá fényképét fent a küldéshez.',
     // Affiche quand le total televerse depasse post_max_size (voir Exceptions/Handler).
     'upload_too_large' => 'A feltöltött fájlok túl nagyok. Tömörítse őket, vagy küldje el egyenként.',
 

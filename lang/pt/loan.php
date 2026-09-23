@@ -35,6 +35,7 @@ return [
     'placeholder_amount' => 'Valor do empréstimo desejado (€)',
     'placeholder_objet' => 'Descreva brevemente o propósito do seu empréstimo',
     'button' => 'Enviar sua solicitação',
+    'button_sending' => 'A enviar…',
 
     'quote_title'    => 'O seu orçamento estimado',
     'quote_monthly'  => 'Prestação mensal estimada',

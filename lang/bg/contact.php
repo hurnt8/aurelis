@@ -12,6 +12,7 @@ return [
     'placeholder_email' => 'Вашият имейл',
     'placeholder_message' => 'Вашето съобщение',
     'button' => 'Изпрати',
+    'sending' => 'Изпращане…',
     'subject' => 'Изберете заем',
 
     'detail_title' => 'Поддържайте връзка с нас',

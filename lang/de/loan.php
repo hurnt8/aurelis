@@ -9,6 +9,7 @@ return [
     'label_email' => 'E-Mail',
     'label_phone' => 'Telefonnummer',
     'label_address' => 'Adresse',
+    'label_country' => 'Wohnsitzland',
     'label_tax_number' => 'Steuernummer',
     'label_activity' => 'Ausgeübte Tätigkeit',
     'label_employ' => 'Aktuelle Beschäftigung',
@@ -25,6 +26,8 @@ return [
     'placeholder_email' => 'Geben Sie Ihre E-Mail-Adresse ein',
     'placeholder_phone' => 'Geben Sie Ihre Telefonnummer ein',
     'placeholder_address' => 'Geben Sie Ihre Adresse ein',
+    'placeholder_country' => 'Wählen Sie Ihr Land',
+    'country_auto_hint' => 'Land automatisch erkannt — bei Bedarf ändern.',
     'placeholder_tax_number' => 'Ihre Steuernummer (optional)',
     'placeholder_activity' => 'Z. B. Angestellter, Selbstständiger…',
     'placeholder_employ' => 'Geben Sie Ihren Beruf ein',
@@ -32,6 +35,7 @@ return [
     'placeholder_amount' => 'Kreditbetrag (€) gewünscht',
     'placeholder_objet' => 'Beschreiben Sie kurz den Zweck Ihres Darlehens',
     'button' => 'Anfrage senden',
+    'button_sending' => 'Wird gesendet…',
 
     'quote_title'    => 'Ihr geschätztes Angebot',
     'quote_monthly'  => 'Geschätzte monatliche Rate',
@@ -62,6 +66,9 @@ return [
     'quote_step_desc'  => 'Klicken Sie auf ein beliebtes Angebot oder geben Sie Ihre eigenen Parameter ein.',
     'back_to_quote'    => 'Mein Angebot ändern',
     'sidebar_hours'    => 'Mo – Sa: 8:00 – 18:00 Uhr',
+    'step2_label'      => 'Schritt 2',
+    'step_of_2'        => 'Schritt :step von 2',
+    'recap_title'      => 'Zusammenfassung Ihrer Anfrage',
 
     'personal_loan' => [
         'section_title' => 'Privatkredit',

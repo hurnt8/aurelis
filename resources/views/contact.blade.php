@@ -1,6 +1,10 @@
 @extends('layouts.app')
 @section('title', __('menu.contact'))
 
+@push('styles')
+<style>[x-cloak]{display:none !important}</style>
+@endpush
+
 @section('content')
 @php
     $locale = app()->getLocale();
@@ -28,7 +32,7 @@
     <div class="container">
         <div class="row g-4 gutter-y-40 align-items-start">
             {{-- Contact form --}}
-            <div class="col-lg-7 wow fadeInLeft" data-wow-duration="900ms">
+            <div class="col-lg-7 wow fadeInLeft" data-wow-duration="900ms" x-data="{ submitting: false }">
                 <div class="form-card">
                     <div class="section-label mb-2">{{ __('contact.form_title') }}</div>
                     <h2 class="section-title mb-6">{{ __('contact.detail_title') }}</h2>
@@ -40,7 +44,7 @@
                         <div class="alert alert-danger">{{ __('message.error') }}</div>
                     @endif
 
-                    <form method="POST" action="{{ route('contact.send') }}">
+                    <form method="POST" action="{{ route('contact.send') }}" @submit="submitting = true">
                         @csrf
                         <div class="row g-3">
                             <div class="col-md-6">
@@ -84,9 +88,10 @@
                                 </div>
                             </div>
                             <div class="col-12">
-                                <button type="submit" class="btn-primary btn-primary--lg w-100 justify-content-center">
-                                    <i class="fas fa-paper-plane"></i>
-                                    {{ __('contact.button') }}
+                                <button type="submit" class="btn-primary btn-primary--lg w-100 justify-content-center" :disabled="submitting">
+                                    <i class="fas fa-spinner fa-spin" x-show="submitting" x-cloak></i>
+                                    <i class="fas fa-paper-plane" x-show="!submitting"></i>
+                                    <span x-text="submitting ? '{{ __('contact.sending') }}' : '{{ __('contact.button') }}'"></span>
                                 </button>
                             </div>
                         </div>

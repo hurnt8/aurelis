@@ -70,6 +70,7 @@
   font-size:.8rem;color:var(--ca-text-2);line-height:1.5;
 }
 .cp-info i { color:var(--ca-accent-l);font-size:1rem;flex-shrink:0;margin-top:.1rem }
+[x-cloak] { display:none !important }
 </style>
 @endpush
 
@@ -90,7 +91,7 @@
 </div>
 @endif
 
-<form method="POST" action="{{ route('client.app.profile.password.save') }}" x-data="cpForm()">
+<form method="POST" action="{{ route('client.app.profile.password.save') }}" x-data="cpForm()" @submit="submitting = true">
   @csrf
 
   {{-- Mot de passe actuel --}}
@@ -153,9 +154,10 @@
     </div>
   </div>
 
-  <button type="submit" class="cp-btn" :disabled="pw.length < 8 || pw !== pwc">
-    <i class="fas fa-shield-halved" style="margin-right:.5rem"></i>
-    {{ __('app.change_password') }}
+  <button type="submit" class="cp-btn" :disabled="submitting || pw.length < 8 || pw !== pwc">
+    <i class="fas fa-spinner fa-spin" x-show="submitting" x-cloak style="margin-right:.5rem"></i>
+    <i class="fas fa-shield-halved" x-show="!submitting" style="margin-right:.5rem"></i>
+    <span x-text="submitting ? '{{ __('app.cp_saving') }}' : '{{ __('app.change_password') }}'"></span>
   </button>
 </form>
 
@@ -167,6 +169,7 @@
 function cpForm() {
   return {
     showCur: false, showNew: false, showConfirm: false,
+    submitting: false,
     pw: '', pwc: '', score: 0,
     colors: ['', '#ef4444','#f97316','#eab308','#22c55e'],
     labels: ['', @json(__('app.cp_strength_weak')), @json(__('app.cp_strength_fair')), @json(__('app.cp_strength_good')), @json(__('app.cp_strength_strong'))],

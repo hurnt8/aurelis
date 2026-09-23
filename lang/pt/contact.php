@@ -12,6 +12,7 @@ return [
     'placeholder_email' => 'Seu email',
     'placeholder_message' => 'Sua Mensagem',
     'button' => 'Enviar',
+    'sending' => 'A enviar…',
     'subject' => 'Selecionar empréstimo',
 
     'detail_title' => 'Mantenha-se em contato conosco',

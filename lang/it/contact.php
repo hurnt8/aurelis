@@ -12,6 +12,7 @@ return [
 'placeholder_email' => 'La tua email',
 'placeholder_message' => 'Il tuo messaggio',
 'button' => 'Invia',
+    'sending' => 'Invio in corso…',
 'subject' => 'Seleziona prestito',
 
 'detail_title' => 'Rimani in contatto con noi',

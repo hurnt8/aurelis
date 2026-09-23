@@ -36,6 +36,7 @@ return [
     'placeholder_amount' => 'Importe del préstamo (€) deseado',
     'placeholder_objet' => 'Describe brevemente el propósito de tu préstamo',
     'button' => 'Enviar mi solicitud',
+    'button_sending' => 'Enviando…',
 
     'quote_title'    => 'Su presupuesto estimado',
     'quote_monthly'  => 'Cuota mensual estimada',

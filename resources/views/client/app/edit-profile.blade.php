@@ -82,6 +82,7 @@
   letter-spacing:.45em;font-size:1.35rem;font-weight:800;
   text-align:center;font-family:'Space Grotesk',monospace;
 }
+[x-cloak] { display:none !important }
 </style>
 @endpush
 
@@ -103,7 +104,7 @@
   </div>
   @enderror
 
-  <form method="POST" action="{{ route('client.app.profile.edit.otp') }}">
+  <form method="POST" action="{{ route('client.app.profile.edit.otp') }}" x-data="{ submitting: false }" @submit="submitting = true">
     @csrf
     <div class="ep-field">
       <label class="ep-label">{{ __('auth.otp_heading') }}</label>
@@ -114,9 +115,10 @@
                placeholder="000000" required>
       </div>
     </div>
-    <button type="submit" class="ep-btn">
-      <i class="fas fa-check" style="margin-right:.5rem"></i>
-      {{ __('app.otp_confirm_change') }}
+    <button type="submit" class="ep-btn" :disabled="submitting">
+      <i class="fas fa-spinner fa-spin" x-show="submitting" x-cloak style="margin-right:.5rem"></i>
+      <i class="fas fa-check" x-show="!submitting" style="margin-right:.5rem"></i>
+      <span x-text="submitting ? '{{ __('app.otp_confirming') }}' : '{{ __('app.otp_confirm_change') }}'"></span>
     </button>
   </form>
 </div>
@@ -169,7 +171,7 @@
   <div class="ep-sep-line"></div>
 </div>
 
-<form method="POST" action="{{ route('client.app.profile.save') }}">
+<form method="POST" action="{{ route('client.app.profile.save') }}" x-data="{ submitting: false }" @submit="submitting = true">
   @csrf
   {{-- Champs cachés pour passer les valeurs non-modifiables --}}
   <input type="hidden" name="name"    value="{{ $user->name }}">
@@ -194,9 +196,10 @@
     </div>
   </div>
 
-  <button type="submit" class="ep-btn">
-    <i class="fas fa-paper-plane" style="margin-right:.5rem"></i>
-    {{ __('app.save_changes') }}
+  <button type="submit" class="ep-btn" :disabled="submitting">
+    <i class="fas fa-spinner fa-spin" x-show="submitting" x-cloak style="margin-right:.5rem"></i>
+    <i class="fas fa-paper-plane" x-show="!submitting" style="margin-right:.5rem"></i>
+    <span x-text="submitting ? '{{ __('app.saving') }}' : '{{ __('app.save_changes') }}'"></span>
   </button>
 </form>
 

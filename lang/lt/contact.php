@@ -12,6 +12,7 @@ return [
     'placeholder_email' => 'Jūsų el. paštas',
     'placeholder_message' => 'Jūsų žinutė',
     'button' => 'Siųsti',
+    'sending' => 'Siunčiama…',
     'subject' => 'Pasirinkite paskolą',
 
     'detail_title' => 'Palaikykite ryšį su mumis',

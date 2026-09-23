@@ -35,6 +35,7 @@ return [
     'placeholder_amount' => 'Suma dorită a împrumutului (€)',
     'placeholder_objet' => 'Descrieți pe scurt scopul împrumutului dumneavoastră',
     'button' => 'Trimiteți cererea dumneavoastră',
+    'button_sending' => 'Se trimite…',
 
     'quote_title'    => 'Oferta dumneavoastră estimativă',
     'quote_monthly'  => 'Rată lunară estimată',

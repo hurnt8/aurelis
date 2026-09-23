@@ -10,6 +10,7 @@ return [
     'label_email' => 'E-mail',
     'label_phone' => 'Telefoonnummer',
     'label_address' => 'Adres',
+    'label_country' => 'Land van verblijf',
     'label_tax_number' => 'Fiscaal nummer',
     'label_activity' => 'Uitgeoefende activiteit',
     'label_employ' => 'Huidig beroep',
@@ -26,6 +27,8 @@ return [
     'placeholder_email' => 'Voer uw e-mailadres in',
     'placeholder_phone' => 'Voer uw telefoonnummer in',
     'placeholder_address' => 'Voer uw adres in',
+    'placeholder_country' => 'Selecteer uw land',
+    'country_auto_hint' => 'Land automatisch gedetecteerd — wijzig indien nodig.',
     'placeholder_tax_number' => 'Uw fiscaal nummer (optioneel)',
     'placeholder_activity' => 'Bijv. werknemer, zelfstandige…',
     'placeholder_employ' => 'Voer uw beroep in',
@@ -33,6 +36,7 @@ return [
     'placeholder_amount' => 'Gewenst leningbedrag (€)',
     'placeholder_objet' => 'Beschrijf kort het doel van uw lening',
     'button' => 'Verstuur uw aanvraag',
+    'button_sending' => 'Verzenden…',
 
     'quote_title'    => 'Uw indicatieve offerte',
     'quote_monthly'  => 'Geschatte maandtermijn',
@@ -63,6 +67,9 @@ return [
     'quote_step_desc'  => 'Klik op een populaire offerte of voer uw eigen gegevens in.',
     'back_to_quote'    => 'Mijn offerte wijzigen',
     'sidebar_hours'    => 'Ma – Za: 8.00 – 18.00 uur',
+    'step2_label'      => 'Stap 2',
+    'step_of_2'        => 'Stap :step van 2',
+    'recap_title'      => 'Overzicht van uw aanvraag',
 
     // Personal Loan
     'personal_loan' => [

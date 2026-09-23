@@ -32,6 +32,7 @@ return [
     'docs_name'      => 'Vārds',
     'docs_email'     => 'E-pasts',
     'docs_address'   => 'Adrese',
+    'docs_country'   => 'Valsts',
     'docs_tax_number' => 'Nodokļu maksātāja numurs',
     'docs_activity'  => 'Veiktā darbība',
     'docs_id_photo'  => 'Personu apliecinošs dokuments / Dokuments',
@@ -55,6 +56,7 @@ return [
 
     'docs_upload_hint'  => 'Velciet un nometiet vai noklikšķiniet, lai izvēlētos failu',
     'docs_single_photo' => 'Šim dokumenta veidam pietiek ar vienu fotogrāfiju.',
+    'docs_complete_hint' => 'Izvēlieties dokumenta veidu un pievienojiet fotogrāfiju augstāk, lai varētu nosūtīt.',
     // Affiche quand le total televerse depasse post_max_size (voir Exceptions/Handler).
     'upload_too_large' => 'Augšupielādētie faili ir pārāk lieli. Saspiediet tos vai sūtiet pa vienam.',
 

@@ -35,6 +35,7 @@ return [
     'placeholder_amount' => 'Żądana kwota kredytu (€)',
     'placeholder_objet' => 'Krótko opisz cel kredytu',
     'button' => 'Wyślij wniosek',
+    'button_sending' => 'Wysyłanie…',
 
     'quote_title'    => 'Twoja orientacyjna wycena',
     'quote_monthly'  => 'Szacowana miesięczna rata',

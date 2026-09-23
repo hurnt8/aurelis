@@ -9,6 +9,7 @@ return [
     'label_email' => 'Имейл',
     'label_phone' => 'Телефонен номер',
     'label_address' => 'Адрес',
+    'label_country' => 'Държава на пребиваване',
     'label_tax_number' => 'Данъчен номер',
     'label_activity' => 'Упражнявана дейност',
     'label_employ' => 'Настояща работа',
@@ -25,6 +26,8 @@ return [
     'placeholder_email' => 'Въведете вашия имейл',
     'placeholder_phone' => 'Въведете вашия телефонен номер',
     'placeholder_address' => 'Въведете вашия адрес',
+    'placeholder_country' => 'Изберете вашата държава',
+    'country_auto_hint' => 'Държавата е открита автоматично — променете я при нужда.',
     'placeholder_tax_number' => 'Вашият данъчен номер (по избор)',
     'placeholder_activity' => 'Напр.: служител, търговец…',
     'placeholder_employ' => 'Въведете вашата професия',
@@ -32,6 +35,7 @@ return [
     'placeholder_amount' => 'Желана сума на заема (€)',
     'placeholder_objet' => 'Накратко опишете целта на вашия заем',
     'button' => 'Изпратете вашата заявка',
+    'button_sending' => 'Изпращане…',
 
     'quote_title'    => 'Вашата прогнозна оферта',
     'quote_monthly'  => 'Прогнозна месечна вноска',
@@ -62,6 +66,9 @@ return [
     'quote_step_desc'  => 'Кликнете върху популярна оферта или въведете свои собствени параметри.',
     'back_to_quote'    => 'Промени офертата ми',
     'sidebar_hours'    => 'Пон – Съб: 8:00 – 18:00',
+    'step2_label'      => 'Стъпка 2',
+    'step_of_2'        => 'Стъпка :step от 2',
+    'recap_title'      => 'Обобщение на вашата заявка',
 
     'personal_loan' => [
         'section_title' => 'Личен заем',

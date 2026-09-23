@@ -12,6 +12,7 @@ return [
     'placeholder_email' => 'Jūsu e-pasts',
     'placeholder_message' => 'Jūsu ziņojums',
     'button' => 'Nosūtīt',
+    'sending' => 'Sūta…',
     'subject' => 'Izvēlēties aizdevumu',
 
     'detail_title' => 'Uzturiet ar mums saikni',

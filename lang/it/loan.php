@@ -9,6 +9,7 @@ return [
 'label_email' => 'Email',
 'label_phone' => 'Numero di telefono',
 'label_address' => 'Indirizzo',
+    'label_country' => 'Paese di residenza',
 'label_tax_number' => 'Numero fiscale',
 'label_activity' => 'Attività svolta',
 'label_employ' => 'Impiego attuale',
@@ -25,6 +26,8 @@ return [
 'placeholder_email' => 'Inserisci la tua email',
 'placeholder_phone' => 'Inserisci il tuo numero di telefono',
 'placeholder_address' => 'Inserisci il tuo indirizzo',
+    'placeholder_country' => 'Seleziona il tuo paese',
+    'country_auto_hint' => 'Paese rilevato automaticamente — modificalo se necessario.',
 'placeholder_tax_number' => 'Il tuo numero fiscale (facoltativo)',
 'placeholder_activity' => 'Es.: dipendente, commerciante…',
 'placeholder_employ' => 'Inserisci la tua professione',
@@ -32,6 +35,7 @@ return [
 'placeholder_amount' => 'Importo del prestito (€) desiderato',
 'placeholder_objet' => 'Descrivi brevemente lo scopo del tuo prestito',
 'button' => 'Invia la tua richiesta',
+    'button_sending' => 'Invio in corso…',
 
 'quote_title'    => 'Il tuo preventivo stimato',
 'quote_monthly'  => 'Rata mensile stimata',
@@ -62,6 +66,9 @@ return [
 'quote_step_desc'  => 'Clicca su un preventivo popolare oppure inserisci i tuoi parametri.',
 'back_to_quote'    => 'Modifica il mio preventivo',
 'sidebar_hours'    => 'Lun – Sab: 8:00 – 18:00',
+    'step2_label'      => 'Passo 2',
+    'step_of_2'        => 'Passo :step di 2',
+    'recap_title'      => 'Riepilogo della tua richiesta',
 
 'personal_loan' => [
     'section_title' => 'Prestito personale',

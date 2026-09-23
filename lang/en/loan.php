@@ -36,6 +36,7 @@ return [
     'placeholder_amount' => 'Loan amount (€) desired',
     'placeholder_objet' => 'Briefly describe the purpose of your loan',
     'button' => 'Send your request',
+    'button_sending' => 'Sending…',
 
     'quote_title'    => 'Your estimated quote',
     'quote_monthly'  => 'Estimated monthly payment',

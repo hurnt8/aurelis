@@ -6,10 +6,13 @@
 
 @section('topbar_action')
 @if($notifications->isNotEmpty())
-<form method="POST" action="{{ route('client.app.notifications.read-all') }}" id="readAllForm">
+<form method="POST" action="{{ route('client.app.notifications.read-all') }}" id="readAllForm"
+      x-data="{ submitting: false }" @submit="submitting = true">
   @csrf
-  <button type="submit" style="background:none;border:none;font-size:.75rem;font-weight:700;color:var(--ca-teal-l);cursor:pointer;padding:.5rem .25rem;font-family:inherit;letter-spacing:.01em">
-    Tout lire
+  <button type="submit" :disabled="submitting"
+          style="background:none;border:none;font-size:.75rem;font-weight:700;color:var(--ca-teal-l);cursor:pointer;padding:.5rem .25rem;font-family:inherit;letter-spacing:.01em">
+    <i class="fas fa-spinner fa-spin" x-show="submitting" x-cloak></i>
+    <span x-text="submitting ? '…' : 'Tout lire'"></span>
   </button>
 </form>
 @endif
@@ -135,6 +138,7 @@
 }
 .nx-empty__title{font-size:1rem;font-weight:700;color:var(--ca-text-2);margin-bottom:.4rem}
 .nx-empty__sub{font-size:.8rem;color:var(--ca-text-3);line-height:1.5;max-width:240px}
+[x-cloak] { display:none !important }
 </style>
 @endpush
 
