@@ -77,14 +77,14 @@ return [
     'testimonials_months_ago' => '{1} prieš 1 mėnesį|[2,9] prieš :count mėnesius|[10,*] prieš :count mėnesių',
     'testimonial_1' => [
         'quote' => '"Esu labai patenkinta paslauga. Paskolos paraiškos pateikimas buvo greitas ir paprastas. Patvirtinimą gavau vos per kelias dienas, o įkainiai buvo konkurencingi. Labai ačiū!"',
-        'name' => 'Julija Kazlauskienė',
-        'location' => 'Vilnius, Lietuva',
+        'name' => 'Rasa Stankevičienė',
+        'location' => 'Marijampolė, Lietuva',
         'months_ago' => 1,
     ],
     'testimonial_2' => [
         'quote' => '"Labai rekomenduoju šią paskolų paslaugą. Komanda buvo labai profesionali ir paslaugi. Jie atsakė į visus mano klausimus ir padarė procesą be streso. Dėkojame už puikų aptarnavimą!"',
-        'name' => 'Petras Jankauskas',
-        'location' => 'Kaunas, Lietuva',
+        'name' => 'Tomas Petrauskas',
+        'location' => 'Mažeikiai, Lietuva',
         'months_ago' => 2,
     ],
     'testimonial_3' => [
@@ -92,32 +92,32 @@ return [
           ir efektyvus. Visą laiką gavau profesionalius ir asmeninius patarimus
           viso proceso metu. Ačiū visai komandai už puikų darbą
           dirbti!"',
-        'name' => 'Sofija Petrauskienė',
-        'location' => 'Klaipėda, Lietuva',
+        'name' => 'Gabija Urbonienė',
+        'location' => 'Jonava, Lietuva',
         'months_ago' => 2,
     ],
     'testimonial_4' => [
         'quote' => '"Paskolos gavimas iš šios įmonės buvo a
           Patirtis be rūpesčių. Personalas buvo draugiškas ir išmanantis, o
           procesas buvo greitas ir efektyvus. Labai rekomenduoju!"',
-        'name' => 'Mantas Butkus',
-        'location' => 'Šiauliai, Lietuva',
+        'name' => 'Rokas Vaitkus',
+        'location' => 'Utena, Lietuva',
         'months_ago' => 3,
     ],
     'testimonial_5' => [
         'quote' => '"Puikus klientų aptarnavimas! Buvau nukreiptas
           buvo atsakyta į kiekvieną paskolos proceso žingsnį ir į mano klausimus
           greitai. Esu labai patenkinta galutiniu rezultatu."',
-        'name' => 'Neringa Vasiliauskienė',
-        'location' => 'Panevėžys, Lietuva',
+        'name' => 'Vilma Adomaitienė',
+        'location' => 'Kėdainiai, Lietuva',
         'months_ago' => 4,
     ],
     'testimonial_6' => [
         'quote' => '"Labai gera palūkanų norma ir greitas procesas. I
           labai rekomenduoju šią paslaugą visiems, kuriems reikia paskolos
           greitas ir patikimas."',
-        'name' => 'Lukas Urbonas',
-        'location' => 'Alytus, Lietuva',
+        'name' => 'Dovydas Zinkevičius',
+        'location' => 'Telšiai, Lietuva',
         'months_ago' => 5,
     ],
     'testimonial_7' => [
@@ -190,11 +190,11 @@ return [
     'sl' => 'sloveno',
 
     // Hero subtitle
-    'hero_subtitle' => 'Jokių sudėtingų procedūrų, jokių paslėptų mokesčių. Jau 15 metų finansuojame asmeninius, nekilnojamojo turto, automobilių ir verslo projektus skaidriai ir greitai.',
+    'hero_subtitle' => 'Jokių sudėtingų procedūrų, jokių paslėptų mokesčių. Jau 8 metų finansuojame asmeninius, nekilnojamojo turto, automobilių ir verslo projektus skaidriai ir greitai.',
 
     // Slide
     'slide_1' => [
-        'title' => ' 15 metų patirtis · Licencijuota · Atsakymas per 48h',
+        'title' => ' 8 metų patirtis · Licencijuota · Atsakymas per 48h',
         'text1' => 'Finansuokite visus projektus,',
         'text2' => 'iki 5 000 000 € per 48h.',
     ],
@@ -225,7 +225,7 @@ return [
         'exptitle' => 'metų patirtis',
         'sectagline' => 'sveiki atvykę į ' . site_name(),
         'sectitle' => 'Asmeninės paskolos jūsų svajonėms įgyvendinti',
-        'text1' => 'Šioje srityje dirbame jau 15 metų ir siūlome geriausias paslaugas.',
+        'text1' => 'Šioje srityje dirbame jau 8 metų ir siūlome geriausias paslaugas.',
         'text2' => site_name() . ' yra jūsų patikima platforma paskoloms gauti su išskirtine klientų patirtimi. Esame įsipareigoję pasiūlyti jums paprastus, saugius ir greitus finansinius sprendimus.',
         'check1' => 'paskola smulkiajam verslui',
         'check2' => 'paskola studijoms užsienyje',
@@ -246,6 +246,67 @@ return [
         'cta_text' => 'Mūsų komanda pasirengusi padėti jums pateikti finansavimo paraišką.',
     ],
 
+    // Reklaminis skydelis — pradžios puslapio karuselė
+    'promo' => [
+        'slide1' => [
+            'tag'   => 'Aktuali pasiūla',
+            'title' => 'Lengvatinė palūkanų norma vartojimo paskolai',
+            'text'  => 'Pasinaudokite palankia palūkanų norma ir atsakymu per 48 val., kad finansuotumėte savo kitą projektą.',
+            'cta'   => 'Skaičiuoti mano paskolą',
+        ],
+        'slide2' => [
+            'tag'   => 'Būsto paskola',
+            'title' => 'Jūsų nekilnojamojo turto projektas nusipelno geriausios palūkanų normos',
+            'text'  => 'Individuali pagalba nuo pirmojo susitikimo iki sutarties pasirašymo.',
+            'cta'   => 'Sužinoti apie būsto paskolą',
+        ],
+        'slide3' => [
+            'tag'   => 'Skaičiuoklė',
+            'title' => 'Įvertinkite savo mėnesinę įmoką per 30 sekundžių',
+            'text'  => 'Be įsipareigojimų ir be poveikio jūsų kredito istorijai: patikrinkite savo skolinimosi galimybes dabar.',
+            'cta'   => 'Atlikti skaičiavimą',
+        ],
+    ],
+
+    // Pagal jūsų situaciją — segmentavimas pagal profilį
+    'needs' => [
+        'sectagline'   => 'pagal jūsų situaciją',
+        'sectitle'     => 'Koks bebūtų jūsų projektas, mes turime sprendimą',
+        'sectitle_sub' => 'Pasirinkite jums tinkantį profilį ir sužinokite jums skirtą pasiūlymą.',
+        'profiles' => [
+            'starter' => [
+                'title' => 'Pradedate naują projektą',
+                'text'  => 'Vestuvės, remontas, nenumatytos išlaidos... finansuokite savo asmeninį projektą lanksčia paskola, be pirkimo pagrindimo.',
+                'cta'   => 'Žr. vartojimo paskolą',
+            ],
+            'student' => [
+                'title' => 'Esate studentas',
+                'text'  => 'Mokslo mokestis, apgyvendinimas, įranga: finansavimas, skirtas palydėti jūsų akademinį kelią.',
+                'cta'   => 'Žr. studento paskolą',
+            ],
+            'buyer' => [
+                'title' => 'Perkate nekilnojamąjį turtą',
+                'text'  => 'Įgyvendinkite būsto pirkimą su būsto paskola, kurios sąlygos skaidrios, o palūkanų norma fiksuota.',
+                'cta'   => 'Žr. būsto paskolą',
+            ],
+            'entrepreneur' => [
+                'title' => 'Turite verslą',
+                'text'  => 'Pradžia, apyvartinės lėšos, įranga: greitas finansavimas, kad jūsų verslas augtų nedelsiant.',
+                'cta'   => 'Žr. verslo paskolą',
+            ],
+            'driver' => [
+                'title' => 'Keičiate automobilį',
+                'text'  => 'Finansuokite savo naują ar naudotą automobilį su jūsų biudžetą atitinkančiomis mėnesinėmis įmokomis.',
+                'cta'   => 'Žr. automobilio paskolą',
+            ],
+            'rider' => [
+                'title' => 'Važinėjate dviračiu transportu',
+                'text'  => 'Motoroleris ar motociklas: greitai apsirūpinkite specialia paskola, atsakymas per 48 val.',
+                'cta'   => 'Žr. motociklo paskolą',
+            ],
+        ],
+    ],
+
     // DUK puslapio CTA
     'faq_cta' => [
         'label' => 'Pagalba',
@@ -260,7 +321,7 @@ return [
     'chooses' => [
         'sectagline' => 'mūsų privalumai',
         'sectitle' => 'kodėl rinktis mus',
-        'text1' => 'Šioje srityje dirbame jau 15 metų ir siūlome geriausias paslaugas.',
+        'text1' => 'Šioje srityje dirbame jau 8 metų ir siūlome geriausias paslaugas.',
         'item1' => 'mažesnės palūkanos',
         'item2' => 'greita ir paprasta',
         'progress1' => 'paskolos procesas',
@@ -288,6 +349,11 @@ return [
             'title' => 'Lėšų išmokėjimas',
             'desc' => 'Lėšos pervedamos tiesiai į jūsų banko sąskaitą netrukus po patvirtinimo.',
         ],
+    ],
+
+    'final_cta' => [
+        'tagline' => 'imkitės veiksmų',
+        'title'   => 'Pasiruošę įgyvendinti savo projektą?',
     ],
 
     'loan_reasons' => [

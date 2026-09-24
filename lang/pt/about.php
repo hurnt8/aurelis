@@ -1,33 +1,47 @@
 <?php
 
 return [
-    'banner_title' => 'Descubra a ' . site_name(),
-    'banner_subtitle' => 'Sobre nós',
-    'banner_description' => 'Empréstimos mais fáceis com soluções de crédito flexíveis adaptadas às suas necessidades financeiras.',
+    // Hero / introdução
+    'hero_tagline' => 'a nossa história',
+    'hero_title' => 'Um banco online pensado para ser mais rápido do que os bancos tradicionais',
+    'hero_text' => 'Há 8 anos que a ' . site_name() . ' apoia particulares e empresas nos seus projetos de financiamento, guiada por uma convicção simples: obter um empréstimo nunca deveria ser complicado.',
 
-    'section1_title' => 'Por que escolher a ' . site_name(),
-    'section1_p1' => 'Na ' . site_name() . ', acreditamos firmemente que todos merecem uma chance de realizar seus sonhos financeiros. Desde a nossa fundação, temos nos comprometido a fornecer soluções de empréstimo flexíveis e acessíveis para atender às diversas necessidades de nossos clientes. Se você está buscando financiar um projeto pessoal, comprar um carro ou expandir seu negócio, temos o empréstimo que você precisa.',
-    'section1_p2' => 'Nossos serviços são projetados para proporcionar uma experiência sem complicações, com um processo de solicitação rápido e fácil. Entendemos que cada cliente é único, por isso oferecemos empréstimos personalizados que se adaptam às suas necessidades específicas. Além disso, nossos consultores dedicados estão sempre prontos para guiá-lo em cada etapa, garantindo que você tenha todo o suporte do início ao fim.',
-    'proposed' => 'Nós propomos:',
-    'check1' => 'Empréstimos personalizados de acordo com suas necessidades específicas.',
-    'check2' => 'Consultores dedicados para ajudá-lo em cada passo do caminho.',
-    'check3' => 'Termos de pagamento flexíveis para se adequar à sua situação financeira.',
-    'check4' => 'Empréstimos sem necessidade de contracheque.',
-    'section1_p3' => 'Na ' . site_name() . ', nossa missão é ajudá-lo a alcançar seus objetivos financeiros com soluções de empréstimo sob medida. Junte-se a nós hoje e descubra como podemos ajudá-lo a tornar seus projetos uma realidade.',
-    'btn' => 'Encontre seu Empréstimo Ideal',
+    // Missão / história
+    'mission_tagline' => 'a nossa missão',
+    'mission_title' => 'Tornar o crédito simples, rápido e acessível',
+    'mission_p1' => 'A ' . site_name() . ' nasceu de uma frustração partilhada por milhares de mutuários: os processos de crédito tradicionais são lentos, pouco transparentes e muitas vezes desmotivadores. Deslocações à agência, dossiês em papel, semanas de espera por uma resposta... quisemos construir uma alternativa pensada inteiramente para o cliente.',
+    'mission_p2' => 'Hoje, apoiamos todos os anos milhares de clientes em toda a Europa no financiamento dos seus projetos pessoais, imobiliários, profissionais ou automóveis. A nossa plataforma online permite fazer o pedido do início ao fim a partir de casa, com resposta em 48 horas e um interlocutor dedicado em cada etapa.',
+
+    // Valores
+    'values_tagline' => 'os nossos valores',
+    'values_title' => 'O que orienta cada uma das nossas decisões',
+    'value1_title' => 'Transparência',
+    'value1_desc' => 'Taxas, encargos e condições são comunicados claramente antes de qualquer assinatura. Sem surpresas desagradáveis, sem cláusulas escondidas.',
+    'value2_title' => 'Rapidez',
+    'value2_desc' => 'Um pedido 100% online, uma decisão em 48 horas e fundos disponibilizados rapidamente assim que o contrato é assinado.',
+    'value3_title' => 'Acompanhamento humano',
+    'value3_desc' => 'Por trás de cada processo está um consultor dedicado, disponível para responder às suas perguntas, do primeiro contacto até ao reembolso.',
+    'value4_title' => 'Segurança',
+    'value4_desc' => 'Instituição de crédito certificada e sujeita às normas europeias. Os seus dados e o seu processo estão protegidos em cada etapa.',
+
+    // A nossa abordagem / como trabalhamos
+    'approach_tagline' => 'a nossa abordagem',
+    'approach_title' => 'Como trabalhamos',
+    'approach1_title' => 'Ouvimos antes de propor',
+    'approach1_desc' => 'Cada projeto é único: dedicamos tempo a compreender a sua situação antes de o orientarmos para a solução mais adequada.',
+    'approach2_title' => 'Simplificamos cada etapa',
+    'approach2_desc' => 'Simulação, processo, assinatura e acompanhamento: tudo é feito online, sem papelada nem deslocações desnecessárias.',
+    'approach3_title' => 'Continuamos ao seu lado depois do empréstimo',
+    'approach3_desc' => 'A nossa relação não termina com a assinatura: o nosso serviço de apoio ao cliente continua disponível durante todo o período de reembolso.',
+
+    // Faixa de estatísticas (retomada da página inicial, no contexto "sobre nós")
+    'stats_tagline' => 'em números',
+    'stats_title' => site_name() . ' hoje',
+
+    // CTA final
+    'cta_tagline' => 'passe à ação',
+    'cta_title' => 'Pronto para começar o seu projeto connosco?',
+    'cta_text' => 'Simule o seu empréstimo em poucos minutos e receba uma resposta personalizada em 48 horas.',
 
     'faq_title' => 'Perguntas Frequentes',
-    'faq_description' => 'Encontre respostas para as perguntas mais comuns sobre nossos serviços de empréstimo.',
-    'acc_1' => 'Quais tipos de empréstimos vocês oferecem?',
-    'acc_1_desc' => 'Oferecemos uma variedade de empréstimos, incluindo empréstimos pessoais, empréstimos hipotecários, empréstimos para automóveis e empréstimos para pequenas empresas. Cada tipo de empréstimo é projetado para atender necessidades específicas e oferece condições flexíveis.',
-    'acc_2' => 'Como posso solicitar um empréstimo?',
-    'acc_2_desc' => 'Você pode solicitar um empréstimo diretamente em nosso site, preenchendo o formulário de solicitação online. Pediremos informações básicas, como seu nome, dados de contato e o valor do empréstimo desejado. Nossos consultores entrarão em contato com você para finalizar a solicitação e orientá-lo durante o processo.',
-    'acc_3' => 'Quais são os critérios de elegibilidade para um empréstimo?',
-    'acc_3_desc' => 'Os critérios de elegibilidade variam dependendo do tipo de empréstimo, mas, em geral, você deve ser maior de idade, ter uma renda estável e um bom histórico de crédito. Também analisaremos sua capacidade de pagamento e seu histórico financeiro.',
-    'acc_4' => 'Qual é o tempo de processamento para uma solicitação de empréstimo?',
-    'acc_4_desc' => 'O tempo de processamento varia dependendo do tipo de empréstimo e da complexidade da sua solicitação. Em geral, as solicitações de empréstimos pessoais são processadas em 24 a 48 horas, enquanto as hipotecas podem levar vários dias devido às verificações mais aprofundadas necessárias.',
-    'acc_5' => 'Posso pagar meu empréstimo antecipadamente?',
-    'acc_5_desc' => 'Sim, você pode pagar seu empréstimo antecipadamente sem penalidade. Nós encorajamos você a pagar seu empréstimo mais cedo, se possível, pois isso reduzirá o montante total de juros que você pagará ao longo da vida do empréstimo.',
-
-
 ];

@@ -1,33 +1,47 @@
 <?php
 
 return [
-'banner_title' => 'Scopri ' . site_name(),
-'banner_subtitle' => 'Chi siamo',
-'banner_description' => 'Prendi in prestito più facilmente con soluzioni di prestito flessibili adattate alle tue esigenze finanziarie.',
+    // Hero / introduzione
+    'hero_tagline' => 'la nostra storia',
+    'hero_title' => 'Una banca online pensata per essere più veloce delle banche tradizionali',
+    'hero_text' => 'Da 8 anni, ' . site_name() . ' accompagna privati e aziende nei loro progetti di finanziamento, guidati da una convinzione semplice: ottenere un prestito non dovrebbe mai essere complicato.',
 
-'section1_title' => 'Perché scegliere ' . site_name(),
-'section1_p1' => 'In ' . site_name() . ', crediamo fermamente che tutti meritino un’opportunità per realizzare i propri sogni finanziari. Fin dalla nostra fondazione, ci siamo impegnati a fornire soluzioni di prestito flessibili e accessibili per soddisfare le diverse esigenze dei nostri clienti. Che tu stia cercando di finanziare un progetto personale, acquistare un’auto o espandere la tua attività, abbiamo il prestito giusto per te.',
-'section1_p2' => 'I nostri servizi sono progettati per offrire un’esperienza senza problemi, con un processo di richiesta rapido e semplice. Comprendiamo che ogni cliente è unico, motivo per cui offriamo prestiti personalizzati che si adattano alle tue esigenze specifiche. Inoltre, i nostri consulenti dedicati sono sempre disponibili per guidarti in ogni fase del percorso, assicurandoti supporto completo dall’inizio alla fine.',
-'proposed' => 'Offriamo:',
-'check1' => 'Prestiti personalizzati in base alle tue esigenze specifiche.',
-'check2' => 'Consulenti dedicati per aiutarti in ogni fase del percorso.',
-'check3' => 'Termini di rimborso flessibili adatti alla tua situazione finanziaria.',
-'check4' => 'Prestiti senza la necessità di una busta paga.',
-'section1_p3' => 'In ' . site_name() . ', la nostra missione è aiutarti a raggiungere i tuoi obiettivi finanziari con soluzioni di prestito su misura. Unisciti a noi oggi e scopri come possiamo aiutarti a realizzare i tuoi progetti.',
-'btn' => 'Trova il tuo prestito ideale',
+    // Missione / storia
+    'mission_tagline' => 'la nostra missione',
+    'mission_title' => 'Rendere il credito semplice, veloce e accessibile',
+    'mission_p1' => site_name() . ' è nata da una frustrazione condivisa da migliaia di richiedenti: le pratiche di prestito tradizionali sono lente, poco trasparenti e spesso scoraggianti. Appuntamenti in filiale, pratiche cartacee, settimane di attesa per una risposta... abbiamo voluto costruire un\'alternativa pensata interamente per il cliente.',
+    'mission_p2' => 'Oggi accompagniamo ogni anno migliaia di clienti in tutta Europa nel finanziamento dei loro progetti personali, immobiliari, professionali o auto. La nostra piattaforma online consente di completare la richiesta dall\'inizio alla fine da casa, con una risposta entro 48 ore e un referente dedicato a ogni fase.',
 
-'faq_title' => 'Domande frequenti',
-'faq_description' => 'Trova risposte alle domande più comuni sui nostri servizi di prestito.',
-'acc_1' => 'Che tipi di prestiti offrite?',
-'acc_1_desc' => 'Offriamo una varietà di prestiti, tra cui prestiti personali, mutui, prestiti auto e prestiti per piccole imprese. Ogni tipo di prestito è progettato per soddisfare esigenze specifiche e offre condizioni flessibili.',
-'acc_2' => 'Come posso richiedere un prestito?',
-'acc_2_desc' => 'Puoi richiedere un prestito direttamente sul nostro sito web compilando il modulo di richiesta online. Ti chiederemo informazioni di base come il tuo nome, i tuoi recapiti e l’importo del prestito desiderato. I nostri consulenti ti contatteranno per finalizzare la richiesta e guidarti attraverso il processo.',
-'acc_3' => 'Quali sono i criteri di idoneità per un prestito?',
-'acc_3_desc' => 'I criteri di idoneità variano a seconda del tipo di prestito, ma in generale devi essere maggiorenne, avere un reddito stabile e un buon punteggio di credito. Esamineremo anche la tua capacità di rimborso e il tuo storico finanziario.',
-'acc_4' => 'Qual è il tempo di elaborazione di una richiesta di prestito?',
-'acc_4_desc' => 'Il tempo di elaborazione varia a seconda del tipo di prestito e della complessità della tua richiesta. In generale, le richieste di prestiti personali vengono elaborate entro 24-48 ore, mentre i mutui possono richiedere diversi giorni a causa dei controlli più approfonditi necessari.',
-'acc_5' => 'Posso rimborsare il mio prestito in anticipo?',
-'acc_5_desc' => 'Sì, puoi rimborsare il tuo prestito in anticipo senza penalità. Ti incoraggiamo a rimborsare il tuo prestito prima, se possibile, poiché ciò ridurrà l’importo totale degli interessi che pagherai nel corso della durata del prestito.',
+    // Valori
+    'values_tagline' => 'i nostri valori',
+    'values_title' => 'Ciò che guida ogni nostra decisione',
+    'value1_title' => 'Trasparenza',
+    'value1_desc' => 'Tassi, commissioni e condizioni vengono comunicati chiaramente prima di qualsiasi firma. Nessuna brutta sorpresa, nessuna clausola nascosta.',
+    'value2_title' => 'Rapidità',
+    'value2_desc' => 'Una richiesta 100% online, una decisione entro 48 ore e fondi erogati rapidamente non appena firmato il contratto.',
+    'value3_title' => 'Supporto umano',
+    'value3_desc' => 'Dietro ogni pratica c\'è un consulente dedicato, sempre disponibile per rispondere alle tue domande, dal primo contatto fino al rimborso.',
+    'value4_title' => 'Sicurezza',
+    'value4_desc' => 'Istituto di credito certificato e soggetto agli standard europei. I tuoi dati e la tua pratica sono protetti in ogni fase.',
 
+    // Il nostro approccio / come lavoriamo
+    'approach_tagline' => 'il nostro approccio',
+    'approach_title' => 'Come lavoriamo',
+    'approach1_title' => 'Ascoltiamo prima di proporre',
+    'approach1_desc' => 'Ogni progetto è unico: ci prendiamo il tempo di capire la tua situazione prima di indirizzarti verso la soluzione più adatta.',
+    'approach2_title' => 'Semplifichiamo ogni fase',
+    'approach2_desc' => 'Simulazione, pratica, firma e monitoraggio: tutto avviene online, senza burocrazia né spostamenti inutili.',
+    'approach3_title' => 'Restiamo al tuo fianco anche dopo il prestito',
+    'approach3_desc' => 'Il nostro rapporto non finisce con la firma: il nostro servizio clienti resta disponibile per tutta la durata del tuo rimborso.',
 
+    // Banner statistiche (ripreso dalla home page, in contesto "chi siamo")
+    'stats_tagline' => 'in cifre',
+    'stats_title' => site_name() . ' oggi',
+
+    // CTA finale
+    'cta_tagline' => 'passa all\'azione',
+    'cta_title' => 'Pronto a iniziare il tuo progetto con noi?',
+    'cta_text' => 'Simula il tuo prestito in pochi minuti e ricevi una risposta personalizzata entro 48 ore.',
+
+    'faq_title' => 'Domande frequenti',
 ];

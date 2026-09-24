@@ -2,10 +2,10 @@
 
 return [
     'general_title' => site_name() . ' – Najlepsze kredyty online w Europie.',
-    'hero_subtitle' => 'Bez skomplikowanych procedur, bez ukrytych opłat. Od 15 lat finansujemy projekty osobiste, nieruchomości, samochodowe i biznesowe z pełną przejrzystością i szybkością.',
+    'hero_subtitle' => 'Bez skomplikowanych procedur, bez ukrytych opłat. Od 8 lat finansujemy projekty osobiste, nieruchomości, samochodowe i biznesowe z pełną przejrzystością i szybkością.',
 
     'slide_1' => [
-        'title' => ' 15 lat doświadczenia · Licencjonowany · Gwarantowana odpowiedź',
+        'title' => ' 8 lat doświadczenia · Licencjonowany · Gwarantowana odpowiedź',
         'text1' => 'Sfinansuj wszystkie swoje projekty,',
         'text2' => 'do 5 000 000 € w 48h.',
     ],
@@ -36,7 +36,7 @@ return [
         'exptitle' => 'lat doświadczenia',
         'sectagline' => 'Witamy w ' . site_name(),
         'sectitle' => 'Kredyty osobiste spełniające Twoje marzenia',
-        'text1' => 'Działamy w tej branży od 15 lat i oferujemy najlepsze usługi.',
+        'text1' => 'Działamy w tej branży od 8 lat i oferujemy najlepsze usługi.',
         'text2' => site_name() . ' to Twoja zaufana platforma kredytowa z wyjątkową obsługą klienta. Jesteśmy zobowiązani do zapewniania prostych, bezpiecznych i szybkich rozwiązań finansowych.',
         'check1' => 'kredyt dla małych firm',
         'check2' => 'kredyt na studia za granicą',
@@ -55,6 +55,67 @@ return [
         'sectitle' => 'Oferujemy najlepsze usługi kredytowe',
         'cta_title' => 'Gotowy, by rozpocząć swój projekt finansowy?',
         'cta_text' => 'Nasz zespół jest do Twojej dyspozycji, aby pomóc Ci w złożeniu wniosku o finansowanie.',
+    ],
+
+    // Baner promocyjny — karuzela na stronie głównej
+    'promo' => [
+        'slide1' => [
+            'tag'   => 'Aktualna oferta',
+            'title' => 'Preferencyjne oprocentowanie kredytu gotówkowego',
+            'text'  => 'Skorzystaj z korzystnego oprocentowania i odpowiedzi w ciągu 48h, aby sfinansować swój kolejny projekt.',
+            'cta'   => 'Symuluj mój kredyt',
+        ],
+        'slide2' => [
+            'tag'   => 'Kredyt hipoteczny',
+            'title' => 'Twój projekt nieruchomości zasługuje na najlepsze oprocentowanie',
+            'text'  => 'Spersonalizowane wsparcie od pierwszego spotkania aż po podpisanie umowy.',
+            'cta'   => 'Poznaj kredyt hipoteczny',
+        ],
+        'slide3' => [
+            'tag'   => 'Symulator',
+            'title' => 'Oszacuj swoją ratę w 30 sekund',
+            'text'  => 'Bez zobowiązań i bez wpływu na Twoją historię: sprawdź swoją zdolność kredytową już teraz.',
+            'cta'   => 'Zrób symulację',
+        ],
+    ],
+
+    // W zależności od Twojej sytuacji — segmentacja wg profilu
+    'needs' => [
+        'sectagline'   => 'w zależności od Twojej sytuacji',
+        'sectitle'     => 'Niezależnie od Twojego projektu, mamy rozwiązanie',
+        'sectitle_sub' => 'Wybierz profil, który Cię opisuje, aby odkryć ofertę stworzoną dla Ciebie.',
+        'profiles' => [
+            'starter' => [
+                'title' => 'Zaczynasz nowy projekt',
+                'text'  => 'Ślub, remont, nieprzewidziany wydatek... sfinansuj swój osobisty projekt elastyczną pożyczką, bez konieczności udowadniania celu zakupu.',
+                'cta'   => 'Zobacz kredyt gotówkowy',
+            ],
+            'student' => [
+                'title' => 'Jesteś studentem',
+                'text'  => 'Czesne, zakwaterowanie, sprzęt: finansowanie stworzone, by wspierać Twoją ścieżkę akademicką.',
+                'cta'   => 'Zobacz kredyt studencki',
+            ],
+            'buyer' => [
+                'title' => 'Kupujesz nieruchomość',
+                'text'  => 'Zrealizuj zakup swojego mieszkania dzięki kredytowi hipotecznemu o przejrzystych warunkach i stałym oprocentowaniu.',
+                'cta'   => 'Zobacz kredyt hipoteczny',
+            ],
+            'entrepreneur' => [
+                'title' => 'Prowadzisz działalność',
+                'text'  => 'Start, płynność finansowa, sprzęt: szybkie finansowanie, by Twoja firma mogła się rozwijać bez zwłoki.',
+                'cta'   => 'Zobacz kredyt firmowy',
+            ],
+            'driver' => [
+                'title' => 'Zmieniasz samochód',
+                'text'  => 'Sfinansuj swój samochód, nowy lub używany, z ratami dopasowanymi do Twojego budżetu.',
+                'cta'   => 'Zobacz kredyt samochodowy',
+            ],
+            'rider' => [
+                'title' => 'Jeździsz na jednośladzie',
+                'text'  => 'Skuter czy motocykl: wyposaż się szybko dzięki dedykowanemu kredytowi, z odpowiedzią w ciągu 48h.',
+                'cta'   => 'Zobacz kredyt motocyklowy',
+            ],
+        ],
     ],
 
     // CTA strony FAQ
@@ -93,7 +154,7 @@ return [
     'chooses' => [
         'sectagline' => 'nasze zalety',
         'sectitle' => 'dlaczego warto nas wybrać',
-        'text1' => 'Działamy w tej branży od 15 lat i oferujemy najlepsze usługi.',
+        'text1' => 'Działamy w tej branży od 8 lat i oferujemy najlepsze usługi.',
         'item1' => 'niższe oprocentowanie',
         'item2' => 'szybko i łatwo',
         'progress1' => 'proces kredytowy',
@@ -128,38 +189,38 @@ return [
     'testimonials_months_ago' => '{1} 1 miesiąc temu|[2,4] :count miesiące temu|[5,*] :count miesięcy temu',
     'testimonial_1' => [
         'quote'    => '„Starałem się o kredyt hipoteczny po kilku odmowach w polskich bankach. ' . site_name() . ' przeanalizowała moją sytuację rzetelnie i przyznała finansowanie w ciągu tygodnia. Oprocentowanie przerosło moje oczekiwania. Polecam z całego serca."',
-        'name'     => 'Piotr Kowalski',
-        'location' => 'Warszawa, Polska',
+        'name'     => 'Grzegorz Mazur',
+        'location' => 'Szczecin, Polska',
         'months_ago' => 1,
     ],
     'testimonial_2' => [
         'quote'    => '„Po utracie pracy potrzebowałam pożyczki na pokrycie bieżących wydatków. Doradca był bardzo wyrozumiały i pomógł mi wybrać opcję dopasowaną do mojej sytuacji. Spłacam bez żadnych problemów."',
-        'name'     => 'Anna Wiśniewska',
-        'location' => 'Kraków, Polska',
+        'name'     => 'Justyna Kamińska',
+        'location' => 'Lublin, Polska',
         'months_ago' => 2,
     ],
     'testimonial_3' => [
         'quote'    => '„Prowadziłem działalność gospodarczą i potrzebowałem kapitału na nowe urządzenia. ' . site_name() . ' oceniła moje realne przychody i przyznała kredyt firmowy w 48 godzin. Profesjonalizm na najwyższym poziomie."',
-        'name'     => 'Marek Nowak',
-        'location' => 'Gdańsk, Polska',
+        'name'     => 'Dariusz Kaczmarek',
+        'location' => 'Bydgoszcz, Polska',
         'months_ago' => 2,
     ],
     'testimonial_4' => [
         'quote'    => '„Cały wniosek wypełniłam online w kwadrans. Decyzja przyszła jeszcze tego samego dnia, a środki trafiły na konto następnego ranka. Nie spodziewałam się tak sprawnej obsługi. Jestem pod wrażeniem."',
-        'name'     => 'Katarzyna Wójcik',
-        'location' => 'Wrocław, Polska',
+        'name'     => 'Magdalena Piotrowska',
+        'location' => 'Katowice, Polska',
         'months_ago' => 3,
     ],
     'testimonial_5' => [
         'quote'    => '„Szukałem kredytu samochodowego i porównałem kilka ofert. ' . site_name() . ' zaoferowała najniższe RRSO i najprostszą procedurę. Auto odebrałem po tygodniu od złożenia wniosku. Bardzo polecam."',
-        'name'     => 'Tomasz Lewandowski',
-        'location' => 'Poznań, Polska',
+        'name'     => 'Rafał Zając',
+        'location' => 'Białystok, Polska',
         'months_ago' => 4,
     ],
     'testimonial_6' => [
         'quote'    => '„Najbardziej cenię sobie przejrzystość: żadnych ukrytych prowizji, żadnych niespodzianek w umowie. Od pierwszego kontaktu wiedziałam dokładnie, ile będę płacić i kiedy. To rzadkość na rynku finansowym."',
-        'name'     => 'Agnieszka Zielińska',
-        'location' => 'Łódź, Polska',
+        'name'     => 'Ewelina Szymańska',
+        'location' => 'Rzeszów, Polska',
         'months_ago' => 5,
     ],
     'testimonial_7' => [
@@ -169,6 +230,11 @@ return [
     'testimonial_8' => [
         'quote' => '„Miałam doskonałe doświadczenie z tą usługą kredytową. Personel był uważny i profesjonalny. Polecam bez wahania!"',
         'name' => 'Jean L.',
+    ],
+
+    'final_cta' => [
+        'tagline' => 'przejdź do działania',
+        'title'   => 'Gotowy, by zrealizować swój projekt?',
     ],
 
     'loan_reasons' => [

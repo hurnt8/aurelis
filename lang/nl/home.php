@@ -69,38 +69,38 @@ return [
     'testimonials_months_ago' => '{1} 1 maand geleden|[2,*] :count maanden geleden',
     'testimonial_1' => [
         'quote' => '"Ik kreeg mijn hypotheek binnen een week rond. De adviseur was ongelooflijk bereikbaar en de voorwaarden lagen ruim onder wat ik elders vond. Ik raad dit zonder aarzelen aan."',
-        'name'  => 'Lars de Vries',
-        'location' => 'Amsterdam, Nederland',
+        'name'  => 'Bram Hendriks',
+        'location' => 'Tilburg, Nederland',
         'months_ago' => 1,
     ],
     'testimonial_2' => [
         'quote' => '"Na twee afwijzingen bij een traditionele bank kreeg ik binnen 48 uur een persoonlijke lening via ' . site_name() . '. Het team heeft mijn aanvraag serieus en met begrip behandeld. Ontzettend bedankt!"',
-        'name'  => 'Sanne Jansen',
-        'location' => 'Rotterdam, Nederland',
+        'name'  => 'Fleur Peters',
+        'location' => 'Breda, Nederland',
         'months_ago' => 2,
     ],
     'testimonial_3' => [
         'quote' => '"Volledig online, snelle reactie, scherp tarief. Ik heb mijn auto gefinancierd zonder ook maar één keer naar een kantoor te hoeven gaan. Een moderne en efficiënte dienst."',
-        'name'  => 'Daan Visser',
-        'location' => 'Utrecht, Nederland',
+        'name'  => 'Sven Dekker',
+        'location' => 'Nijmegen, Nederland',
         'months_ago' => 2,
     ],
     'testimonial_4' => [
         'quote' => '"De persoonlijke begeleiding maakte echt indruk op mij. Mijn adviseur belde mij bij elke stap om de voortgang van mijn aanvraag toe te lichten. Je voelt je begeleid, niet alleen gelaten met formulieren."',
-        'name'  => 'Anna de Boer',
-        'location' => 'Den Haag, Nederland',
+        'name'  => 'Femke Smit',
+        'location' => 'Arnhem, Nederland',
         'months_ago' => 3,
     ],
     'testimonial_5' => [
         'quote' => '"Duidelijke simulator, eenvoudig dossier, overschrijving ontvangen binnen drie werkdagen. Ik moest dringend een verbouwing financieren en ' . site_name() . ' stond precies op het juiste moment klaar."',
-        'name'  => 'Sophie Mulder',
-        'location' => 'Eindhoven, Nederland',
+        'name'  => 'Wouter Bakker',
+        'location' => 'Haarlem, Nederland',
         'months_ago' => 4,
     ],
     'testimonial_6' => [
         'quote' => '"De transparantie over tarieven en kosten overtuigde mij al bij het eerste contact. Onderweg geen enkele vervelende verrassing. Dat is zeldzaam en waardevol in deze sector."',
-        'name'  => 'Emma Bakker',
-        'location' => 'Groningen, Nederland',
+        'name'  => 'Iris van Dijk',
+        'location' => 'Zwolle, Nederland',
         'months_ago' => 5,
     ],
     'testimonial_7' => [
@@ -163,11 +163,11 @@ return [
     'sl' => 'Slovène',
 
     // Hero subtitle
-    'hero_subtitle' => 'Geen ingewikkelde procedures, geen verborgen kosten. Al 15 jaar financieren wij uw persoonlijke, hypothecaire, auto- en zakelijke projecten met transparantie en snelheid.',
+    'hero_subtitle' => 'Geen ingewikkelde procedures, geen verborgen kosten. Al 8 jaar financieren wij uw persoonlijke, hypothecaire, auto- en zakelijke projecten met transparantie en snelheid.',
 
     // Slide
     'slide_1' => [
-        'title' => ' Al 15 jaar · Erkend · Gegarandeerd antwoord',
+        'title' => ' Al 8 jaar · Erkend · Gegarandeerd antwoord',
         'text1' => 'Financier al uw projecten,',
         'text2' => 'tot € 500.000 binnen 24 uur.',
     ],
@@ -200,7 +200,7 @@ return [
         'exptitle' => 'jaar ervaring',
         'sectagline' => 'welkom bij ' . site_name(),
         'sectitle' => 'Persoonlijke leningen om uw dromen te realiseren',
-        'text1' => 'Wij zijn al 15 jaar actief in deze sector en bieden de beste diensten.',
+        'text1' => 'Wij zijn al 8 jaar actief in deze sector en bieden de beste diensten.',
         'text2' => site_name() . ' is uw vertrouwde platform voor leningen met een uitzonderlijke klantervaring. Wij zetten ons in om u eenvoudige, veilige en snelle financiële oplossingen te bieden.',
         'check1' => 'lening voor kleine ondernemingen',
         'check2' => 'lening om in het buitenland te studeren',
@@ -222,6 +222,67 @@ return [
         'cta_text' => 'Ons team staat klaar om u te begeleiden bij uw financieringsaanvraag.',
     ],
 
+    // Promobanner — carrousel op de homepage
+    'promo' => [
+        'slide1' => [
+            'tag'   => 'Actuele aanbieding',
+            'title' => 'Voorkeurstarief op de persoonlijke lening',
+            'text'  => 'Profiteer van een gunstig tarief en een antwoord binnen 48u om uw volgende project te financieren.',
+            'cta'   => 'Simuleer mijn lening',
+        ],
+        'slide2' => [
+            'tag'   => 'Hypotheek',
+            'title' => 'Uw vastgoedproject verdient het beste tarief',
+            'text'  => 'Persoonlijke begeleiding, van de eerste afspraak tot de ondertekening.',
+            'cta'   => 'Ontdek de hypotheek',
+        ],
+        'slide3' => [
+            'tag'   => 'Simulator',
+            'title' => 'Bereken uw maandelijkse afbetaling in 30 seconden',
+            'text'  => 'Vrijblijvend en zonder impact op uw dossier: test nu uw leencapaciteit.',
+            'cta'   => 'Simulatie uitvoeren',
+        ],
+    ],
+
+    // Naargelang uw situatie — segmentatie per profiel
+    'needs' => [
+        'sectagline'   => 'naargelang uw situatie',
+        'sectitle'     => 'Wat uw project ook is, wij hebben de oplossing',
+        'sectitle_sub' => 'Kies het profiel dat bij u past om de voor u bedachte aanbieding te ontdekken.',
+        'profiles' => [
+            'starter' => [
+                'title' => 'U start een nieuw project',
+                'text'  => 'Huwelijk, verbouwing, onverwachte uitgave... financier uw persoonlijk project met een flexibele lening, zonder aankoopbewijs.',
+                'cta'   => 'Bekijk de persoonlijke lening',
+            ],
+            'student' => [
+                'title' => 'U bent student',
+                'text'  => 'Inschrijvingsgeld, huisvesting, materiaal: een financiering die uw academische traject ondersteunt.',
+                'cta'   => 'Bekijk de studentenlening',
+            ],
+            'buyer' => [
+                'title' => 'U koopt een woning',
+                'text'  => 'Maak uw woningaankoop waar met een hypotheek met transparante voorwaarden en een vaste rente.',
+                'cta'   => 'Bekijk de hypotheek',
+            ],
+            'entrepreneur' => [
+                'title' => 'U onderneemt',
+                'text'  => 'Opstart, kasstroom, uitrusting: een snelle financiering zodat uw activiteit zonder wachten kan groeien.',
+                'cta'   => 'Bekijk de zakelijke lening',
+            ],
+            'driver' => [
+                'title' => 'U verandert van voertuig',
+                'text'  => 'Financier uw auto, nieuw of tweedehands, met maandelijkse termijnen die passen bij uw budget.',
+                'cta'   => 'Bekijk de autolening',
+            ],
+            'rider' => [
+                'title' => 'U rijdt met twee wielen',
+                'text'  => 'Scooter of motor: rust u snel uit met een specifieke lening en een antwoord binnen 48u.',
+                'cta'   => 'Bekijk de motorlening',
+            ],
+        ],
+    ],
+
     // FAQ page CTA
     'faq_cta' => [
         'label' => 'Ondersteuning',
@@ -238,7 +299,7 @@ return [
     'chooses' => [
         'sectagline' => 'onze voordelen',
         'sectitle' => 'waarom voor ons kiezen',
-        'text1' => 'Wij zijn al 15 jaar actief in deze sector en bieden de beste diensten.',
+        'text1' => 'Wij zijn al 8 jaar actief in deze sector en bieden de beste diensten.',
         'item1' => 'lage tarieven',
         'item2' => 'snel en eenvoudig',
         'progress1' => 'leenproces',
@@ -270,6 +331,11 @@ return [
     ],
 
     // Loan Reasons
+    'final_cta' => [
+        'tagline' => 'onderneem actie',
+        'title'   => 'Klaar om uw project te realiseren?',
+    ],
+
     'loan_reasons' => [
         'sectagline' => 'redenen om te lenen',
         'sectitle' => 'Populaire redenen om te lenen',

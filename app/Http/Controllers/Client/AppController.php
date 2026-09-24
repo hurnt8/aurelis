@@ -462,7 +462,7 @@ class AppController extends Controller
             }
 
             $canvas = imagecreatetruecolor($size, $size);
-            imagefill($canvas, 0, 0, imagecolorallocate($canvas, 0x06, 0x57, 0xA4));
+            imagefill($canvas, 0, 0, imagecolorallocate($canvas, 0x2A, 0x19, 0x67));
 
             // Un logo deja carre est presque toujours une icone concue comme telle :
             // on remplit le cadre. Un logotype large est encastre a 80% pour survivre
@@ -575,8 +575,8 @@ class AppController extends Controller
             'scope'            => '/app',
             'display'          => 'standalone',
             'orientation'      => 'any',
-            'background_color' => '#0657A4',
-            'theme_color'      => '#0657A4',
+            'background_color' => '#2A1967',
+            'theme_color'      => '#268226',
             'lang'             => app()->getLocale(),
             'categories'       => ['finance', 'business'],
             'icons'            => [
@@ -627,8 +627,8 @@ class AppController extends Controller
             'scope'            => '/',
             'display'          => 'standalone',
             'orientation'      => 'any',
-            'background_color' => '#0657A4',
-            'theme_color'      => '#0657A4',
+            'background_color' => '#2A1967',
+            'theme_color'      => '#268226',
             'lang'             => app()->getLocale(),
             'categories'       => ['finance', 'business'],
             'icons'            => [

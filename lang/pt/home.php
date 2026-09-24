@@ -77,39 +77,39 @@ return [
     'testimonials_months_ago' => '{1} há 1 mês|[2,*] há :count meses',
     'testimonial_1' => [
         'quote' => '"Estou muito satisfeita com o serviço. O processo de solicitação de empréstimo foi rápido e fácil. Recebi a aprovação em apenas alguns dias, e as taxas eram competitivas. Muito obrigada!"',
-        'name' => 'Julie B.',
-        'location' => 'Lisboa, Portugal',
+        'name' => 'Beatriz Carvalho',
+        'location' => 'Aveiro, Portugal',
         'months_ago' => 1,
     ],
     'testimonial_2' => [
         'quote' => '"Recomendo muito este serviço de empréstimo. A equipe foi muito profissional e prestativa. Eles responderam todas as minhas perguntas e tornaram o processo sem estresse. Obrigada pelo excelente serviço!"',
-        'name' => 'Pierre L.',
-        'location' => 'Porto, Portugal',
+        'name' => 'Rui Fernandes',
+        'location' => 'Évora, Portugal',
         'months_ago' => 2,
     ],
     'testimonial_3' => [
         'quote' => '"O processo de solicitação de empréstimo foi transparente e eficiente. Recebi conselhos profissionais e personalizados durante todo o processo. Agradeço a toda a equipe pelo excelente trabalho!"',
-        'name' => 'Sophie D.',
-        'location' => 'Braga, Portugal',
+        'name' => 'Mariana Sousa',
+        'location' => 'Viseu, Portugal',
         'months_ago' => 2,
     ],
     'testimonial_4' => [
         'quote' => '"Obter um empréstimo com esta empresa foi uma experiência sem complicações. A equipe foi amigável e conhecedora, e o processo foi rápido e eficiente. Recomendo muito!"',
-        'name' => 'Marc F.',
-        'location' => 'Coimbra, Portugal',
+        'name' => 'Tiago Pereira',
+        'location' => 'Leiria, Portugal',
         'months_ago' => 3,
     ],
     'testimonial_5' => [
         'quote' => '"Excelente atendimento ao cliente! Fui guiada em cada etapa do processo de empréstimo e minhas perguntas foram respondidas rapidamente. Estou muito satisfeita com o resultado final."',
-        'name' => 'Nathalie P.',
-        'location' => 'Faro, Portugal',
+        'name' => 'Carolina Gonçalves',
+        'location' => 'Funchal, Portugal',
         'months_ago' => 4,
     ],
 
     'testimonial_6' => [
         'quote' => '"Taxa de juros muito boa e processo rápido. Eu recomendo muito este serviço para quem precisa de um empréstimo rápido e confiável."',
-        'name' => 'Luc M.',
-        'location' => 'Setúbal, Portugal',
+        'name' => 'André Ribeiro',
+        'location' => 'Braga, Portugal',
         'months_ago' => 5,
     ],
     'testimonial_7' => [
@@ -178,11 +178,11 @@ return [
     'sl' => 'esloveno',
 
     // Hero subtitle
-    'hero_subtitle' => 'Sem procedimentos complexos, sem taxas ocultas. Há 15 anos financiamos projetos pessoais, imobiliários, automóveis e empresariais com transparência e rapidez.',
+    'hero_subtitle' => 'Sem procedimentos complexos, sem taxas ocultas. Há 8 anos financiamos projetos pessoais, imobiliários, automóveis e empresariais com transparência e rapidez.',
 
     // Slide
     'slide_1' => [
-        'title' => ' 15 anos de experiência · Autorizado · Resposta em 48h',
+        'title' => ' 8 anos de experiência · Autorizado · Resposta em 48h',
         'text1' => 'Financie todos os seus projetos,',
         'text2' => 'até 5 000 000 € em 48h.',
     ],
@@ -213,7 +213,7 @@ return [
         'exptitle' => 'ano de experiência',
         'sectagline' => 'bem-vindo à ' . site_name(),
         'sectitle' => 'Empréstimos pessoais para realizar os seus sonhos',
-        'text1' => 'Estamos neste negócio há 15 anos e oferecemos os melhores serviços.',
+        'text1' => 'Estamos neste negócio há 8 anos e oferecemos os melhores serviços.',
         'text2' => 'A ' . site_name() . ' é a sua plataforma confiável para empréstimos com uma experiência de cliente excecional. Estamos comprometidos em fornecer soluções financeiras simples, seguras e rápidas.',
         'check1' => 'empréstimo para pequenas empresas',
         'check2' => 'empréstimo para estudar no estrangeiro',
@@ -234,6 +234,67 @@ return [
         'cta_text' => 'A nossa equipa está disponível para o apoiar no seu pedido de financiamento.',
     ],
 
+    // Banner promocional — carrossel da página inicial
+    'promo' => [
+        'slide1' => [
+            'tag'   => 'Oferta do momento',
+            'title' => 'Taxa preferencial no empréstimo pessoal',
+            'text'  => 'Aproveite uma taxa vantajosa e uma resposta em 48h para financiar o seu próximo projeto.',
+            'cta'   => 'Simular o meu empréstimo',
+        ],
+        'slide2' => [
+            'tag'   => 'Crédito habitação',
+            'title' => 'O seu projeto imobiliário merece a melhor taxa',
+            'text'  => 'Um acompanhamento personalizado, desde a primeira reunião até à assinatura.',
+            'cta'   => 'Descobrir o crédito habitação',
+        ],
+        'slide3' => [
+            'tag'   => 'Simulador',
+            'title' => 'Estime a sua prestação mensal em 30 segundos',
+            'text'  => 'Sem compromisso nem impacto no seu processo: teste já a sua capacidade de endividamento.',
+            'cta'   => 'Fazer uma simulação',
+        ],
+    ],
+
+    // Consoante a sua situação — segmentação por perfil
+    'needs' => [
+        'sectagline'   => 'consoante a sua situação',
+        'sectitle'     => 'Seja qual for o seu projeto, temos a solução',
+        'sectitle_sub' => 'Escolha o perfil que lhe corresponde para descobrir a oferta pensada para si.',
+        'profiles' => [
+            'starter' => [
+                'title' => 'Está a começar um novo projeto',
+                'text'  => 'Casamento, obras, imprevistos... financie o seu projeto pessoal com um empréstimo flexível, sem justificação de compra.',
+                'cta'   => 'Ver o empréstimo pessoal',
+            ],
+            'student' => [
+                'title' => 'É estudante',
+                'text'  => 'Propinas, alojamento, material: um financiamento pensado para acompanhar o seu percurso académico.',
+                'cta'   => 'Ver o empréstimo estudante',
+            ],
+            'buyer' => [
+                'title' => 'Está a comprar um imóvel',
+                'text'  => 'Concretize a compra da sua casa com um crédito habitação de condições transparentes e taxa fixa.',
+                'cta'   => 'Ver o crédito habitação',
+            ],
+            'entrepreneur' => [
+                'title' => 'Tem um negócio',
+                'text'  => 'Arranque, tesouraria, equipamento: um financiamento rápido para fazer crescer a sua atividade sem esperar.',
+                'cta'   => 'Ver o empréstimo profissional',
+            ],
+            'driver' => [
+                'title' => 'Está a mudar de veículo',
+                'text'  => 'Financie o seu carro, novo ou usado, com prestações adaptadas ao seu orçamento.',
+                'cta'   => 'Ver o crédito automóvel',
+            ],
+            'rider' => [
+                'title' => 'Anda de duas rodas',
+                'text'  => 'Scooter ou mota: equipe-se rapidamente com um crédito dedicado, com resposta em 48h.',
+                'cta'   => 'Ver o crédito moto',
+            ],
+        ],
+    ],
+
     'faq_cta' => [
         'label' => 'Suporte',
         'title' => 'Não encontrou a sua resposta?',
@@ -247,7 +308,7 @@ return [
     'chooses' => [
         'sectagline' => 'os nossos benefícios',
         'sectitle' => 'por que escolher-nos',
-        'text1' => 'Estamos neste negócio há 15 anos e oferecemos os melhores serviços.',
+        'text1' => 'Estamos neste negócio há 8 anos e oferecemos os melhores serviços.',
         'item1' => 'taxas mais baixas',
         'item2' => 'rápido e fácil',
         'progress1' => 'processo de empréstimo',
@@ -297,6 +358,11 @@ return [
             'title' => 'Pagamento dos Fundos',
             'desc' => 'Os fundos são transferidos diretamente para a sua conta bancária em um curto período de tempo após a aprovação.',
         ],
+    ],
+
+    'final_cta' => [
+        'tagline' => 'passe à ação',
+        'title'   => 'Pronto para concretizar o seu projeto?',
     ],
 
     'loan_reasons' => [

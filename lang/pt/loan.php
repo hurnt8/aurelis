@@ -36,6 +36,9 @@ return [
     'placeholder_objet' => 'Descreva brevemente o propósito do seu empréstimo',
     'button' => 'Enviar sua solicitação',
     'button_sending' => 'A enviar…',
+    'service_benefits_title' => 'Porque escolher esta oferta',
+    'service_related_title'  => 'Descubra também as nossas outras soluções',
+    'service_related_sub'    => 'Tem outro projeto em mente? Certamente temos a solução certa para si.',
 
     'quote_title'    => 'O seu orçamento estimado',
     'quote_monthly'  => 'Prestação mensal estimada',
@@ -210,6 +213,35 @@ return [
         ]
     ],
 
-
+    'general_faqs' => [
+        'question1' => 'Qual é a taxa de juro aplicada ao meu empréstimo?',
+        'answer1' => 'A taxa depende do montante solicitado, do prazo escolhido e do seu perfil (rendimentos, situação profissional, histórico de crédito). Após a simulação, recebe uma oferta personalizada antes de qualquer compromisso, sem custos nem impacto no seu processo.',
+        'question2' => 'Qual é o montante máximo que posso solicitar?',
+        'answer2' => 'Consoante o tipo de empréstimo e a sua capacidade de reembolso, a ' . site_name() . ' financia projetos até 5.000.000 € (ou o equivalente na sua moeda). O montante exato proposto depende da análise do seu processo.',
+        'question3' => 'Para que posso utilizar o meu empréstimo?',
+        'answer3' => 'Pode decidir livremente a utilização do seu empréstimo pessoal: compras, obras, viagens, imprevistos... Para um projeto específico (imobiliário, automóvel, estudos, empresa), as nossas ofertas dedicadas propõem condições mais adequadas: não hesite em comparar os nossos diferentes produtos.',
+        'question4' => 'Quem pode solicitar um empréstimo na ' . site_name() . '?',
+        'answer4' => 'Qualquer pessoa maior de idade com um rendimento regular e um documento de identificação válido pode submeter um pedido online. A concessão final depende da análise da sua situação financeira e da sua capacidade de reembolso.',
+        'question5' => 'Quanto tempo demora até receber os fundos?',
+        'answer5' => 'Assim que o seu processo for validado e o contrato assinado eletronicamente, os fundos são geralmente transferidos para a sua conta no prazo de 48 horas úteis.',
+        'question6' => 'Posso efetuar reembolsos antecipados?',
+        'answer6' => 'Sim, pode reembolsar total ou parcialmente o seu empréstimo antecipadamente a qualquer momento, sem custos ocultos. Um reembolso antecipado reduz o prazo restante ou o valor das prestações seguintes.',
+        'question7' => 'Posso liquidar o meu empréstimo antes do fim previsto do contrato?',
+        'answer7' => 'Sim, o reembolso total antecipado é possível a qualquer momento mediante simples pedido. Contacte o nosso serviço de apoio ao cliente para obter o saldo exato a reembolsar na data da sua escolha.',
+        'question8' => 'Que documentos devo fornecer para o meu pedido online?',
+        'answer8' => 'Um documento de identificação válido, um comprovativo de rendimentos e, consoante o tipo de empréstimo, alguns documentos complementares (comprovativo de morada, extrato bancário...). A lista exata é comunicada após a simulação.',
+        'question9' => 'Como envio os meus documentos durante um pedido online?',
+        'answer9' => 'Pode carregar diretamente os seus documentos (PDF, JPEG ou PNG) a partir da área de pedido online, com total segurança. Não é necessário qualquer envio postal ou deslocação a uma agência.',
+        'question10' => 'A taxa anunciada inclui todos os custos?',
+        'answer10' => 'As suas prestações cobrem o capital emprestado e os juros. Não se aplica qualquer custo adicional durante o empréstimo, exceto o seguro facultativo que tenha subscrito.',
+        'question11' => 'Posso solicitar um empréstimo se já tiver um crédito noutra entidade?',
+        'answer11' => 'Um crédito existente não impede automaticamente a concessão de um novo empréstimo: o que conta é a sua capacidade de assumir o conjunto das suas prestações. Uma consolidação de créditos também pode ser considerada para simplificar o seu orçamento.',
+        'question12' => 'Posso ter vários empréstimos em simultâneo na ' . site_name() . '?',
+        'answer12' => 'Sim, desde que tenha rendimento líquido disponível suficiente e um bom histórico nas suas contas. Cada novo pedido é objeto de uma análise independente da sua situação global.',
+        'question13' => 'O que acontece se eu não conseguir pagar uma prestação?',
+        'answer13' => 'Contacte o nosso serviço de apoio ao cliente assim que possível: pode ser estudado um adiamento de prestação ou uma reestruturação do seu empréstimo. Quanto mais cedo entrar em contacto, mais soluções existem.',
+        'question14' => 'Posso segurar o meu empréstimo?',
+        'answer14' => 'Um seguro de crédito facultativo pode cobrir as suas prestações em caso de perda de emprego, incapacidade ou morte, para proteger a sua família. Não é obrigatório para a obtenção do empréstimo e pode ser adicionado a qualquer momento.',
+    ],
 
 ];

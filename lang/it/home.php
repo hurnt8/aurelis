@@ -76,38 +76,38 @@ return [
 'testimonials_months_ago' => '{1} 1 mese fa|[2,*] :count mesi fa',
 'testimonial_1' => [
     'quote' => '"Sono molto soddisfatta del servizio. Il processo di richiesta del prestito è stato rapido e semplice. Ho ricevuto l’approvazione in pochi giorni e i tassi erano competitivi. Grazie mille!"',
-    'name' => 'Giulia Bianchi',
-    'location' => 'Milano, Italia',
+    'name' => 'Valentina Greco',
+    'location' => 'Verona, Italia',
     'months_ago' => 1,
 ],
 'testimonial_2' => [
     'quote' => '"Raccomando vivamente questo servizio di prestito. Il team è stato molto professionale e disponibile. Hanno risposto a tutte le mie domande rendendo il processo senza stress. Grazie per l’ottimo servizio!"',
-    'name' => 'Marco Rossi',
-    'location' => 'Roma, Italia',
+    'name' => 'Matteo Ricci',
+    'location' => 'Palermo, Italia',
     'months_ago' => 2,
 ],
 'testimonial_3' => [
     'quote' => '"Il processo di richiesta del prestito è stato trasparente ed efficiente. Ho ricevuto consulenze professionali e personalizzate durante tutto il processo. Grazie a tutto il team per l’ottimo lavoro!"',
-    'name' => 'Francesca Romano',
-    'location' => 'Torino, Italia',
+    'name' => 'Elisa Marino',
+    'location' => 'Genova, Italia',
     'months_ago' => 2,
 ],
 'testimonial_4' => [
     'quote' => '"Ottenere un prestito con questa azienda è stata un’esperienza senza problemi. Il personale era cordiale e competente e il processo è stato rapido ed efficiente. Lo consiglio vivamente!"',
-    'name' => 'Alessandro Ferrari',
-    'location' => 'Napoli, Italia',
+    'name' => 'Davide Colombo',
+    'location' => 'Bari, Italia',
     'months_ago' => 3,
 ],
 'testimonial_5' => [
     'quote' => '"Servizio clienti eccellente! Sono stato guidato in ogni fase del processo di prestito e le mie domande hanno ricevuto risposta rapidamente. Sono molto soddisfatto del risultato finale."',
-    'name' => 'Chiara Esposito',
-    'location' => 'Bologna, Italia',
+    'name' => 'Federica Gallo',
+    'location' => 'Catania, Italia',
     'months_ago' => 4,
 ],
 'testimonial_6' => [
     'quote' => '"Ottimo tasso di interesse e processo veloce. Raccomando vivamente questo servizio a chiunque abbia bisogno di un prestito rapido e affidabile."',
-    'name' => 'Luca Conti',
-    'location' => 'Firenze, Italia',
+    'name' => 'Simone Barbieri',
+    'location' => 'Padova, Italia',
     'months_ago' => 5,
 ],
 'testimonial_7' => [
@@ -177,11 +177,11 @@ return [
 'sl' => 'Sloveno',
 
 // Hero subtitle
-'hero_subtitle' => 'Nessun processo complesso, nessuna commissione nascosta. Da 15 anni finanziamo i vostri progetti personali, immobiliari, auto e aziendali con trasparenza e velocità.',
+'hero_subtitle' => 'Nessun processo complesso, nessuna commissione nascosta. Da 8 anni finanziamo i vostri progetti personali, immobiliari, auto e aziendali con trasparenza e velocità.',
 
 // Slide
 'slide_1' => [
-    'title' => ' Da 15 anni · Autorizzato · Risposta in 48h',
+    'title' => ' Da 8 anni · Autorizzato · Risposta in 48h',
     'text1' => 'Finanziate tutti i vostri progetti,',
     'text2' => 'fino a 500.000 € in 48h.',
 ],
@@ -212,7 +212,7 @@ return [
     'exptitle' => 'anni di esperienza',
     'sectagline' => 'benvenuto in ' . site_name(),
     'sectitle' => 'Prestiti personali per realizzare i tuoi sogni',
-    'text1' => 'Siamo in questo settore da 15 anni e forniamo i migliori servizi.',
+    'text1' => 'Siamo in questo settore da 8 anni e forniamo i migliori servizi.',
     'text2' => site_name() . ' è la tua piattaforma di fiducia per prestiti con un’esperienza cliente eccezionale. Siamo impegnati a offrirti soluzioni finanziarie semplici, sicure e veloci.',
     'check1' => 'prestito per piccole imprese',
     'check2' => 'prestito per studiare all’estero',
@@ -233,6 +233,67 @@ return [
     'cta_text' => 'Il nostro team è a disposizione per assisterti nella tua richiesta di finanziamento.',
 ],
 
+    // Banner promozionale — carosello in home page
+    'promo' => [
+        'slide1' => [
+            'tag'   => 'Offerta del momento',
+            'title' => 'Tasso preferenziale sul prestito personale',
+            'text'  => 'Approfitta di un tasso vantaggioso e di una risposta entro 48h per finanziare il tuo prossimo progetto.',
+            'cta'   => 'Simula il mio prestito',
+        ],
+        'slide2' => [
+            'tag'   => 'Mutuo',
+            'title' => 'Il tuo progetto immobiliare merita il tasso migliore',
+            'text'  => 'Un accompagnamento personalizzato, dal primo incontro fino alla firma.',
+            'cta'   => 'Scopri il mutuo',
+        ],
+        'slide3' => [
+            'tag'   => 'Simulatore',
+            'title' => 'Stima la tua rata mensile in 30 secondi',
+            'text'  => 'Senza impegno né impatto sulla tua pratica: verifica subito la tua capacità di indebitamento.',
+            'cta'   => 'Fai una simulazione',
+        ],
+    ],
+
+    // In base alla tua situazione — segmentazione per profilo
+    'needs' => [
+        'sectagline'   => 'in base alla tua situazione',
+        'sectitle'     => 'Qualunque sia il tuo progetto, abbiamo la soluzione',
+        'sectitle_sub' => 'Scegli il profilo che ti corrisponde per scoprire l\'offerta pensata per te.',
+        'profiles' => [
+            'starter' => [
+                'title' => 'Stai avviando un nuovo progetto',
+                'text'  => 'Matrimonio, lavori, imprevisti... finanzia il tuo progetto personale con un prestito flessibile, senza giustificativo d\'acquisto.',
+                'cta'   => 'Vedi il prestito personale',
+            ],
+            'student' => [
+                'title' => 'Sei uno studente',
+                'text'  => 'Tasse universitarie, alloggio, materiale: un finanziamento pensato per accompagnare il tuo percorso accademico.',
+                'cta'   => 'Vedi il prestito studenti',
+            ],
+            'buyer' => [
+                'title' => 'Stai acquistando un immobile',
+                'text'  => 'Realizza l\'acquisto della tua casa con un mutuo dalle condizioni trasparenti e a tasso fisso.',
+                'cta'   => 'Vedi il mutuo',
+            ],
+            'entrepreneur' => [
+                'title' => 'Hai un\'attività',
+                'text'  => 'Avvio, liquidità, attrezzature: un finanziamento rapido per far crescere la tua attività senza attese.',
+                'cta'   => 'Vedi il prestito aziendale',
+            ],
+            'driver' => [
+                'title' => 'Stai cambiando veicolo',
+                'text'  => 'Finanzia la tua auto, nuova o usata, con rate adatte al tuo budget.',
+                'cta'   => 'Vedi il prestito auto',
+            ],
+            'rider' => [
+                'title' => 'Viaggi su due ruote',
+                'text'  => 'Scooter o moto: equipaggiati rapidamente con un credito dedicato, con risposta entro 48h.',
+                'cta'   => 'Vedi il prestito moto',
+            ],
+        ],
+    ],
+
 // CTA pagina FAQ
 'faq_cta' => [
     'label' => 'Assistenza',
@@ -247,7 +308,7 @@ return [
 'chooses' => [
     'sectagline' => 'i nostri vantaggi',
     'sectitle' => 'perché sceglierci',
-    'text1' => 'Siamo in questo settore da 15 anni e forniamo i migliori servizi.',
+    'text1' => 'Siamo in questo settore da 8 anni e forniamo i migliori servizi.',
     'item1' => 'tassi più bassi',
     'item2' => 'rapido e semplice',
     'progress1' => 'processo di prestito',
@@ -297,6 +358,11 @@ return [
         'title' => 'Erogazione dei fondi',
         'desc' => 'I fondi vengono trasferiti direttamente sul tuo conto bancario in breve tempo dopo l’approvazione.'
     ],
+],
+
+'final_cta' => [
+    'tagline' => "passa all'azione",
+    'title'   => 'Pronto a realizzare il tuo progetto?',
 ],
 
 'loan_reasons' => [

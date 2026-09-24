@@ -37,7 +37,7 @@
 /* ── Total card ── */
 .invd-total {
   margin: .875rem 1.25rem 0;
-  background: linear-gradient(145deg,#1B527A 0%,#0D2E54 50%,#071828 100%);
+  background: linear-gradient(145deg,#180F3C 0%,#110A29 50%,#080513 100%);
   border-radius: 20px;
   padding: 1.25rem 1.375rem;
   text-align: center;
@@ -142,11 +142,11 @@
 
 /* ── Note ── */
 .invd-note {
-  background: rgba(129, 182, 233,.07);
-  border: 1px solid rgba(129, 182, 233,.2);
+  background: rgba(101, 220, 80,.07);
+  border: 1px solid rgba(101, 220, 80,.2);
   border-radius: 12px;
   padding: .875rem 1rem;
-  font-size: .8rem; color: rgba(129, 182, 233,.85);
+  font-size: .8rem; color: rgba(101, 220, 80,.85);
   line-height: 1.55;
 }
 .invd-note i { margin-right: .45rem; opacity: .7 }

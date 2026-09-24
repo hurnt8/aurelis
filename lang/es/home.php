@@ -67,38 +67,38 @@ return [
     'testimonials_months_ago' => '{1} hace 1 mes|[2,*] hace :count meses',
     'testimonial_1' => [
         'quote'    => '«Solicité un préstamo hipotecario tras varios rechazos en mi banco habitual. ' . site_name() . ' estudió mi caso con detalle y me aprobó la financiación en cinco días. El tipo de interés fue mejor de lo esperado. Muy recomendable.»',
-        'name'     => 'Carlos García',
-        'location' => 'Madrid, España',
+        'name'     => 'Pablo Iglesias',
+        'location' => 'Zaragoza, España',
         'months_ago' => 1,
     ],
     'testimonial_2' => [
         'quote'    => '«El proceso fue completamente digital y muy intuitivo. Me asignaron un asesor personal que me llamó en cada fase para explicarme los pasos. Nunca me sentí perdida ni presionada. Un servicio de diez.»',
-        'name'     => 'María López',
-        'location' => 'Barcelona, España',
+        'name'     => 'Lucía Navarro',
+        'location' => 'Murcia, España',
         'months_ago' => 2,
     ],
     'testimonial_3' => [
         'quote'    => '«Necesitaba financiación para ampliar mi taller mecánico y los bancos me pedían avales imposibles. ' . site_name() . ' analizó mi facturación real y me concedió el préstamo empresarial que necesitaba. Gracias al equipo.»',
-        'name'     => 'Antonio Martínez',
-        'location' => 'Sevilla, España',
+        'name'     => 'Rubén Domínguez',
+        'location' => 'Alicante, España',
         'months_ago' => 2,
     ],
     'testimonial_4' => [
         'quote'    => '«Pedí un préstamo personal para reformar la cocina de casa. La respuesta llegó en menos de 24 horas y el dinero estaba en mi cuenta al día siguiente. Rapidez y profesionalidad al máximo nivel.»',
-        'name'     => 'Isabel Rodríguez',
-        'location' => 'Valencia, España',
+        'name'     => 'Marta Iglesias',
+        'location' => 'Vigo, España',
         'months_ago' => 3,
     ],
     'testimonial_5' => [
         'quote'    => '«Lo que más valoré fue la transparencia total: sin comisiones ocultas, sin letra pequeña engañosa. Desde el primer momento supe exactamente cuánto iba a pagar cada mes. Eso genera mucha confianza.»',
-        'name'     => 'Juan Hernández',
-        'location' => 'Bilbao, España',
+        'name'     => 'Diego Serrano',
+        'location' => 'Gijón, España',
         'months_ago' => 4,
     ],
     'testimonial_6' => [
         'quote'    => '«Mi situación laboral como autónoma complicaba la obtención de crédito. ' . site_name() . ' valoró mis ingresos reales y me ofreció condiciones adaptadas a mi perfil. Por fin una entidad que entiende la realidad de los trabajadores independientes.»',
-        'name'     => 'Carmen Fernández',
-        'location' => 'Málaga, España',
+        'name'     => 'Nuria Ramos',
+        'location' => 'Granada, España',
         'months_ago' => 5,
     ],
     'testimonial_7' => [
@@ -161,11 +161,11 @@ return [
     'sl' => 'esloveno',
 
     // Hero subtitle
-    'hero_subtitle' => 'Sin trámites complejos, sin costes ocultos. Desde hace 15 años financiamos sus proyectos personales, inmobiliarios, de vehículos y empresariales con total transparencia.',
+    'hero_subtitle' => 'Sin trámites complejos, sin costes ocultos. Desde hace 8 años financiamos sus proyectos personales, inmobiliarios, de vehículos y empresariales con total transparencia.',
 
     // Slide
     'slide_1' => [
-        'title' => ' 15 años de experiencia · Autorizado · Respuesta garantizada',
+        'title' => ' 8 años de experiencia · Autorizado · Respuesta garantizada',
         'text1' => 'Financia todos tus proyectos,',
         'text2' => 'hasta 500.000 € en 48h.',
     ],
@@ -196,7 +196,7 @@ return [
         'exptitle' => 'años de experiencia',
         'sectagline' => 'bienvenido a ' . site_name(),
         'sectitle' => 'Préstamos personales para cumplir tus sueños',
-        'text1' => 'Estamos en este negocio desde hace 15 años y brindamos los mejores servicios.',
+        'text1' => 'Estamos en este negocio desde hace 8 años y brindamos los mejores servicios.',
         'text2' => site_name() . ' es tu plataforma confiable para préstamos con una experiencia al cliente excepcional. Nos comprometemos a ofrecerte soluciones financieras simples, seguras y rápidas.',
         'check1' => 'préstamo para pequeñas empresas',
         'check2' => 'préstamo para estudiar en el extranjero',
@@ -217,6 +217,67 @@ return [
         'cta_text' => 'Nuestro equipo está disponible para acompañarle en su solicitud de financiación.',
     ],
 
+    // Banner promocional — carrusel de la página de inicio
+    'promo' => [
+        'slide1' => [
+            'tag'   => 'Oferta del momento',
+            'title' => 'Tasa preferente en el préstamo personal',
+            'text'  => 'Aproveche una tasa competitiva y una respuesta en 48h para financiar su próximo proyecto.',
+            'cta'   => 'Simular mi préstamo',
+        ],
+        'slide2' => [
+            'tag'   => 'Préstamo hipotecario',
+            'title' => 'Su proyecto inmobiliario merece la mejor tasa',
+            'text'  => 'Un acompañamiento personalizado, desde la primera cita hasta la firma.',
+            'cta'   => 'Descubrir el préstamo hipotecario',
+        ],
+        'slide3' => [
+            'tag'   => 'Simulador',
+            'title' => 'Calcule su cuota mensual en 30 segundos',
+            'text'  => 'Sin compromiso ni impacto en su historial: compruebe su capacidad de endeudamiento ahora mismo.',
+            'cta'   => 'Hacer una simulación',
+        ],
+    ],
+
+    // Según su situación — segmentación por perfil
+    'needs' => [
+        'sectagline'   => 'según su situación',
+        'sectitle'     => 'Sea cual sea su proyecto, tenemos la solución',
+        'sectitle_sub' => 'Elija el perfil que le corresponde para descubrir la oferta pensada para usted.',
+        'profiles' => [
+            'starter' => [
+                'title' => 'Está iniciando un nuevo proyecto',
+                'text'  => 'Boda, obras, imprevistos... financie su proyecto personal con un préstamo flexible, sin justificante de compra.',
+                'cta'   => 'Ver el préstamo personal',
+            ],
+            'student' => [
+                'title' => 'Es estudiante',
+                'text'  => 'Matrícula, alojamiento, material: una financiación pensada para acompañar su trayectoria académica.',
+                'cta'   => 'Ver el préstamo estudiantil',
+            ],
+            'buyer' => [
+                'title' => 'Está comprando una vivienda',
+                'text'  => 'Haga realidad la compra de su vivienda con un préstamo hipotecario de condiciones transparentes y tasa fija.',
+                'cta'   => 'Ver el préstamo hipotecario',
+            ],
+            'entrepreneur' => [
+                'title' => 'Está emprendiendo',
+                'text'  => 'Lanzamiento, tesorería, equipamiento: una financiación rápida para hacer crecer su actividad sin esperar.',
+                'cta'   => 'Ver el préstamo profesional',
+            ],
+            'driver' => [
+                'title' => 'Está cambiando de vehículo',
+                'text'  => 'Financie su coche, nuevo o de segunda mano, con cuotas adaptadas a su presupuesto.',
+                'cta'   => 'Ver el préstamo de coche',
+            ],
+            'rider' => [
+                'title' => 'Se mueve en dos ruedas',
+                'text'  => 'Scooter o moto: equípese rápidamente gracias a un crédito específico, con respuesta en 48h.',
+                'cta'   => 'Ver el préstamo de moto',
+            ],
+        ],
+    ],
+
     // CTA de la página de preguntas frecuentes
     'faq_cta' => [
         'label' => 'Soporte',
@@ -231,7 +292,7 @@ return [
     'chooses' => [
         'sectagline' => 'nuestros beneficios',
         'sectitle' => '¿por qué elegirnos?',
-        'text1' => 'Estamos en este negocio desde hace 15 años y brindamos los mejores servicios.',
+        'text1' => 'Estamos en este negocio desde hace 8 años y brindamos los mejores servicios.',
         'item1' => 'tasas bajas',
         'item2' => 'rápido y fácil',
         'progress1' => 'proceso de préstamo',
@@ -259,6 +320,11 @@ return [
             'title' => 'Desembolso de los fondos',
             'desc' => 'Los fondos se transfieren directamente a tu cuenta bancaria poco después de la aprobación.'
         ],
+    ],
+
+    'final_cta' => [
+        'tagline' => 'pase a la acción',
+        'title'   => '¿Listo para hacer realidad su proyecto?',
     ],
 
     'loan_reasons' => [

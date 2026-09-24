@@ -11,7 +11,7 @@
 /* ── Hero card ── */
 .rcv-hero{
   margin:.875rem 1.25rem 0;
-  background:linear-gradient(145deg,#1B527A,#0D2E54);
+  background:linear-gradient(145deg,#180F3C,#110A29);
   border-radius:20px;padding:1.625rem 1.5rem;
   position:relative;overflow:hidden;
   box-shadow:0 12px 32px rgba(0,0,0,.4);
@@ -20,7 +20,7 @@
 .rcv-hero::before{
   content:'';position:absolute;bottom:-50px;right:-50px;
   width:180px;height:180px;border-radius:50%;
-  background:radial-gradient(circle,rgba(129, 182, 233,.18) 0%,transparent 70%);
+  background:radial-gradient(circle,rgba(101, 220, 80,.18) 0%,transparent 70%);
   pointer-events:none;
 }
 .rcv-hero__avatar{
@@ -35,8 +35,8 @@
 .rcv-hero__badge{
   display:inline-flex;align-items:center;gap:.35rem;
   font-size:.68rem;font-weight:600;
-  color:rgba(129, 182, 233,.9);
-  background:rgba(129, 182, 233,.12);border:1px solid rgba(129, 182, 233,.25);
+  color:rgba(101, 220, 80,.9);
+  background:rgba(101, 220, 80,.12);border:1px solid rgba(101, 220, 80,.25);
   border-radius:999px;padding:.2rem .65rem;margin-bottom:.25rem;
 }
 

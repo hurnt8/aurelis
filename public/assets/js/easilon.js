@@ -23,6 +23,7 @@
       let loanTotalElm = form.find(".loan-total");
       let interestRate = form.data("interest-rate");
       let direction = form.data("form-direction");
+      let monthSuffix = form.data("month-suffix") || " Month";
 
 
       var monthRange = document.getElementById(getID + '-month');
@@ -41,7 +42,7 @@
         tooltips: [
           wNumb({
             decimals: 0,
-            suffix: " Month",
+            suffix: monthSuffix,
           }),
         ],
         connect: [true, false],

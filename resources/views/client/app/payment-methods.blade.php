@@ -11,7 +11,7 @@
 /* Carte bancaire visuelle */
 .pm-card {
   border-radius:22px;
-  background:linear-gradient(145deg,#1B527A 0%,#0D2E54 45%,#071828 100%);
+  background:linear-gradient(145deg,#180F3C 0%,#110A29 45%,#080513 100%);
   padding:1.5rem;position:relative;overflow:hidden;
   box-shadow:0 20px 56px rgba(0,0,0,.55),0 0 0 1px rgba(255,255,255,.07);
   margin-bottom:1.5rem;
@@ -25,7 +25,7 @@
 .pm-card::after {
   content:'';position:absolute;bottom:-70px;left:-40px;
   width:180px;height:180px;border-radius:50%;
-  background:radial-gradient(circle,rgba(129, 182, 233,.08) 0%,transparent 65%);
+  background:radial-gradient(circle,rgba(101, 220, 80,.08) 0%,transparent 65%);
   pointer-events:none;
 }
 .pm-card__top {
@@ -39,7 +39,7 @@
 }
 .pm-card__chip {
   width:32px;height:24px;border-radius:4px;
-  background:linear-gradient(135deg,#B5D4F2,#81B6E9,#2B94F7);
+  background:linear-gradient(135deg,#84E373,#65DC50,#379627);
   box-shadow:0 2px 6px rgba(0,0,0,.35);position:relative;overflow:hidden;
 }
 .pm-card__chip::before {

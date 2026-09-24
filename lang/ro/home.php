@@ -69,38 +69,38 @@ return [
     'testimonials_months_ago' => '{1} acum 1 lună|[2,19] acum :count luni|[20,*] acum :count de luni',
     'testimonial_1' => [
         'quote' => '„Mi-am obținut creditul imobiliar în mai puțin de o săptămână. Consilierul a dat dovadă de o disponibilitate remarcabilă, iar condițiile propuse erau mult sub ceea ce găseam în altă parte. Recomand fără ezitare.”',
-        'name'  => 'Ioana Popescu',
-        'location' => 'București, România',
+        'name'  => 'Raluca Marin',
+        'location' => 'Craiova, România',
         'months_ago' => 1,
     ],
     'testimonial_2' => [
         'quote' => '„După două refuzuri din partea unei bănci tradiționale, ' . site_name() . ' mi-a acordat un împrumut personal în 48 de ore. Echipa a știut să îmi analizeze dosarul cu seriozitate și bunăvoință. Mulțumesc enorm!”',
-        'name'  => 'Andrei Ionescu',
-        'location' => 'Cluj-Napoca, România',
+        'name'  => 'Bogdan Radu',
+        'location' => 'Galați, România',
         'months_ago' => 2,
     ],
     'testimonial_3' => [
         'quote' => '„Proces 100% online, răspuns rapid, rată competitivă. Mi-am finanțat mașina fără să mă deplasez nici măcar o dată la agenție. Un serviciu modern și eficient.”',
-        'name'  => 'Elena Dumitrescu',
-        'location' => 'Timișoara, România',
+        'name'  => 'Simona Tudor',
+        'location' => 'Oradea, România',
         'months_ago' => 2,
     ],
     'testimonial_4' => [
         'quote' => '„Urmărirea personalizată m-a impresionat cu adevărat. Consilierul meu m-a sunat la fiecare etapă pentru a-mi explica evoluția dosarului. Te simți însoțit, nu singur în fața formularelor.”',
-        'name'  => 'Mihai Constantin',
-        'location' => 'Iași, România',
+        'name'  => 'Florin Neagu',
+        'location' => 'Ploiești, România',
         'months_ago' => 3,
     ],
     'testimonial_5' => [
         'quote' => '„Simulator clar, dosar simplu, transfer primit în trei zile lucrătoare. Aveam nevoie să finanțez niște lucrări urgente, iar ' . site_name() . ' a fost prezent la momentul potrivit.”',
-        'name'  => 'Cristina Stan',
-        'location' => 'Constanța, România',
+        'name'  => 'Roxana Dinu',
+        'location' => 'Sibiu, România',
         'months_ago' => 4,
     ],
     'testimonial_6' => [
         'quote' => '„Transparența privind ratele și taxele m-a convins încă din primul contact. Nicio surpriză neplăcută pe parcurs. Este ceva rar și prețios în acest domeniu.”',
-        'name'  => 'Alexandru Gheorghe',
-        'location' => 'Brașov, România',
+        'name'  => 'Cătălin Vasile',
+        'location' => 'Arad, România',
         'months_ago' => 5,
     ],
     'testimonial_7' => [
@@ -163,11 +163,11 @@ return [
     'sl' => 'Slovenă',
 
     // Hero subtitle
-    'hero_subtitle' => 'Fără demersuri complicate, fără costuri ascunse. De 15 ani, finanțăm proiectele dumneavoastră personale, imobiliare, auto și profesionale cu transparență și rapiditate.',
+    'hero_subtitle' => 'Fără demersuri complicate, fără costuri ascunse. De 8 ani, finanțăm proiectele dumneavoastră personale, imobiliare, auto și profesionale cu transparență și rapiditate.',
 
     // Slide
     'slide_1' => [
-        'title' => ' De 15 ani · Autorizat · Răspuns garantat',
+        'title' => ' De 8 ani · Autorizat · Răspuns garantat',
         'text1' => 'Finanțați toate proiectele dumneavoastră,',
         'text2' => 'până la 5 000 000 € în 48h.',
     ],
@@ -200,7 +200,7 @@ return [
         'exptitle' => 'ani de experiență',
         'sectagline' => 'bine ați venit la ' . site_name(),
         'sectitle' => 'Împrumuturi personale pentru a vă îndeplini visurile',
-        'text1' => 'Suntem activi în acest domeniu de 15 ani și oferim cele mai bune servicii.',
+        'text1' => 'Suntem activi în acest domeniu de 8 ani și oferim cele mai bune servicii.',
         'text2' => site_name() . ' este platforma dumneavoastră de încredere pentru împrumuturi, cu o experiență excepțională pentru clienți. Ne angajăm să vă oferim soluții financiare simple, sigure și rapide.',
         'check1' => 'împrumut pentru afaceri mici',
         'check2' => 'împrumut pentru studii în străinătate',
@@ -222,6 +222,67 @@ return [
         'cta_text' => 'Echipa noastră este disponibilă pentru a vă însoți în cererea dumneavoastră de finanțare.',
     ],
 
+    // Banner promoțional — carusel pe pagina principală
+    'promo' => [
+        'slide1' => [
+            'tag'   => 'Ofertă de moment',
+            'title' => 'Rată preferențială la creditul personal',
+            'text'  => 'Beneficiați de o rată avantajoasă și de un răspuns în 48h pentru a vă finanța următorul proiect.',
+            'cta'   => 'Simulează creditul meu',
+        ],
+        'slide2' => [
+            'tag'   => 'Credit imobiliar',
+            'title' => 'Proiectul dumneavoastră imobiliar merită cea mai bună rată',
+            'text'  => 'O asistență personalizată, de la prima întâlnire până la semnare.',
+            'cta'   => 'Descoperiți creditul imobiliar',
+        ],
+        'slide3' => [
+            'tag'   => 'Simulator',
+            'title' => 'Estimați-vă rata lunară în 30 de secunde',
+            'text'  => 'Fără angajament și fără impact asupra dosarului dumneavoastră: testați-vă acum capacitatea de îndatorare.',
+            'cta'   => 'Faceți o simulare',
+        ],
+    ],
+
+    // În funcție de situația dumneavoastră — segmentare pe profil
+    'needs' => [
+        'sectagline'   => 'în funcție de situația dumneavoastră',
+        'sectitle'     => 'Indiferent de proiectul dumneavoastră, avem soluția',
+        'sectitle_sub' => 'Alegeți profilul care vi se potrivește pentru a descoperi oferta gândită pentru dumneavoastră.',
+        'profiles' => [
+            'starter' => [
+                'title' => 'Începeți un proiect nou',
+                'text'  => 'Nuntă, renovări, cheltuieli neprevăzute... finanțați-vă proiectul personal cu un credit flexibil, fără justificarea achiziției.',
+                'cta'   => 'Vezi creditul personal',
+            ],
+            'student' => [
+                'title' => 'Sunteți student',
+                'text'  => 'Taxe de școlarizare, cazare, echipament: o finanțare gândită pentru a vă susține parcursul academic.',
+                'cta'   => 'Vezi creditul studențesc',
+            ],
+            'buyer' => [
+                'title' => 'Cumpărați un imobil',
+                'text'  => 'Realizați achiziția locuinței dumneavoastră cu un credit imobiliar cu condiții transparente și rată fixă.',
+                'cta'   => 'Vezi creditul imobiliar',
+            ],
+            'entrepreneur' => [
+                'title' => 'Aveți o afacere',
+                'text'  => 'Lansare, trezorerie, echipamente: o finanțare rapidă pentru a vă dezvolta afacerea fără întârziere.',
+                'cta'   => 'Vezi creditul profesional',
+            ],
+            'driver' => [
+                'title' => 'Vă schimbați mașina',
+                'text'  => 'Finanțați-vă mașina, nouă sau la mâna a doua, cu rate lunare adaptate bugetului dumneavoastră.',
+                'cta'   => 'Vezi creditul auto',
+            ],
+            'rider' => [
+                'title' => 'Circulați pe două roți',
+                'text'  => 'Scuter sau motocicletă: echipați-vă rapid printr-un credit dedicat, cu răspuns în 48h.',
+                'cta'   => 'Vezi creditul moto',
+            ],
+        ],
+    ],
+
     // CTA pagina de întrebări frecvente
     'faq_cta' => [
         'label' => 'Asistență',
@@ -238,7 +299,7 @@ return [
     'chooses' => [
         'sectagline' => 'avantajele noastre',
         'sectitle' => 'de ce să ne alegeți',
-        'text1' => 'Suntem activi în acest domeniu de 15 ani și oferim cele mai bune servicii.',
+        'text1' => 'Suntem activi în acest domeniu de 8 ani și oferim cele mai bune servicii.',
         'item1' => 'rate mici',
         'item2' => 'rapid și simplu',
         'progress1' => 'proces de creditare',
@@ -270,6 +331,11 @@ return [
     ],
 
     // Loan Reasons
+    'final_cta' => [
+        'tagline' => 'treceți la acțiune',
+        'title'   => 'Gata să vă transformați proiectul în realitate?',
+    ],
+
     'loan_reasons' => [
         'sectagline' => 'motive de creditare',
         'sectitle' => 'Motive Populare de Creditare',

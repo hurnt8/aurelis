@@ -6,7 +6,7 @@
 <meta name="mobile-web-app-capable" content="yes">
 <meta name="apple-mobile-web-app-capable" content="yes">
 <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-<meta name="theme-color" content="#0657A4">
+<meta name="theme-color" content="#268226">
 <link rel="icon" type="image/png" sizes="192x192" href="/site-icon-192.png">
 <title>Réinitialiser le mot de passe — {{ site_name() }}</title>
 
@@ -17,14 +17,14 @@
 
 <style>
 :root{
-  --bg:   #02182E;
-  --inp:  #06304F;
-  --cyan: #2B94F7;
-  --cyan2:#0870D4;
+  --bg:   #150C38;
+  --inp:  #120B2B;
+  --cyan: #379627;
+  --cyan2:#379627;
   --text: #FFFFFF;
   --sub:  rgba(255,255,255,.52);
   --muted:rgba(255,255,255,.28);
-  --bdr:  rgba(129,182,233,.16);
+  --bdr:  rgba(101,220,80,.16);
 }
 *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
 html,body{
@@ -93,7 +93,7 @@ a{text-decoration:none;color:inherit}
   outline:none;transition:border-color .2s,box-shadow .2s,background .2s;
 }
 .finput::placeholder{color:rgba(255,255,255,.2)}
-.finput:focus{border-color:var(--cyan);background:#161E30;box-shadow:0 0 0 3.5px rgba(13,207,220,.15)}
+.finput:focus{border-color:var(--cyan);background:#0D081F;box-shadow:0 0 0 3.5px rgba(13,207,220,.15)}
 .finput:focus ~ .ficon,.frel:focus-within .ficon{color:var(--cyan)}
 .finput.err{border-color:#ef4444}
 .feye{
@@ -114,7 +114,7 @@ a{text-decoration:none;color:inherit}
   width:100%;padding:.92rem 1.5rem;border:none;border-radius:999px;
   font-size:.97rem;font-weight:700;font-family:'Inter',sans-serif;cursor:pointer;
   display:flex;align-items:center;justify-content:center;gap:.625rem;
-  background:linear-gradient(135deg,#0870D4 0%,#0657A4 100%);
+  background:linear-gradient(135deg,#379627 0%,#268226 100%);
   color:#080C18;letter-spacing:.01em;
   box-shadow:0 6px 28px rgba(13,207,220,.35),0 2px 8px rgba(0,0,0,.3);
   transition:filter .2s,box-shadow .2s,transform .1s;margin-top:.5rem;

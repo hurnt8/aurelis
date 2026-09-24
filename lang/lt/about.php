@@ -1,46 +1,47 @@
 <?php
 
 return [
-    'banner_title' => 'Atrask ' . site_name(),
-    'banner_subtitle' => 'Apie mus',
-    'banner_description' => 'Skolinkites lengviau naudodamiesi lanksčiais paskolų sprendimais, pritaikytais jūsų finansiniams poreikiams.',
-   
-    'section1_title' => 'Kodėl verta rinktis ' . site_name(),
-    'section1_p1' => 'Mes, ' . site_name() . ', tvirtai tikime, kad kiekvienas nusipelno galimybės įgyvendinti savo finansines svajones. Nuo pat savo veiklos pradžios esame įsipareigoję teikti lanksčius ir prieinamus skolinimo sprendimus, kad patenkintume įvairius mūsų klientų poreikius. Nesvarbu, ar norite finansuoti asmeninį projektą, įsigyti automobilį ar išplėsti savo verslą, mes turime jums reikalingą paskolą.',
-    'section1_p2' => 'Mūsų paslaugos sukurtos taip, kad būtų užtikrintas be vargo, greitas ir paprastas paraiškų teikimo procesas. Suprantame, kad kiekvienas klientas yra unikalus, todėl siūlome individualizuotas paskolas, kurios prisitaiko prie konkrečių jūsų poreikių. Be to, mūsų atsidavę patarėjai visada padės jums kiekviename žingsnyje, užtikrindami, kad nuo pradžios iki pabaigos jus visapusiškai palaikytų.',
-    'proposed' => 'Mes siūlome:',
-    'check1' => 'Suasmenintos paskolos pagal jūsų konkrečius poreikius.',
-    'check2' => 'Paskirti patarėjai padės jums kiekviename žingsnyje.',
-    'check3' => 'Lanksčios grąžinimo sąlygos, atitinkančios jūsų finansinę padėtį',
-    'check4' => 'Paskolos be atlyginimo.',
-    'section1_p3' => 'Mūsų „ ' . site_name() . '“ misija yra padėti jums pasiekti jūsų finansinius tikslus, taikant individualiai pritaikytus paskolų sprendimus. Prisijunkite prie mūsų šiandien ir sužinokite, kaip galime padėti jums paversti jūsų projektus realybe.',
-    'btn' => 'Raskite savo idealią paskolą',
-   
+    // Hero / įvadas
+    'hero_tagline' => 'mūsų istorija',
+    'hero_title' => 'Internetinis bankas, sukurtas veikti greičiau nei tradiciniai bankai',
+    'hero_text' => 'Jau 8 metų ' . site_name() . ' padeda privatiems asmenims ir įmonėms įgyvendinti savo finansavimo projektus, vadovaudamiesi paprastu įsitikinimu: gauti paskolą niekada neturėtų būti sudėtinga.',
+
+    // Misija / istorija
+    'mission_tagline' => 'mūsų misija',
+    'mission_title' => 'Kreditą padarome paprastą, greitą ir prieinamą',
+    'mission_p1' => site_name() . ' gimė iš nusivylimo, kurį patiria tūkstančiai skolininkų: tradicinės paskolų procedūros yra lėtos, neaiškios ir dažnai atgraso. Vizitai skyriuje, popieriniai dokumentai, savaitės laukiant atsakymo... mes norėjome sukurti alternatyvą, sukurtą visiškai orientuotą į klientą.',
+    'mission_p2' => 'Šiandien kasmet padedame tūkstančiams klientų visoje Europoje finansuoti jų asmeninius, nekilnojamojo turto, verslo ir automobilių projektus. Mūsų internetinė platforma leidžia pateikti paraišką nuo pradžios iki pabaigos iš namų, gauti atsakymą per 48 valandas ir turėti asmeninį konsultantą kiekviename etape.',
+
+    // Vertybės
+    'values_tagline' => 'mūsų vertybės',
+    'values_title' => 'Kas vadovauja kiekvienam mūsų sprendimui',
+    'value1_title' => 'Skaidrumas',
+    'value1_desc' => 'Palūkanos, mokesčiai ir sąlygos aiškiai pateikiamos prieš pasirašant bet kokią sutartį. Jokių nemalonių staigmenų, jokių paslėptų sąlygų.',
+    'value2_title' => 'Greitis',
+    'value2_desc' => '100 % internetinė paraiška, sprendimas per 48 valandas ir greitas lėšų pervedimas iš karto pasirašius sutartį.',
+    'value3_title' => 'Žmogiškas palaikymas',
+    'value3_desc' => 'Už kiekvienos bylos stovi asmeninis konsultantas, pasiekiamas jūsų klausimams nuo pirmojo kontakto iki paskolos grąžinimo.',
+    'value4_title' => 'Saugumas',
+    'value4_desc' => 'Sertifikuota kredito įstaiga, veikianti pagal Europos standartus. Jūsų duomenys ir byla saugomi kiekviename etape.',
+
+    // Mūsų požiūris / kaip mes dirbame
+    'approach_tagline' => 'mūsų požiūris',
+    'approach_title' => 'Kaip mes dirbame',
+    'approach1_title' => 'Išklausome prieš siūlydami',
+    'approach1_desc' => 'Kiekvienas projektas yra unikalus: skiriame laiko suprasti jūsų situaciją, prieš nukreipdami jus link tinkamiausio sprendimo.',
+    'approach2_title' => 'Supaprastiname kiekvieną etapą',
+    'approach2_desc' => 'Simuliacija, byla, pasirašymas ir stebėsena: viskas vyksta internetu, be popierizmo ir nereikalingų kelionių.',
+    'approach3_title' => 'Liekame šalia jūsų ir po paskolos suteikimo',
+    'approach3_desc' => 'Mūsų ryšys nesibaigia pasirašius sutartį: mūsų klientų aptarnavimo tarnyba lieka pasiekiama visą grąžinimo laikotarpį.',
+
+    // Statistikos juosta (perimta iš pradinio puslapio, „apie mus" kontekste)
+    'stats_tagline' => 'skaičiais',
+    'stats_title' => site_name() . ' šiandien',
+
+    // Baigiamasis CTA
+    'cta_tagline' => 'imkitės veiksmų',
+    'cta_title' => 'Pasiruošę pradėti savo projektą kartu su mumis?',
+    'cta_text' => 'Susimuliuokite savo paskolą per kelias minutes ir gaukite asmeninį atsakymą per 48 valandas.',
+
     'faq_title' => 'Dažniausiai užduodami klausimai',
-    'faq_description' => 'Raskite atsakymus į dažniausiai užduodamus klausimus apie mūsų paskolų paslaugas.',
-    'acc_1' => 'Kokio tipo paskolas siūlote?',
-    'acc_1_desc' => 'Mes siūlome įvairias paskolas, įskaitant asmenines paskolas, paskolas
-    hipotekos, paskolos automobiliui ir smulkaus verslo paskolos. Kiekvienas
-    paskolos tipas yra skirtas specifiniams poreikiams ir pasiūlymams patenkinti
-    lanksčios sąlygos.',
-    'acc_2' => 'Kaip galiu kreiptis dėl paskolos?',
-    'acc_2_desc' => 'Paskolos paraišką galite pateikti tiesiogiai mūsų svetainėje iki
-    užpildant internetinę paraiškos formą. Mes jūsų paprašysime
-    pagrindinė informacija, pvz., jūsų vardas, kontaktiniai duomenys ir suma
-    pageidaujama paskola. Mūsų konsultantai susisieks su jumis, kad užbaigtų užklausą ir
-    padės jums per procesą.',
-    'acc_3' => 'Kokie yra paskolos tinkamumo kriterijai?',
-    'acc_3_desc' => 'Tinkamumo kriterijai skiriasi priklausomai nuo paskolos tipo, bet apskritai jūs
-    turi būti pilnametis, turėti stabilias pajamas ir gerą kredito balą. Mes
-    Taip pat išnagrinėsime jūsų mokėjimo galimybes ir istoriją
-    finansinis.',
-    'acc_4' => 'Koks yra paskolos prašymo apdorojimo laikas?',
-    'acc_4_desc' => ' Apdorojimo laikas skiriasi priklausomai nuo paskolos tipo ir sudėtingumo
-    prašymas. Paprastai asmeninės paskolos paraiškos apdorojamos nuo 24 iki 48
-    valandų, o hipoteka gali užtrukti kelias dienas
-    priežastis, dėl kurios reikia atlikti išsamesnius patikrinimus.',
-    'acc_5' => 'Ar galiu grąžinti paskolą anksčiau?',
-    'acc_5_desc' => 'Taip, paskolą galite grąžinti anksčiau laiko be baudos. Mes jūs
-    Rekomenduojame, jei įmanoma, greičiau grąžinti paskolą, nes tai sumažins
-    bendra palūkanų suma, kurią mokėsite per paskolos laikotarpį.',
 ];

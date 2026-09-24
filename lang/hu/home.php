@@ -77,14 +77,14 @@ return [
     'testimonials_months_ago' => '{1} 1 hónapja|[2,*] :count hónapja',
     'testimonial_1' => [
         'quote' => '"Nagyon elégedett vagyok a szolgáltatással. A hiteligénylési folyamat gyors és egyszerű volt. Néhány napon belül megkaptam a jóváhagyást, a kamatlábak pedig versenyképesek voltak. Köszönöm szépen!"',
-        'name' => 'Nagy Katalin',
-        'location' => 'Budapest, Magyarország',
+        'name' => 'Farkas Zsuzsanna',
+        'location' => 'Kecskemét, Magyarország',
         'months_ago' => 1,
     ],
     'testimonial_2' => [
         'quote' => '"Nagyon ajánlom ezt a hitelszolgáltatást. A csapat nagyon profi és segítőkész volt. Minden kérdésemre válaszoltak, és stresszmentessé tették a folyamatot. Köszönjük a kiváló szolgáltatást!"',
-        'name' => 'Kovács Péter',
-        'location' => 'Debrecen, Magyarország',
+        'name' => 'Molnár Zoltán',
+        'location' => 'Nyíregyháza, Magyarország',
         'months_ago' => 2,
     ],
     'testimonial_3' => [
@@ -92,32 +92,32 @@ return [
           és hatékony. Szakszerű és személyre szabott tanácsokat kaptam mindvégig
           az egész folyamat során. Köszönöm az egész csapatnak a kiváló teljesítményt
           munka!"',
-        'name' => 'Szabó Anna',
-        'location' => 'Szeged, Magyarország',
+        'name' => 'Kiss Andrea',
+        'location' => 'Székesfehérvár, Magyarország',
         'months_ago' => 2,
     ],
     'testimonial_4' => [
         'quote' => '"A kölcsön felvétele ennél a cégnél a
           Problémamentes élmény. A személyzet barátságos és hozzáértő volt, és a
           a folyamat gyors és hatékony volt. Nagyon ajánlom!"',
-        'name' => 'Tóth Gábor',
-        'location' => 'Pécs, Magyarország',
+        'name' => 'Balogh Ferenc',
+        'location' => 'Szombathely, Magyarország',
         'months_ago' => 3,
     ],
     'testimonial_5' => [
         'quote' => '"Kiváló ügyfélszolgálat! Végigvezettek
           a hitelezési folyamat minden lépésére és kérdéseimre választ kaptak
           gyorsan. Nagyon elégedett vagyok a végeredménnyel."',
-        'name' => 'Horváth Eszter',
-        'location' => 'Győr, Magyarország',
+        'name' => 'Simon Ildikó',
+        'location' => 'Sopron, Magyarország',
         'months_ago' => 4,
     ],
     'testimonial_6' => [
         'quote' => '"Nagyon jó kamat és gyors folyamat. I
           erősen ajánlom ezt a szolgáltatást mindenkinek, akinek hitelre van szüksége
           gyors és megbízható."',
-        'name' => 'Varga László',
-        'location' => 'Miskolc, Magyarország',
+        'name' => 'Papp Tamás',
+        'location' => 'Eger, Magyarország',
         'months_ago' => 5,
     ],
     'testimonial_7' => [
@@ -190,11 +190,11 @@ return [
     'sl' => 'szlovén',
 
     // Hero subtitle
-    'hero_subtitle' => 'Nincs bonyolult folyamat, nincsenek rejtett díjak. 15 éve finanszírozzuk személyes, ingatlan-, autó- és üzleti projektjeit átláthatóan és gyorsan.',
+    'hero_subtitle' => 'Nincs bonyolult folyamat, nincsenek rejtett díjak. 8 éve finanszírozzuk személyes, ingatlan-, autó- és üzleti projektjeit átláthatóan és gyorsan.',
 
     // Slide
     'slide_1' => [
-        'title' => ' 15 év tapasztalat · Engedélyes · Válasz 24 órán belül',
+        'title' => ' 8 év tapasztalat · Engedélyes · Válasz 24 órán belül',
         'text1' => 'Finanszírozza összes projektjét,',
         'text2' => 'akár 5 000 000 € 24 órán belül.',
     ],
@@ -225,7 +225,7 @@ return [
         'exptitle' => 'év tapasztalat',
         'sectagline' => 'Üdvözlünk a Solberg Grupónál',
         'sectitle' => 'Személyi hitelek, hogy valóra váltsd az álmaidat',
-        'text1' => '15 éve vagyunk jelen az üzletben, és a legjobb szolgáltatásokat kínáljuk.',
+        'text1' => '8 éve vagyunk jelen az üzletben, és a legjobb szolgáltatásokat kínáljuk.',
         'text2' => 'A ' . site_name() . ' a megbízható platformod hitelekhez, kivételes ügyfélszolgálattal. Elkötelezettek vagyunk abban, hogy egyszerű, biztonságos és gyors pénzügyi megoldásokat kínáljunk.',
         'check1' => 'kisvállalkozói hitel',
         'check2' => 'külföldi tanulmányi hitel',
@@ -246,6 +246,67 @@ return [
         'cta_text' => 'Csapatunk készséggel segít Önnek a finanszírozási kérelme során.',
     ],
 
+    // Promóciós banner — kezdőlapi karusszel
+    'promo' => [
+        'slide1' => [
+            'tag'   => 'Aktuális ajánlat',
+            'title' => 'Kedvezményes kamat a személyi kölcsönre',
+            'text'  => 'Vegye igénybe a kedvező kamatot és a 48 órán belüli választ következő projektje finanszírozásához.',
+            'cta'   => 'Kölcsönöm szimulálása',
+        ],
+        'slide2' => [
+            'tag'   => 'Jelzáloghitel',
+            'title' => 'Ingatlanprojektje megérdemli a legjobb kamatot',
+            'text'  => 'Személyre szabott támogatás az első találkozótól az aláírásig.',
+            'cta'   => 'Jelzáloghitel felfedezése',
+        ],
+        'slide3' => [
+            'tag'   => 'Kalkulátor',
+            'title' => 'Becsülje meg havi törlesztőrészletét 30 másodperc alatt',
+            'text'  => 'Kötelezettség és hitelképességre gyakorolt hatás nélkül: tesztelje most hitelfelvételi kapacitását.',
+            'cta'   => 'Szimuláció készítése',
+        ],
+    ],
+
+    // Az Ön helyzete szerint — profil szerinti szegmentálás
+    'needs' => [
+        'sectagline'   => 'az Ön helyzete szerint',
+        'sectitle'     => 'Bármi is legyen a projektje, megvan rá a megoldásunk',
+        'sectitle_sub' => 'Válassza ki az Önhöz illő profilt, hogy megtalálja az Önnek szánt ajánlatot.',
+        'profiles' => [
+            'starter' => [
+                'title' => 'Új projektet indít',
+                'text'  => 'Esküvő, felújítás, váratlan kiadás... finanszírozza személyes projektjét rugalmas kölcsönnel, vásárlási igazolás nélkül.',
+                'cta'   => 'Személyi kölcsön megtekintése',
+            ],
+            'student' => [
+                'title' => 'Ön diák',
+                'text'  => 'Tandíj, szállás, felszerelés: finanszírozás, amely támogatja tanulmányi útját.',
+                'cta'   => 'Diákhitel megtekintése',
+            ],
+            'buyer' => [
+                'title' => 'Ingatlant vásárol',
+                'text'  => 'Valósítsa meg otthona megvásárlását átlátható feltételekkel és fix kamattal rendelkező jelzáloghitellel.',
+                'cta'   => 'Jelzáloghitel megtekintése',
+            ],
+            'entrepreneur' => [
+                'title' => 'Vállalkozást vezet',
+                'text'  => 'Indítás, likviditás, felszerelés: gyors finanszírozás, hogy vállalkozása várakozás nélkül fejlődhessen.',
+                'cta'   => 'Vállalkozói hitel megtekintése',
+            ],
+            'driver' => [
+                'title' => 'Járművet cserél',
+                'text'  => 'Finanszírozza autóját, legyen az új vagy használt, a költségvetéséhez igazított havi részletekkel.',
+                'cta'   => 'Autóhitel megtekintése',
+            ],
+            'rider' => [
+                'title' => 'Két keréken közlekedik',
+                'text'  => 'Robogó vagy motor: szerelje fel magát gyorsan egy erre szánt hitellel, 48 órán belüli válasszal.',
+                'cta'   => 'Motorhitel megtekintése',
+            ],
+        ],
+    ],
+
     // GYIK oldal CTA
     'faq_cta' => [
         'label' => 'Támogatás',
@@ -260,7 +321,7 @@ return [
     'chooses' => [
         'sectagline' => 'előnyeink',
         'sectitle' => 'Miért válassz minket',
-        'text1' => '15 éve vagyunk jelen az üzletben, és a legjobb szolgáltatásokat kínáljuk.',
+        'text1' => '8 éve vagyunk jelen az üzletben, és a legjobb szolgáltatásokat kínáljuk.',
         'item1' => 'alacsonyabb kamatok',
         'item2' => 'gyors és egyszerű',
         'progress1' => 'hitel folyamat',
@@ -288,6 +349,11 @@ return [
             'title' => 'A pénz kifizetése',
             'desc' => 'A pénz közvetlenül a bankszámládra kerül átutalásra a jóváhagyás után rövid időn belül.',
         ],
+    ],
+
+    'final_cta' => [
+        'tagline' => 'lépjen most',
+        'title'   => 'Készen áll projektje megvalósítására?',
     ],
 
     'loan_reasons' => [

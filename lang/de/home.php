@@ -77,14 +77,14 @@ return [
     'testimonials_months_ago' => '{1} vor 1 Monat|[2,*] vor :count Monaten',
     'testimonial_1' => [
         'quote' => '"Ich bin mit dem Service sehr zufrieden. Der Kreditantragsprozess verlief schnell und einfach. Ich erhielt die Genehmigung innerhalb weniger Tage und die Zinssätze waren wettbewerbsfähig. Vielen Dank!"',
-        'name' => 'Julia Becker',
-        'location' => 'Berlin, Deutschland',
+        'name' => 'Katharina Neumann',
+        'location' => 'Leipzig, Deutschland',
         'months_ago' => 1,
     ],
     'testimonial_2' => [
         'quote' => '"Ich kann diesen Kreditservice wärmstens empfehlen. Das Team war sehr professionell und hilfsbereit. Sie haben alle meine Fragen beantwortet und den Prozess stressfrei gestaltet. Vielen Dank für Ihren hervorragenden Service!"',
-        'name' => 'Thomas Wagner',
-        'location' => 'München, Deutschland',
+        'name' => 'Sebastian Krüger',
+        'location' => 'Dresden, Deutschland',
         'months_ago' => 2,
     ],
     'testimonial_3' => [
@@ -92,32 +92,32 @@ return [
           und effizient. Ich wurde durchgehend professionell und individuell beraten
           während des gesamten Prozesses. Vielen Dank an das gesamte Team für Ihre hervorragende Arbeit
           arbeiten!"',
-        'name' => 'Sophie Fischer',
-        'location' => 'Hamburg, Deutschland',
+        'name' => 'Franziska Zimmermann',
+        'location' => 'Hannover, Deutschland',
         'months_ago' => 2,
     ],
     'testimonial_4' => [
         'quote' => '"Einen Kredit bei dieser Firma zu bekommen war eine
           Problemloses Erlebnis. Das Personal war freundlich und kompetent, und das
           Der Prozess war schnell und effizient. Ich empfehle es sehr!"',
-        'name' => 'Markus Schmidt',
-        'location' => 'Köln, Deutschland',
+        'name' => 'Florian Braun',
+        'location' => 'Nürnberg, Deutschland',
         'months_ago' => 3,
     ],
     'testimonial_5' => [
         'quote' => '"Ausgezeichneter Kundenservice! Ich wurde durch die Beratung geführt
           Jeder Schritt des Kreditprozesses und meine Fragen wurden beantwortet
           schnell. „Ich bin mit dem Endergebnis sehr zufrieden.“"',
-        'name' => 'Anna Hoffmann',
-        'location' => 'Frankfurt, Deutschland',
+        'name' => 'Vanessa Schulz',
+        'location' => 'Bremen, Deutschland',
         'months_ago' => 4,
     ],
     'testimonial_6' => [
         'quote' => '"Sehr guter Zinssatz und schnelle Abwicklung. I
           Ich kann diesen Service jedem wärmstens empfehlen, der einen Kredit benötigt
           schnell und zuverlässig."',
-        'name' => 'Lukas Weber',
-        'location' => 'Stuttgart, Deutschland',
+        'name' => 'Maximilian Hartmann',
+        'location' => 'Dortmund, Deutschland',
         'months_ago' => 5,
     ],
     'testimonial_7' => [
@@ -190,11 +190,11 @@ return [
     'sl' => 'Slowenisch',
 
     // Hero subtitle
-    'hero_subtitle' => 'Kein aufwändiges Verfahren, keine versteckten Gebühren. Wir finanzieren Ihre persönlichen, Immobilien-, Auto- und Geschäftsprojekte seit 15 Jahren transparent und schnell.',
+    'hero_subtitle' => 'Kein aufwändiges Verfahren, keine versteckten Gebühren. Wir finanzieren Ihre persönlichen, Immobilien-, Auto- und Geschäftsprojekte seit 8 Jahren transparent und schnell.',
 
     // Slide
     'slide_1' => [
-        'title' => ' Seit 15 Jahren · Lizenziert · Antwort in 48h',
+        'title' => ' Seit 8 Jahren · Lizenziert · Antwort in 48h',
         'text1' => 'Finanzieren Sie alle Projekte,',
         'text2' => 'bis zu 500.000 € in 48h.',
     ],
@@ -225,7 +225,7 @@ return [
         'exptitle' => 'Jahre Erfahrung',
         'sectagline' => 'Willkommen bei ' . site_name(),
         'sectitle' => 'Persönliche Kredite, um Ihre Träume zu erfüllen',
-        'text1' => 'Wir sind seit 15 Jahren in diesem Geschäft und bieten die besten Dienstleistungen.',
+        'text1' => 'Wir sind seit 8 Jahren in diesem Geschäft und bieten die besten Dienstleistungen.',
         'text2' => site_name() . ' ist Ihre vertrauenswürdige Plattform für Kredite mit einer außergewöhnlichen Kundenerfahrung. Wir bieten einfache, sichere und schnelle Finanzlösungen.',
         'check1' => 'Kredit für kleine Unternehmen',
         'check2' => 'Kredit für Auslandsstudium',
@@ -246,6 +246,67 @@ return [
         'cta_text' => 'Unser Team steht Ihnen bei Ihrem Finanzierungsantrag gerne zur Seite.',
     ],
 
+    // Werbebanner — Karussell auf der Startseite
+    'promo' => [
+        'slide1' => [
+            'tag'   => 'Aktuelles Angebot',
+            'title' => 'Vorzugszins für den Privatkredit',
+            'text'  => 'Sichern Sie sich einen attraktiven Zinssatz und eine Antwort innerhalb von 48h für Ihr nächstes Projekt.',
+            'cta'   => 'Meinen Kredit simulieren',
+        ],
+        'slide2' => [
+            'tag'   => 'Immobilienkredit',
+            'title' => 'Ihr Immobilienprojekt verdient den besten Zinssatz',
+            'text'  => 'Persönliche Begleitung, vom ersten Termin bis zur Unterschrift.',
+            'cta'   => 'Immobilienkredit entdecken',
+        ],
+        'slide3' => [
+            'tag'   => 'Rechner',
+            'title' => 'Berechnen Sie Ihre Monatsrate in 30 Sekunden',
+            'text'  => 'Unverbindlich und ohne Auswirkung auf Ihre Bonität: Testen Sie jetzt Ihre Kreditkapazität.',
+            'cta'   => 'Jetzt berechnen',
+        ],
+    ],
+
+    // Je nach Ihrer Situation — Segmentierung nach Profil
+    'needs' => [
+        'sectagline'   => 'je nach Ihrer Situation',
+        'sectitle'     => 'Welches Projekt Sie auch haben, wir haben die Lösung',
+        'sectitle_sub' => 'Wählen Sie das Profil, das zu Ihnen passt, um das für Sie gedachte Angebot zu entdecken.',
+        'profiles' => [
+            'starter' => [
+                'title' => 'Sie starten ein neues Projekt',
+                'text'  => 'Hochzeit, Renovierung, unerwartete Ausgabe... finanzieren Sie Ihr persönliches Projekt mit einem flexiblen Kredit, ohne Kaufnachweis.',
+                'cta'   => 'Privatkredit ansehen',
+            ],
+            'student' => [
+                'title' => 'Sie sind Student',
+                'text'  => 'Studiengebühren, Unterkunft, Ausstattung: eine Finanzierung, die Ihren akademischen Weg begleitet.',
+                'cta'   => 'Studienkredit ansehen',
+            ],
+            'buyer' => [
+                'title' => 'Sie kaufen eine Immobilie',
+                'text'  => 'Verwirklichen Sie Ihren Immobilienkauf mit einem Immobilienkredit zu transparenten Konditionen und Festzins.',
+                'cta'   => 'Immobilienkredit ansehen',
+            ],
+            'entrepreneur' => [
+                'title' => 'Sie führen ein Unternehmen',
+                'text'  => 'Gründung, Liquidität, Ausstattung: eine schnelle Finanzierung, damit Ihr Unternehmen ohne Wartezeit wächst.',
+                'cta'   => 'Geschäftskredit ansehen',
+            ],
+            'driver' => [
+                'title' => 'Sie wechseln Ihr Fahrzeug',
+                'text'  => 'Finanzieren Sie Ihr Auto, neu oder gebraucht, mit Monatsraten passend zu Ihrem Budget.',
+                'cta'   => 'Autokredit ansehen',
+            ],
+            'rider' => [
+                'title' => 'Sie fahren zweirädrig',
+                'text'  => 'Roller oder Motorrad: rüsten Sie sich schnell aus mit einem speziellen Kredit und einer Antwort innerhalb von 48h.',
+                'cta'   => 'Motorradkredit ansehen',
+            ],
+        ],
+    ],
+
     // FAQ-Seiten-CTA
     'faq_cta' => [
         'label' => 'Support',
@@ -260,7 +321,7 @@ return [
     'chooses' => [
         'sectagline' => 'unsere Vorteile',
         'sectitle' => 'warum uns wählen',
-        'text1' => 'Wir sind seit 15 Jahren in diesem Geschäft und bieten die besten Dienstleistungen.',
+        'text1' => 'Wir sind seit 8 Jahren in diesem Geschäft und bieten die besten Dienstleistungen.',
         'item1' => 'niedrigere Zinsen',
         'item2' => 'schnell und einfach',
         'progress1' => 'Kreditprozess',
@@ -288,6 +349,11 @@ return [
             'title' => 'Auszahlung der Mittel',
             'desc' => 'Nach der Genehmigung werden die Mittel in kurzer Zeit direkt auf Ihr Bankkonto überwiesen.',
         ],
+    ],
+
+    'final_cta' => [
+        'tagline' => 'werden Sie aktiv',
+        'title'   => 'Bereit, Ihr Vorhaben zu verwirklichen?',
     ],
 
     'loan_reasons' => [

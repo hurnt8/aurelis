@@ -9,7 +9,7 @@
 /* ── Balance hero ── */
 .trf-hero{
   margin:.875rem 1.25rem 0;
-  background:linear-gradient(145deg,#1B527A,#0D2E54);
+  background:linear-gradient(145deg,#180F3C,#110A29);
   border-radius:20px;
   padding:1.375rem 1.5rem;
   position:relative;overflow:hidden;
@@ -34,13 +34,13 @@
 }
 .trf-action:active{transform:scale(.97)}
 .trf-action--send{background:rgba(27,138,122,.15);border:1px solid rgba(27,138,122,.28)}
-.trf-action--recv{background:rgba(129, 182, 233,.12);border:1px solid rgba(129, 182, 233,.22)}
+.trf-action--recv{background:rgba(101, 220, 80,.12);border:1px solid rgba(101, 220, 80,.22)}
 .trf-action__ico{
   width:54px;height:54px;border-radius:16px;
   display:flex;align-items:center;justify-content:center;font-size:1.25rem;color:#fff;
 }
-.trf-action--send .trf-action__ico{background:linear-gradient(145deg,#B5D4F2,#81B6E9);box-shadow:0 4px 14px rgba(129, 182, 233,.4)}
-.trf-action--recv .trf-action__ico{background:linear-gradient(145deg,#B5D4F2,#81B6E9);box-shadow:0 4px 14px rgba(129, 182, 233,.35)}
+.trf-action--send .trf-action__ico{background:linear-gradient(145deg,#84E373,#65DC50);box-shadow:0 4px 14px rgba(101, 220, 80,.4)}
+.trf-action--recv .trf-action__ico{background:linear-gradient(145deg,#84E373,#65DC50);box-shadow:0 4px 14px rgba(101, 220, 80,.35)}
 .trf-action__name{font-size:.875rem;font-weight:700;color:var(--ca-text)}
 .trf-action__desc{font-size:.7rem;color:var(--ca-text-3);text-align:center;line-height:1.4}
 

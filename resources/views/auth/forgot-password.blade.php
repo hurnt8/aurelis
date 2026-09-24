@@ -6,7 +6,7 @@
 <meta name="mobile-web-app-capable" content="yes">
 <meta name="apple-mobile-web-app-capable" content="yes">
 <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-<meta name="theme-color" content="#0657A4">
+<meta name="theme-color" content="#268226">
 <link rel="icon" type="image/png" sizes="192x192" href="/site-icon-192.png">
 <title>Mot de passe oublié — {{ site_name() }}</title>
 
@@ -17,19 +17,19 @@
 
 <style>
 :root{
-  --bg:   #02182E;
-  --inp:  #06304F;
-  --navy: #032A4F;
-  --navy2:#043767;
-  --accent: #81B6E9;
-  --accent-2:#2B94F7;
+  --bg:   #150C38;
+  --inp:  #120B2B;
+  --navy: #2A1967;
+  --navy2:#3A2A72;
+  --accent: #65DC50;
+  --accent-2:#379627;
   --text: #FFFFFF;
   --sub:  rgba(255,255,255,.52);
   --muted:rgba(255,255,255,.28);
-  --bdr:  rgba(129,182,233,.16);
+  --bdr:  rgba(101,220,80,.16);
   /* Compat: quelques accents ponctuels référencent encore --cyan/--cyan2 */
-  --cyan: #2B94F7;
-  --cyan2:#0870D4;
+  --cyan: #379627;
+  --cyan2:#379627;
 }
 *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
 html,body{
@@ -43,8 +43,8 @@ a{text-decoration:none;color:inherit}
 /* Background orbs */
 .bg-orbs{position:fixed;inset:0;pointer-events:none;z-index:0;overflow:hidden}
 .orb{position:absolute;border-radius:50%;filter:blur(90px)}
-.orb-1{width:480px;height:480px;top:-10%;right:-8%;background:radial-gradient(circle,rgba(129, 182, 233,.1) 0%,transparent 65%);animation:orbf 10s ease-in-out infinite alternate}
-.orb-2{width:360px;height:360px;bottom:-15%;left:-8%;background:radial-gradient(circle,rgba(129, 182, 233,.06) 0%,transparent 65%);animation:orbf 14s ease-in-out infinite alternate-reverse}
+.orb-1{width:480px;height:480px;top:-10%;right:-8%;background:radial-gradient(circle,rgba(101, 220, 80,.1) 0%,transparent 65%);animation:orbf 10s ease-in-out infinite alternate}
+.orb-2{width:360px;height:360px;bottom:-15%;left:-8%;background:radial-gradient(circle,rgba(101, 220, 80,.06) 0%,transparent 65%);animation:orbf 14s ease-in-out infinite alternate-reverse}
 @keyframes orbf{from{transform:scale(1)}to{transform:scale(1.1) translate(2%,3%)}}
 
 /* Top bar */
@@ -78,9 +78,9 @@ a{text-decoration:none;color:inherit}
   width:fit-content;max-width:100%;
   border-radius:20px;overflow:hidden;
   background:linear-gradient(135deg,var(--navy2),var(--navy));
-  border:1px solid rgba(129,182,233,.18);
+  border:1px solid rgba(101,220,80,.18);
   margin:0 auto 1.5rem;
-  box-shadow:0 12px 34px rgba(2,24,46,.55),0 0 44px rgba(6,87,164,.22);
+  box-shadow:0 12px 34px rgba(2,24,46,.55),0 0 44px rgba(38,130,38,.22);
 }
 /* Sans rembourrage : un logo carre opaque remplit la tuile, un PNG transparent
    laisse voir le degrade. Le !important neutralise la hauteur posee en inline. */
@@ -89,10 +89,10 @@ a{text-decoration:none;color:inherit}
 /* Icon badge */
 .icon-badge{
   width:72px;height:72px;border-radius:50%;
-  background:rgba(129, 182, 233,.1);border:1.5px solid rgba(129, 182, 233,.25);
+  background:rgba(101, 220, 80,.1);border:1.5px solid rgba(101, 220, 80,.25);
   display:flex;align-items:center;justify-content:center;
   margin:0 auto 1.5rem;
-  box-shadow:0 0 28px rgba(129, 182, 233,.15);
+  box-shadow:0 0 28px rgba(101, 220, 80,.15);
 }
 .icon-badge i{font-size:1.75rem;color:var(--accent)}
 
@@ -130,7 +130,7 @@ a{text-decoration:none;color:inherit}
   outline:none;transition:border-color .2s,box-shadow .2s,background .2s;
 }
 .finput::placeholder{color:rgba(255,255,255,.2)}
-.finput:focus{border-color:var(--navy);background:#161E30;box-shadow:0 0 0 3.5px rgba(3, 42, 79,.25)}
+.finput:focus{border-color:var(--navy);background:#0D081F;box-shadow:0 0 0 3.5px rgba(42, 25, 103,.25)}
 .finput:focus ~ .ficon,.frel:focus-within .ficon{color:var(--accent)}
 .finput.err{border-color:#ef4444}
 
@@ -139,12 +139,12 @@ a{text-decoration:none;color:inherit}
   width:100%;padding:.92rem 1.5rem;border:none;border-radius:999px;
   font-size:.97rem;font-weight:700;font-family:'Inter',sans-serif;cursor:pointer;
   display:flex;align-items:center;justify-content:center;gap:.625rem;
-  background:linear-gradient(135deg,#0870D4 0%,#0657A4 100%);
+  background:linear-gradient(135deg,#379627 0%,#268226 100%);
   color:#fff;letter-spacing:.01em;
-  box-shadow:0 6px 28px rgba(6,87,164,.45),0 2px 8px rgba(2,24,46,.35);
+  box-shadow:0 6px 28px rgba(38,130,38,.45),0 2px 8px rgba(2,24,46,.35);
   transition:filter .2s,box-shadow .2s,transform .1s;margin-top:.25rem;
 }
-.fbtn:hover{filter:brightness(1.08);box-shadow:0 8px 36px rgba(129, 182, 233,.5)}
+.fbtn:hover{filter:brightness(1.08);box-shadow:0 8px 36px rgba(101, 220, 80,.5)}
 .fbtn:active{transform:scale(.975)}
 .fbtn:disabled{opacity:.6;cursor:not-allowed;filter:none}
 

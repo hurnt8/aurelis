@@ -68,38 +68,38 @@ return [
     'testimonials_months_ago' => '{1} 1 month ago|[2,*] :count months ago',
     'testimonial_1' => [
         'quote'    => '"I was sceptical at first, but the whole process was smoother than I imagined. My mortgage application was approved within days and the rate was better than any high-street bank I tried. Absolutely delighted."',
-        'name'     => 'James Harrison',
-        'location' => 'London, United Kingdom',
+        'name'     => 'Thomas Whitfield',
+        'location' => 'Bristol, United Kingdom',
         'months_ago' => 1,
     ],
     'testimonial_2' => [
         'quote'    => '"' . site_name() . ' helped me consolidate my debts into one manageable monthly payment. The adviser walked me through every option without any pressure. I finally feel in control of my finances."',
-        'name'     => 'Emily Watson',
-        'location' => 'Manchester, United Kingdom',
+        'name'     => 'Lucy Fairbanks',
+        'location' => 'Cardiff, Wales',
         'months_ago' => 2,
     ],
     'testimonial_3' => [
         'quote'    => '"As a self-employed contractor, most lenders turned me down flat. ' . site_name() . ' looked at my actual income, not just payslips, and got me a business loan within the week. Exceptional service."',
-        'name'     => 'Oliver Bennett',
-        'location' => 'Edinburgh, Scotland',
+        'name'     => 'Nathaniel Cross',
+        'location' => 'Glasgow, Scotland',
         'months_ago' => 2,
     ],
     'testimonial_4' => [
         'quote'    => '"The online application took under twenty minutes and I had a decision the same afternoon. I used the funds to cover my daughter\'s university fees and the repayment terms are very fair."',
-        'name'     => 'Charlotte Hughes',
-        'location' => 'Birmingham, United Kingdom',
+        'name'     => 'Isla Meadows',
+        'location' => 'Liverpool, United Kingdom',
         'months_ago' => 3,
     ],
     'testimonial_5' => [
         'quote'    => '"I needed a car loan quickly after my old vehicle broke down. ' . site_name() . ' processed everything in 48 hours. The team were friendly, professional, and kept me informed at every step."',
-        'name'     => 'Harry Thompson',
-        'location' => 'Dublin, Ireland',
+        'name'     => 'Freddie Ashworth',
+        'location' => 'Belfast, Northern Ireland',
         'months_ago' => 4,
     ],
     'testimonial_6' => [
         'quote'    => '"Transparent fees, competitive rates, and a team that actually answers the phone. In an industry full of hidden charges, ' . site_name() . ' stands out as genuinely trustworthy. Highly recommended."',
-        'name'     => 'Grace Williams',
-        'location' => 'Leeds, United Kingdom',
+        'name'     => 'Poppy Sinclair',
+        'location' => 'Newcastle, United Kingdom',
         'months_ago' => 5,
     ],
     'testimonial_7' => [
@@ -162,11 +162,11 @@ return [
     'sl' => 'Slovenian',
 
     // Hero subtitle
-    'hero_subtitle' => 'No complex process, no hidden fees. For 15 years, we have been financing personal, real estate, auto and business projects with transparency and speed.',
+    'hero_subtitle' => 'No complex process, no hidden fees. For 8 years, we have been financing personal, real estate, auto and business projects with transparency and speed.',
 
     // Slide
     'slide_1' => [
-        'title' => ' 15 Years of Expertise · Licensed · Guaranteed Response',
+        'title' => ' 8 Years of Expertise · Licensed · Guaranteed Response',
         'text1' => 'Finance all your projects,',
         'text2' => 'up to €95,000 in 48h.',
     ],
@@ -197,7 +197,7 @@ return [
         'exptitle' => 'year of experience',
         'sectagline' => 'welcome to ' . site_name(),
         'sectitle' => 'Personal loans to fulfill your dreams',
-        'text1' => 'We’ve been in this business for 15 years and we provide the best services.',
+        'text1' => 'We’ve been in this business for 8 years and we provide the best services.',
         'text2' => site_name() . ' is your trusted platform for loans with an exceptional customer experience. We are committed to providing you with simple, secure and fast financial solutions.',
         'check1' => 'small business loan',
         'check2' => 'studying abroad loan',
@@ -218,6 +218,67 @@ return [
         'cta_text' => 'Our team is available to support you with your financing application.',
     ],
 
+    // Promo banner — homepage carousel
+    'promo' => [
+        'slide1' => [
+            'tag'   => 'Current offer',
+            'title' => 'Preferential rate on personal loans',
+            'text'  => 'Enjoy a competitive rate and a response within 48h to fund your next project.',
+            'cta'   => 'Simulate my loan',
+        ],
+        'slide2' => [
+            'tag'   => 'Home loan',
+            'title' => 'Your property project deserves the best rate',
+            'text'  => 'Personalised support, from your first meeting all the way to signing.',
+            'cta'   => 'Discover the home loan',
+        ],
+        'slide3' => [
+            'tag'   => 'Simulator',
+            'title' => 'Estimate your monthly payment in 30 seconds',
+            'text'  => 'No commitment, no impact on your file: test your borrowing capacity now.',
+            'cta'   => 'Run a simulation',
+        ],
+    ],
+
+    // Based on your situation — profile segmentation
+    'needs' => [
+        'sectagline'   => 'based on your situation',
+        'sectitle'     => 'Whatever your project, we have the solution',
+        'sectitle_sub' => 'Choose the profile that matches you to discover the offer designed for you.',
+        'profiles' => [
+            'starter' => [
+                'title' => 'You are starting a new project',
+                'text'  => 'Wedding, renovation, unexpected expense... fund your personal project with a flexible loan, no proof of purchase required.',
+                'cta'   => 'See the personal loan',
+            ],
+            'student' => [
+                'title' => 'You are a student',
+                'text'  => 'Tuition fees, accommodation, equipment: financing designed to support your academic journey.',
+                'cta'   => 'See the student loan',
+            ],
+            'buyer' => [
+                'title' => 'You are buying property',
+                'text'  => 'Make your home purchase a reality with a home loan offering transparent, fixed-rate terms.',
+                'cta'   => 'See the home loan',
+            ],
+            'entrepreneur' => [
+                'title' => 'You are running a business',
+                'text'  => 'Launch, cash flow, equipment: fast financing to help your business grow without delay.',
+                'cta'   => 'See the business loan',
+            ],
+            'driver' => [
+                'title' => 'You are changing vehicles',
+                'text'  => 'Finance your car, new or used, with monthly payments that fit your budget.',
+                'cta'   => 'See the auto loan',
+            ],
+            'rider' => [
+                'title' => 'You ride a two-wheeler',
+                'text'  => 'Scooter or motorbike: get equipped quickly with a dedicated loan and a response within 48h.',
+                'cta'   => 'See the bike loan',
+            ],
+        ],
+    ],
+
     // FAQ page CTA
     'faq_cta' => [
         'label' => 'Support',
@@ -232,7 +293,7 @@ return [
     'chooses' => [
         'sectagline' => 'our benefits',
         'sectitle' => 'why choose us',
-        'text1' => 'We’ve been in this business for 15 years and we provide the best services.',
+        'text1' => 'We’ve been in this business for 8 years and we provide the best services.',
         'item1' => 'lower rates',
         'item2' => 'quick and easy',
         'progress1' => 'loan process',
@@ -283,6 +344,11 @@ return [
             'title' => 'Payment of funds',
             'desc' => 'Funds are transferred directly to your bank account within a short time after approval.'
         ],
+    ],
+
+    'final_cta' => [
+        'tagline' => 'take action',
+        'title'   => 'Ready to make your project happen?',
     ],
 
     'loan_reasons' => [

@@ -68,7 +68,7 @@ table.li-tbl tbody tr:hover td:first-child{border-left-color:var(--c-accent)}
 .li-ins-pill{display:inline-flex;align-items:center;gap:.2rem;font-size:.6rem;font-weight:700;padding:.1rem .35rem;border-radius:4px;background:#F0FDF4;color:#16a34a;border:1px solid #A7F3D0;margin-left:.25rem;vertical-align:middle;text-transform:uppercase}
 .li-fin-pill{display:inline-flex;align-items:center;gap:.2rem;font-size:.62rem;font-weight:700;padding:.1rem .4rem;border-radius:4px;background:#F5F3FF;color:#6d28d9;border:1px solid #DDD6FE;margin-top:.3rem}
 .li-avatar{width:30px;height:30px;border-radius:8px;display:flex;align-items:center;justify-content:center;font-weight:900;font-size:.7rem;flex-shrink:0}
-.li-avatar--client{background:linear-gradient(135deg,var(--c-navy),#1a3a6c);color:var(--c-accent)}
+.li-avatar--client{background:linear-gradient(135deg,var(--c-navy),#150D34);color:var(--c-accent)}
 .li-avatar--admin{background:linear-gradient(135deg,#7c3aed,#4f46e5);color:#fff}
 .li-name{font-weight:600;color:var(--c-navy);font-size:.82rem}
 .li-sub{font-size:.68rem;color:var(--c-muted);margin-top:.05rem}

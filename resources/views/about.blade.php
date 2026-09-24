@@ -4,41 +4,6 @@
 @section('content')
 @php $locale = app()->getLocale(); @endphp
 
-@push('styles')
-<style>
-.about-engage-card {
-    display:flex; gap:1rem; padding:1rem 1.25rem;
-    background:var(--cream); border-radius:12px;
-    border-left:3px solid var(--accent); margin-bottom:.75rem;
-}
-.about-engage-icon {
-    width:42px; height:42px; flex-shrink:0; border-radius:10px;
-    background:var(--accent-pale); display:flex; align-items:center;
-    justify-content:center; color:var(--accent-dark); font-size:1rem;
-}
-.about-engage-title { font-size:.875rem; font-weight:800; color:var(--navy); margin-bottom:.2rem; }
-.about-engage-desc  { font-size:.78rem; color:#6b7280; margin:0; line-height:1.55; }
-
-.about-page-partners-marquee {
-    overflow:hidden;
-    -webkit-mask-image:linear-gradient(to right, transparent, #000 8%, #000 92%, transparent);
-    mask-image:linear-gradient(to right, transparent, #000 8%, #000 92%, transparent);
-}
-.about-page-partners-track {
-    display:flex; align-items:center; width:max-content; gap:.5rem;
-    animation:about-page-partners-scroll 60s linear infinite;
-}
-.about-page-partners-marquee:hover .about-page-partners-track { animation-play-state:paused; }
-@keyframes about-page-partners-scroll {
-    from { transform:translateX(0); }
-    to   { transform:translateX(-50%); }
-}
-@media (prefers-reduced-motion: reduce) {
-    .about-page-partners-track { animation:none; flex-wrap:wrap; width:100%; }
-}
-</style>
-@endpush
-
 {{-- Page hero --}}
 <div class="page-hero">
     <div class="container">
@@ -53,92 +18,49 @@
     </div>
 </div>
 
-{{-- About intro --}}
+{{-- Intro --}}
 <section class="py-24 bg-white">
     <div class="container">
-        <div class="row g-4 gutter-y-60 align-items-center">
+        <div class="row g-4 gutter-y-40 align-items-center">
             <div class="col-lg-6 wow fadeInLeft" data-wow-duration="900ms">
+                <div class="rule-label">{{ __('about.hero_tagline') }}</div>
+                <h2 class="section-title mb-4">{{ __('about.hero_title') }}</h2>
+                <p style="color:var(--gray-500);font-size:1rem;line-height:1.85;margin:0;">
+                    {{ __('about.hero_text') }}
+                </p>
+            </div>
+            <div class="col-lg-6 wow fadeInRight" data-wow-duration="900ms" data-wow-delay="150ms">
                 <div class="about-image-wrap">
-                    <img src="{{ asset('assets/images/about/about-1-1.jpg') }}"
+                    <img src="{{ asset('assets/images/refonte/bureaux-reunion.jpg') }}"
                          alt="{{ site_name() }}" class="about-image-main">
-                    <img src="{{ asset('assets/images/about/about-1-2.jpg') }}"
-                         alt="" class="about-image-secondary"
-                         style="width:38%;right:1rem;bottom:1rem;">
                     <div class="about-badge">
-                        <span class="about-badge__number">15</span>
+                        <span class="about-badge__number">8</span>
                         <span class="about-badge__label">{{ __('home.about.exptitle') }}</span>
                     </div>
                 </div>
             </div>
+        </div>
+    </div>
+</section>
 
-            <div class="col-lg-6 wow fadeInRight" data-wow-duration="900ms" data-wow-delay="150ms">
-                <div class="section-label">{{ __('home.about.sectagline') }}</div>
-                <h2 class="section-title">{{ __('home.about.sectitle') }}</h2>
-
-                <p style="color:var(--gray-500);font-size:.9375rem;line-height:1.8;margin-bottom:1.5rem;">
-                    {{ __('home.about.text2') }}
+{{-- Mission / histoire --}}
+<section class="py-24" style="background:var(--cream);">
+    <div class="container">
+        <div class="row g-4 gutter-y-40 align-items-center">
+            <div class="col-lg-6 order-lg-2 wow fadeInRight" data-wow-duration="900ms">
+                <div class="rule-label">{{ __('about.mission_tagline') }}</div>
+                <h2 class="section-title mb-4">{{ __('about.mission_title') }}</h2>
+                <p style="color:var(--gray-500);font-size:.9375rem;line-height:1.85;margin-bottom:1.25rem;">
+                    {{ __('about.mission_p1') }}
                 </p>
-
-                {{-- 3 engagements clés --}}
-                <div class="about-engage-card">
-                    <div class="about-engage-icon"><i class="fas fa-shield-alt"></i></div>
-                    <div>
-                        <div class="about-engage-title">{{ __('home.about.engage1_title') }}</div>
-                        <p class="about-engage-desc">{{ __('home.about.engage1_desc') }}</p>
-                    </div>
-                </div>
-                <div class="about-engage-card">
-                    <div class="about-engage-icon"><i class="fas fa-bolt"></i></div>
-                    <div>
-                        <div class="about-engage-title">{{ __('home.about.engage2_title') }}</div>
-                        <p class="about-engage-desc">{{ __('home.about.engage2_desc') }}</p>
-                    </div>
-                </div>
-                <div class="about-engage-card" style="margin-bottom:1.5rem;">
-                    <div class="about-engage-icon"><i class="fas fa-globe"></i></div>
-                    <div>
-                        <div class="about-engage-title">{{ __('home.about.engage3_title') }}</div>
-                        <p class="about-engage-desc">{{ __('home.about.engage3_desc') }}</p>
-                    </div>
-                </div>
-
-                {{-- Types de prêts proposés --}}
-                <div style="margin-bottom:.5rem;font-size:.68rem;font-weight:800;text-transform:uppercase;letter-spacing:.1em;color:var(--navy);">
-                    <i class="fas fa-tags" style="color:var(--accent);margin-right:.35rem;"></i>@lang('home.discover_our_loan_services')
-                </div>
-                <div style="display:flex;flex-wrap:wrap;gap:.4rem;margin-bottom:1.5rem;">
-                    @foreach([
-                        ['fas fa-user-tie',       'home.personal_loan'],
-                        ['fas fa-home',           'home.mortgage_loan'],
-                        ['fas fa-car',            'home.auto_loan'],
-                        ['fas fa-graduation-cap', 'home.student_loan'],
-                        ['fas fa-briefcase',      'home.business_loan'],
-                        ['fas fa-credit-card',    'home.microcredit'],
-                    ] as $t)
-                    <span style="display:inline-flex;align-items:center;gap:.35rem;padding:.3rem .75rem;border-radius:999px;background:var(--cream);border:1px solid #e2ddd0;font-size:.75rem;font-weight:700;color:var(--navy);">
-                        <i class="{{ $t[0] }}" style="color:var(--accent-dark);font-size:.7rem;"></i> @lang($t[1])
-                    </span>
-                    @endforeach
-                </div>
-
-                {{-- Partenaires --}}
-                <div style="padding:.85rem 1.1rem;background:#f7f8fa;border:1px solid #eaecf0;border-radius:12px;margin-bottom:1.5rem;">
-                    <div style="font-size:.65rem;font-weight:800;text-transform:uppercase;letter-spacing:.12em;color:#9ca3af;margin-bottom:.75rem;">@lang('home.partners_title')</div>
-                    <div class="about-page-partners-marquee">
-                        <div class="about-page-partners-track">
-                            @foreach (__('home.partners_list') as $bankName)
-                            <span style="font-size:.72rem;font-weight:700;color:var(--navy);background:#fff;border:1px solid #e5e7eb;border-radius:999px;padding:.25rem .7rem;white-space:nowrap;flex-shrink:0;">{{ $bankName }}</span>
-                            @endforeach
-                            @foreach (__('home.partners_list') as $bankName)
-                            <span style="font-size:.72rem;font-weight:700;color:var(--navy);background:#fff;border:1px solid #e5e7eb;border-radius:999px;padding:.25rem .7rem;white-space:nowrap;flex-shrink:0;" aria-hidden="true">{{ $bankName }}</span>
-                            @endforeach
-                        </div>
-                    </div>
-                </div>
-
-                <a href="{{ route('loan', ['locale' => $locale]) }}" class="btn-primary btn-primary--lg">
-                    <i class="fas fa-file-signature"></i> @lang('menu.loan')
-                </a>
+                <p style="color:var(--gray-500);font-size:.9375rem;line-height:1.85;margin:0;">
+                    {{ __('about.mission_p2') }}
+                </p>
+            </div>
+            <div class="col-lg-6 order-lg-1 wow fadeInLeft" data-wow-duration="900ms" data-wow-delay="150ms">
+                <img src="{{ asset('assets/images/refonte/bureaux-couloir.jpg') }}"
+                     alt="{{ site_name() }}"
+                     style="width:100%;border-radius:var(--radius-xl);height:420px;object-fit:cover;box-shadow:var(--shadow-hover);">
             </div>
         </div>
     </div>
@@ -147,13 +69,17 @@
 {{-- Stats --}}
 <section style="background:var(--navy);">
     <div class="container">
+        <div class="text-center pt-16" style="padding-top:4rem;">
+            <div class="section-label justify-content-center" style="color:var(--accent);">{{ __('about.stats_tagline') }}</div>
+            <h2 class="section-title section-title--white mb-0">{{ __('about.stats_title') }}</h2>
+        </div>
         <div class="row">
             @php
             $stats = [
                 ['stop'=>'8500','suffix'=>'+','prefix'=>'', 'label'=> __('home.customer_satisfaction_rate')],
                 ['stop'=>'500',  'suffix'=>'k','prefix'=>'€','label'=> __('home.total_loan_amount_granted')],
                 ['stop'=>'24',  'suffix'=>'h','prefix'=>'', 'label'=> __('home.average_approval_time')],
-                ['stop'=>'15',   'suffix'=>'+','prefix'=>'', 'label'=> __('home.years_experience')],
+                ['stop'=>'8',    'suffix'=>'+','prefix'=>'', 'label'=> __('home.years_experience')],
             ];
             @endphp
             @foreach ($stats as $i => $stat)
@@ -172,29 +98,81 @@
     </div>
 </section>
 
-{{-- Why choose us --}}
-<section class="py-24" style="background:var(--cream);">
+{{-- Nos valeurs --}}
+<section class="py-24 bg-white">
     <div class="container">
         <div class="text-center mb-14">
-            <div class="section-label justify-content-center">{{ __('home.loan_reasons.sectagline') }}</div>
-            <h2 class="section-title">{{ __('home.loan_reasons.sectitle') }}</h2>
+            <div class="section-label justify-content-center">{{ __('about.values_tagline') }}</div>
+            <h2 class="section-title">{{ __('about.values_title') }}</h2>
         </div>
         <div class="row g-4 gutter-y-30">
-            @foreach ([1,2,3] as $r)
-            <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-duration="800ms" data-wow-delay="{{ ($r-1)*80 }}ms">
-                <div class="card-glass p-8" style="padding:2rem;">
+            @php
+            $values = [
+                ['icon' => 'fas fa-balance-scale', 'title' => __('about.value1_title'), 'desc' => __('about.value1_desc')],
+                ['icon' => 'fas fa-bolt',            'title' => __('about.value2_title'), 'desc' => __('about.value2_desc')],
+                ['icon' => 'fas fa-user-tie',        'title' => __('about.value3_title'), 'desc' => __('about.value3_desc')],
+                ['icon' => 'fas fa-shield-alt',      'title' => __('about.value4_title'), 'desc' => __('about.value4_desc')],
+            ];
+            @endphp
+            @foreach ($values as $i => $v)
+            <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-duration="800ms" data-wow-delay="{{ $i * 80 }}ms">
+                <div class="card-glass p-8" style="padding:2rem;height:100%;">
                     <div style="width:52px;height:52px;background:var(--accent-pale);border-radius:var(--radius-sm);display:flex;align-items:center;justify-content:center;color:var(--accent-dark);font-size:1.25rem;margin-bottom:1.25rem;">
-                        <i class="fas fa-{{ $r===1 ? 'shield-alt' : ($r===2 ? 'bolt' : 'headset') }}"></i>
+                        <i class="{{ $v['icon'] }}"></i>
                     </div>
-                    <h3 style="font-family:'Playfair Display',serif;font-size:1.125rem;font-weight:700;color:var(--navy);margin-bottom:.625rem;">
-                        {{ __('home.loan_reasons.reasons.title' . $r) }}
+                    <h3 style="font-family:'Playfair Display',serif;font-size:1.0625rem;font-weight:700;color:var(--navy);margin-bottom:.625rem;">
+                        {{ $v['title'] }}
                     </h3>
-                    <p style="font-size:.875rem;color:var(--gray-500);line-height:1.75;margin:0;">
-                        {{ __('home.loan_reasons.reasons.desc' . $r) }}
+                    <p style="font-size:.85rem;color:var(--gray-500);line-height:1.7;margin:0;">
+                        {{ $v['desc'] }}
                     </p>
                 </div>
             </div>
             @endforeach
+        </div>
+    </div>
+</section>
+
+{{-- Comment nous travaillons --}}
+<section class="py-24" style="background:var(--cream);">
+    <div class="container">
+        <div class="row g-4 gutter-y-40 align-items-center">
+            <div class="col-lg-5 wow fadeInLeft" data-wow-duration="900ms">
+                <div class="rule-label">{{ __('about.approach_tagline') }}</div>
+                <h2 class="section-title mb-4">{{ __('about.approach_title') }}</h2>
+                <img src="{{ asset('assets/images/refonte/about-handshake.jpg') }}"
+                     alt="{{ site_name() }}"
+                     style="width:100%;border-radius:var(--radius-xl);height:280px;object-fit:cover;box-shadow:var(--shadow-hover);">
+            </div>
+            <div class="col-lg-7 wow fadeInRight" data-wow-duration="900ms" data-wow-delay="150ms">
+                <div class="steps-list">
+                    @foreach ([1,2,3] as $s)
+                    <div class="step-row">
+                        <div class="step-row__num">0{{ $s }}</div>
+                        <div class="step-row__title">{{ __('about.approach' . $s . '_title') }}</div>
+                        <p class="step-row__desc">{{ __('about.approach' . $s . '_desc') }}</p>
+                    </div>
+                    @endforeach
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+{{-- CTA --}}
+<section class="cta-banner">
+    <div class="container">
+        <div class="row align-items-center gutter-y-30">
+            <div class="col-lg-8 wow fadeInLeft" data-wow-duration="900ms">
+                <div class="section-label" style="color:var(--accent);">{{ __('about.cta_tagline') }}</div>
+                <h2 class="section-title section-title--white mb-2">{{ __('about.cta_title') }}</h2>
+                <p class="section-sub section-sub--white">{{ __('about.cta_text') }}</p>
+            </div>
+            <div class="col-lg-4 text-lg-end wow fadeInRight" data-wow-duration="900ms" data-wow-delay="100ms">
+                <a href="{{ route('loan', ['locale' => $locale]) }}" class="btn-primary btn-primary--lg">
+                    <i class="fas fa-file-signature"></i> @lang('menu.loan')
+                </a>
+            </div>
         </div>
     </div>
 </section>

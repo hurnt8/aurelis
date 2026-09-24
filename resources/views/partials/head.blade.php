@@ -29,19 +29,19 @@
         theme: {
             extend: {
                 colors: {
-                    navy:      { DEFAULT:'#032A4F', mid:'#043767', light:'#054685', deep:'#021D36' },
-                    accent:      { DEFAULT:'#0657A4', light:'#0870D4', pale:'#DEEBF7', dark:'#054685' },
-                    cream:     { DEFAULT:'#F3F7FC', light:'#F9FBFE' },
+                    navy:      { DEFAULT:'#2A1967', mid:'#3A2A72', light:'#443579', deep:'#211450' },
+                    accent:      { DEFAULT:'#268226', light:'#379627', pale:'#E9F3E9', dark:'#1F6B1F' },
+                    cream:     { DEFAULT:'#F3F0FA', light:'#F9F7FC' },
                 },
                 fontFamily: {
                     sans:  ['Inter','ui-sans-serif','system-ui','sans-serif'],
                     serif: ['Playfair Display','Georgia','serif'],
                 },
                 boxShadow: {
-                    'card':  '0 1px 3px rgba(11,26,46,.06), 0 4px 16px rgba(11,26,46,.08)',
-                    'card-hover': '0 4px 8px rgba(11,26,46,.08), 0 16px 40px rgba(11,26,46,.12)',
-                    'accent':  '0 4px 24px rgba(200,169,81,.30)',
-                    'nav':   '0 1px 0 rgba(11,26,46,.08)',
+                    'card':  '0 1px 3px rgba(42,25,103,.06), 0 4px 16px rgba(42,25,103,.08)',
+                    'card-hover': '0 4px 8px rgba(42,25,103,.08), 0 16px 40px rgba(42,25,103,.12)',
+                    'accent':  '0 4px 24px rgba(38,130,38,.30)',
+                    'nav':   '0 1px 0 rgba(42,25,103,.08)',
                 },
                 animation: {
                     'fade-in-up': 'fadeInUp .6s ease forwards',

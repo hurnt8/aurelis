@@ -69,38 +69,38 @@ return [
     'testimonials_months_ago' => '{1} pirms 1 mēneša|[2,*] pirms :count mēnešiem',
     'testimonial_1' => [
         'quote' => '"Saņēmu savu hipotekāro aizdevumu nepilnas nedēļas laikā. Konsultants bija ārkārtīgi pieejams, un piedāvātie nosacījumi bija krietni izdevīgāki nekā jebkur citur, ko atradu. Iesaku bez šaubām."',
-        'name'  => 'Jānis Ozoliņš',
-        'location' => 'Rīga, Latvija',
+        'name'  => 'Kārlis Priede',
+        'location' => 'Rēzekne, Latvija',
         'months_ago' => 1,
     ],
     'testimonial_2' => [
         'quote' => '"Pēc diviem atteikumiem tradicionālajā bankā ' . site_name() . ' man piešķīra personīgo aizdevumu 48 stundu laikā. Komanda izskatīja manu pieteikumu nopietni un ar sapratni. Liels paldies!"',
-        'name'  => 'Ilze Bērziņa',
-        'location' => 'Daugavpils, Latvija',
+        'name'  => 'Zane Kalēja',
+        'location' => 'Valmiera, Latvija',
         'months_ago' => 2,
     ],
     'testimonial_3' => [
         'quote' => '"Process 100% tiešsaistē, ātra atbilde, konkurētspējīga likme. Es finansēju savu automašīnu, nemaz neapmeklējot filiāli. Moderns un efektīvs pakalpojums."',
-        'name'  => 'Toms Kalniņš',
-        'location' => 'Liepāja, Latvija',
+        'name'  => 'Edgars Roze',
+        'location' => 'Jēkabpils, Latvija',
         'months_ago' => 2,
     ],
     'testimonial_4' => [
         'quote' => '"Individuālā pieeja mani patiešām pārsteidza. Mans konsultants man zvanīja katrā posmā, lai izskaidrotu pieteikuma virzību. Jūties atbalstīts, nevis viens pats pretī veidlapām."',
-        'name'  => 'Signe Fogele',
-        'location' => 'Jelgava, Latvija',
+        'name'  => 'Laura Ozola',
+        'location' => 'Ogre, Latvija',
         'months_ago' => 3,
     ],
     'testimonial_5' => [
         'quote' => '"Skaidrs simulators, vienkāršs pieteikums, pārskaitījums saņemts trīs darba dienu laikā. Man bija steidzami jāfinansē remontdarbi, un ' . site_name() . ' bija klāt īstajā brīdī."',
-        'name'  => 'Artūrs Liepiņš',
-        'location' => 'Ventspils, Latvija',
+        'name'  => 'Mārtiņš Vītols',
+        'location' => 'Cēsis, Latvija',
         'months_ago' => 4,
     ],
     'testimonial_6' => [
         'quote' => '"Pārskatāmība par likmēm un maksām mani pārliecināja jau no pirmā kontakta. Nekādu negaidītu pārsteigumu ceļā. Šajā nozarē tas ir reti un vērtīgi."',
-        'name'  => 'Sandra Krūmiņa',
-        'location' => 'Jūrmala, Latvija',
+        'name'  => 'Inese Krastiņa',
+        'location' => 'Tukums, Latvija',
         'months_ago' => 5,
     ],
     'testimonial_7' => [
@@ -163,11 +163,11 @@ return [
     'sl' => 'Slovēņu',
 
     // Hero subtitle
-    'hero_subtitle' => 'Bez sarežģītām procedūrām, bez slēptām maksām. Jau 15 gadus mēs finansējam jūsu personīgos, nekustamā īpašuma, auto un uzņēmējdarbības projektus ar pārskatāmību un ātrumu.',
+    'hero_subtitle' => 'Bez sarežģītām procedūrām, bez slēptām maksām. Jau 8 gadus mēs finansējam jūsu personīgos, nekustamā īpašuma, auto un uzņēmējdarbības projektus ar pārskatāmību un ātrumu.',
 
     // Slide
     'slide_1' => [
-        'title' => 'Jau 15 gadus · Sertificēts · Garantēta atbilde',
+        'title' => 'Jau 8 gadus · Sertificēts · Garantēta atbilde',
         'text1' => 'Finansējiet visus savus projektus,',
         'text2' => 'līdz 5 000 000 € 24 stundu laikā.',
     ],
@@ -200,7 +200,7 @@ return [
         'exptitle' => 'gadu pieredze',
         'sectagline' => 'laipni lūdzam ' . site_name(),
         'sectitle' => 'Personīgie aizdevumi jūsu sapņu piepildīšanai',
-        'text1' => 'Mēs darbojamies šajā jomā jau 15 gadus un piedāvājam labākos pakalpojumus.',
+        'text1' => 'Mēs darbojamies šajā jomā jau 8 gadus un piedāvājam labākos pakalpojumus.',
         'text2' => site_name() . ' ir jūsu uzticamā platforma aizdevumiem ar izcilu klientu pieredzi. Mēs apņemamies nodrošināt jums vienkāršus, drošus un ātrus finanšu risinājumus.',
         'check1' => 'aizdevums mazajam uzņēmumam',
         'check2' => 'aizdevums studijām ārzemēs',
@@ -222,6 +222,67 @@ return [
         'cta_text' => 'Mūsu komanda ir pieejama, lai palīdzētu jums finansējuma pieteikumā.',
     ],
 
+    // Reklāmas baneris — sākumlapas karuselis
+    'promo' => [
+        'slide1' => [
+            'tag'   => 'Aktuālais piedāvājums',
+            'title' => 'Izdevīga procentu likme patēriņa kredītam',
+            'text'  => 'Izmantojiet izdevīgu procentu likmi un atbildi 48 stundu laikā, lai finansētu savu nākamo projektu.',
+            'cta'   => 'Aprēķināt manu kredītu',
+        ],
+        'slide2' => [
+            'tag'   => 'Hipotekārais kredīts',
+            'title' => 'Jūsu nekustamā īpašuma projekts ir pelnījis labāko likmi',
+            'text'  => 'Personalizēts atbalsts no pirmās tikšanās līdz parakstīšanai.',
+            'cta'   => 'Uzzināt par hipotekāro kredītu',
+        ],
+        'slide3' => [
+            'tag'   => 'Kalkulators',
+            'title' => 'Aprēķiniet savu ikmēneša maksājumu 30 sekundēs',
+            'text'  => 'Bez saistībām un bez ietekmes uz jūsu kredītvēsturi: pārbaudiet savu aizņemšanās iespēju tagad.',
+            'cta'   => 'Veikt aprēķinu',
+        ],
+    ],
+
+    // Atbilstoši jūsu situācijai — segmentācija pēc profila
+    'needs' => [
+        'sectagline'   => 'atbilstoši jūsu situācijai',
+        'sectitle'     => 'Lai kāds būtu jūsu projekts, mums ir risinājums',
+        'sectitle_sub' => 'Izvēlieties profilu, kas jums atbilst, lai atklātu jums domāto piedāvājumu.',
+        'profiles' => [
+            'starter' => [
+                'title' => 'Uzsākat jaunu projektu',
+                'text'  => 'Kāzas, remonts, neparedzēti izdevumi... finansējiet savu personīgo projektu ar elastīgu kredītu, bez pirkuma apliecinājuma.',
+                'cta'   => 'Skatīt patēriņa kredītu',
+            ],
+            'student' => [
+                'title' => 'Jūs esat students',
+                'text'  => 'Mācību maksa, mājoklis, aprīkojums: finansējums, kas domāts jūsu akadēmiskā ceļa atbalstam.',
+                'cta'   => 'Skatīt studiju kredītu',
+            ],
+            'buyer' => [
+                'title' => 'Pērkat nekustamo īpašumu',
+                'text'  => 'Īstenojiet sava mājokļa pirkumu ar hipotekāro kredītu ar pārskatāmiem nosacījumiem un fiksētu likmi.',
+                'cta'   => 'Skatīt hipotekāro kredītu',
+            ],
+            'entrepreneur' => [
+                'title' => 'Vadāt uzņēmumu',
+                'text'  => 'Uzsākšana, apgrozāmie līdzekļi, aprīkojums: ātrs finansējums, lai jūsu uzņēmums augtu bez kavēšanās.',
+                'cta'   => 'Skatīt biznesa kredītu',
+            ],
+            'driver' => [
+                'title' => 'Mainiet transportlīdzekli',
+                'text'  => 'Finansējiet savu automašīnu, jaunu vai lietotu, ar ikmēneša maksājumiem, kas atbilst jūsu budžetam.',
+                'cta'   => 'Skatīt auto kredītu',
+            ],
+            'rider' => [
+                'title' => 'Braucat ar divriteni',
+                'text'  => 'Skūteris vai motocikls: aprīkojieties ātri ar īpašu kredītu un atbildi 48 stundu laikā.',
+                'cta'   => 'Skatīt moto kredītu',
+            ],
+        ],
+    ],
+
     // BUJ lapas CTA
     'faq_cta' => [
         'label' => 'Atbalsts',
@@ -238,7 +299,7 @@ return [
     'chooses' => [
         'sectagline' => 'mūsu priekšrocības',
         'sectitle' => 'kāpēc izvēlēties mūs',
-        'text1' => 'Mēs darbojamies šajā jomā jau 15 gadus un piedāvājam labākos pakalpojumus.',
+        'text1' => 'Mēs darbojamies šajā jomā jau 8 gadus un piedāvājam labākos pakalpojumus.',
         'item1' => 'zemas likmes',
         'item2' => 'ātri un vienkārši',
         'progress1' => 'aizdevuma process',
@@ -270,6 +331,11 @@ return [
     ],
 
     // Loan Reasons
+    'final_cta' => [
+        'tagline' => 'rīkojieties tagad',
+        'title'   => 'Gatavs īstenot savu projektu?',
+    ],
+
     'loan_reasons' => [
         'sectagline' => 'aizdevuma iemesli',
         'sectitle' => 'Populāri aizdevuma iemesli',

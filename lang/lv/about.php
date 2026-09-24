@@ -1,47 +1,47 @@
 <?php
 
 return [
-    'banner_title' => 'Iepazīstiet ' . site_name(),
-    'banner_subtitle' => 'Par mums',
-    'banner_description' => 'Aizņemieties vienkāršāk ar elastīgiem aizdevuma risinājumiem, kas pielāgoti jūsu finansiālajām vajadzībām.',
+    // Hero / ievads
+    'hero_tagline' => 'mūsu vēsture',
+    'hero_title' => 'Tiešsaistes banka, kas radīta ātrāka nekā tradicionālās bankas',
+    'hero_text' => 'Jau 8 gadus ' . site_name() . ' palīdz privātpersonām un uzņēmumiem īstenot savus finansēšanas projektus, vadoties pēc vienkārša principa: aizdevuma saņemšanai nekad nevajadzētu būt sarežģītai.',
 
-    'section1_title' => 'Kāpēc izvēlēties ' . site_name(),
-    'section1_p1' => site_name() . ' mēs stingri ticam, ka ikvienam pienākas iespēja piepildīt savus finansiālos sapņus. Kopš mūsu darbības sākuma esam apņēmušies nodrošināt elastīgus un pieejamus aizdevuma risinājumus, lai apmierinātu mūsu klientu dažādās vajadzības. Vai vēlaties finansēt personīgu projektu, iegādāties automašīnu vai attīstīt savu uzņēmumu — mums ir aizdevums, kas jums nepieciešams.',
-    'section1_p2' => 'Mūsu pakalpojumi ir izstrādāti, lai nodrošinātu ērtu pieredzi ar vienkāršu un ātru pieteikšanās procesu. Mēs saprotam, ka katrs klients ir unikāls, tāpēc piedāvājam individuāli pielāgotus aizdevumus, kas atbilst jūsu konkrētajām vajadzībām. Turklāt mūsu personīgie konsultanti vienmēr ir gatavi jūs vadīt katrā solī, nodrošinot pilnvērtīgu atbalstu no sākuma līdz beigām.',
-    'proposed' => 'Mēs piedāvājam:',
-    'check1' => 'Individuāli pielāgotus aizdevumus atbilstoši jūsu konkrētajām vajadzībām.',
-    'check2' => 'Personīgus konsultantus, kas palīdz jums katrā procesa posmā.',
-    'check3' => 'Elastīgus atmaksas nosacījumus, kas pielāgojas jūsu finansiālajai situācijai',
-    'check4' => 'Aizdevumus arī bez algas lapiņas uzrādīšanas.',
-    'section1_p3' => site_name() . ' misija ir palīdzēt jums sasniegt savus finansiālos mērķus ar individuāli pielāgotiem aizdevuma risinājumiem. Pievienojieties mums jau šodien un uzziniet, kā mēs varam palīdzēt jums īstenot savus projektus.',
-    'btn' => 'Atrodiet sev ideālo aizdevumu',
+    // Misija / vēsture
+    'mission_tagline' => 'mūsu misija',
+    'mission_title' => 'Padarām kredītu vienkāršu, ātru un pieejamu',
+    'mission_p1' => site_name() . ' radās no vilšanās, ko izjūt tūkstošiem aizņēmēju: tradicionālās aizdevumu procedūras ir lēnas, necaurspīdīgas un bieži vien atturošas. Vizītes filiālē, papīra dokumenti, nedēļām ilga gaidīšana uz atbildi... mēs vēlējāmies izveidot alternatīvu, kas pilnībā veidota ap klientu.',
+    'mission_p2' => 'Šodien katru gadu palīdzam tūkstošiem klientu visā Eiropā finansēt viņu personīgos, nekustamā īpašuma, biznesa un auto projektus. Mūsu tiešsaistes platforma ļauj iesniegt pieteikumu no sākuma līdz beigām no mājām, saņemot atbildi 48 stundu laikā un personīgu konsultantu katrā posmā.',
+
+    // Vērtības
+    'values_tagline' => 'mūsu vērtības',
+    'values_title' => 'Kas vada katru mūsu lēmumu',
+    'value1_title' => 'Caurskatāmība',
+    'value1_desc' => 'Likmes, maksas un nosacījumi tiek skaidri paziņoti pirms jebkāda paraksta. Bez nepatīkamiem pārsteigumiem, bez slēptām klauzulām.',
+    'value2_title' => 'Ātrums',
+    'value2_desc' => '100 % tiešsaistes pieteikums, lēmums 48 stundu laikā un ātrs līdzekļu izmaksājums tiklīdz līgums ir parakstīts.',
+    'value3_title' => 'Cilvēcīgs atbalsts',
+    'value3_desc' => 'Aiz katras lietas stāv personīgs konsultants, kas ir pieejams jūsu jautājumiem no pirmā kontakta līdz pat aizdevuma atmaksai.',
+    'value4_title' => 'Drošība',
+    'value4_desc' => 'Sertificēta kredītiestāde, kas darbojas saskaņā ar Eiropas standartiem. Jūsu dati un lieta ir aizsargāti katrā posmā.',
+
+    // Mūsu pieeja / kā mēs strādājam
+    'approach_tagline' => 'mūsu pieeja',
+    'approach_title' => 'Kā mēs strādājam',
+    'approach1_title' => 'Mēs uzklausām, pirms piedāvājam',
+    'approach1_desc' => 'Katrs projekts ir unikāls: mēs veltām laiku, lai izprastu jūsu situāciju, pirms novirzām jūs uz piemērotāko risinājumu.',
+    'approach2_title' => 'Mēs vienkāršojam katru posmu',
+    'approach2_desc' => 'Simulācija, lieta, paraksts un uzraudzība: viss notiek tiešsaistē, bez papīra darba un nevajadzīgiem braucieniem.',
+    'approach3_title' => 'Mēs paliekam jums blakus arī pēc aizdevuma piešķiršanas',
+    'approach3_desc' => 'Mūsu attiecības nebeidzas ar parakstu: mūsu klientu apkalpošanas dienests paliek pieejams visu atmaksas periodu.',
+
+    // Statistikas josla (pārņemta no sākumlapas, kontekstā "par mums")
+    'stats_tagline' => 'skaitļos',
+    'stats_title' => site_name() . ' šodien',
+
+    // Noslēguma CTA
+    'cta_tagline' => 'rīkojieties tagad',
+    'cta_title' => 'Gatavi uzsākt savu projektu kopā ar mums?',
+    'cta_text' => 'Simulējiet savu aizdevumu dažu minūšu laikā un saņemiet personalizētu atbildi 48 stundu laikā.',
 
     'faq_title' => 'Biežāk uzdotie jautājumi',
-    'faq_description' => 'Atrodiet atbildes uz visbiežāk uzdotajiem jautājumiem par mūsu aizdevumu pakalpojumiem.',
-    'acc_1' => 'Kādus aizdevumu veidus jūs piedāvājat?',
-    'acc_1_desc' => 'Mēs piedāvājam dažādus aizdevumu veidus, tostarp personīgos aizdevumus,
-    hipotekāros aizdevumus, auto aizdevumus un aizdevumus mazajiem uzņēmumiem. Katrs
-    aizdevuma veids ir izstrādāts, lai apmierinātu konkrētas vajadzības, un piedāvā
-    elastīgus nosacījumus.',
-    'acc_2' => 'Kā es varu pieteikties aizdevumam?',
-    'acc_2_desc' => 'Jūs varat pieteikties aizdevumam tieši mūsu tīmekļa vietnē,
-    aizpildot tiešsaistes pieteikuma veidlapu. Mēs jums pieprasīsim
-    pamatinformāciju, piemēram, vārdu, kontaktinformāciju un vēlamo aizdevuma
-    summu. Mūsu konsultanti sazināsies ar jums, lai pabeigtu pieteikumu un
-    palīdzētu jums visā procesa gaitā.',
-    'acc_3' => 'Kādi ir atbilstības kritēriji aizdevuma saņemšanai?',
-    'acc_3_desc' => 'Atbilstības kritēriji atšķiras atkarībā no aizdevuma veida, taču kopumā
-    jums jābūt pilngadīgam, jābūt stabiliem ienākumiem un labai kredītvēsturei. Mēs
-    izvērtēsim arī jūsu atmaksas spēju un finansiālo
-    priekšvēsturi.',
-    'acc_4' => 'Cik ilgs ir aizdevuma pieteikuma izskatīšanas laiks?',
-    'acc_4_desc' => 'Izskatīšanas laiks atšķiras atkarībā no aizdevuma veida un jūsu
-    pieteikuma sarežģītības. Kopumā personīgo aizdevumu pieteikumi tiek izskatīti 24–48
-    stundu laikā, savukārt hipotekāro aizdevumu izskatīšana var aizņemt vairākas dienas
-    padziļinātāku pārbaužu dēļ.',
-    'acc_5' => 'Vai es varu atmaksāt savu aizdevumu pirms termiņa?',
-    'acc_5_desc' => 'Jā, jūs varat atmaksāt savu aizdevumu pirms termiņa bez soda naudas. Mēs
-    iesakām atmaksāt aizdevumu ātrāk, ja iespējams, jo tas samazinās
-    kopējo procentu summu, ko jūs samaksāsiet aizdevuma darbības laikā.',
-
 ];

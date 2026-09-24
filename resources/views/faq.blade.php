@@ -42,24 +42,16 @@
                 </div>
             </div>
 
-            {{-- FAQ accordions (Alpine.js) --}}
+            {{-- FAQ accordion (Alpine.js) --}}
             <div class="col-lg-8 wow fadeInRight" data-wow-duration="900ms" data-wow-delay="100ms">
                 <div class="section-label mb-2">@lang('menu.faq')</div>
-                <h2 class="section-title mb-8">Questions fréquentes</h2>
+                <h2 class="section-title mb-8">{{ __('about.faq_title') }}</h2>
 
-                @php
-                $types = ['personal_loan','home_loan','auto_loan','business_loan','study_loan','bike_loan'];
-                @endphp
+                @php $faqs = __('loan.general_faqs'); @endphp
 
-                @foreach ($types as $type)
-                @php $faqs = __('loan.' . $type . '.details.faqs'); @endphp
-                @if (is_array($faqs) && isset($faqs['question1']))
-
-                <div class="faq-category-title">{{ __('loan.' . $type . '.section_title') }}</div>
-
-                {{-- Alpine scope: one open item per category, default first open --}}
-                <div x-data="{ open: 1 }" class="mb-6">
-                    @for ($q = 1; $q <= 3; $q++)
+                {{-- Alpine scope: one open item at a time, default first open --}}
+                <div x-data="{ open: 1 }">
+                    @for ($q = 1; $q <= 14; $q++)
                     @if (isset($faqs['question' . $q]))
                     @php $qn = $q; @endphp
                     <div class="accordion-item mb-1" style="border-radius:var(--radius);overflow:hidden;box-shadow:var(--shadow-card);">
@@ -87,9 +79,6 @@
                     @endif
                     @endfor
                 </div>
-
-                @endif
-                @endforeach
             </div>
 
         </div>

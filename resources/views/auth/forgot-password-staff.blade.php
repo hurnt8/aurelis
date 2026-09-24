@@ -6,7 +6,7 @@
 <meta name="mobile-web-app-capable" content="yes">
 <meta name="apple-mobile-web-app-capable" content="yes">
 <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-<meta name="theme-color" content="#0657A4">
+<meta name="theme-color" content="#268226">
 <link rel="icon" type="image/png" sizes="192x192" href="/site-icon-192.png">
 <title>Mot de passe oublié — {{ site_name() }} Admin</title>
 
@@ -17,8 +17,8 @@
 
 <style>
 :root{
-  --navy:#032A4F;--nm:#043767;--nl:#054685;
-  --accent:#81B6E9;--gd:#2B94F7;--gp:#DEEBF7;
+  --navy:#2A1967;--nm:#3A2A72;--nl:#443579;
+  --accent:#65DC50;--gd:#379627;--gp:#E9F3E9;
 }
 *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
 html,body{
@@ -35,7 +35,7 @@ a{text-decoration:none;color:inherit}
   background-size:40px 40px;
 }
 .bg-orb{position:fixed;top:-100px;right:-100px;width:380px;height:380px;border-radius:50%;
-  background:radial-gradient(circle,rgba(129, 182, 233,.08) 0%,transparent 70%);pointer-events:none;z-index:0}
+  background:radial-gradient(circle,rgba(101, 220, 80,.08) 0%,transparent 70%);pointer-events:none;z-index:0}
 
 .topbar{position:relative;z-index:10;display:flex;align-items:center;
   padding:.9rem 1.5rem;padding-top:calc(.9rem + env(safe-area-inset-top,0px));}
@@ -50,9 +50,9 @@ a{text-decoration:none;color:inherit}
 
 .icon-badge{
   width:72px;height:72px;border-radius:50%;
-  background:rgba(129, 182, 233,.1);border:1.5px solid rgba(129, 182, 233,.28);
+  background:rgba(101, 220, 80,.1);border:1.5px solid rgba(101, 220, 80,.28);
   display:flex;align-items:center;justify-content:center;margin:0 auto 1.5rem;
-  box-shadow:0 0 28px rgba(129, 182, 233,.15);
+  box-shadow:0 0 28px rgba(101, 220, 80,.15);
 }
 .icon-badge i{font-size:1.75rem;color:var(--accent)}
 
@@ -86,7 +86,7 @@ a{text-decoration:none;color:inherit}
   outline:none;transition:border-color .2s,box-shadow .2s,background .2s;
 }
 .finput::placeholder{color:rgba(255,255,255,.25)}
-.finput:focus{border-color:var(--accent);background:rgba(255,255,255,.08);box-shadow:0 0 0 3.5px rgba(129, 182, 233,.15)}
+.finput:focus{border-color:var(--accent);background:rgba(255,255,255,.08);box-shadow:0 0 0 3.5px rgba(101, 220, 80,.15)}
 .finput:focus ~ .ficon,.frel:focus-within .ficon{color:var(--accent)}
 .finput.err{border-color:#ef4444}
 
@@ -94,8 +94,8 @@ a{text-decoration:none;color:inherit}
   width:100%;padding:.92rem 1.5rem;border:none;border-radius:10px;
   font-size:.95rem;font-weight:700;font-family:'Inter',sans-serif;cursor:pointer;
   display:flex;align-items:center;justify-content:center;gap:.625rem;
-  background:var(--accent);color:#032A4F;letter-spacing:.01em;
-  box-shadow:0 6px 24px rgba(129, 182, 233,.3);
+  background:var(--accent);color:#2A1967;letter-spacing:.01em;
+  box-shadow:0 6px 24px rgba(101, 220, 80,.3);
   transition:filter .2s,box-shadow .2s,transform .1s;margin-top:.25rem;
 }
 .fbtn:hover{filter:brightness(1.08)}

@@ -21,6 +21,8 @@
     </div>
 </div>
 
+@include('partials.promo-carousel')
+
 {{-- Services grid --}}
 <section class="py-24 bg-white">
     <div class="container">

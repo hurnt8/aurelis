@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
 <meta name="csrf-token" content="{{ csrf_token() }}">
-<meta name="theme-color" content="#0657A4">
+<meta name="theme-color" content="#268226">
 <meta name="apple-mobile-web-app-capable" content="yes">
 <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
 <meta name="apple-mobile-web-app-title" content="{{ site_name() }} Admin">
@@ -32,17 +32,17 @@
   Mellenthin Financial — DESIGN SYSTEM v2
    ═══════════════════════════════════════════════ */
 :root {
-  --c-navy:       #032A4F;
-  --c-navy-2:     #043767;
-  --c-navy-3:     #054685;
-  --c-accent:       #0657A4;
+  --c-navy:       #2A1967;
+  --c-navy-2:     #3A2A72;
+  --c-navy-3:     #443579;
+  --c-accent:       #268226;
   --c-on-accent:  #FFFFFF;  /* texte sur aplat d accent */
-  --c-accent-d:     #054685;
-  --c-accent-l:     #0870D4;
+  --c-accent-d:     #443579;
+  --c-accent-l:     #379627;
   --c-bg:         #F7F8F9;
   --c-surface:    #FFFFFF;
   --c-border:     #DBDDDE;
-  --c-text:       #032A4F;
+  --c-text:       #2A1967;
   --c-muted:      #95A3B1;
   --c-green:      #059669;
   --c-green-l:    #D1FAE5;
@@ -58,8 +58,8 @@
   --topbar-h:     64px;
   --radius:       12px;
   --radius-sm:    8px;
-  --shadow:       0 1px 3px rgba(3, 42, 79,.06), 0 4px 16px rgba(3, 42, 79,.07);
-  --shadow-sm:    0 1px 2px rgba(3, 42, 79,.05);
+  --shadow:       0 1px 3px rgba(42, 25, 103,.06), 0 4px 16px rgba(42, 25, 103,.07);
+  --shadow-sm:    0 1px 2px rgba(42, 25, 103,.05);
   --transition:   all .2s ease;
 }
 
@@ -77,7 +77,7 @@ a { text-decoration:none; }
    ══════════════════ */
 .sidebar {
   /* Fond bleu profond : l accent doit s eclaircir pour rester lisible. */
-  --c-accent:#81B6E9;
+  --c-accent:#65DC50;
   position:fixed; top:0; left:0; width:var(--sidebar-w); height:100vh;
   background:var(--c-navy);
   display:flex; flex-direction:column; z-index:300;
@@ -125,7 +125,7 @@ a { text-decoration:none; }
 }
 .sidebar-link .icon { width:18px; text-align:center; font-size:.8rem; flex-shrink:0; }
 .sidebar-link:hover { color:#fff; background:rgba(255,255,255,.04); border-left-color:rgba(255,255,255,.15); }
-.sidebar-link.active { color:var(--c-accent); background:rgba(6, 87, 164,.1); border-left-color:var(--c-accent); font-weight:600; }
+.sidebar-link.active { color:var(--c-accent); background:rgba(38, 130, 38,.1); border-left-color:var(--c-accent); font-weight:600; }
 .sidebar-link.active .icon { color:var(--c-accent); }
 
 .sidebar-footer {
@@ -413,7 +413,7 @@ a.pg-pro__link:hover { background:var(--c-bg); border-color:#94A3B8; color:var(-
   font-family:inherit; transition:var(--transition);
   appearance:none;
 }
-.form-control-pro:focus { outline:none; border-color:var(--c-accent); box-shadow:0 0 0 3px rgba(6, 87, 164,.12); }
+.form-control-pro:focus { outline:none; border-color:var(--c-accent); box-shadow:0 0 0 3px rgba(38, 130, 38,.12); }
 .form-control-pro::placeholder { color:#C4CADC; }
 .form-help { font-size:.73rem; color:var(--c-muted); margin-top:.3rem; }
 
@@ -456,7 +456,7 @@ a.pg-pro__link:hover { background:var(--c-bg); border-color:#94A3B8; color:var(-
   transition:var(--transition);
 }
 .step-dot.done { background:var(--c-accent); color:var(--c-on-accent); border-color:var(--c-accent); }
-.step-dot.current { background:var(--c-navy); color:#81B6E9; border-color:#81B6E9; }
+.step-dot.current { background:var(--c-navy); color:#65DC50; border-color:#65DC50; }
 .step-label { font-size:.62rem; text-align:center; color:var(--c-muted); margin-top:.4rem; max-width:65px; line-height:1.3; }
 .step-label.done,.step-label.current { color:var(--c-navy); font-weight:600; }
 
@@ -490,7 +490,7 @@ a.pg-pro__link:hover { background:var(--c-bg); border-color:#94A3B8; color:var(-
 }
 .filter-bar input:focus, .filter-bar select:focus {
   outline:none; border-color:var(--c-accent); background:var(--c-surface);
-  box-shadow:0 0 0 3px rgba(6, 87, 164,.1);
+  box-shadow:0 0 0 3px rgba(38, 130, 38,.1);
 }
 .filter-bar input::placeholder { color:#C4CADC; }
 
@@ -1091,14 +1091,14 @@ function _renderNotifs(list) {
   const bgMap    = { support:'rgba(124,58,237,.1)', transfer:'rgba(37,99,235,.1)', system:'rgba(217,119,6,.1)' };
   el.innerHTML = list.map(n => {
     const col = colorMap[n.type] || 'var(--c-accent)';
-    const bg  = bgMap[n.type]   || 'rgba(6, 87, 164,.1)';
+    const bg  = bgMap[n.type]   || 'rgba(38, 130, 38,.1)';
     const unreadDot = n.read ? '' : `<div style="width:6px;height:6px;border-radius:50%;background:var(--c-accent);flex-shrink:0;margin-top:.4rem"></div>`;
     return `<div onclick="${n.url ? `window.location='${n.url}'` : ''}"
       style="display:flex;align-items:flex-start;gap:.75rem;padding:.75rem 1.125rem;
         border-bottom:1px solid var(--c-border);cursor:${n.url ? 'pointer' : 'default'};
-        background:${n.read ? 'transparent' : 'rgba(6, 87, 164,.04)'};transition:.15s"
+        background:${n.read ? 'transparent' : 'rgba(38, 130, 38,.04)'};transition:.15s"
       onmouseover="this.style.background='var(--c-bg)'"
-      onmouseout="this.style.background='${n.read ? 'transparent' : 'rgba(6, 87, 164,.04)'}'">
+      onmouseout="this.style.background='${n.read ? 'transparent' : 'rgba(38, 130, 38,.04)'}'">
       <div style="width:34px;height:34px;border-radius:8px;flex-shrink:0;display:flex;
         align-items:center;justify-content:center;font-size:.8rem;background:${bg};color:${col}">
         <i class="fas fa-${n.icon}"></i>
@@ -1213,7 +1213,7 @@ function doInstallPwa() {
     border-radius:var(--radius);padding:1rem 1.125rem;
     box-shadow:0 8px 32px rgba(0,0,0,.25);z-index:9999;
     flex-direction:column;gap:.625rem;
-    border:1px solid rgba(6, 87, 164,.3)">
+    border:1px solid rgba(38, 130, 38,.3)">
   <div style="display:flex;align-items:center;justify-content:space-between">
     <div style="display:flex;align-items:center;gap:.625rem">
       <img src="/site-icon-192.png" style="width:36px;height:36px;border-radius:8px" alt="">
@@ -1229,15 +1229,15 @@ function doInstallPwa() {
   </div>
   <div style="font-size:.73rem;color:rgba(255,255,255,.65);line-height:1.6">
     <div style="display:flex;align-items:center;gap:.5rem;margin-bottom:.3rem">
-      <span style="background:rgba(6, 87, 164,.15);border-radius:4px;padding:.1rem .4rem;font-size:.7rem;color:var(--c-accent);font-weight:700">1</span>
+      <span style="background:rgba(38, 130, 38,.15);border-radius:4px;padding:.1rem .4rem;font-size:.7rem;color:var(--c-accent);font-weight:700">1</span>
       Appuyez sur <strong style="color:#fff">Partager</strong> <i class="fas fa-share-square" style="color:var(--c-accent)"></i>
     </div>
     <div style="display:flex;align-items:center;gap:.5rem;margin-bottom:.3rem">
-      <span style="background:rgba(6, 87, 164,.15);border-radius:4px;padding:.1rem .4rem;font-size:.7rem;color:var(--c-accent);font-weight:700">2</span>
+      <span style="background:rgba(38, 130, 38,.15);border-radius:4px;padding:.1rem .4rem;font-size:.7rem;color:var(--c-accent);font-weight:700">2</span>
       Puis <strong style="color:#fff">Sur l'écran d'accueil</strong> <i class="fas fa-plus-square" style="color:var(--c-accent)"></i>
     </div>
     <div style="display:flex;align-items:center;gap:.5rem">
-      <span style="background:rgba(6, 87, 164,.15);border-radius:4px;padding:.1rem .4rem;font-size:.7rem;color:var(--c-accent);font-weight:700">3</span>
+      <span style="background:rgba(38, 130, 38,.15);border-radius:4px;padding:.1rem .4rem;font-size:.7rem;color:var(--c-accent);font-weight:700">3</span>
       Appuyez sur <strong style="color:#fff">Ajouter</strong>
     </div>
   </div>

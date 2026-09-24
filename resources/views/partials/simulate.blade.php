@@ -1,4 +1,5 @@
 <form action="#" id="loan-calculator-01" data-form-direction="ltr" data-interest-rate="{{ (float) \App\Models\LoanSetting::current()->annual_rate }}"
+    data-month-suffix=" {{ __('message.month_abbr') }}"
     class="loan-calculator-form">
 
     <h3 class="loan-calculator-form__title">{{ __('home.simulate.sectitle') }}</h3>

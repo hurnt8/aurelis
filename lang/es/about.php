@@ -1,46 +1,47 @@
 <?php
 
 return [
-    'banner_title' => 'Descubre ' . site_name(),
-    'banner_subtitle' => 'Acerca de nosotros',
-    'banner_description' => 'Pide prestado más fácilmente con soluciones de préstamo flexibles adaptadas a tus necesidades financieras.',
+    // Hero / introducción
+    'hero_tagline' => 'nuestra historia',
+    'hero_title' => 'Un banco online pensado para ir más rápido que la banca tradicional',
+    'hero_text' => 'Desde hace 8 años, ' . site_name() . ' acompaña a particulares y empresas en sus proyectos de financiación, con una convicción simple: conseguir un préstamo nunca debería ser complicado.',
 
-    'section1_title' => 'Por qué elegir ' . site_name(),
-    'section1_p1' => 'En ' . site_name() . ', creemos firmemente que todo el mundo merece la oportunidad de hacer realidad sus sueños financieros. Desde nuestros inicios, nos hemos comprometido a brindar soluciones crediticias flexibles y accesibles para satisfacer las diversas necesidades de nuestros clientes. Ya sea que esté buscando financiar un proyecto personal, comprar un automóvil o expandir su negocio, tenemos el préstamo que necesita.',
-    'section1_p2' => 'Nuestros servicios están diseñados para brindar una experiencia sin complicaciones, con un proceso de solicitud rápido y sencillo. Entendemos que cada cliente es único, por eso ofrecemos préstamos personalizados que se adaptan a sus necesidades específicas. Además, nuestros asesores dedicados siempre están ahí para guiarlo en cada paso del camino, asegurándose de que reciba pleno apoyo de principio a fin.',
-    'propuesto' => 'Proponemos:',
-    'check1' => 'Préstamos personalizados según tus necesidades específicas.',
-    'check2' => 'Asesores dedicados para ayudarte en cada paso del camino.',
-    'check3' => 'Términos de pago flexibles que se adaptan a su situación financiera',
-    'check4' => 'Préstamos sin que tengas sueldo.',
-    'section1_p3' => 'En ' . site_name() . ', nuestra misión es ayudarle a alcanzar sus objetivos financieros con soluciones de préstamos hechas a medida. Únase a nosotros hoy y descubra cómo podemos ayudarlo a hacer realidad sus proyectos.',
-    'btn' => 'Encuentre su préstamo ideal',
+    // Misión / historia
+    'mission_tagline' => 'nuestra misión',
+    'mission_title' => 'Hacer que el crédito sea simple, rápido y accesible',
+    'mission_p1' => site_name() . ' nació de una frustración compartida por miles de solicitantes: los trámites de préstamo tradicionales son lentos, poco transparentes y a menudo desalentadores. Citas en oficina, expedientes en papel, semanas de espera para una respuesta... quisimos construir una alternativa pensada íntegramente para el cliente.',
+    'mission_p2' => 'Hoy acompañamos cada año a miles de clientes en toda Europa en la financiación de sus proyectos personales, inmobiliarios, profesionales o de automóvil. Nuestra plataforma online permite realizar la solicitud de principio a fin desde casa, con una respuesta en 48 horas y un interlocutor dedicado en cada etapa.',
+
+    // Valores
+    'values_tagline' => 'nuestros valores',
+    'values_title' => 'Lo que guía cada una de nuestras decisiones',
+    'value1_title' => 'Transparencia',
+    'value1_desc' => 'Tasas, comisiones y condiciones se comunican con claridad antes de cualquier firma. Sin sorpresas desagradables, sin cláusulas ocultas.',
+    'value2_title' => 'Rapidez',
+    'value2_desc' => 'Una solicitud 100 % online, una decisión en 48 horas y fondos abonados rápidamente en cuanto se firma el contrato.',
+    'value3_title' => 'Acompañamiento humano',
+    'value3_desc' => 'Detrás de cada expediente hay un asesor dedicado disponible para responder tus preguntas, desde el primer contacto hasta el reembolso.',
+    'value4_title' => 'Seguridad',
+    'value4_desc' => 'Entidad de crédito certificada y sujeta a las normas europeas. Tus datos y tu expediente están protegidos en cada etapa.',
+
+    // Nuestro enfoque / cómo trabajamos
+    'approach_tagline' => 'nuestro enfoque',
+    'approach_title' => 'Cómo trabajamos',
+    'approach1_title' => 'Escuchamos antes de proponer',
+    'approach1_desc' => 'Cada proyecto es único: nos tomamos el tiempo de entender tu situación antes de orientarte hacia la solución más adecuada.',
+    'approach2_title' => 'Simplificamos cada etapa',
+    'approach2_desc' => 'Simulación, expediente, firma y seguimiento: todo se hace online, sin papeleo ni desplazamientos innecesarios.',
+    'approach3_title' => 'Seguimos a tu lado después del préstamo',
+    'approach3_desc' => 'Nuestra relación no termina con la firma: nuestro servicio de atención al cliente sigue disponible durante toda la duración de tu reembolso.',
+
+    // Banner de estadísticas (retomado de la página de inicio, contexto "sobre nosotros")
+    'stats_tagline' => 'en cifras',
+    'stats_title' => site_name() . ' hoy',
+
+    // CTA final
+    'cta_tagline' => 'pasa a la acción',
+    'cta_title' => '¿Listo para empezar tu proyecto con nosotros?',
+    'cta_text' => 'Simula tu préstamo en pocos minutos y recibe una respuesta personalizada en 48 horas.',
 
     'faq_title' => 'Preguntas frecuentes',
-    'faq_description' => 'Encuentre respuestas a las preguntas más comunes sobre nuestros servicios de préstamo.',
-    'acc_1' => '¿Qué tipos de préstamos ofrecen?',
-    'acc_1_desc' => 'Ofrecemos una variedad de préstamos, incluidos préstamos personales, préstamos
-    hipotecas, préstamos para automóviles y préstamos para pequeñas empresas. Cada
-    El tipo de préstamo está diseñado para satisfacer necesidades y ofertas específicas.
-    condiciones flexibles.',
-    'acc_2' => '¿Cómo puedo solicitar un préstamo?',
-    'acc_2_desc' => 'Puedes solicitar un préstamo directamente en nuestro sitio web
-    completando el formulario de solicitud en línea. te pediremos
-    información básica como su nombre, datos de contacto y el importe del
-    préstamo deseado. Nuestros asesores se pondrán en contacto contigo para finalizar la solicitud y
-    guiarte a través del proceso.',
-    'acc_3' => '¿Cuáles son los criterios de elegibilidad para un préstamo?',
-    'acc_3_desc' => 'Los criterios de elegibilidad varían dependiendo del tipo de préstamo, pero en general, usted
-    debe ser mayor de edad, tener ingresos estables y buen puntaje crediticio. Nosotros
-    También examinaremos tu capacidad de pago y tu historial.
-    financiero.',
-    'acc_4' => '¿Cuál es el tiempo de procesamiento de una solicitud de préstamo?',
-    'acc_4_desc' => ' El tiempo de procesamiento varía según el tipo de préstamo y la complejidad de su
-    pedido. Por lo general, las solicitudes de préstamos personales se procesan en un plazo de 24 a 48
-    horas, mientras que las hipotecas pueden tardar varios días en
-    razón por la que se requieren controles más profundos.',
-    'acc_5' => '¿Puedo pagar mi préstamo anticipadamente?',
-    'acc_5_desc' => 'Sí, puedes pagar tu préstamo anticipadamente sin penalización. Nosotros tu
-    Le recomendamos que pague su préstamo lo antes posible, ya que esto reducirá el
-    monto total de intereses que pagará durante la vigencia del préstamo.',
 ];

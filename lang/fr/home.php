@@ -69,38 +69,38 @@ return [
     'testimonials_months_ago' => '{1} il y a 1 mois|[2,*] il y a :count mois',
     'testimonial_1' => [
         'quote' => '« J\'ai obtenu mon prêt immobilier en moins d\'une semaine. Le conseiller a été d\'une disponibilité remarquable et les conditions proposées étaient bien en dessous de ce que je trouvais ailleurs. Je recommande sans hésiter. »',
-        'name'  => 'Jean-Pierre Moreau',
-        'location' => 'Paris, France',
+        'name'  => 'Nicolas Blanchard',
+        'location' => 'Toulouse, France',
         'months_ago' => 1,
     ],
     'testimonial_2' => [
         'quote' => '« Après deux refus en banque traditionnelle, ' . site_name() . ' m\'a accordé un prêt personnel en 48 h. L\'équipe a su étudier mon dossier avec sérieux et bienveillance. Merci infiniment ! »',
-        'name'  => 'Isabelle Dupont',
-        'location' => 'Lyon, France',
+        'name'  => 'Amélie Girard',
+        'location' => 'Lille, France',
         'months_ago' => 2,
     ],
     'testimonial_3' => [
         'quote' => '« Démarche 100 % en ligne, réponse rapide, taux compétitif. J\'ai financé ma voiture sans me déplacer une seule fois en agence. Un service moderne et efficace. »',
-        'name'  => 'Thomas Renard',
-        'location' => 'Bordeaux, France',
+        'name'  => 'Julien Mercier',
+        'location' => 'Rennes, France',
         'months_ago' => 2,
     ],
     'testimonial_4' => [
         'quote' => '« Le suivi personnalisé m\'a vraiment impressionnée. Mon conseiller m\'a appelée à chaque étape pour m\'expliquer l\'avancement de mon dossier. On se sent accompagné, pas seul face aux formulaires. »',
-        'name'  => 'Céline Fontaine',
-        'location' => 'Marseille, France',
+        'name'  => 'Camille Rousseau',
+        'location' => 'Montpellier, France',
         'months_ago' => 3,
     ],
     'testimonial_5' => [
         'quote' => '« Simulateur clair, dossier simple, virement reçu en trois jours ouvrés. J\'avais besoin de financer des travaux urgents et ' . site_name() . ' a répondu présent au bon moment. »',
-        'name'  => 'Aurélien Leclerc',
-        'location' => 'Nantes, France',
+        'name'  => 'Mathieu Lambert',
+        'location' => 'Nice, France',
         'months_ago' => 4,
     ],
     'testimonial_6' => [
         'quote' => '« La transparence sur les taux et les frais m\'a convaincue dès le premier contact. Aucune mauvaise surprise en cours de route. C\'est rare et précieux dans ce secteur. »',
-        'name'  => 'Sandrine Bouchard',
-        'location' => 'Strasbourg, France',
+        'name'  => 'Laëtitia Faure',
+        'location' => 'Nantes, France',
         'months_ago' => 5,
     ],
     'testimonial_7' => [
@@ -163,11 +163,11 @@ return [
     'sl' => 'Slovène',
 
     // Hero subtitle
-    'hero_subtitle' => 'Pas de démarche complexe, pas de frais cachés. Depuis 15 ans, nous finançons vos projets personnels, immobiliers, auto et professionnels avec transparence et rapidité.',
+    'hero_subtitle' => 'Pas de démarche complexe, pas de frais cachés. Depuis 8 ans, nous finançons vos projets personnels, immobiliers, auto et professionnels avec transparence et rapidité.',
 
     // Slide
     'slide_1' => [
-        'title' => ' Depuis 15 ans · Agréé · Réponse garantie',
+        'title' => ' Depuis 8 ans · Agréé · Réponse garantie',
         'text1' => 'Financez tous vos projets,',
         'text2' => 'jusqu\'à 5 000 000 € en 48h.',
     ],
@@ -200,7 +200,7 @@ return [
         'exptitle' => 'années d\'expérience',
         'sectagline' => 'bienvenue chez ' . site_name(),
         'sectitle' => 'Prêts personnels pour réaliser vos rêves',
-        'text1' => 'Nous sommes dans ce domaine depuis 15 ans et offrons les meilleurs services.',
+        'text1' => 'Nous sommes dans ce domaine depuis 8 ans et offrons les meilleurs services.',
         'text2' => site_name() . ' est votre plateforme de confiance pour des prêts avec une expérience client exceptionnelle. Nous nous engageons à vous fournir des solutions financières simples, sécurisées et rapides.',
         'check1' => 'prêt pour petite entreprise',
         'check2' => 'prêt pour étudier à l\'étranger',
@@ -222,6 +222,67 @@ return [
         'cta_text' => 'Notre équipe est disponible pour vous accompagner dans votre demande de financement.',
     ],
 
+    // Bandeau d'offres — carrousel promotionnel en tête de page
+    'promo' => [
+        'slide1' => [
+            'tag'   => 'Offre du moment',
+            'title' => 'Taux préférentiel sur le prêt personnel',
+            'text'  => 'Profitez d\'un taux avantageux et d\'une réponse en 48h pour financer votre prochain projet.',
+            'cta'   => 'Simuler mon prêt',
+        ],
+        'slide2' => [
+            'tag'   => 'Immobilier',
+            'title' => 'Votre projet immobilier mérite le meilleur taux',
+            'text'  => 'Un accompagnement personnalisé, du premier rendez-vous jusqu\'à la signature.',
+            'cta'   => 'Découvrir le prêt immobilier',
+        ],
+        'slide3' => [
+            'tag'   => 'Simulateur',
+            'title' => 'Estimez votre mensualité en 30 secondes',
+            'text'  => 'Sans engagement ni impact sur votre dossier : testez votre capacité d\'emprunt dès maintenant.',
+            'cta'   => 'Faire une simulation',
+        ],
+    ],
+
+    // Selon votre situation — segmentation par profil
+    'needs' => [
+        'sectagline'    => 'selon votre situation',
+        'sectitle'      => 'Quel que soit votre projet, nous avons la solution',
+        'sectitle_sub'  => 'Choisissez le profil qui vous ressemble pour découvrir l\'offre pensée pour vous.',
+        'profiles' => [
+            'starter' => [
+                'title' => 'Vous démarrez un nouveau projet',
+                'text'  => 'Mariage, travaux, imprévu... financez votre projet personnel avec un prêt souple, sans justificatif d\'achat exigé.',
+                'cta'   => 'Voir le prêt personnel',
+            ],
+            'student' => [
+                'title' => 'Vous êtes étudiant',
+                'text'  => 'Frais de scolarité, logement, matériel : un financement pensé pour accompagner votre parcours académique.',
+                'cta'   => 'Voir le prêt étudiant',
+            ],
+            'buyer' => [
+                'title' => 'Vous achetez un bien immobilier',
+                'text'  => 'Concrétisez l\'achat de votre résidence grâce à un prêt immobilier aux conditions transparentes et à taux fixe.',
+                'cta'   => 'Voir le prêt immobilier',
+            ],
+            'entrepreneur' => [
+                'title' => 'Vous entreprenez',
+                'text'  => 'Lancement, trésorerie, équipement : un financement rapide pour faire grandir votre activité sans attendre.',
+                'cta'   => 'Voir le prêt professionnel',
+            ],
+            'driver' => [
+                'title' => 'Vous changez de véhicule',
+                'text'  => 'Financez votre voiture, neuve ou d\'occasion, avec des mensualités adaptées à votre budget.',
+                'cta'   => 'Voir le prêt auto',
+            ],
+            'rider' => [
+                'title' => 'Vous roulez à deux-roues',
+                'text'  => 'Scooter ou moto : équipez-vous rapidement grâce à un crédit dédié, avec une réponse sous 48h.',
+                'cta'   => 'Voir le prêt moto',
+            ],
+        ],
+    ],
+
     // FAQ page CTA
     'faq_cta' => [
         'label' => 'Support',
@@ -238,7 +299,7 @@ return [
     'chooses' => [
         'sectagline' => 'nos avantages',
         'sectitle' => 'pourquoi nous choisir',
-        'text1' => 'Nous sommes dans ce domaine depuis 15 ans et offrons les meilleurs services.',
+        'text1' => 'Nous sommes dans ce domaine depuis 8 ans et offrons les meilleurs services.',
         'item1' => 'taux bas',
         'item2' => 'rapide et facile',
         'progress1' => 'processus de prêt',
@@ -267,6 +328,12 @@ return [
             'title' => 'Versement des fonds',
             'desc' => 'Les fonds sont transférés directement sur votre compte bancaire peu de temps après l\'approbation.',
         ],
+    ],
+
+    // Bandeau CTA final (distinct de "Raisons Populaires de Prêt")
+    'final_cta' => [
+        'tagline' => "passez à l'action",
+        'title'   => 'Prêt à concrétiser votre projet ?',
     ],
 
     // Loan Reasons

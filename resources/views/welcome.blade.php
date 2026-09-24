@@ -2,7 +2,10 @@
 @section('title', __('menu.home'))
 
 @section('content')
-@php $locale = app()->getLocale(); @endphp
+@php
+    $locale = app()->getLocale();
+    $siteContact = \App\Models\SiteContact::current();
+@endphp
 
 {{-- ============================================================
      HÉROS SCINDÉ
@@ -39,7 +42,7 @@
                         ['4.9/5',  __('home.customer_satisfaction_rate')],
                         ['48h',    __('home.average_approval_time')],
                         ['8 500+', __('home.member')],
-                        ['15',     __('home.about.exptitle')],
+                        ['8',      __('home.about.exptitle')],
                     ] as $fait)
                     <div class="hero-fact">
                         <span class="hero-fact__num">{{ $fait[0] }}</span>
@@ -50,36 +53,90 @@
             </div>
 
             <div class="hero-split__media wow fadeIn" data-wow-duration="1100ms">
-                <img src="{{ asset('assets/images/refonte/hero-siege.jpg') }}"
-                     alt="@lang('menu.loan')">
+                <img src="{{ asset('assets/images/refonte/hero-client.jpg') }}"
+                     alt="@lang('menu.loan')" style="object-position:center 30%;">
             </div>
 
     </div>
 </section>
 
+@include('partials.promo-carousel')
+
 {{-- ============================================================
-     SERVICE NAV STRIP
+     SELON VOTRE SITUATION — segmentation par profil
 ============================================================ --}}
-@php
-$serviceNav = [
-    ['route' => 'services.personal', 'icon' => 'fas fa-user-tie',      'label' => 'menu.personal'],
-    ['route' => 'services.home',     'icon' => 'fas fa-home',           'label' => 'menu.home_loan'],
-    ['route' => 'services.auto',     'icon' => 'fas fa-car',            'label' => 'menu.auto'],
-    ['route' => 'services.business', 'icon' => 'fas fa-briefcase',      'label' => 'menu.business'],
-    ['route' => 'services.study',    'icon' => 'fas fa-graduation-cap', 'label' => 'menu.study'],
-    ['route' => 'services.bike',     'icon' => 'fas fa-bicycle',        'label' => 'menu.bike'],
-];
-@endphp
-<div class="service-nav-strip" id="services-strip">
-    <div class="service-nav-strip__inner">
-        @foreach ($serviceNav as $nav)
-        <a href="{{ route($nav['route'], ['locale' => $locale]) }}" class="service-nav-strip__item">
-            <div class="service-nav-strip__icon"><i class="{{ $nav['icon'] }}"></i></div>
-            <span class="service-nav-strip__label">@lang($nav['label'])</span>
-        </a>
-        @endforeach
+@push('styles')
+<style>
+.needs-grid {
+    display:grid; grid-template-columns:1fr; gap:1.1rem; margin-top:2.5rem;
+}
+@media (min-width:640px)  { .needs-grid { grid-template-columns:repeat(2,1fr); } }
+@media (min-width:1024px) { .needs-grid { grid-template-columns:repeat(3,1fr); } }
+
+.needs-card {
+    display:flex; flex-direction:column;
+    background:#fff; border:1px solid var(--gray-200); border-radius:16px;
+    padding:1.75rem 1.5rem; text-decoration:none;
+    transition:transform .22s ease, box-shadow .22s ease, border-color .22s ease;
+}
+.needs-card:hover {
+    transform:translateY(-4px);
+    box-shadow:0 18px 40px rgba(42,25,103,.1);
+    border-color:transparent;
+}
+.needs-card__icon {
+    width:50px; height:50px; border-radius:13px;
+    background:rgba(38,130,38,.08); color:var(--accent);
+    display:flex; align-items:center; justify-content:center;
+    font-size:1.2rem; margin-bottom:1.1rem;
+    transition:background .22s ease, color .22s ease;
+}
+.needs-card:hover .needs-card__icon { background:var(--accent); color:#fff; }
+.needs-card__title {
+    font-family:'Playfair Display',serif; font-weight:700; color:var(--navy);
+    font-size:1.05rem; margin:0 0 .5rem; line-height:1.3;
+}
+.needs-card__text { font-size:.85rem; color:var(--gray-500); line-height:1.65; margin:0 0 1.1rem; flex:1; }
+.needs-card__cta {
+    font-size:.78rem; font-weight:800; color:var(--accent);
+    text-transform:uppercase; letter-spacing:.05em;
+    display:inline-flex; align-items:center; gap:.4rem;
+}
+.needs-card:hover .needs-card__cta { gap:.65rem; }
+</style>
+@endpush
+
+<section class="py-24" style="background:var(--cream);">
+    <div class="container">
+        <div class="text-center mb-4" style="max-width:640px;margin-left:auto;margin-right:auto;">
+            <div class="rule-label rule-label--center">{{ __('home.needs.sectagline') }}</div>
+            <h2 class="section-title">{{ __('home.needs.sectitle') }}</h2>
+            <p style="color:var(--gray-500);font-size:.95rem;">{{ __('home.needs.sectitle_sub') }}</p>
+        </div>
+
+        @php
+        $needsProfiles = [
+            ['key' => 'starter',      'route' => 'services.personal', 'icon' => 'fas fa-seedling'],
+            ['key' => 'student',      'route' => 'services.study',    'icon' => 'fas fa-graduation-cap'],
+            ['key' => 'buyer',        'route' => 'services.home',     'icon' => 'fas fa-key'],
+            ['key' => 'entrepreneur', 'route' => 'services.business', 'icon' => 'fas fa-briefcase'],
+            ['key' => 'driver',       'route' => 'services.auto',     'icon' => 'fas fa-car'],
+            ['key' => 'rider',        'route' => 'services.bike',     'icon' => 'fas fa-motorcycle'],
+        ];
+        @endphp
+        <div class="needs-grid">
+            @foreach ($needsProfiles as $i => $p)
+            <a href="{{ route($p['route'], ['locale' => $locale]) }}" class="needs-card wow fadeInUp"
+               data-wow-duration="700ms" data-wow-delay="{{ $i * 60 }}ms">
+                <div class="needs-card__icon"><i class="{{ $p['icon'] }}"></i></div>
+                <h3 class="needs-card__title">{{ __('home.needs.profiles.' . $p['key'] . '.title') }}</h3>
+                <p class="needs-card__text">{{ __('home.needs.profiles.' . $p['key'] . '.text') }}</p>
+                <span class="needs-card__cta">{{ __('home.needs.profiles.' . $p['key'] . '.cta') }} <i class="fas fa-arrow-right"></i></span>
+            </a>
+            @endforeach
+        </div>
     </div>
-</div>
+</section>
 
 {{-- ============================================================
      ABOUT
@@ -111,7 +168,7 @@ $serviceNav = [
     padding:.3rem .8rem; white-space:nowrap; flex-shrink:0;
     transition:border-color .25s ease, box-shadow .25s ease;
 }
-.about-partner-bar__name:hover { border-color:var(--accent); box-shadow:0 2px 10px rgba(6, 87, 164,.18); }
+.about-partner-bar__name:hover { border-color:var(--accent); box-shadow:0 2px 10px rgba(38, 130, 38,.18); }
 @media (prefers-reduced-motion: reduce) {
     }
 </style>
@@ -127,7 +184,7 @@ $serviceNav = [
                      pose plus de badge sur l'image. --}}
                 <div class="about-stack">
                     <img src="{{ asset('assets/images/refonte/bureaux-couloir.jpg') }}"
-                         alt="{{ __('home.about.sectitle') }}" class="about-stack__tall" loading="lazy">
+                         alt="{{ __('about.mission_title') }}" class="about-stack__tall" loading="lazy">
                     <img src="{{ asset('assets/images/refonte/bureaux-reunion.jpg') }}"
                          alt="" class="about-stack__wide" loading="lazy">
                 </div>
@@ -136,33 +193,33 @@ $serviceNav = [
             {{-- ── Contenu ── --}}
             <div class="col-lg-6 wow fadeInRight" data-wow-duration="1000ms" data-wow-delay="150ms">
 
-                <div class="rule-label">{{ __('home.about.sectagline') }}</div>
-                <h2 class="section-title">{{ __('home.about.sectitle') }}</h2>
+                <div class="rule-label">{{ __('about.mission_tagline') }}</div>
+                <h2 class="section-title">{{ __('about.mission_title') }}</h2>
 
                 <p style="color:var(--gray-500);font-size:.9375rem;line-height:1.8;margin-bottom:1.5rem;">
-                    {{ __('home.about.text2') }}
+                    {{ __('about.mission_p1') }}
                 </p>
 
-                {{-- 3 engagements clés --}}
+                {{-- Valeurs clés (alignées sur la page À propos) --}}
                 <div class="about-point">
-                    <div class="about-point__icon"><i class="fas fa-shield-alt"></i></div>
+                    <div class="about-point__icon"><i class="fas fa-balance-scale"></i></div>
                     <div>
-                        <div class="about-point__title">{{ __('home.about.engage1_title') }}</div>
-                        <p class="about-point__desc">{{ __('home.about.engage1_desc') }}</p>
+                        <div class="about-point__title">{{ __('about.value1_title') }}</div>
+                        <p class="about-point__desc">{{ __('about.value1_desc') }}</p>
                     </div>
                 </div>
                 <div class="about-point">
                     <div class="about-point__icon"><i class="fas fa-bolt"></i></div>
                     <div>
-                        <div class="about-point__title">{{ __('home.about.engage2_title') }}</div>
-                        <p class="about-point__desc">{{ __('home.about.engage2_desc') }}</p>
+                        <div class="about-point__title">{{ __('about.value2_title') }}</div>
+                        <p class="about-point__desc">{{ __('about.value2_desc') }}</p>
                     </div>
                 </div>
                 <div class="about-point">
-                    <div class="about-point__icon"><i class="fas fa-globe"></i></div>
+                    <div class="about-point__icon"><i class="fas fa-user-tie"></i></div>
                     <div>
-                        <div class="about-point__title">{{ __('home.about.engage3_title') }}</div>
-                        <p class="about-point__desc">{{ __('home.about.engage3_desc') }}</p>
+                        <div class="about-point__title">{{ __('about.value3_title') }}</div>
+                        <p class="about-point__desc">{{ __('about.value3_desc') }}</p>
                     </div>
                 </div>
 
@@ -281,11 +338,11 @@ $serviceNav = [
             <div class="col-lg-5 wow fadeInLeft" data-wow-duration="900ms">
                 <div class="rule-label" style="color:var(--accent);">{{ __('home.works.sectagline') }}</div>
                 <h2 class="section-title section-title--white">{{ __('home.loan_reasons.sectitle') }}</h2>
-                <p class="section-sub section-sub--white mb-8">{{ __('home.about.text2') }}</p>
+                <p class="section-sub section-sub--white mb-8">{{ __('about.mission_p1') }}</p>
 
                 @foreach ([1,2,3] as $r)
                 <div class="d-flex align-items-start gap-3 mb-4">
-                    <div style="width:36px;height:36px;background:rgba(6, 87, 164,.15);border-radius:50%;display:flex;align-items:center;justify-content:center;color:var(--accent);flex-shrink:0;">
+                    <div style="width:36px;height:36px;background:rgba(38, 130, 38,.15);border-radius:50%;display:flex;align-items:center;justify-content:center;color:var(--accent);flex-shrink:0;">
                         <i class="fas fa-check"></i>
                     </div>
                     <div>
@@ -326,7 +383,7 @@ $serviceNav = [
             ['8 500+',   __('home.customer_satisfaction_rate')],
             ['€500k',    __('home.total_loan_amount_granted')],
             ['48h',      __('home.average_approval_time')],
-            ['15+',      __('home.years_experience')],
+            ['8+',       __('home.years_experience')],
         ];
         @endphp
         <div class="figure-band__grid">
@@ -392,8 +449,8 @@ $serviceNav = [
     <div class="container">
         <div class="row align-items-center gutter-y-30">
             <div class="col-lg-7 wow fadeInLeft" data-wow-duration="900ms">
-                <div class="rule-label" style="color:var(--accent);">@lang('menu.newsletter_title')</div>
-                <h2 class="section-title section-title--white mb-0">@lang('home.loan_reasons.sectitle')</h2>
+                <div class="rule-label" style="color:var(--accent);">@lang('home.final_cta.tagline')</div>
+                <h2 class="section-title section-title--white mb-0">@lang('home.final_cta.title')</h2>
             </div>
             <div class="col-lg-5 text-lg-end wow fadeInRight" data-wow-duration="900ms" data-wow-delay="150ms">
                 <div class="d-flex flex-wrap justify-content-lg-end gap-3">
@@ -409,17 +466,25 @@ $serviceNav = [
 
         <hr style="border-color:rgba(255,255,255,.08);margin:3rem 0;">
 
-        <div class="row align-items-center gutter-y-20">
-            <div class="col-lg-4 wow fadeInLeft" data-wow-duration="900ms">
-                <p style="color:rgba(255,255,255,.6);font-size:.9375rem;margin:0;">@lang('menu.newsletter_title')</p>
+        <div class="d-flex flex-wrap justify-content-lg-end gap-4">
+            @if($siteContact->address_1)
+            <div class="d-flex align-items-center gap-2">
+                <i class="fas fa-map-marker-alt" style="color:var(--accent);font-size:.9rem;"></i>
+                <span style="color:rgba(255,255,255,.6);font-size:.875rem;">{{ $siteContact->address_1 }}</span>
             </div>
-            <div class="col-lg-8 text-lg-end wow fadeInRight" data-wow-duration="900ms" data-wow-delay="100ms">
-                <form action="{{ route('subscribe.send') }}" method="POST" class="newsletter-form d-inline-flex">
-                    @csrf
-                    <input type="email" name="email" placeholder="@lang('menu.email_placeholder')" required>
-                    <button type="submit" class="btn-primary">@lang('menu.subscribe')</button>
-                </form>
+            @endif
+            @if($siteContact->phone_1)
+            <div class="d-flex align-items-center gap-2">
+                <i class="fas fa-phone-alt" style="color:var(--accent);font-size:.9rem;"></i>
+                <a href="tel:{{ preg_replace('/[^\d+]/', '', $siteContact->phone_1) }}" style="color:rgba(255,255,255,.6);font-size:.875rem;">{{ $siteContact->phone_1 }}</a>
             </div>
+            @endif
+            @if($siteContact->email)
+            <div class="d-flex align-items-center gap-2">
+                <i class="fas fa-envelope" style="color:var(--accent);font-size:.9rem;"></i>
+                <a href="mailto:{{ $siteContact->email }}" style="color:rgba(255,255,255,.6);font-size:.875rem;">{{ $siteContact->email }}</a>
+            </div>
+            @endif
         </div>
     </div>
 </section>

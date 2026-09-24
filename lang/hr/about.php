@@ -1,46 +1,47 @@
 <?php
 
 return [
-    'banner_title' => 'Otkrijte ' . site_name(),
-    'banner_subtitle' => 'O nama',
-    'banner_description' => 'Posudite lakše uz fleksibilna rješenja zajma prilagođena vašim financijskim potrebama.',
+    // Hero / uvod
+    'hero_tagline' => 'naša priča',
+    'hero_title' => 'Internetska banka stvorena da bude brža od tradicionalnih banaka',
+    'hero_text' => 'Već 8 godina ' . site_name() . ' pomaže pojedincima i tvrtkama u ostvarenju njihovih financijskih projekata, vođeni jednostavnim uvjerenjem: dobivanje kredita nikada ne bi smjelo biti komplicirano.',
 
-    'section1_title' => 'Zašto odabrati ' . site_name(),
-    'section1_p1' => 'Mi u ' . site_name() . 'u čvrsto vjerujemo da svatko zaslužuje priliku ostvariti svoje financijske snove. Od svog osnutka, predani smo pružanju fleksibilnih i pristupačnih rješenja za kreditiranje kako bismo zadovoljili različite potrebe naših klijenata. Bilo da želite financirati osobni projekt, kupiti automobil ili proširiti svoje poslovanje, mi imamo kredit koji vam je potreban.',
-    'section1_p2' => 'Naše usluge osmišljene su za pružanje iskustva bez muke, uz brz i jednostavan proces prijave. Shvaćamo da je svaki klijent jedinstven, stoga nudimo personalizirane kredite koji se prilagođavaju vašim specifičnim potrebama. Osim toga, naši posvećeni savjetnici uvijek su tu da vas vode na svakom koraku, osiguravajući da imate punu podršku od početka do kraja.',
-    'proposed' => 'Mi predlažemo:',
-    'check1' => 'Personalizirani zajmovi prema vašim specifičnim potrebama.',
-    'check2' => 'Posvećeni savjetnici koji će vam pomoći na svakom koraku.',
-    'check3' => 'Fleksibilni uvjeti otplate koji odgovaraju vašoj financijskoj situaciji',
-    'check4' => 'Zajmovi bez da imate plaću.',
-    'section1_p3' => 'Naša misija u ' . site_name() . 'u je pomoći vam da postignete svoje financijske ciljeve s kreditnim rješenjima po mjeri. Pridružite nam se danas i saznajte kako vam možemo pomoći da svoje projekte ostvarite.',
-    'btn' => 'Pronađite svoj idealan zajam',
+    // Misija / povijest
+    'mission_tagline' => 'naša misija',
+    'mission_title' => 'Kredit jednostavan, brz i dostupan',
+    'mission_p1' => site_name() . ' je nastao iz frustracije koju dijele tisuće korisnika kredita: tradicionalni postupci odobravanja kredita su spori, nejasni i često obeshrabrujući. Dolasci u poslovnicu, papirnata dokumentacija, tjedni čekanja na odgovor... htjeli smo izgraditi alternativu osmišljenu u potpunosti za klijenta.',
+    'mission_p2' => 'Danas svake godine pomažemo tisućama klijenata diljem Europe u financiranju njihovih osobnih, stambenih, poslovnih i automobilskih projekata. Naša internetska platforma omogućuje podnošenje zahtjeva od početka do kraja od kuće, s odgovorom u roku od 48 sati i posebnim savjetnikom u svakom koraku.',
+
+    // Vrijednosti
+    'values_tagline' => 'naše vrijednosti',
+    'values_title' => 'Što vodi svaku našu odluku',
+    'value1_title' => 'Transparentnost',
+    'value1_desc' => 'Kamate, naknade i uvjeti jasno se priopćavaju prije bilo kakvog potpisa. Bez neugodnih iznenađenja, bez skrivenih klauzula.',
+    'value2_title' => 'Brzina',
+    'value2_desc' => '100 % online zahtjev, odluka u roku od 48 sati i brza isplata sredstava čim se ugovor potpiše.',
+    'value3_title' => 'Ljudska podrška',
+    'value3_desc' => 'Iza svakog dosjea stoji poseban savjetnik dostupan za sva pitanja, od prvog kontakta do konačne otplate.',
+    'value4_title' => 'Sigurnost',
+    'value4_desc' => 'Certificirana kreditna institucija koja posluje u skladu s europskim standardima. Vaši podaci i dosje zaštićeni su u svakom koraku.',
+
+    // Naš pristup / kako radimo
+    'approach_tagline' => 'naš pristup',
+    'approach_title' => 'Kako radimo',
+    'approach1_title' => 'Slušamo prije nego što predložimo',
+    'approach1_desc' => 'Svaki projekt je jedinstven: uzimamo si vremena razumjeti vašu situaciju prije nego vas usmjerimo prema najprikladnijem rješenju.',
+    'approach2_title' => 'Pojednostavljujemo svaki korak',
+    'approach2_desc' => 'Simulacija, dosje, potpis i praćenje: sve se odvija online, bez papirologije i nepotrebnih odlazaka.',
+    'approach3_title' => 'Ostajemo uz vas i nakon odobrenja kredita',
+    'approach3_desc' => 'Naš odnos ne prestaje potpisom: naša korisnička podrška ostaje dostupna tijekom cijelog razdoblja otplate.',
+
+    // Traka sa statistikom (preuzeto s početne stranice, u kontekstu "o nama")
+    'stats_tagline' => 'u brojkama',
+    'stats_title' => site_name() . ' danas',
+
+    // Završni CTA
+    'cta_tagline' => 'krenite u akciju',
+    'cta_title' => 'Spremni započeti svoj projekt s nama?',
+    'cta_text' => 'Simulirajte svoj kredit za nekoliko minuta i primite personalizirani odgovor u roku od 48 sati.',
 
     'faq_title' => 'Često postavljana pitanja',
-    'faq_description' => 'Pronađite odgovore na najčešća pitanja o našim kreditnim uslugama.',
-    'acc_1' => 'Koje vrste kredita nudite?',
-    'acc_1_desc' => 'Nudimo razne zajmove, uključujući osobne zajmove, zajmove
-    hipoteke, auto krediti i krediti za mala poduzeća. Svaki
-    vrsta kredita je dizajnirana da zadovolji specifične potrebe i ponude
-    fleksibilni uvjeti.',
-    'acc_2' => 'Kako se mogu prijaviti za kredit?',
-    'acc_2_desc' => 'Možete podnijeti zahtjev za zajam izravno na našoj web stranici do
-    ispunjavanje online obrasca za prijavu. Tražit ćemo od vas
-    osnovne podatke kao što su vaše ime, podaci za kontakt i iznos
-    željeni zajam. Naši savjetnici će vas kontaktirati kako bi finalizirali zahtjev i
-    voditi vas kroz proces.',
-    'acc_3' => 'Koji su kriteriji prihvatljivosti za zajam?',
-    'acc_3_desc' => 'Kriteriji prihvatljivosti razlikuju se ovisno o vrsti kredita, ali općenito,
-    mora biti punoljetan, imati stabilan prihod i dobar kreditni rezultat. Mi
-    Također ćemo ispitati vašu sposobnost otplate i vašu povijest
-    financijski.',
-    'acc_4' => 'Koje je vrijeme obrade zahtjeva za kredit?',
-    'acc_4_desc' => ' Vrijeme obrade varira ovisno o vrsti kredita i složenosti vašeg
-    zahtjev. Općenito, zahtjevi za osobni zajam obrađuju se u roku od 24 do 48
-    sati, dok hipoteke mogu trajati nekoliko dana
-    razlog za potrebne dublje provjere.',
-    'acc_5' => 'Mogu li prijevremeno otplatiti svoj kredit?',
-    'acc_5_desc' => 'Da, možete prijevremeno otplatiti svoj kredit bez penala. Mi ti
-    Potičemo vas da što prije otplatite zajam jer ćete tako smanjiti
-    ukupni iznos kamata koje ćete platiti tijekom trajanja kredita.',
 ];

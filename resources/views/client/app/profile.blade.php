@@ -21,7 +21,7 @@
 
 {{-- Balance rapide --}}
 <a href="{{ route('client.app.movements') }}" style="text-decoration:none;display:block;margin:0 1.25rem .875rem">
-<div style="background:linear-gradient(135deg,#1B4976,#0D2E52);border-radius:var(--ca-radius-md);padding:1rem 1.25rem;border:1px solid rgba(255,255,255,.08);display:flex;align-items:center;justify-content:space-between">
+<div style="background:linear-gradient(135deg,#1A1040,#110A29);border-radius:var(--ca-radius-md);padding:1rem 1.25rem;border:1px solid rgba(255,255,255,.08);display:flex;align-items:center;justify-content:space-between">
   <div>
     <div style="font-size:.65rem;color:rgba(255,255,255,.45);text-transform:uppercase;letter-spacing:.07em;margin-bottom:.25rem">{{ __('app.balance') }}</div>
     <div style="font-family:'Space Grotesk',sans-serif;font-size:1.5rem;font-weight:800;color:#fff">
@@ -49,7 +49,7 @@
       <div class="ca-settings-item__right"><i class="fas fa-chevron-right"></i></div>
     </div>
     <a href="{{ route('client.app.payment-methods') }}" class="ca-settings-item" style="text-decoration:none">
-      <div class="ca-settings-item__icon" style="background:rgba(129, 182, 233,.18);color:var(--ca-accent-l)">
+      <div class="ca-settings-item__icon" style="background:rgba(101, 220, 80,.18);color:var(--ca-accent-l)">
         <i class="fas fa-credit-card"></i>
       </div>
       <div class="ca-settings-item__text">
@@ -76,7 +76,7 @@
       <div class="ca-settings-item__right"><i class="fas fa-chevron-right"></i></div>
     </a>
     <a href="{{ route('client.app.profile.password') }}" class="ca-settings-item" style="text-decoration:none">
-      <div class="ca-settings-item__icon" style="background:rgba(129, 182, 233,.18);color:var(--ca-accent-l)">
+      <div class="ca-settings-item__icon" style="background:rgba(101, 220, 80,.18);color:var(--ca-accent-l)">
         <i class="fas fa-lock"></i>
       </div>
       <div class="ca-settings-item__text">

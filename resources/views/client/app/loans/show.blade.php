@@ -28,7 +28,7 @@
 /* ── Hero ── */
 .ds-hero{
   margin:.75rem 1.25rem 0;
-  background:linear-gradient(145deg,#1B4976,#0D2E52);
+  background:linear-gradient(145deg,#1A1040,#110A29);
   border-radius:20px;padding:1.5rem;
   position:relative;overflow:hidden;
   box-shadow:0 12px 32px rgba(0,0,0,.4);
@@ -52,7 +52,7 @@
   border:1px solid rgba(255,255,255,.12);
   color:rgba(255,255,255,.7);
 }
-.ds-hero__pill--accent{background:rgba(129, 182, 233,.15);border-color:rgba(129, 182, 233,.3);color:#81B6E9}
+.ds-hero__pill--accent{background:rgba(101, 220, 80,.15);border-color:rgba(101, 220, 80,.3);color:#65DC50}
 
 /* ── Alert ── */
 .ds-alert{
@@ -102,16 +102,16 @@
   background:var(--ca-bg3);border:1.5px solid var(--ca-border);
   color:var(--ca-text-3);
 }
-.ds-step.done .ds-step__dot{background:rgba(129, 182, 233,.15);border-color:var(--ca-accent-l);color:var(--ca-accent-l)}
-.ds-step.current .ds-step__dot{background:var(--ca-accent-l);border-color:var(--ca-accent-l);color:#fff;box-shadow:0 0 12px rgba(129, 182, 233,.35)}
+.ds-step.done .ds-step__dot{background:rgba(101, 220, 80,.15);border-color:var(--ca-accent-l);color:var(--ca-accent-l)}
+.ds-step.current .ds-step__dot{background:var(--ca-accent-l);border-color:var(--ca-accent-l);color:#fff;box-shadow:0 0 12px rgba(101, 220, 80,.35)}
 .ds-step:not(:last-child).done::after{background:var(--ca-accent-l);opacity:.4}
 .ds-step__info{padding-top:.4rem}
 .ds-step__label{font-size:.825rem;font-weight:600;color:var(--ca-text-3)}
 .ds-step.done    .ds-step__label{color:var(--ca-text-2)}
 .ds-step.current .ds-step__label{color:var(--ca-text);font-weight:700}
 .ds-step__tag{display:inline-block;font-size:.6rem;padding:.1rem .5rem;border-radius:999px;margin-top:.25rem;font-weight:700}
-.ds-step__tag--done{background:rgba(129, 182, 233,.12);color:var(--ca-accent-l)}
-.ds-step__tag--cur {background:rgba(129, 182, 233,.2);color:var(--ca-accent-l)}
+.ds-step__tag--done{background:rgba(101, 220, 80,.12);color:var(--ca-accent-l)}
+.ds-step__tag--cur {background:rgba(101, 220, 80,.2);color:var(--ca-accent-l)}
 
 /* ── Detail card ── */
 .ds-detail{background:var(--ca-bg2);border:1px solid var(--ca-border);border-radius:18px;margin:0 1.25rem;overflow:hidden}

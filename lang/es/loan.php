@@ -37,6 +37,9 @@ return [
     'placeholder_objet' => 'Describe brevemente el propósito de tu préstamo',
     'button' => 'Enviar mi solicitud',
     'button_sending' => 'Enviando…',
+    'service_benefits_title' => 'Por qué elegir esta oferta',
+    'service_related_title'  => 'Descubra también nuestras otras soluciones',
+    'service_related_sub'    => '¿Tiene otro proyecto en mente? Seguro que tenemos la solución adecuada.',
 
     'quote_title'    => 'Su presupuesto estimado',
     'quote_monthly'  => 'Cuota mensual estimada',
@@ -209,7 +212,37 @@ return [
                 'answer3' => 'Los términos de pago varían, pero muchos préstamos para estudios ofrecen opciones de pago diferido, permitiéndote comenzar el pago después de completar tus estudios.'
             ]
         ]
-    ]
+    ],
 
+    'general_faqs' => [
+        'question1' => '¿Qué tasa de interés se aplica a mi préstamo?',
+        'answer1' => 'La tasa depende del importe solicitado, del plazo elegido y de tu perfil (ingresos, situación laboral, historial crediticio). Tras la simulación, recibirás una oferta personalizada antes de asumir cualquier compromiso, sin coste alguno y sin afectar a tu historial.',
+        'question2' => '¿Cuál es el importe máximo que puedo solicitar?',
+        'answer2' => 'Según el tipo de préstamo y tu capacidad de reembolso, ' . site_name() . ' financia proyectos de hasta 5.000.000 € (o el equivalente en tu moneda). El importe exacto ofrecido dependerá del estudio de tu solicitud.',
+        'question3' => '¿Para qué puedo utilizar mi préstamo?',
+        'answer3' => 'Decides libremente el destino de tu préstamo personal: una compra, reformas, un viaje, un imprevisto... Para un proyecto concreto (vivienda, coche, estudios, empresa), nuestras ofertas específicas ofrecen condiciones mejor adaptadas: no dudes en comparar nuestros diferentes productos.',
+        'question4' => '¿Quién puede solicitar un préstamo con ' . site_name() . '?',
+        'answer4' => 'Cualquier persona mayor de edad con ingresos regulares y un documento de identidad válido puede presentar su solicitud en línea. La concesión final depende del análisis de tu situación financiera y de tu capacidad de reembolso.',
+        'question5' => '¿Cuánto tiempo tarda en recibirse el dinero?',
+        'answer5' => 'Una vez aprobada tu solicitud y firmado el contrato electrónicamente, los fondos suelen transferirse a tu cuenta en un plazo de 48 horas hábiles.',
+        'question6' => '¿Puedo hacer amortizaciones anticipadas parciales?',
+        'answer6' => 'Sí, puedes amortizar tu préstamo total o parcialmente por adelantado en cualquier momento, sin comisiones ocultas. Una amortización anticipada reduce el plazo restante o el importe de las siguientes cuotas.',
+        'question7' => '¿Puedo liquidar mi préstamo antes de que finalice el contrato?',
+        'answer7' => 'Sí, la amortización anticipada total es posible en cualquier momento con una simple solicitud. Ponte en contacto con nuestro servicio de atención al cliente para conocer el importe exacto a liquidar en la fecha que elijas.',
+        'question8' => '¿Qué documentos debo aportar para mi solicitud en línea?',
+        'answer8' => 'Un documento de identidad válido, un justificante de ingresos y, según el tipo de préstamo, algunos documentos adicionales (justificante de domicilio, extracto bancario...). La lista exacta se te comunicará tras la simulación.',
+        'question9' => '¿Cómo envío mis documentos en una solicitud en línea?',
+        'answer9' => 'Puedes subir tus documentos directamente (PDF, JPEG o PNG) desde el área de solicitud en línea, con total seguridad. No es necesario ningún envío postal ni visita a una oficina.',
+        'question10' => '¿La tasa anunciada incluye todos los gastos?',
+        'answer10' => 'Tus cuotas cubren el capital solicitado y los intereses. No se aplican gastos adicionales durante la vida del préstamo, salvo el seguro opcional que hayas podido contratar.',
+        'question11' => '¿Puedo solicitar un préstamo si ya tengo otro crédito en curso?',
+        'answer11' => 'Tener un crédito activo no impide automáticamente la concesión de un nuevo préstamo: lo importante es tu capacidad para asumir el conjunto de tus cuotas. También puede estudiarse una unificación de deudas para simplificar tu presupuesto.',
+        'question12' => '¿Puedo tener varios préstamos activos con ' . site_name() . '?',
+        'answer12' => 'Sí, siempre que dispongas de suficiente renta neta disponible y mantengas tus cuentas en buen estado. Cada nueva solicitud se estudia de forma independiente en función de tu situación global.',
+        'question13' => '¿Qué ocurre si no puedo pagar una cuota?',
+        'answer13' => 'Ponte en contacto con nuestro servicio de atención al cliente lo antes posible: puede estudiarse un aplazamiento del pago o una reestructuración de tu préstamo. Cuanto antes nos avises, más soluciones estarán disponibles.',
+        'question14' => '¿Puedo asegurar mi préstamo?',
+        'answer14' => 'Un seguro de prestatario opcional puede cubrir tus cuotas en caso de pérdida de empleo, incapacidad o fallecimiento, protegiendo así a tu familia. No es obligatorio para obtener el préstamo y puede añadirse en cualquier momento.',
+    ],
 
 ];

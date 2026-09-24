@@ -1,31 +1,47 @@
 <?php
 
 return [
-    'banner_title' => 'Odkryj ' . site_name(),
-    'banner_subtitle' => 'O nas',
-    'banner_description' => 'Pożyczaj łatwiej dzięki elastycznym rozwiązaniom kredytowym dostosowanym do Twoich potrzeb finansowych.',
+    // Hero / wprowadzenie
+    'hero_tagline' => 'nasza historia',
+    'hero_title' => 'Bank internetowy stworzony, by działać szybciej niż tradycyjne banki',
+    'hero_text' => 'Od 8 lat ' . site_name() . ' pomaga osobom prywatnym i firmom realizować projekty finansowe, kierując się jedną prostą zasadą: uzyskanie pożyczki nigdy nie powinno być skomplikowane.',
 
-    'section1_title' => 'Dlaczego warto wybrać ' . site_name(),
-    'section1_p1' => 'W ' . site_name() . ' wierzymy, że każdy zasługuje na szansę realizacji swoich marzeń finansowych. Od początku naszej działalności jesteśmy zaangażowani w dostarczanie elastycznych i dostępnych rozwiązań kredytowych spełniających różnorodne potrzeby naszych klientów. Niezależnie od tego, czy chcesz sfinansować projekt osobisty, kupić samochód, czy rozwinąć firmę, mamy kredyt dla Ciebie.',
-    'section1_p2' => 'Nasze usługi są zaprojektowane tak, aby zapewnić bezproblemowe doświadczenie, z szybkim i łatwym procesem aplikacji. Rozumiemy, że każdy klient jest wyjątkowy, dlatego oferujemy spersonalizowane kredyty dostosowane do Twoich konkretnych potrzeb. Ponadto nasi dedykowani doradcy są zawsze dostępni, aby prowadzić Cię na każdym kroku.',
-    'proposed' => 'Oferujemy:',
-    'check1' => 'Spersonalizowane kredyty dopasowane do Twoich potrzeb.',
-    'check2' => 'Dedykowani doradcy na każdym etapie procesu.',
-    'check3' => 'Elastyczne warunki spłaty dostosowane do Twojej sytuacji finansowej.',
-    'check4' => 'Kredyty bez konieczności posiadania zaświadczenia o zarobkach.',
-    'section1_p3' => 'W ' . site_name() . ' naszą misją jest pomoc w osiąganiu celów finansowych dzięki rozwiązaniom kredytowym szytym na miarę. Dołącz do nas i dowiedz się, jak możemy pomóc Ci zrealizować Twoje projekty.',
-    'btn' => 'Znajdź idealny kredyt',
+    // Misja / historia
+    'mission_tagline' => 'nasza misja',
+    'mission_title' => 'Sprawiamy, że kredyt jest prosty, szybki i dostępny',
+    'mission_p1' => site_name() . ' powstał z frustracji podzielanej przez tysiące pożyczkobiorców: tradycyjne procedury kredytowe są powolne, nieprzejrzyste i często zniechęcające. Wizyty w oddziale, papierowa dokumentacja, tygodnie oczekiwania na odpowiedź... postanowiliśmy stworzyć alternatywę zaprojektowaną w pełni z myślą o kliencie.',
+    'mission_p2' => 'Dziś każdego roku pomagamy tysiącom klientów w całej Europie finansować ich projekty osobiste, mieszkaniowe, biznesowe i samochodowe. Nasza platforma online umożliwia złożenie wniosku od początku do końca z domu, z odpowiedzią w ciągu 48 godzin i dedykowanym opiekunem na każdym etapie.',
+
+    // Wartości
+    'values_tagline' => 'nasze wartości',
+    'values_title' => 'Co kieruje każdą naszą decyzją',
+    'value1_title' => 'Przejrzystość',
+    'value1_desc' => 'Oprocentowanie, opłaty i warunki są jasno przedstawiane przed podpisaniem umowy. Żadnych niemiłych niespodzianek, żadnych ukrytych klauzul.',
+    'value2_title' => 'Szybkość',
+    'value2_desc' => 'Wniosek w 100% online, decyzja w ciągu 48 godzin i szybka wypłata środków zaraz po podpisaniu umowy.',
+    'value3_title' => 'Wsparcie ludzi',
+    'value3_desc' => 'Za każdym wnioskiem stoi dedykowany doradca dostępny na pytania, od pierwszego kontaktu aż po spłatę.',
+    'value4_title' => 'Bezpieczeństwo',
+    'value4_desc' => 'Certyfikowana instytucja kredytowa działająca zgodnie z normami europejskimi. Twoje dane i wniosek są chronione na każdym etapie.',
+
+    // Nasze podejście / jak pracujemy
+    'approach_tagline' => 'nasze podejście',
+    'approach_title' => 'Jak pracujemy',
+    'approach1_title' => 'Najpierw słuchamy, potem proponujemy',
+    'approach1_desc' => 'Każdy projekt jest inny: poświęcamy czas, by zrozumieć Twoją sytuację, zanim zaproponujemy najbardziej odpowiednie rozwiązanie.',
+    'approach2_title' => 'Upraszczamy każdy etap',
+    'approach2_desc' => 'Symulacja, wniosek, podpis i śledzenie sprawy: wszystko odbywa się online, bez papierologii i zbędnych wizyt.',
+    'approach3_title' => 'Pozostajemy przy Tobie po udzieleniu pożyczki',
+    'approach3_desc' => 'Nasza relacja nie kończy się na podpisaniu umowy: nasze biuro obsługi klienta pozostaje dostępne przez cały okres spłaty.',
+
+    // Pasek statystyk (z zakładki „O nas")
+    'stats_tagline' => 'w liczbach',
+    'stats_title' => site_name() . ' dzisiaj',
+
+    // CTA końcowe
+    'cta_tagline' => 'przejdź do działania',
+    'cta_title' => 'Gotowy, by rozpocząć swój projekt z nami?',
+    'cta_text' => 'Zasymuluj swoją pożyczkę w kilka minut i otrzymaj spersonalizowaną odpowiedź w ciągu 48 godzin.',
 
     'faq_title' => 'Często zadawane pytania',
-    'faq_description' => 'Znajdź odpowiedzi na najczęstsze pytania dotyczące naszych usług kredytowych.',
-    'acc_1' => 'Jakie rodzaje kredytów oferujecie?',
-    'acc_1_desc' => 'Oferujemy różnorodne kredyty, w tym kredyty osobiste, hipoteczne, samochodowe oraz dla małych firm. Każdy rodzaj kredytu jest zaprojektowany tak, aby spełniać określone potrzeby i oferuje elastyczne warunki.',
-    'acc_2' => 'Jak mogę złożyć wniosek o kredyt?',
-    'acc_2_desc' => 'Wniosek o kredyt możesz złożyć bezpośrednio na naszej stronie internetowej, wypełniając formularz online. Nasi doradcy skontaktują się z Tobą, aby sfinalizować wniosek i przeprowadzić Cię przez cały proces.',
-    'acc_3' => 'Jakie są kryteria kwalifikacji do kredytu?',
-    'acc_3_desc' => 'Kryteria kwalifikacji różnią się w zależności od rodzaju kredytu, ale ogólnie musisz być pełnoletni, mieć stały dochód i dobrą zdolność kredytową. Ocenimy również Twoją zdolność do spłaty i historię finansową.',
-    'acc_4' => 'Jaki jest czas rozpatrzenia wniosku kredytowego?',
-    'acc_4_desc' => 'Czas rozpatrzenia zależy od rodzaju kredytu i złożoności wniosku. Generalnie wnioski o kredyt osobisty są rozpatrywane w ciągu 24–48 godzin, podczas gdy kredyty hipoteczne mogą wymagać kilku dni ze względu na bardziej szczegółowe weryfikacje.',
-    'acc_5' => 'Czy mogę spłacić kredyt wcześniej?',
-    'acc_5_desc' => 'Tak, możesz spłacić kredyt wcześniej bez żadnych kar. Zachęcamy do wcześniejszej spłaty, jeśli to możliwe, ponieważ zmniejszy to całkowitą kwotę odsetek, które zapłacisz przez cały okres kredytowania.',
 ];

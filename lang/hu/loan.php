@@ -37,6 +37,9 @@ return [
     'placeholder_objet' => 'Írd le röviden a kölcsön célját',
     'button' => 'Küldje el kérését',
     'button_sending' => 'Küldés…',
+    'service_benefits_title' => 'Miért érdemes ezt az ajánlatot választani',
+    'service_related_title'  => 'Fedezze fel további megoldásainkat is',
+    'service_related_sub'    => 'Más projektje van? Biztosan van Önnek megfelelő megoldásunk.',
 
     'quote_title'    => 'Az Ön becsült ajánlata',
     'quote_monthly'  => 'Becsült havi törlesztőrészlet',
@@ -207,6 +210,37 @@ return [
                 'answer3' => 'A törlesztési feltételek változnak, de sok tanulmányi kölcsön halasztott törlesztési lehetőséget kínál, lehetővé téve a törlesztés megkezdését a tanulmányok befejezése után.',
             ]
         ]
+    ],
+
+    'general_faqs' => [
+        'question1' => 'Milyen kamatláb vonatkozik a kölcsönömre?',
+        'answer1' => 'A kamatláb a felvett összegtől, a választott futamidőtől és az Ön profiljától (jövedelem, foglalkoztatási helyzet, hiteltörténet) függ. A szimuláció után személyre szabott ajánlatot kap, bármilyen kötelezettségvállalás előtt, díjmentesen és az adatai befolyásolása nélkül.',
+        'question2' => 'Mekkora a maximálisan felvehető összeg?',
+        'answer2' => 'A kölcsön típusától és a törlesztési képességétől függően a(z) ' . site_name() . ' akár 5 000 000 € (vagy az ennek megfelelő összeg az Ön pénznemében) összegű projekteket finanszíroz. A pontos felajánlott összeg az igénylés elbírálásától függ.',
+        'question3' => 'Mire használhatom fel a kölcsönömet?',
+        'answer3' => 'Szabadon eldöntheti, mire használja fel személyi kölcsönét: vásárlás, felújítás, utazás, váratlan kiadás... Konkrét célra (ingatlan, autó, tanulmányok, vállalkozás) a célzott ajánlataink jobban igazodó feltételeket kínálnak: érdemes összehasonlítania termékeinket.',
+        'question4' => 'Ki igényelhet kölcsönt a(z) ' . site_name() . 'nál?',
+        'answer4' => 'Bármely nagykorú személy, akinek rendszeres jövedelme és érvényes személyazonosító okmánya van, online nyújthatja be igénylését. A végső jóváhagyás az Ön pénzügyi helyzetének és törlesztési képességének elemzésétől függ.',
+        'question5' => 'Mennyi idő alatt kapom meg az összeget?',
+        'answer5' => 'Miután az igénylését jóváhagyták és a szerződést elektronikusan aláírta, az összeget általában 48 munkaórán belül átutalják a számlájára.',
+        'question6' => 'Teljesíthetek előtörlesztést?',
+        'answer6' => 'Igen, kölcsönét bármikor részben vagy egészben előtörlesztheti, rejtett díjak nélkül. Az előtörlesztés csökkenti a hátralévő futamidőt vagy a következő törlesztőrészletek összegét.',
+        'question7' => 'A szerződés lejárta előtt teljes egészében kifizethetem a kölcsönömet?',
+        'answer7' => 'Igen, a teljes előtörlesztés bármikor lehetséges egyszerű kérelem alapján. Vegye fel a kapcsolatot ügyfélszolgálatunkkal a választott időpontra vonatkozó pontos visszafizetendő egyenleg megismeréséhez.',
+        'question8' => 'Milyen dokumentumokat kell benyújtanom az online igényléshez?',
+        'answer8' => 'Érvényes személyazonosító okmányt, jövedelemigazolást, és a kölcsön típusától függően néhány kiegészítő dokumentumot (lakcímigazolás, bankszámlakivonat...). A pontos listát a szimuláció után közöljük Önnel.',
+        'question9' => 'Hogyan küldhetem el a dokumentumaimat online igénylés során?',
+        'answer9' => 'Dokumentumait (PDF, JPEG vagy PNG formátumban) közvetlenül és biztonságosan feltöltheti az online igénylési felületen. Postai küldeményre vagy fiókban tett látogatásra nincs szükség.',
+        'question10' => 'A meghirdetett kamatláb tartalmaz minden költséget?',
+        'answer10' => 'A törlesztőrészletei a felvett tőkét és a kamatokat fedezik. A kölcsön futamideje alatt nincs további költség, kivéve az esetlegesen kötött önkéntes biztosítást.',
+        'question11' => 'Igényelhetek kölcsönt, ha máshol már van folyamatban lévő hitelem?',
+        'answer11' => 'A meglévő hitel önmagában nem zárja ki egy új kölcsön jóváhagyását: a lényeg az, hogy képes legyen teljesíteni az összes törlesztőrészletét. Fontolóra vehető a hitelkiváltás is a költségvetés egyszerűsítése érdekében.',
+        'question12' => 'Lehet egyszerre több kölcsönöm is a(z) ' . site_name() . 'nál?',
+        'answer12' => 'Igen, amennyiben elegendő rendelkezésre álló nettó jövedelemmel rendelkezik, és számlái rendben vannak. Minden új igénylést az Ön teljes helyzetének független elbírálása alapján bírálunk el.',
+        'question13' => 'Mi történik, ha nem tudok fizetni egy törlesztőrészletet?',
+        'answer13' => 'Vegye fel a kapcsolatot ügyfélszolgálatunkkal amint lehetséges: fizetési halasztás vagy a kölcsön átütemezése is mérlegelhető. Minél korábban jelentkezik, annál több megoldás áll rendelkezésre.',
+        'question14' => 'Biztosíthatom a kölcsönömet?',
+        'answer14' => 'Az opcionális hitelfedezeti biztosítás fedezheti törlesztőrészleteit munkahely elvesztése, munkaképtelenség vagy elhalálozás esetén, hogy megvédje családját. Nem kötelező a kölcsön megszerzéséhez, és bármikor hozzáadható.',
     ],
 
 ];

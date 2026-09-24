@@ -1,46 +1,47 @@
 <?php
 
 return [
-    'banner_title' => 'Fedezze fel a Solberg Grupót',
-    'banner_subtitle' => 'Rólunk',
-    'banner_description' => 'A pénzügyi igényeihez igazodó rugalmas hitelmegoldások segítségével könnyebben felvehet kölcsönt.',
+    // Hero / bevezető
+    'hero_tagline' => 'a történetünk',
+    'hero_title' => 'Egy online bank, amely gyorsabb, mint a hagyományos bankok',
+    'hero_text' => 'A ' . site_name() . ' 8 éve segíti magánszemélyek és vállalkozások finanszírozási terveinek megvalósítását, egyetlen egyszerű meggyőződés jegyében: hitelt felvenni sosem szabadna bonyolultnak lennie.',
 
-    'section1_title' => 'Miért válassza a Solberg Grupót?',
-    'section1_p1' => 'A Solberg Grupónál szilárdan hiszünk abban, hogy mindenki megérdemel egy esélyt pénzügyi álmai megvalósítására. Megalakulásunk óta elkötelezettek vagyunk a rugalmas és elérhető hitelezési megoldások mellett, ügyfeleink sokrétű igényeinek kielégítésére. Akár személyes projektet szeretne finanszírozni, akár autót szeretne vásárolni, akár bővíteni szeretné vállalkozását, nálunk megtalálja a szükséges kölcsönt.',
-    'section1_p2' => 'Szolgáltatásainkat úgy alakítottuk ki, hogy problémamentes élményt nyújtsanak, gyors és egyszerű jelentkezési folyamattal. Tisztában vagyunk vele, hogy minden ügyfél egyedi, ezért kínálunk személyre szabott hiteleket, amelyek alkalmazkodnak az Ön egyedi igényeihez. Emellett elkötelezett tanácsadóink mindig készen állnak, hogy végigvezetik Önt az út minden lépésében, biztosítva, hogy az elejétől a végéig teljes körű támogatást kapjon.',
-    'proposed' => 'Javaslatunk:',
-    'check1' => 'Személyre szabott kölcsönök az Ön egyedi igényei szerint.',
-    'check2' => 'Elkötelezett tanácsadók segítenek minden lépésben.',
-    'check3' => 'Rugalmas visszafizetési feltételek az Ön pénzügyi helyzetének megfelelően',
-    'check4' => 'Kölcsönek fizetés nélkül.',
-    'section1_p3' => 'A Solberg Grupónál küldetésünk, hogy személyre szabott hitelmegoldásokkal segítsük pénzügyi céljai elérésében. Csatlakozzon hozzánk még ma, és megtudja, hogyan segíthetünk projektjei megvalósításában.',
-    'btn' => 'Találja meg ideális kölcsönét',
+    // Küldetés / történet
+    'mission_tagline' => 'a küldetésünk',
+    'mission_title' => 'Egyszerűvé, gyorssá és elérhetővé tesszük a hitelt',
+    'mission_p1' => 'A ' . site_name() . ' egy sok ezer hiteligénylő által megélt csalódásból született: a hagyományos hitelügyintézés lassú, átláthatatlan és sokszor kedvét szegi az embernek. Fiókban töltött idő, papíralapú dossziék, hetekig tartó várakozás a válaszra... mi egy teljesen az ügyfél köré épített alternatívát akartunk létrehozni.',
+    'mission_p2' => 'Ma évente több ezer ügyfélnek segítünk Európa-szerte a személyes, ingatlan-, vállalkozási és autós projektjeik finanszírozásában. Online platformunkon az igénylés elejétől a végéig otthonról intézhető, 48 órán belüli válasszal és minden lépésnél egy dedikált kapcsolattartóval.',
+
+    // Értékeink
+    'values_tagline' => 'az értékeink',
+    'values_title' => 'Ami minden döntésünket vezérli',
+    'value1_title' => 'Átláthatóság',
+    'value1_desc' => 'A kamatokat, díjakat és feltételeket minden aláírás előtt világosan közöljük. Semmi kellemetlen meglepetés, semmi elrejtett kikötés.',
+    'value2_title' => 'Gyorsaság',
+    'value2_desc' => '100%-ban online igénylés, 48 órán belüli döntés, és a szerződés aláírása után gyorsan folyósított összeg.',
+    'value3_title' => 'Személyes támogatás',
+    'value3_desc' => 'Minden ügy mögött egy dedikált tanácsadó áll, aki a kérdéseivel elérhető az első kapcsolatfelvételtől egészen a törlesztés végéig.',
+    'value4_title' => 'Biztonság',
+    'value4_desc' => 'Tanúsított hitelintézet, amely az európai szabványoknak megfelelően működik. Az Ön adatait és ügyét minden lépésnél védjük.',
+
+    // A megközelítésünk / hogyan dolgozunk
+    'approach_tagline' => 'a megközelítésünk',
+    'approach_title' => 'Hogyan dolgozunk',
+    'approach1_title' => 'Meghallgatjuk Önt, mielőtt javaslatot teszünk',
+    'approach1_desc' => 'Minden projekt egyedi: időt szánunk arra, hogy megértsük az Ön helyzetét, mielőtt a legmegfelelőbb megoldás felé irányítanánk.',
+    'approach2_title' => 'Minden lépést egyszerűsítünk',
+    'approach2_desc' => 'Szimuláció, igénylés, aláírás és nyomon követés: minden online zajlik, papírmunka és felesleges utazás nélkül.',
+    'approach3_title' => 'A hitel folyósítása után is Önnel maradunk',
+    'approach3_desc' => 'Kapcsolatunk nem ér véget az aláírással: ügyfélszolgálatunk a teljes törlesztési időszak alatt elérhető marad.',
+
+    // Statisztika sáv (a főoldalról átvéve, "rólunk" kontextusban)
+    'stats_tagline' => 'számokban',
+    'stats_title' => 'A ' . site_name() . ' ma',
+
+    // Záró CTA
+    'cta_tagline' => 'lépjen tovább',
+    'cta_title' => 'Készen áll, hogy velünk indítsa el projektjét?',
+    'cta_text' => 'Szimulálja hitelét néhány perc alatt, és kapjon személyre szabott választ 48 órán belül.',
 
     'faq_title' => 'Gyakran Ismételt Kérdések',
-    'faq_description' => 'Válaszokat találhat a hitelszolgáltatásainkkal kapcsolatos leggyakoribb kérdésekre.',
-    'acc_1' => 'Milyen típusú kölcsönöket kínál?',
-    'acc_1_desc' => 'Számos kölcsönt kínálunk, beleértve a személyi kölcsönöket, kölcsönöket
-    jelzáloghitelek, autóhitelek és kisvállalkozási hitelek. Minden egyes
-    A kölcsön típusa egyedi igények és ajánlatok kielégítésére szolgál
-    rugalmas feltételek.',
-    'acc_2' => 'Hogyan igényelhetek kölcsönt?',
-    'acc_2_desc' => 'Kölcsönigénylését közvetlenül a weboldalunkon végezheti el
-    online jelentkezési lap kitöltésével. Kérni fogunk tőled
-    alapvető információkat, például az Ön nevét, elérhetőségeit és az összeg összegét
-    kívánt kölcsön. Tanácsadóink felveszik Önnel a kapcsolatot a kérés véglegesítése és
-    végigvezeti Önt a folyamaton.',
-    'acc_3' => 'Mik a kölcsön jogosultsági feltételei?',
-    'acc_3_desc' => 'A jogosultsági feltételek a kölcsön típusától függően változnak, de általában
-    nagykorúnak, stabil jövedelemmel és jó hitelképességgel kell rendelkeznie. Mi
-    Megvizsgáljuk törlesztőképességét és előzményeit is
-    pénzügyi.',
-    'acc_4' => 'Mi a kölcsönkérelem feldolgozási ideje?',
-    'acc_4_desc' => ' A feldolgozási idő a kölcsön típusától és a kölcsön összetettségétől függően változik.
-    kérés. A személyi kölcsönkérelmeket általában 24-48 között dolgozzák fel
-    óra, míg a jelzáloghitelek több napig is eltarthatnak
-    az alaposabb ellenőrzések szükségességének oka.',
-    'acc_5' => 'Visszafizethetem előbb a hitelemet?',
-    'acc_5_desc' => 'Igen, büntetés nélkül visszafizetheti kölcsönét idő előtt. Mi te
-    Javasoljuk, hogy lehetőleg minél előbb fizesse vissza hitelét, mert ezzel csökkenti a
-    a kölcsön futamideje alatt fizetendő kamat teljes összege.',
 ];

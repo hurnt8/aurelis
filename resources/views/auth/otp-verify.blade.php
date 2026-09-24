@@ -7,7 +7,7 @@
 <meta name="apple-mobile-web-app-capable" content="yes">
 <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
 <meta name="apple-mobile-web-app-title" content="{{ site_name() }}">
-<meta name="theme-color" content="#0657A4">
+<meta name="theme-color" content="#268226">
 <link rel="manifest" href="{{ route('pwa.manifest') }}">
 <link rel="apple-touch-icon" sizes="180x180" href="/site-icon-180.png">
 <link rel="icon" type="image/png" sizes="192x192" href="/site-icon-192.png">
@@ -21,20 +21,20 @@
 
 <style>
 :root{
-  --bg:   #02182E;
+  --bg:   #150C38;
   --card: #05243F;
-  --inp:  #06304F;
-  --navy: #032A4F;
-  --navy2:#043767;
-  --accent: #81B6E9;
-  --accent-2:#2B94F7;
+  --inp:  #120B2B;
+  --navy: #2A1967;
+  --navy2:#3A2A72;
+  --accent: #65DC50;
+  --accent-2:#379627;
   --text: #FFFFFF;
   --sub:  rgba(255,255,255,.52);
   --muted:rgba(255,255,255,.28);
-  --bdr:  rgba(129,182,233,.16);
+  --bdr:  rgba(101,220,80,.16);
   /* Compat: le reste de la feuille référence encore --cyan/--cyan2 pour ses accents ponctuels */
-  --cyan: #2B94F7;
-  --cyan2:#0870D4;
+  --cyan: #379627;
+  --cyan2:#379627;
 }
 *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
 html,body{
@@ -64,13 +64,13 @@ html,body{
   background:linear-gradient(135deg,var(--navy2),var(--navy));
   display:flex;align-items:center;justify-content:center;
   margin-bottom:1.5rem;position:relative;
-  box-shadow:0 0 40px rgba(3, 42, 79,.25);
+  box-shadow:0 0 40px rgba(42, 25, 103,.25);
   overflow:hidden;
 }
 .ld-logo img{width:auto;height:auto !important;max-width:220px;max-height:80px;object-fit:contain;display:block}
 .ld-ring{
   position:absolute;inset:-8px;border-radius:32px;
-  border:2px solid rgba(3, 42, 79,.15);border-top-color:var(--accent);
+  border:2px solid rgba(42, 25, 103,.15);border-top-color:var(--accent);
   animation:spin .9s linear infinite;
 }
 @keyframes spin{to{transform:rotate(360deg)}}
@@ -89,12 +89,12 @@ html,body{
 .orb{position:absolute;border-radius:50%;filter:blur(90px)}
 .orb-1{
   width:480px;height:480px;top:-10%;right:-8%;
-  background:radial-gradient(circle,rgba(129, 182, 233,.09) 0%,transparent 65%);
+  background:radial-gradient(circle,rgba(101, 220, 80,.09) 0%,transparent 65%);
   animation:orbf 10s ease-in-out infinite alternate;
 }
 .orb-2{
   width:360px;height:360px;bottom:-15%;left:-8%;
-  background:radial-gradient(circle,rgba(3, 42, 79,.05) 0%,transparent 65%);
+  background:radial-gradient(circle,rgba(42, 25, 103,.05) 0%,transparent 65%);
   animation:orbf 14s ease-in-out infinite alternate-reverse;
 }
 @keyframes orbf{from{transform:scale(1)}to{transform:scale(1.1) translate(2%,3%)}}
@@ -123,7 +123,7 @@ html,body{
   transition:color .18s,background .18s;
   -webkit-tap-highlight-color:transparent;
 }
-.topbar__back:hover{color:var(--navy);background:#DEEBF7}
+.topbar__back:hover{color:var(--navy);background:#E9F3E9}
 .topbar__back i{font-size:.65rem}
 .topbar__logo img{height:26px;object-fit:contain}
 
@@ -143,8 +143,8 @@ html,body{
 /* Shield icon */
 .otp-icon{
   width:76px;height:76px;border-radius:22px;
-  background:linear-gradient(135deg,rgba(129, 182, 233,.16),rgba(150,112,47,.16));
-  border:1.5px solid rgba(129, 182, 233,.3);
+  background:linear-gradient(135deg,rgba(101, 220, 80,.16),rgba(150,112,47,.16));
+  border:1.5px solid rgba(101, 220, 80,.3);
   display:flex;align-items:center;justify-content:center;
   margin:0 auto 1.25rem;
   position:relative;
@@ -153,7 +153,7 @@ html,body{
 .otp-icon::after{
   content:'';
   position:absolute;inset:-6px;border-radius:28px;
-  border:1px solid rgba(129, 182, 233,.15);
+  border:1px solid rgba(101, 220, 80,.15);
   animation:pulse-ring 2.5s ease-in-out infinite;
 }
 @keyframes pulse-ring{
@@ -195,13 +195,13 @@ html,body{
 }
 .odigit.filled{
   border-color:var(--navy);
-  background:rgba(3, 42, 79,.05);
+  background:rgba(42, 25, 103,.05);
   color:var(--navy);
 }
 .odigit.active{
   border-color:var(--navy);
   background:#fff;
-  box-shadow:0 0 0 4px rgba(3, 42, 79,.1),0 0 16px rgba(3, 42, 79,.08);
+  box-shadow:0 0 0 4px rgba(42, 25, 103,.1),0 0 16px rgba(42, 25, 103,.08);
 }
 .odigit.active::after{
   content:'';position:absolute;
@@ -236,7 +236,7 @@ html,body{
   cursor:pointer;display:flex;align-items:center;justify-content:center;gap:.625rem;
   background:linear-gradient(135deg,var(--navy2) 0%,var(--navy) 100%);
   color:#fff;letter-spacing:.01em;
-  box-shadow:0 6px 28px rgba(3, 42, 79,.28),0 2px 8px rgba(3, 42, 79,.15);
+  box-shadow:0 6px 28px rgba(42, 25, 103,.28),0 2px 8px rgba(42, 25, 103,.15);
   transition:filter .2s,box-shadow .2s,transform .1s;
   margin-bottom:.5rem;
 }
@@ -298,9 +298,9 @@ html,body{
 }
 .kbtn:active,.kbtn.pressed{
   transform:scale(.92);
-  background:rgba(3, 42, 79,.08);
-  border-color:rgba(3, 42, 79,.25);
-  box-shadow:0 0 14px rgba(3, 42, 79,.12);
+  background:rgba(42, 25, 103,.08);
+  border-color:rgba(42, 25, 103,.25);
+  box-shadow:0 0 14px rgba(42, 25, 103,.12);
 }
 .kbtn:disabled{opacity:.3;cursor:not-allowed}
 .knum{

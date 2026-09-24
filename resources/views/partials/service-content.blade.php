@@ -30,24 +30,55 @@
             {{-- Main content (1er sur mobile, 2e sur desktop) --}}
             <div class="col-lg-8 order-1 order-lg-2 wow fadeInRight" data-wow-duration="900ms" data-wow-delay="100ms">
 
-                <div class="service-detail__thumbnail mb-6">
+                <div class="service-detail__thumbnail mb-6" style="position:relative;">
                     <img src="{{ asset('assets/images/services/' . $image) }}"
                          alt="@lang('menu.' . $menuKey)">
+                </div>
+
+                {{-- Trois engagements clés — repris tels quels de la page d'accueil,
+                     même registre que "Agréé & réglementé / Réponse 48h / Multi-devises". --}}
+                <div class="service-value-props mb-6">
+                    @foreach ([1 => 'fa-shield-alt', 2 => 'fa-bolt', 3 => 'fa-globe'] as $n => $icon)
+                    <div class="service-value-props__item">
+                        <div class="service-value-props__icon"><i class="fas {{ $icon }}"></i></div>
+                        <div>
+                            <div class="service-value-props__title">{{ __('home.about.engage' . $n . '_title') }}</div>
+                            <p class="service-value-props__desc">{{ __('home.about.engage' . $n . '_desc') }}</p>
+                        </div>
+                    </div>
+                    @endforeach
                 </div>
 
                 <h2 class="service-detail__title">@lang('loan.' . $loanKey . '.section_title')</h2>
                 <p class="service-detail__text">{{ __('loan.' . $loanKey . '.description') }}</p>
 
                 <div class="service-detail__advantages mb-6">
-                    <h4 class="service-detail__advantages__title">Avantages</h4>
-                    <ul class="advantage-list">
+                    <h4 class="service-detail__advantages__title">{{ __('loan.service_benefits_title') }}</h4>
+                    <div class="advantage-grid">
                         @foreach ([1,2,3,4] as $n)
-                        <li>
-                            <i class="fas fa-check advantage-list__icon"></i>
-                            {{ __('loan.' . $loanKey . '.details.advantage' . $n) }}
-                        </li>
+                        <div class="advantage-grid__item">
+                            <i class="fas fa-check-circle advantage-grid__icon"></i>
+                            <span>{{ __('loan.' . $loanKey . '.details.advantage' . $n) }}</span>
+                        </div>
                         @endforeach
-                    </ul>
+                    </div>
+                </div>
+
+                {{-- Comment ça marche — process en 4 etapes, contenu deja traduit
+                     et partage avec la page d'accueil (identique quel que soit le pret). --}}
+                <div class="service-process mb-6">
+                    <h4 class="service-detail__advantages__title">{{ __('home.works.sectitle') }}</h4>
+                    <div class="service-process__list">
+                        @foreach ([1,2,3,4] as $s)
+                        <div class="service-process__item">
+                            <span class="service-process__num">0{{ $s }}</span>
+                            <div>
+                                <div class="service-process__title">{{ __('home.works.step' . $s . '.title') }}</div>
+                                <p class="service-process__desc">{{ __('home.works.step' . $s . '.desc') }}</p>
+                            </div>
+                        </div>
+                        @endforeach
+                    </div>
                 </div>
 
                 <h3 class="service-detail__title" style="font-size:1.25rem;">
@@ -108,6 +139,40 @@
             <div class="col-lg-6 wow fadeInRight" data-wow-duration="900ms" data-wow-delay="150ms">
                 @include('partials.simulate')
             </div>
+        </div>
+    </div>
+</section>
+
+{{-- Produits associés — cross-sell vers les 5 autres types de prêt --}}
+<section class="py-24" style="background:var(--cream);">
+    <div class="container">
+        <div class="text-center mb-4" style="max-width:640px;margin-left:auto;margin-right:auto;">
+            <div class="rule-label rule-label--center">{{ __('menu.services') }}</div>
+            <h2 class="section-title">{{ __('loan.service_related_title') }}</h2>
+            <p style="color:var(--gray-500);font-size:.95rem;">{{ __('loan.service_related_sub') }}</p>
+        </div>
+
+        @php
+        $allServices = [
+            ['route' => 'services.personal', 'key' => 'personal_loan', 'label' => 'menu.personal',  'icon' => 'fas fa-user-tie'],
+            ['route' => 'services.home',     'key' => 'home_loan',     'label' => 'menu.home_loan', 'icon' => 'fas fa-key'],
+            ['route' => 'services.auto',     'key' => 'auto_loan',     'label' => 'menu.auto',      'icon' => 'fas fa-car'],
+            ['route' => 'services.business', 'key' => 'business_loan', 'label' => 'menu.business',  'icon' => 'fas fa-briefcase'],
+            ['route' => 'services.study',    'key' => 'study_loan',    'label' => 'menu.study',     'icon' => 'fas fa-graduation-cap'],
+            ['route' => 'services.bike',     'key' => 'bike_loan',     'label' => 'menu.bike',      'icon' => 'fas fa-motorcycle'],
+        ];
+        $relatedServices = array_values(array_filter($allServices, fn($s) => $s['route'] !== ($currentRoute ?? '')));
+        @endphp
+        <div class="offer-grid">
+            @foreach ($relatedServices as $i => $svc)
+            <a href="{{ route($svc['route'], ['locale' => $locale]) }}" class="offer-cell wow fadeInUp"
+               data-wow-duration="700ms" data-wow-delay="{{ $i * 60 }}ms">
+                <i class="{{ $svc['icon'] }} offer-cell__icon"></i>
+                <h3 class="offer-cell__title">@lang($svc['label'])</h3>
+                <p class="offer-cell__desc">{{ Str::limit(__('loan.' . $svc['key'] . '.description'), 110) }}</p>
+                <span class="offer-cell__more">@lang('menu.read_more') <i class="fas fa-arrow-right"></i></span>
+            </a>
+            @endforeach
         </div>
     </div>
 </section>

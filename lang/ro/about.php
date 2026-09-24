@@ -1,32 +1,47 @@
 <?php
 
 return [
-    'banner_title' => 'Descoperiți ' . site_name(),
-    'banner_subtitle' => 'Despre noi',
-    'banner_description' => 'Împrumutați mai simplu cu soluții de creditare flexibile, adaptate nevoilor dumneavoastră financiare.',
+    // Hero / introducere
+    'hero_tagline' => 'povestea noastră',
+    'hero_title' => 'O bancă online creată pentru a fi mai rapidă decât băncile tradiționale',
+    'hero_text' => 'De 8 ani, ' . site_name() . ' îi ajută pe persoane fizice și companii să își ducă la bun sfârșit proiectele de finanțare, ghidați de o convingere simplă: obținerea unui împrumut nu ar trebui niciodată să fie complicată.',
 
-    'section1_title' => 'De ce să alegeți ' . site_name(),
-    'section1_p1' => 'La ' . site_name() . ', credem cu tărie că fiecare persoană merită șansa de a-și îndeplini visurile financiare. Încă de la înființare, ne-am angajat să oferim soluții de creditare flexibile și accesibile pentru a răspunde nevoilor variate ale clienților noștri. Fie că doriți să finanțați un proiect personal, să cumpărați o mașină sau să vă dezvoltați afacerea, avem împrumutul potrivit pentru dumneavoastră.',
-    'section1_p2' => 'Serviciile noastre sunt concepute pentru a oferi o experiență fără bătăi de cap, cu un proces de cerere simplu și rapid. Înțelegem că fiecare client este unic, motiv pentru care oferim împrumuturi personalizate, adaptate nevoilor dumneavoastră specifice. În plus, consilierii noștri dedicați sunt mereu alături de dumneavoastră la fiecare etapă, asigurându-vă un sprijin complet de la început până la final.',
-    'proposed' => 'Vă oferim:',
-    'check1' => 'Împrumuturi personalizate în funcție de nevoile dumneavoastră specifice.',
-    'check2' => 'Consilieri dedicați care vă ajută la fiecare etapă a procesului.',
-    'check3' => 'Condiții de rambursare flexibile, adaptate situației dumneavoastră financiare',
-    'check4' => 'Împrumuturi fără a fi necesar să dispuneți de un fluturaș de salariu.',
-    'section1_p3' => 'La ' . site_name() . ', misiunea noastră este să vă ajutăm să vă atingeți obiectivele financiare prin soluții de creditare personalizate. Alăturați-vă nouă chiar astăzi și descoperiți cum vă putem ajuta să vă concretizați proiectele.',
-    'btn' => 'Găsiți Împrumutul Ideal',
+    // Misiune / istorie
+    'mission_tagline' => 'misiunea noastră',
+    'mission_title' => 'Facem creditul simplu, rapid și accesibil',
+    'mission_p1' => site_name() . ' s-a născut dintr-o frustrare împărtășită de mii de solicitanți: demersurile clasice de creditare sunt lente, opace și adesea descurajante. Vizite la sucursală, dosare pe hârtie, săptămâni de așteptare pentru un răspuns... am vrut să construim o alternativă gândită în întregime pentru client.',
+    'mission_p2' => 'Astăzi, ajutăm în fiecare an mii de clienți din toată Europa să își finanțeze proiectele personale, imobiliare, profesionale sau auto. Platforma noastră online permite depunerea cererii de la un capăt la altul de acasă, cu un răspuns în 48 de ore și un consilier dedicat la fiecare etapă.',
+
+    // Valori
+    'values_tagline' => 'valorile noastre',
+    'values_title' => 'Ce ghidează fiecare decizie pe care o luăm',
+    'value1_title' => 'Transparență',
+    'value1_desc' => 'Dobânzile, comisioanele și condițiile sunt comunicate clar înainte de orice semnătură. Fără surprize neplăcute, fără clauze ascunse.',
+    'value2_title' => 'Rapiditate',
+    'value2_desc' => 'O cerere 100% online, o decizie în 48 de ore și fonduri virate rapid imediat după semnarea contractului.',
+    'value3_title' => 'Sprijin uman',
+    'value3_desc' => 'În spatele fiecărui dosar se află un consilier dedicat pe care îl puteți contacta oricând, din primul contact și până la rambursare.',
+    'value4_title' => 'Securitate',
+    'value4_desc' => 'Instituție de creditare certificată și supusă normelor europene. Datele și dosarul dumneavoastră sunt protejate la fiecare etapă.',
+
+    // Abordarea noastră / cum lucrăm
+    'approach_tagline' => 'abordarea noastră',
+    'approach_title' => 'Cum lucrăm',
+    'approach1_title' => 'Ascultăm înainte de a propune',
+    'approach1_desc' => 'Fiecare proiect este unic: ne luăm timpul necesar să înțelegem situația dumneavoastră înainte de a vă orienta către soluția cea mai potrivită.',
+    'approach2_title' => 'Simplificăm fiecare etapă',
+    'approach2_desc' => 'Simulare, dosar, semnătură și urmărire: totul se desfășoară online, fără hârtii și fără deplasări inutile.',
+    'approach3_title' => 'Rămânem alături de dumneavoastră după acordarea împrumutului',
+    'approach3_desc' => 'Relația noastră nu se oprește la semnătură: serviciul nostru clienți rămâne disponibil pe toată durata rambursării.',
+
+    // Banner statistici (preluat de pe pagina principală, în contextul "despre noi")
+    'stats_tagline' => 'în cifre',
+    'stats_title' => site_name() . ' astăzi',
+
+    // CTA final
+    'cta_tagline' => 'treceți la acțiune',
+    'cta_title' => 'Gata să vă începeți proiectul alături de noi?',
+    'cta_text' => 'Simulați-vă împrumutul în câteva minute și primiți un răspuns personalizat în 48 de ore.',
 
     'faq_title' => 'Întrebări Frecvente',
-    'faq_description' => 'Găsiți răspunsuri la cele mai frecvente întrebări despre serviciile noastre de creditare.',
-    'acc_1' => ' Ce tipuri de împrumuturi oferiți?',
-    'acc_1_desc' => 'Oferim o varietate de împrumuturi, inclusiv împrumuturi personale, credite ipotecare, credite auto și împrumuturi pentru afaceri mici. Fiecare tip de împrumut este conceput pentru a răspunde unor nevoi specifice și oferă condiții flexibile.',
-    'acc_2' => 'Cum pot depune o cerere de împrumut?',
-    'acc_2_desc' => 'Puteți depune o cerere de împrumut direct pe site-ul nostru, completând formularul de cerere online. Vă vom solicita informații de bază, precum numele, datele de contact și suma dorită a împrumutului. Consilierii noștri vă vor contacta pentru a finaliza cererea și a vă ghida pe parcursul procesului.',
-    'acc_3' => 'Care sunt criteriile de eligibilitate pentru un împrumut?',
-    'acc_3_desc' => 'Criteriile de eligibilitate variază în funcție de tipul de împrumut, dar, în general, trebuie să fiți major, să aveți un venit stabil și un scor de credit bun. Vom examina, de asemenea, capacitatea dumneavoastră de rambursare și istoricul financiar.',
-    'acc_4' => 'Care este termenul de procesare a unei cereri de împrumut?',
-    'acc_4_desc' => 'Termenul de procesare variază în funcție de tipul de împrumut și complexitatea cererii dumneavoastră. În general, cererile de împrumuturi personale sunt procesate în 24-48 de ore, în timp ce creditele ipotecare pot dura mai multe zile din cauza verificărilor mai amănunțite necesare.',
-    'acc_5' => 'Îmi pot rambursa împrumutul în avans?',
-    'acc_5_desc' => 'Da, puteți rambursa împrumutul în avans fără penalizări. Vă încurajăm să rambursați împrumutul mai devreme dacă este posibil, deoarece acest lucru va reduce suma totală a dobânzilor pe care le veți plăti pe durata împrumutului.',
-
 ];

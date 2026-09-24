@@ -73,36 +73,48 @@ return [
     'testimonials_description' => 'Saznajte što naši kupci kažu o nama.',
     'testimonial_1' => [
         'quote' => '"Vrlo sam zadovoljan uslugom. Proces podnošenja zahtjeva za kredit bio je brz i jednostavan. Dobio sam odobrenje za samo nekoliko dana, a cijene su bile konkurentne. Hvala vam puno!"',
-        'name' => 'Julie B.',
+        'name' => 'Ivana Horvat',
+        'location' => 'Zagreb, Hrvatska',
+        'months_ago' => 1,
     ],
     'testimonial_2' => [
         'quote' => '"Toplo preporučujem ovu uslugu zajma. Tim je bio vrlo profesionalan i uslužan. Odgovorili su na sva moja pitanja i olakšali proces. Hvala vam na izvrsnoj usluzi!"',
-        'name' => 'Pierre L.',
+        'name' => 'Marko Kovačević',
+        'location' => 'Split, Hrvatska',
+        'months_ago' => 2,
     ],
     'testimonial_3' => [
         'quote' => '"Proces prijave za kredit bio je transparentan
           i učinkovito. Cijelo vrijeme sam dobivao stručne i personalizirane savjete
           tijekom cijelog procesa. Hvala cijelom timu na izvrsnosti
           raditi!"',
-        'name' => 'Sophie D.',
+        'name' => 'Petra Novak',
+        'location' => 'Rijeka, Hrvatska',
+        'months_ago' => 2,
     ],
     'testimonial_4' => [
         'quote' => '"Dobijanje zajma kod ove tvrtke bilo je
           Iskustvo bez muke. Osoblje je bilo ljubazno i obrazovano, a
           proces je bio brz i učinkovit. Toplo ga preporučujem!"',
-        'name' => 'Marc F.',
+        'name' => 'Ante Babić',
+        'location' => 'Osijek, Hrvatska',
+        'months_ago' => 3,
     ],
     'testimonial_5' => [
         'quote' => '"Izvrsna korisnička služba! Vodili su me kroz sve
           svaki korak procesa zajma i odgovoreno je na moja pitanja
           brzo. Vrlo sam zadovoljan krajnjim rezultatom."',
-        'name' => 'Nathalie P.',
+        'name' => 'Ana Marić',
+        'location' => 'Zadar, Hrvatska',
+        'months_ago' => 4,
     ],
     'testimonial_6' => [
         'quote' => '"Vrlo dobra kamata i brz proces. I
           preporučujemo ovu uslugu svima koji trebaju zajam
           brz i pouzdan."',
-        'name' => 'Luc M.',
+        'name' => 'Josip Radić',
+        'location' => 'Pula, Hrvatska',
+        'months_ago' => 5,
     ],
     'testimonial_7' => [
         'quote' => '"Jednostavan i učinkovit postupak zajma. Bio sam
@@ -174,11 +186,11 @@ return [
     'sl' => 'slovenski',
 
     // Hero subtitle
-    'hero_subtitle' => 'Bez složenih postupaka, bez skrivenih naknada. Već 15 godina financiramo vaše osobne, stambene, auto i poslovne projekte transparentno i brzo.',
+    'hero_subtitle' => 'Bez složenih postupaka, bez skrivenih naknada. Već 8 godina financiramo vaše osobne, stambene, auto i poslovne projekte transparentno i brzo.',
 
     // Slide
     'slide_1' => [
-        'title' => ' 15 godina iskustva · Licencirano · Odgovor za 48h',
+        'title' => ' 8 godina iskustva · Licencirano · Odgovor za 48h',
         'text1' => 'Financirajte sve svoje projekte,',
         'text2' => 'do 500.000 € za 48h.',
     ],
@@ -209,7 +221,7 @@ return [
         'exptitle' => 'godina iskustva',
         'sectagline' => 'dobrodošli u ' . site_name(),
         'sectitle' => 'Osobni krediti za ostvarenje vaših snova',
-        'text1' => 'U ovom poslu smo već 15 godina i pružamo najbolje usluge.',
+        'text1' => 'U ovom poslu smo već 8 godina i pružamo najbolje usluge.',
         'text2' => site_name() . ' je vaša pouzdana platforma za kredite s iznimnim korisničkim iskustvom. Posvećeni smo pružanju jednostavnih, sigurnih i brzih financijskih rješenja.',
         'check1' => 'kredit za mala poduzeća',
         'check2' => 'kredit za studiranje u inozemstvu',
@@ -222,6 +234,67 @@ return [
         'sectitle' => 'Pružamo najbolje usluge za vaš kredit',
     ],
 
+    // Promotivni baner — karusel na početnoj stranici
+    'promo' => [
+        'slide1' => [
+            'tag'   => 'Trenutna ponuda',
+            'title' => 'Povlaštena kamatna stopa na osobni kredit',
+            'text'  => 'Iskoristite povoljnu kamatnu stopu i odgovor u roku od 48h za financiranje vašeg sljedećeg projekta.',
+            'cta'   => 'Izračunaj moj kredit',
+        ],
+        'slide2' => [
+            'tag'   => 'Stambeni kredit',
+            'title' => 'Vaš projekt nekretnine zaslužuje najbolju kamatnu stopu',
+            'text'  => 'Osobna podrška, od prvog sastanka do potpisivanja ugovora.',
+            'cta'   => 'Otkrijte stambeni kredit',
+        ],
+        'slide3' => [
+            'tag'   => 'Kalkulator',
+            'title' => 'Izračunajte svoju mjesečnu ratu za 30 sekundi',
+            'text'  => 'Bez obveze i bez utjecaja na vaš dosje: provjerite svoju kreditnu sposobnost odmah.',
+            'cta'   => 'Napravite izračun',
+        ],
+    ],
+
+    // Prema vašoj situaciji — segmentacija po profilu
+    'needs' => [
+        'sectagline'   => 'prema vašoj situaciji',
+        'sectitle'     => 'Bez obzira na vaš projekt, imamo rješenje',
+        'sectitle_sub' => 'Odaberite profil koji vam odgovara kako biste otkrili ponudu osmišljenu za vas.',
+        'profiles' => [
+            'starter' => [
+                'title' => 'Pokrećete novi projekt',
+                'text'  => 'Vjenčanje, radovi, nepredviđeni trošak... financirajte svoj osobni projekt fleksibilnim kreditom, bez dokaza o namjeni.',
+                'cta'   => 'Pogledajte osobni kredit',
+            ],
+            'student' => [
+                'title' => 'Vi ste student',
+                'text'  => 'Školarina, smještaj, oprema: financiranje osmišljeno da podrži vaš akademski put.',
+                'cta'   => 'Pogledajte studentski kredit',
+            ],
+            'buyer' => [
+                'title' => 'Kupujete nekretninu',
+                'text'  => 'Ostvarite kupnju svog doma uz stambeni kredit s transparentnim uvjetima i fiksnom kamatnom stopom.',
+                'cta'   => 'Pogledajte stambeni kredit',
+            ],
+            'entrepreneur' => [
+                'title' => 'Vodite posao',
+                'text'  => 'Pokretanje, likvidnost, oprema: brzo financiranje kako bi vaš posao rastao bez čekanja.',
+                'cta'   => 'Pogledajte poslovni kredit',
+            ],
+            'driver' => [
+                'title' => 'Mijenjate vozilo',
+                'text'  => 'Financirajte svoj automobil, novi ili rabljeni, uz mjesečne rate prilagođene vašem proračunu.',
+                'cta'   => 'Pogledajte auto kredit',
+            ],
+            'rider' => [
+                'title' => 'Vozite dvokotač',
+                'text'  => 'Skuter ili motocikl: brzo se opremite namjenskim kreditom, uz odgovor u roku od 48h.',
+                'cta'   => 'Pogledajte moto kredit',
+            ],
+        ],
+    ],
+
     'simulate' => [
         'sectitle' => 'Koliko vam treba?',
     ],
@@ -229,7 +302,7 @@ return [
     'chooses' => [
         'sectagline' => 'naše prednosti',
         'sectitle' => 'Zašto odabrati nas?',
-        'text1' => 'U ovom poslu smo već 15 godina i pružamo najbolje usluge.',
+        'text1' => 'U ovom poslu smo već 8 godina i pružamo najbolje usluge.',
         'item1' => 'niži kamatni postoci',
         'item2' => 'brzo i jednostavno',
         'progress1' => 'postupak odobrenja kredita',
@@ -279,6 +352,11 @@ return [
             'title' => 'Isplata sredstava',
             'desc' => 'Sredstva se izravno prebacuju na vaš bankovni račun u kratkom vremenu nakon odobrenja.'
         ],
+    ],
+
+    'final_cta' => [
+        'tagline' => 'poduzmite akciju',
+        'title'   => 'Spremni ostvariti svoj projekt?',
     ],
 
     'loan_reasons' => [
