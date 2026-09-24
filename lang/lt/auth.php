@@ -30,7 +30,7 @@ return [
     'email'               => 'El. pašto adresas',
     'email_staff'         => 'Darbinis el. paštas',
     'email_ph'            => 'jus@pavyzdys.lt',
-    'email_ph_staff'      => 'agent@mellenthinfinancial.online',
+    'email_ph_staff'      => 'agent@aureliscapital.de',
     'password_label'      => 'Slaptažodis',
     'remember'            => 'Prisiminti mane',
     'remember_staff'      => 'Likti prisijungus',

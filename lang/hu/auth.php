@@ -30,7 +30,7 @@ return [
     'email'               => 'E-mail cím',
     'email_staff'         => 'Céges e-mail cím',
     'email_ph'            => 'on@pelda.com',
-    'email_ph_staff'      => 'agent@mellenthinfinancial.online',
+    'email_ph_staff'      => 'agent@aureliscapital.de',
     'password_label'      => 'Jelszó',
     'remember'            => 'Emlékezzen rám',
     'remember_staff'      => 'Bejelentkezve maradok',

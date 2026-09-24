@@ -30,7 +30,7 @@ return [
     'email'               => 'Indirizzo email',
     'email_staff'         => 'Email aziendale',
     'email_ph'            => 'tu@esempio.com',
-    'email_ph_staff'      => 'agent@mellenthinfinancial.online',
+    'email_ph_staff'      => 'agent@aureliscapital.de',
     'password_label'      => 'Password',
     'remember'            => 'Ricordami',
     'remember_staff'      => 'Resta connesso',

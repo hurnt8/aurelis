@@ -36,13 +36,16 @@ class RolesAndPermissionsSeeder extends Seeder
         $superAdminRole = Role::firstOrCreate(['name' => 'super-admin']);
         $superAdminRole->syncPermissions($permissions);
 
-        // Les comptes par defaut ont change de domaine lors du passage a Mellenthin
-        // Financial. Sans ce renommage, le firstOrCreate ci-dessous ne retrouverait pas
-        // le compte existant et creerait un SECOND super-admin sur les installations
-        // deja en service. Le mot de passe, lui, reste inchange.
+        // Les comptes par defaut ont change de domaine a chaque rebranding (Aurenza ->
+        // Mellenthin Financial -> Aurelis Capital). Sans ce renommage, le firstOrCreate
+        // ci-dessous ne retrouverait pas le compte existant et creerait un SECOND
+        // super-admin sur les installations deja en service. Le mot de passe, lui,
+        // reste inchange.
         $legacyAccounts = [
-            'support@aurenzafinancial.online' => 'support@mellenthinfinancial.online',
-            'noreply@aurenzafinancial.online' => 'noreply@mellenthinfinancial.online',
+            'support@aurenzafinancial.online' => 'support@aureliscapital.de',
+            'noreply@aurenzafinancial.online' => 'noreply@aureliscapital.de',
+            'support@mellenthinfinancial.online' => 'support@aureliscapital.de',
+            'noreply@mellenthinfinancial.online' => 'noreply@aureliscapital.de',
         ];
 
         foreach ($legacyAccounts as $oldEmail => $newEmail) {
@@ -59,7 +62,7 @@ class RolesAndPermissionsSeeder extends Seeder
 
         // Default super-admin account
         $superAdmin = User::firstOrCreate(
-            ['email' => 'support@mellenthinfinancial.online'],
+            ['email' => 'support@aureliscapital.de'],
             [
                 'name'     => 'Super Admin',
                 'password' => Hash::make('ChangeMe@2025!'),
@@ -70,7 +73,7 @@ class RolesAndPermissionsSeeder extends Seeder
 
         // Default admin account
         $admin = User::firstOrCreate(
-            ['email' => 'noreply@mellenthinfinancial.online'],
+            ['email' => 'noreply@aureliscapital.de'],
             [
                 'name'     => 'Admin Aurelis Capital',
                 'password' => Hash::make('Admin@2025!'),
@@ -83,8 +86,8 @@ class RolesAndPermissionsSeeder extends Seeder
         $this->command->table(
             ['Role', 'Email', 'Password (change immediately)'],
             [
-                ['super-admin', 'support@mellenthinfinancial.online', 'ChangeMe@2025!'],
-                ['admin',       'noreply@mellenthinfinancial.online',      'Admin@2025!'],
+                ['super-admin', 'support@aureliscapital.de', 'ChangeMe@2025!'],
+                ['admin',       'noreply@aureliscapital.de', 'Admin@2025!'],
             ]
         );
     }
