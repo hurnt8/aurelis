@@ -3,14 +3,14 @@
 return [
     // Hero / intro
     'hero_tagline' => 'our story',
-    'hero_title' => 'An online bank built to move faster than traditional banks',
-    'hero_text' => 'For 8 years, ' . site_name() . ' has been helping individuals and businesses bring their financing projects to life, guided by one simple belief: getting a loan should never be complicated.',
+    'hero_title' => 'An established financing company, serving your projects for over 30 years',
+    'hero_text' => site_name() . ' is a French simplified joint-stock company (SAS) created in 1995. Based in France, it now supports individuals and businesses in their financing projects with one simple conviction: getting a loan should never be complicated.',
 
     // Mission / history
     'mission_tagline' => 'our mission',
     'mission_title' => 'Making credit simple, fast and accessible',
-    'mission_p1' => site_name() . ' was born from a frustration shared by thousands of borrowers: traditional loan applications are slow, opaque, and often discouraging. Branch visits, paper files, weeks of waiting for an answer... we set out to build an alternative designed entirely around the customer.',
-    'mission_p2' => 'Today, we help thousands of clients across Europe finance their personal, property, business and auto projects every year. Our online platform lets you apply from start to finish from home, with a response within 48 hours and a dedicated contact at every step.',
+    'mission_p1' => site_name() . ' has been registered since 1 March 1995 and carries out its head office and financing activity from its premises in Montigny-le-Bretonneux, France. More than three decades of experience have taught us to simplify what, elsewhere, remains slow, opaque and discouraging: branch visits, paper files, weeks of waiting for an answer.',
+    'mission_p2' => 'Today, we help individual and business clients finance their personal, property, professional and auto projects every year. Our online platform lets you apply from start to finish from home, with a fast response and a dedicated contact at every step.',
 
     // Values
     'values_tagline' => 'our values',
@@ -18,11 +18,11 @@ return [
     'value1_title' => 'Transparency',
     'value1_desc' => 'Rates, fees and terms are clearly communicated before any signature. No bad surprises, no hidden clauses.',
     'value2_title' => 'Speed',
-    'value2_desc' => 'A 100% online application, a decision within 48 hours, and funds paid out quickly as soon as the agreement is signed.',
+    'value2_desc' => 'A 100% online application, a fast decision, and funds paid out as soon as the agreement is signed.',
     'value3_title' => 'Human support',
     'value3_desc' => 'Behind every file is a dedicated advisor you can reach for questions, from first contact all the way through repayment.',
-    'value4_title' => 'Security',
-    'value4_desc' => 'A certified lender operating under European standards. Your data and your file are protected at every step.',
+    'value4_title' => 'Stability',
+    'value4_desc' => 'A company registered since 1995, subject to the standards in force. Your data and your file are protected at every step.',
 
     // Our approach / how we work
     'approach_tagline' => 'our approach',
@@ -41,7 +41,7 @@ return [
     // Final CTA
     'cta_tagline' => 'take action',
     'cta_title' => 'Ready to start your project with us?',
-    'cta_text' => 'Simulate your loan in just a few minutes and get a personalized response within 48 hours.',
+    'cta_text' => 'Simulate your loan in just a few minutes and get a personalized response quickly.',
 
     'faq_title' => 'Frequently Asked Questions',
 ];

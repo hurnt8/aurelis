@@ -8,6 +8,7 @@ class SiteContact extends Model
 {
     protected $fillable = [
         'name',
+        'siren',
         'logo_light_path',
         'logo_dark_path',
         'email_signature_path',

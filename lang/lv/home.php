@@ -163,11 +163,11 @@ return [
     'sl' => 'Slovēņu',
 
     // Hero subtitle
-    'hero_subtitle' => 'Bez sarežģītām procedūrām, bez slēptām maksām. Jau 8 gadus mēs finansējam jūsu personīgos, nekustamā īpašuma, auto un uzņēmējdarbības projektus ar pārskatāmību un ātrumu.',
+    'hero_subtitle' => 'Bez sarežģītām procedūrām, bez slēptām maksām. Jau 31 gadu mēs finansējam jūsu personīgos, nekustamā īpašuma, auto un uzņēmējdarbības projektus ar pārskatāmību un ātrumu.',
 
     // Slide
     'slide_1' => [
-        'title' => 'Jau 8 gadus · Sertificēts · Garantēta atbilde',
+        'title' => 'Jau 31 gadu · Sertificēts · Garantēta atbilde',
         'text1' => 'Finansējiet visus savus projektus,',
         'text2' => 'līdz 5 000 000 € 24 stundu laikā.',
     ],
@@ -200,7 +200,7 @@ return [
         'exptitle' => 'gadu pieredze',
         'sectagline' => 'laipni lūdzam ' . site_name(),
         'sectitle' => 'Personīgie aizdevumi jūsu sapņu piepildīšanai',
-        'text1' => 'Mēs darbojamies šajā jomā jau 8 gadus un piedāvājam labākos pakalpojumus.',
+        'text1' => 'Mēs darbojamies šajā jomā jau 31 gadu un piedāvājam labākos pakalpojumus.',
         'text2' => site_name() . ' ir jūsu uzticamā platforma aizdevumiem ar izcilu klientu pieredzi. Mēs apņemamies nodrošināt jums vienkāršus, drošus un ātrus finanšu risinājumus.',
         'check1' => 'aizdevums mazajam uzņēmumam',
         'check2' => 'aizdevums studijām ārzemēs',
@@ -299,7 +299,7 @@ return [
     'chooses' => [
         'sectagline' => 'mūsu priekšrocības',
         'sectitle' => 'kāpēc izvēlēties mūs',
-        'text1' => 'Mēs darbojamies šajā jomā jau 8 gadus un piedāvājam labākos pakalpojumus.',
+        'text1' => 'Mēs darbojamies šajā jomā jau 31 gadu un piedāvājam labākos pakalpojumus.',
         'item1' => 'zemas likmes',
         'item2' => 'ātri un vienkārši',
         'progress1' => 'aizdevuma process',

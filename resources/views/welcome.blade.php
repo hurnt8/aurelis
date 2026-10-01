@@ -42,7 +42,7 @@
                         ['4.9/5',  __('home.customer_satisfaction_rate')],
                         ['48h',    __('home.average_approval_time')],
                         ['8 500+', __('home.member')],
-                        ['8',      __('home.about.exptitle')],
+                        ['31',     __('home.about.exptitle')],
                     ] as $fait)
                     <div class="hero-fact">
                         <span class="hero-fact__num">{{ $fait[0] }}</span>
@@ -81,12 +81,12 @@
 }
 .needs-card:hover {
     transform:translateY(-4px);
-    box-shadow:0 18px 40px rgba(42,25,103,.1);
+    box-shadow:0 18px 40px rgba(15,36,56,.1);
     border-color:transparent;
 }
 .needs-card__icon {
     width:50px; height:50px; border-radius:13px;
-    background:rgba(38,130,38,.08); color:var(--accent);
+    background:rgba(12,122,118,.08); color:var(--accent);
     display:flex; align-items:center; justify-content:center;
     font-size:1.2rem; margin-bottom:1.1rem;
     transition:background .22s ease, color .22s ease;
@@ -168,7 +168,7 @@
     padding:.3rem .8rem; white-space:nowrap; flex-shrink:0;
     transition:border-color .25s ease, box-shadow .25s ease;
 }
-.about-partner-bar__name:hover { border-color:var(--accent); box-shadow:0 2px 10px rgba(38, 130, 38,.18); }
+.about-partner-bar__name:hover { border-color:var(--accent); box-shadow:0 2px 10px rgba(12, 122, 118,.18); }
 @media (prefers-reduced-motion: reduce) {
     }
 </style>
@@ -342,7 +342,7 @@
 
                 @foreach ([1,2,3] as $r)
                 <div class="d-flex align-items-start gap-3 mb-4">
-                    <div style="width:36px;height:36px;background:rgba(38, 130, 38,.15);border-radius:50%;display:flex;align-items:center;justify-content:center;color:var(--accent);flex-shrink:0;">
+                    <div style="width:36px;height:36px;background:rgba(12, 122, 118,.15);border-radius:50%;display:flex;align-items:center;justify-content:center;color:var(--accent);flex-shrink:0;">
                         <i class="fas fa-check"></i>
                     </div>
                     <div>
@@ -383,7 +383,7 @@
             ['8 500+',   __('home.customer_satisfaction_rate')],
             ['€500k',    __('home.total_loan_amount_granted')],
             ['48h',      __('home.average_approval_time')],
-            ['8+',       __('home.years_experience')],
+            ['31+',      __('home.years_experience')],
         ];
         @endphp
         <div class="figure-band__grid">

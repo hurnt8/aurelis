@@ -18,10 +18,13 @@ class SiteContactSeeder extends Seeder
      * Idempotent : n'ecrase que les valeurs vides ou les placeholders laisses par les
      * migrations. Ce qu'un administrateur a saisi est preserve, donc rejouable en prod.
      */
-    private const DEFAULT_NAME = 'Aurelis Capital';
+    private const DEFAULT_NAME = 'Emitech Finance';
+
+    /** SIREN legal d'EMITECH FINANCE (SAS, immatriculee le 01/03/1995). */
+    private const DEFAULT_SIREN = '400 283 214';
 
     /** Valeurs posees par les migrations : a considerer comme "non configure". */
-    private const LEGACY_NAMES = ['Solberg Grupo'];
+    private const LEGACY_NAMES = ['Solberg Grupo', 'Mellenthin Financial', 'Aurelis Capital'];
 
     private const LEGACY_EMAILS = ['contact@solberggrupo.site'];
 
@@ -31,6 +34,10 @@ class SiteContactSeeder extends Seeder
 
         if ($this->needsValue($contact->name, self::LEGACY_NAMES)) {
             $contact->name = self::DEFAULT_NAME;
+        }
+
+        if (blank($contact->siren)) {
+            $contact->siren = self::DEFAULT_SIREN;
         }
 
         if ($this->needsValue($contact->email, self::LEGACY_EMAILS)) {

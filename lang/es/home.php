@@ -161,11 +161,11 @@ return [
     'sl' => 'esloveno',
 
     // Hero subtitle
-    'hero_subtitle' => 'Sin trámites complejos, sin costes ocultos. Desde hace 8 años financiamos sus proyectos personales, inmobiliarios, de vehículos y empresariales con total transparencia.',
+    'hero_subtitle' => 'Sin trámites complejos, sin costes ocultos. Desde hace 31 años financiamos sus proyectos personales, inmobiliarios, de vehículos y empresariales con total transparencia.',
 
     // Slide
     'slide_1' => [
-        'title' => ' 8 años de experiencia · Autorizado · Respuesta garantizada',
+        'title' => ' 31 años de experiencia · Autorizado · Respuesta garantizada',
         'text1' => 'Financia todos tus proyectos,',
         'text2' => 'hasta 500.000 € en 48h.',
     ],
@@ -196,7 +196,7 @@ return [
         'exptitle' => 'años de experiencia',
         'sectagline' => 'bienvenido a ' . site_name(),
         'sectitle' => 'Préstamos personales para cumplir tus sueños',
-        'text1' => 'Estamos en este negocio desde hace 8 años y brindamos los mejores servicios.',
+        'text1' => 'Estamos en este negocio desde hace 31 años y brindamos los mejores servicios.',
         'text2' => site_name() . ' es tu plataforma confiable para préstamos con una experiencia al cliente excepcional. Nos comprometemos a ofrecerte soluciones financieras simples, seguras y rápidas.',
         'check1' => 'préstamo para pequeñas empresas',
         'check2' => 'préstamo para estudiar en el extranjero',
@@ -292,7 +292,7 @@ return [
     'chooses' => [
         'sectagline' => 'nuestros beneficios',
         'sectitle' => '¿por qué elegirnos?',
-        'text1' => 'Estamos en este negocio desde hace 8 años y brindamos los mejores servicios.',
+        'text1' => 'Estamos en este negocio desde hace 31 años y brindamos los mejores servicios.',
         'item1' => 'tasas bajas',
         'item2' => 'rápido y fácil',
         'progress1' => 'proceso de préstamo',

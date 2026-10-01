@@ -162,11 +162,11 @@ return [
     'sl' => 'Slovenian',
 
     // Hero subtitle
-    'hero_subtitle' => 'No complex process, no hidden fees. For 8 years, we have been financing personal, real estate, auto and business projects with transparency and speed.',
+    'hero_subtitle' => 'No complex process, no hidden fees. For 31 years, we have been financing personal, real estate, auto and business projects with transparency and speed.',
 
     // Slide
     'slide_1' => [
-        'title' => ' 8 Years of Expertise · Licensed · Guaranteed Response',
+        'title' => ' 31 Years of Expertise · Licensed · Guaranteed Response',
         'text1' => 'Finance all your projects,',
         'text2' => 'up to €95,000 in 48h.',
     ],
@@ -197,7 +197,7 @@ return [
         'exptitle' => 'year of experience',
         'sectagline' => 'welcome to ' . site_name(),
         'sectitle' => 'Personal loans to fulfill your dreams',
-        'text1' => 'We’ve been in this business for 8 years and we provide the best services.',
+        'text1' => 'We’ve been in this business for 31 years and we provide the best services.',
         'text2' => site_name() . ' is your trusted platform for loans with an exceptional customer experience. We are committed to providing you with simple, secure and fast financial solutions.',
         'check1' => 'small business loan',
         'check2' => 'studying abroad loan',
@@ -293,7 +293,7 @@ return [
     'chooses' => [
         'sectagline' => 'our benefits',
         'sectitle' => 'why choose us',
-        'text1' => 'We’ve been in this business for 8 years and we provide the best services.',
+        'text1' => 'We’ve been in this business for 31 years and we provide the best services.',
         'item1' => 'lower rates',
         'item2' => 'quick and easy',
         'progress1' => 'loan process',

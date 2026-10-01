@@ -3,14 +3,14 @@
 return [
     // Hero / uvod
     'hero_tagline' => 'naša priča',
-    'hero_title' => 'Internetska banka stvorena da bude brža od tradicionalnih banaka',
-    'hero_text' => 'Već 8 godina ' . site_name() . ' pomaže pojedincima i tvrtkama u ostvarenju njihovih financijskih projekata, vođeni jednostavnim uvjerenjem: dobivanje kredita nikada ne bi smjelo biti komplicirano.',
+    'hero_title' => 'Ustanovljeno financijsko društvo, u službi vaših projekata već više od 30 godina',
+    'hero_text' => site_name() . ' je francusko pojednostavljeno dioničko društvo (SAS) osnovano 1995. godine. Sa sjedištem u Francuskoj, danas pomaže pojedincima i tvrtkama u njihovim financijskim projektima, vođeno jednostavnim uvjerenjem: dobivanje kredita nikada ne bi smjelo biti komplicirano.',
 
     // Misija / povijest
     'mission_tagline' => 'naša misija',
     'mission_title' => 'Kredit jednostavan, brz i dostupan',
-    'mission_p1' => site_name() . ' je nastao iz frustracije koju dijele tisuće korisnika kredita: tradicionalni postupci odobravanja kredita su spori, nejasni i često obeshrabrujući. Dolasci u poslovnicu, papirnata dokumentacija, tjedni čekanja na odgovor... htjeli smo izgraditi alternativu osmišljenu u potpunosti za klijenta.',
-    'mission_p2' => 'Danas svake godine pomažemo tisućama klijenata diljem Europe u financiranju njihovih osobnih, stambenih, poslovnih i automobilskih projekata. Naša internetska platforma omogućuje podnošenje zahtjeva od početka do kraja od kuće, s odgovorom u roku od 48 sati i posebnim savjetnikom u svakom koraku.',
+    'mission_p1' => site_name() . ' je registriran od 1. ožujka 1995. godine i obavlja svoju djelatnost sjedišta i financiranja iz svog poslovnog nastana u Montigny-le-Bretonneuxu, u Francuskoj. Više od tri desetljeća iskustva naučilo nas je pojednostaviti ono što drugdje ostaje sporo, nejasno i obeshrabrujuće: dolasci u poslovnicu, papirnata dokumentacija, tjedni čekanja na odgovor.',
+    'mission_p2' => 'Danas svake godine pomažemo klijentima, pojedincima i poslovnim subjektima, u financiranju njihovih osobnih, stambenih, poslovnih i automobilskih projekata. Naša internetska platforma omogućuje podnošenje zahtjeva od početka do kraja od kuće, uz brz odgovor i posebnog savjetnika u svakom koraku.',
 
     // Vrijednosti
     'values_tagline' => 'naše vrijednosti',
@@ -18,11 +18,11 @@ return [
     'value1_title' => 'Transparentnost',
     'value1_desc' => 'Kamate, naknade i uvjeti jasno se priopćavaju prije bilo kakvog potpisa. Bez neugodnih iznenađenja, bez skrivenih klauzula.',
     'value2_title' => 'Brzina',
-    'value2_desc' => '100 % online zahtjev, odluka u roku od 48 sati i brza isplata sredstava čim se ugovor potpiše.',
+    'value2_desc' => '100 % online zahtjev, brza odluka i isplata sredstava čim se ugovor potpiše.',
     'value3_title' => 'Ljudska podrška',
     'value3_desc' => 'Iza svakog dosjea stoji poseban savjetnik dostupan za sva pitanja, od prvog kontakta do konačne otplate.',
-    'value4_title' => 'Sigurnost',
-    'value4_desc' => 'Certificirana kreditna institucija koja posluje u skladu s europskim standardima. Vaši podaci i dosje zaštićeni su u svakom koraku.',
+    'value4_title' => 'Stabilnost',
+    'value4_desc' => 'Društvo registrirano od 1995. godine, u skladu s važećim propisima. Vaši podaci i dosje zaštićeni su u svakom koraku.',
 
     // Naš pristup / kako radimo
     'approach_tagline' => 'naš pristup',
@@ -41,7 +41,7 @@ return [
     // Završni CTA
     'cta_tagline' => 'krenite u akciju',
     'cta_title' => 'Spremni započeti svoj projekt s nama?',
-    'cta_text' => 'Simulirajte svoj kredit za nekoliko minuta i primite personalizirani odgovor u roku od 48 sati.',
+    'cta_text' => 'Simulirajte svoj kredit za nekoliko minuta i brzo primite personalizirani odgovor.',
 
     'faq_title' => 'Često postavljana pitanja',
 ];

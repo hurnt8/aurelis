@@ -3,14 +3,14 @@
 return [
     // Hero / introducere
     'hero_tagline' => 'povestea noastră',
-    'hero_title' => 'O bancă online creată pentru a fi mai rapidă decât băncile tradiționale',
-    'hero_text' => 'De 8 ani, ' . site_name() . ' îi ajută pe persoane fizice și companii să își ducă la bun sfârșit proiectele de finanțare, ghidați de o convingere simplă: obținerea unui împrumut nu ar trebui niciodată să fie complicată.',
+    'hero_title' => 'O societate de finanțare consacrată, în slujba proiectelor dumneavoastră de peste 30 de ani',
+    'hero_text' => site_name() . ' este o societate pe acțiuni simplificată (SAS) franceză, înființată în 1995. Cu sediul în Franța, aceasta îi însoțește astăzi pe persoane fizice și companii în proiectele lor de finanțare, ghidați de o convingere simplă: obținerea unui împrumut nu ar trebui niciodată să fie complicată.',
 
     // Misiune / istorie
     'mission_tagline' => 'misiunea noastră',
     'mission_title' => 'Facem creditul simplu, rapid și accesibil',
-    'mission_p1' => site_name() . ' s-a născut dintr-o frustrare împărtășită de mii de solicitanți: demersurile clasice de creditare sunt lente, opace și adesea descurajante. Vizite la sucursală, dosare pe hârtie, săptămâni de așteptare pentru un răspuns... am vrut să construim o alternativă gândită în întregime pentru client.',
-    'mission_p2' => 'Astăzi, ajutăm în fiecare an mii de clienți din toată Europa să își finanțeze proiectele personale, imobiliare, profesionale sau auto. Platforma noastră online permite depunerea cererii de la un capăt la altul de acasă, cu un răspuns în 48 de ore și un consilier dedicat la fiecare etapă.',
+    'mission_p1' => site_name() . ' este înmatriculată din 1 martie 1995 și își desfășoară activitatea de sediu social și de finanțare din stabilimentul său din Montigny-le-Bretonneux, Franța. Peste trei decenii de experiență ne-au învățat să simplificăm ceea ce, în altă parte, rămâne lent, opac și descurajant: vizite la sucursală, dosare pe hârtie, săptămâni de așteptare pentru un răspuns.',
+    'mission_p2' => 'Astăzi, ajutăm în fiecare an clienți persoane fizice și profesioniști să își finanțeze proiectele personale, imobiliare, profesionale sau auto. Platforma noastră online permite depunerea cererii de la un capăt la altul de acasă, cu un răspuns rapid și un consilier dedicat la fiecare etapă.',
 
     // Valori
     'values_tagline' => 'valorile noastre',
@@ -18,11 +18,11 @@ return [
     'value1_title' => 'Transparență',
     'value1_desc' => 'Dobânzile, comisioanele și condițiile sunt comunicate clar înainte de orice semnătură. Fără surprize neplăcute, fără clauze ascunse.',
     'value2_title' => 'Rapiditate',
-    'value2_desc' => 'O cerere 100% online, o decizie în 48 de ore și fonduri virate rapid imediat după semnarea contractului.',
+    'value2_desc' => 'O cerere 100% online, o decizie rapidă și fonduri virate imediat după semnarea contractului.',
     'value3_title' => 'Sprijin uman',
     'value3_desc' => 'În spatele fiecărui dosar se află un consilier dedicat pe care îl puteți contacta oricând, din primul contact și până la rambursare.',
-    'value4_title' => 'Securitate',
-    'value4_desc' => 'Instituție de creditare certificată și supusă normelor europene. Datele și dosarul dumneavoastră sunt protejate la fiecare etapă.',
+    'value4_title' => 'Stabilitate',
+    'value4_desc' => 'O societate înmatriculată din 1995, supusă normelor în vigoare. Datele și dosarul dumneavoastră sunt protejate la fiecare etapă.',
 
     // Abordarea noastră / cum lucrăm
     'approach_tagline' => 'abordarea noastră',
@@ -41,7 +41,7 @@ return [
     // CTA final
     'cta_tagline' => 'treceți la acțiune',
     'cta_title' => 'Gata să vă începeți proiectul alături de noi?',
-    'cta_text' => 'Simulați-vă împrumutul în câteva minute și primiți un răspuns personalizat în 48 de ore.',
+    'cta_text' => 'Simulați-vă împrumutul în câteva minute și primiți rapid un răspuns personalizat.',
 
     'faq_title' => 'Întrebări Frecvente',
 ];

@@ -37,15 +37,17 @@ class RolesAndPermissionsSeeder extends Seeder
         $superAdminRole->syncPermissions($permissions);
 
         // Les comptes par defaut ont change de domaine a chaque rebranding (Aurenza ->
-        // Mellenthin Financial -> Aurelis Capital). Sans ce renommage, le firstOrCreate
-        // ci-dessous ne retrouverait pas le compte existant et creerait un SECOND
-        // super-admin sur les installations deja en service. Le mot de passe, lui,
-        // reste inchange.
+        // Mellenthin Financial -> Aurelis Capital -> Emitech Finance). Sans ce renommage,
+        // le firstOrCreate ci-dessous ne retrouverait pas le compte existant et creerait
+        // un SECOND super-admin sur les installations deja en service. Le mot de passe,
+        // lui, reste inchange.
         $legacyAccounts = [
-            'support@aurenzafinancial.online' => 'support@aureliscapital.de',
-            'noreply@aurenzafinancial.online' => 'noreply@aureliscapital.de',
-            'support@mellenthinfinancial.online' => 'support@aureliscapital.de',
-            'noreply@mellenthinfinancial.online' => 'noreply@aureliscapital.de',
+            'support@aurenzafinancial.online' => 'support@emitechfinance.com',
+            'noreply@aurenzafinancial.online' => 'noreply@emitechfinance.com',
+            'support@mellenthinfinancial.online' => 'support@emitechfinance.com',
+            'noreply@mellenthinfinancial.online' => 'noreply@emitechfinance.com',
+            'support@aureliscapital.de' => 'support@emitechfinance.com',
+            'noreply@aureliscapital.de' => 'noreply@emitechfinance.com',
         ];
 
         foreach ($legacyAccounts as $oldEmail => $newEmail) {
@@ -62,7 +64,7 @@ class RolesAndPermissionsSeeder extends Seeder
 
         // Default super-admin account
         $superAdmin = User::firstOrCreate(
-            ['email' => 'support@aureliscapital.de'],
+            ['email' => 'support@emitechfinance.com'],
             [
                 'name'     => 'Super Admin',
                 'password' => Hash::make('ChangeMe@2025!'),
@@ -73,9 +75,9 @@ class RolesAndPermissionsSeeder extends Seeder
 
         // Default admin account
         $admin = User::firstOrCreate(
-            ['email' => 'noreply@aureliscapital.de'],
+            ['email' => 'noreply@emitechfinance.com'],
             [
-                'name'     => 'Admin Aurelis Capital',
+                'name'     => 'Admin Emitech Finance',
                 'password' => Hash::make('Admin@2025!'),
                 'type'     => 'staff',
             ]
@@ -86,8 +88,8 @@ class RolesAndPermissionsSeeder extends Seeder
         $this->command->table(
             ['Role', 'Email', 'Password (change immediately)'],
             [
-                ['super-admin', 'support@aureliscapital.de', 'ChangeMe@2025!'],
-                ['admin',       'noreply@aureliscapital.de', 'Admin@2025!'],
+                ['super-admin', 'support@emitechfinance.com', 'ChangeMe@2025!'],
+                ['admin',       'noreply@emitechfinance.com', 'Admin@2025!'],
             ]
         );
     }

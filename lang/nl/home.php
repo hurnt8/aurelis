@@ -163,11 +163,11 @@ return [
     'sl' => 'Slovène',
 
     // Hero subtitle
-    'hero_subtitle' => 'Geen ingewikkelde procedures, geen verborgen kosten. Al 8 jaar financieren wij uw persoonlijke, hypothecaire, auto- en zakelijke projecten met transparantie en snelheid.',
+    'hero_subtitle' => 'Geen ingewikkelde procedures, geen verborgen kosten. Al 31 jaar financieren wij uw persoonlijke, hypothecaire, auto- en zakelijke projecten met transparantie en snelheid.',
 
     // Slide
     'slide_1' => [
-        'title' => ' Al 8 jaar · Erkend · Gegarandeerd antwoord',
+        'title' => ' Al 31 jaar · Erkend · Gegarandeerd antwoord',
         'text1' => 'Financier al uw projecten,',
         'text2' => 'tot € 500.000 binnen 24 uur.',
     ],
@@ -200,7 +200,7 @@ return [
         'exptitle' => 'jaar ervaring',
         'sectagline' => 'welkom bij ' . site_name(),
         'sectitle' => 'Persoonlijke leningen om uw dromen te realiseren',
-        'text1' => 'Wij zijn al 8 jaar actief in deze sector en bieden de beste diensten.',
+        'text1' => 'Wij zijn al 31 jaar actief in deze sector en bieden de beste diensten.',
         'text2' => site_name() . ' is uw vertrouwde platform voor leningen met een uitzonderlijke klantervaring. Wij zetten ons in om u eenvoudige, veilige en snelle financiële oplossingen te bieden.',
         'check1' => 'lening voor kleine ondernemingen',
         'check2' => 'lening om in het buitenland te studeren',
@@ -299,7 +299,7 @@ return [
     'chooses' => [
         'sectagline' => 'onze voordelen',
         'sectitle' => 'waarom voor ons kiezen',
-        'text1' => 'Wij zijn al 8 jaar actief in deze sector en bieden de beste diensten.',
+        'text1' => 'Wij zijn al 31 jaar actief in deze sector en bieden de beste diensten.',
         'item1' => 'lage tarieven',
         'item2' => 'snel en eenvoudig',
         'progress1' => 'leenproces',

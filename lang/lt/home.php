@@ -190,11 +190,11 @@ return [
     'sl' => 'sloveno',
 
     // Hero subtitle
-    'hero_subtitle' => 'Jokių sudėtingų procedūrų, jokių paslėptų mokesčių. Jau 8 metų finansuojame asmeninius, nekilnojamojo turto, automobilių ir verslo projektus skaidriai ir greitai.',
+    'hero_subtitle' => 'Jokių sudėtingų procedūrų, jokių paslėptų mokesčių. Jau 31 metų finansuojame asmeninius, nekilnojamojo turto, automobilių ir verslo projektus skaidriai ir greitai.',
 
     // Slide
     'slide_1' => [
-        'title' => ' 8 metų patirtis · Licencijuota · Atsakymas per 48h',
+        'title' => ' 31 metų patirtis · Licencijuota · Atsakymas per 48h',
         'text1' => 'Finansuokite visus projektus,',
         'text2' => 'iki 5 000 000 € per 48h.',
     ],
@@ -225,7 +225,7 @@ return [
         'exptitle' => 'metų patirtis',
         'sectagline' => 'sveiki atvykę į ' . site_name(),
         'sectitle' => 'Asmeninės paskolos jūsų svajonėms įgyvendinti',
-        'text1' => 'Šioje srityje dirbame jau 8 metų ir siūlome geriausias paslaugas.',
+        'text1' => 'Šioje srityje dirbame jau 31 metų ir siūlome geriausias paslaugas.',
         'text2' => site_name() . ' yra jūsų patikima platforma paskoloms gauti su išskirtine klientų patirtimi. Esame įsipareigoję pasiūlyti jums paprastus, saugius ir greitus finansinius sprendimus.',
         'check1' => 'paskola smulkiajam verslui',
         'check2' => 'paskola studijoms užsienyje',
@@ -321,7 +321,7 @@ return [
     'chooses' => [
         'sectagline' => 'mūsų privalumai',
         'sectitle' => 'kodėl rinktis mus',
-        'text1' => 'Šioje srityje dirbame jau 8 metų ir siūlome geriausias paslaugas.',
+        'text1' => 'Šioje srityje dirbame jau 31 metų ir siūlome geriausias paslaugas.',
         'item1' => 'mažesnės palūkanos',
         'item2' => 'greita ir paprasta',
         'progress1' => 'paskolos procesas',

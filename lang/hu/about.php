@@ -3,14 +3,14 @@
 return [
     // Hero / bevezető
     'hero_tagline' => 'a történetünk',
-    'hero_title' => 'Egy online bank, amely gyorsabb, mint a hagyományos bankok',
-    'hero_text' => 'A ' . site_name() . ' 8 éve segíti magánszemélyek és vállalkozások finanszírozási terveinek megvalósítását, egyetlen egyszerű meggyőződés jegyében: hitelt felvenni sosem szabadna bonyolultnak lennie.',
+    'hero_title' => 'Egy bejegyzett finanszírozási társaság, amely több mint 30 éve szolgálja projektjeit',
+    'hero_text' => 'A ' . site_name() . ' egy 1995-ben alapított francia egyszerűsített részvénytársaság (SAS). Franciaországban székelve ma magánszemélyeket és vállalkozásokat támogat finanszírozási terveik megvalósításában, egyetlen egyszerű meggyőződés jegyében: hitelt felvenni sosem szabadna bonyolultnak lennie.',
 
     // Küldetés / történet
     'mission_tagline' => 'a küldetésünk',
     'mission_title' => 'Egyszerűvé, gyorssá és elérhetővé tesszük a hitelt',
-    'mission_p1' => 'A ' . site_name() . ' egy sok ezer hiteligénylő által megélt csalódásból született: a hagyományos hitelügyintézés lassú, átláthatatlan és sokszor kedvét szegi az embernek. Fiókban töltött idő, papíralapú dossziék, hetekig tartó várakozás a válaszra... mi egy teljesen az ügyfél köré épített alternatívát akartunk létrehozni.',
-    'mission_p2' => 'Ma évente több ezer ügyfélnek segítünk Európa-szerte a személyes, ingatlan-, vállalkozási és autós projektjeik finanszírozásában. Online platformunkon az igénylés elejétől a végéig otthonról intézhető, 48 órán belüli válasszal és minden lépésnél egy dedikált kapcsolattartóval.',
+    'mission_p1' => 'A ' . site_name() . ' 1995. március 1. óta be van jegyezve, és székhely- valamint finanszírozási tevékenységét montigny-le-bretonneux-i (Franciaország) telephelyéről végzi. Több mint három évtizedes tapasztalatunk megtanított minket egyszerűsíteni azt, ami máshol lassú, átláthatatlan és kedvét szegi az embernek marad: fiókban töltött idő, papíralapú dossziék, hetekig tartó várakozás a válaszra.',
+    'mission_p2' => 'Ma évente segítünk magánszemély és vállalati ügyfeleknek a személyes, ingatlan-, szakmai és autós projektjeik finanszírozásában. Online platformunkon az igénylés elejétől a végéig otthonról intézhető, gyors válasszal és minden lépésnél egy dedikált kapcsolattartóval.',
 
     // Értékeink
     'values_tagline' => 'az értékeink',
@@ -18,11 +18,11 @@ return [
     'value1_title' => 'Átláthatóság',
     'value1_desc' => 'A kamatokat, díjakat és feltételeket minden aláírás előtt világosan közöljük. Semmi kellemetlen meglepetés, semmi elrejtett kikötés.',
     'value2_title' => 'Gyorsaság',
-    'value2_desc' => '100%-ban online igénylés, 48 órán belüli döntés, és a szerződés aláírása után gyorsan folyósított összeg.',
+    'value2_desc' => '100%-ban online igénylés, gyors döntés, és a szerződés aláírása után azonnal folyósított összeg.',
     'value3_title' => 'Személyes támogatás',
     'value3_desc' => 'Minden ügy mögött egy dedikált tanácsadó áll, aki a kérdéseivel elérhető az első kapcsolatfelvételtől egészen a törlesztés végéig.',
-    'value4_title' => 'Biztonság',
-    'value4_desc' => 'Tanúsított hitelintézet, amely az európai szabványoknak megfelelően működik. Az Ön adatait és ügyét minden lépésnél védjük.',
+    'value4_title' => 'Stabilitás',
+    'value4_desc' => '1995 óta bejegyzett társaság, amely megfelel a hatályos előírásoknak. Az Ön adatait és ügyét minden lépésnél védjük.',
 
     // A megközelítésünk / hogyan dolgozunk
     'approach_tagline' => 'a megközelítésünk',
@@ -41,7 +41,7 @@ return [
     // Záró CTA
     'cta_tagline' => 'lépjen tovább',
     'cta_title' => 'Készen áll, hogy velünk indítsa el projektjét?',
-    'cta_text' => 'Szimulálja hitelét néhány perc alatt, és kapjon személyre szabott választ 48 órán belül.',
+    'cta_text' => 'Szimulálja hitelét néhány perc alatt, és kapjon gyorsan személyre szabott választ.',
 
     'faq_title' => 'Gyakran Ismételt Kérdések',
 ];

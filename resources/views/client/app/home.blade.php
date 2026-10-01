@@ -55,9 +55,9 @@
 .h-header__actions{ display:flex;gap:.5rem }
 .h-avatar{
   width:46px;height:46px;border-radius:50%;flex-shrink:0;
-  background:linear-gradient(135deg,var(--ca-navy-light),#2A1967);
-  border:2.5px solid rgba(101, 220, 80,.45);
-  box-shadow:0 0 0 4px rgba(101, 220, 80,.1);
+  background:linear-gradient(135deg,var(--ca-navy-light),#0F2438);
+  border:2.5px solid rgba(45, 212, 207,.45);
+  box-shadow:0 0 0 4px rgba(45, 212, 207,.1);
   display:flex;align-items:center;justify-content:center;
   font-weight:800;font-size:1.1rem;color:#fff;
 }
@@ -85,18 +85,18 @@
   background:linear-gradient(145deg,var(--ca-navy-3) 0%,var(--ca-navy-2) 40%,var(--ca-navy) 100%);
   padding:1.375rem 1.5rem 1.25rem;
   position:relative;overflow:hidden;
-  box-shadow:0 20px 56px rgba(42, 25, 103,.4),0 0 0 1px rgba(255,255,255,.07);
+  box-shadow:0 20px 56px rgba(15, 36, 56,.4),0 0 0 1px rgba(255,255,255,.07);
 }
 .h-card::before{
   content:'';position:absolute;top:-80px;right:-80px;
   width:260px;height:260px;border-radius:50%;
-  background:radial-gradient(circle,rgba(101, 220, 80,.12) 0%,transparent 65%);
+  background:radial-gradient(circle,rgba(45, 212, 207,.12) 0%,transparent 65%);
   pointer-events:none;
 }
 .h-card::after{
   content:'';position:absolute;bottom:-80px;left:-50px;
   width:220px;height:220px;border-radius:50%;
-  background:radial-gradient(circle,rgba(101, 220, 80,.09) 0%,transparent 65%);
+  background:radial-gradient(circle,rgba(45, 212, 207,.09) 0%,transparent 65%);
   pointer-events:none;
 }
 /* Card top row */
@@ -112,7 +112,7 @@
 }
 .h-card__chip{
   width:34px;height:26px;border-radius:5px;
-  background:linear-gradient(135deg,#84E373,#65DC50,#379627);
+  background:linear-gradient(135deg,#57DDD9,#2DD4CF,#3D9591);
   box-shadow:0 2px 8px rgba(0,0,0,.35);
   position:relative;overflow:hidden;
 }
@@ -171,8 +171,8 @@
   color:rgba(255,255,255,.38);letter-spacing:.15em;
 }
 .h-card__badge{
-  background:rgba(101, 220, 80,.18);
-  border:1px solid rgba(101, 220, 80,.38);
+  background:rgba(45, 212, 207,.18);
+  border:1px solid rgba(45, 212, 207,.38);
   border-radius:999px;
   padding:.28rem .75rem;
   font-size:.65rem;font-weight:700;
@@ -207,7 +207,7 @@
   transition:transform .14s,box-shadow .14s;
 }
 .h-action:active .h-action__ico{ transform:scale(.91) }
-.h-action__ico--teal  { background:rgba(101, 220, 80,.2);  border:1px solid rgba(101, 220, 80,.35);  color:var(--ca-accent-l);    box-shadow:0 4px 14px rgba(101, 220, 80,.18) }
+.h-action__ico--teal  { background:rgba(45, 212, 207,.2);  border:1px solid rgba(45, 212, 207,.35);  color:var(--ca-accent-l);    box-shadow:0 4px 14px rgba(45, 212, 207,.18) }
 .h-action__ico--green { background:rgba(0,200,150,.15);  border:1px solid rgba(0,200,150,.3);    color:var(--ca-positive);  box-shadow:0 4px 14px rgba(0,200,150,.16) }
 .h-action__ico--blue  { background:rgba(74,158,255,.15); border:1px solid rgba(74,158,255,.3);   color:var(--ca-blue);      box-shadow:0 4px 14px rgba(74,158,255,.14) }
 .h-action__ico--purple{ background:rgba(139,92,246,.15); border:1px solid rgba(139,92,246,.3);   color:var(--ca-purple);    box-shadow:0 4px 14px rgba(139,92,246,.14) }
@@ -234,7 +234,7 @@
   height:3px;border-radius:16px 16px 0 0;
 }
 .h-stat--def::before { background:linear-gradient(90deg,var(--ca-text-3),var(--ca-bg4)) }
-.h-stat--teal::before{ background:linear-gradient(90deg,var(--ca-accent-l),#379627) }
+.h-stat--teal::before{ background:linear-gradient(90deg,var(--ca-accent-l),#3D9591) }
 .h-stat--amb::before { background:linear-gradient(90deg,var(--ca-amber),#C87800) }
 .h-stat__num{
   font-family:'Inter',sans-serif;
@@ -415,7 +415,7 @@
     <span class="h-action__lbl">{{ __('app.action_analytics') }}</span>
   </a>
   <a href="{{ route('client.app.movements') }}" class="h-action">
-    <div class="h-action__ico" style="background:rgba(101, 220, 80,.15);border:1px solid rgba(101, 220, 80,.3);color:var(--ca-accent-l)">
+    <div class="h-action__ico" style="background:rgba(45, 212, 207,.15);border:1px solid rgba(45, 212, 207,.3);color:var(--ca-accent-l)">
       <i class="fas fa-list-ul"></i>
     </div>
     <span class="h-action__lbl">{{ __('app.movements_title') }}</span>

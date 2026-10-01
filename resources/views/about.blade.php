@@ -34,7 +34,7 @@
                     <img src="{{ asset('assets/images/refonte/bureaux-reunion.jpg') }}"
                          alt="{{ site_name() }}" class="about-image-main">
                     <div class="about-badge">
-                        <span class="about-badge__number">8</span>
+                        <span class="about-badge__number">31</span>
                         <span class="about-badge__label">{{ __('home.about.exptitle') }}</span>
                     </div>
                 </div>
@@ -79,7 +79,7 @@
                 ['stop'=>'8500','suffix'=>'+','prefix'=>'', 'label'=> __('home.customer_satisfaction_rate')],
                 ['stop'=>'500',  'suffix'=>'k','prefix'=>'€','label'=> __('home.total_loan_amount_granted')],
                 ['stop'=>'24',  'suffix'=>'h','prefix'=>'', 'label'=> __('home.average_approval_time')],
-                ['stop'=>'8',    'suffix'=>'+','prefix'=>'', 'label'=> __('home.years_experience')],
+                ['stop'=>'31',   'suffix'=>'+','prefix'=>'', 'label'=> __('home.years_experience')],
             ];
             @endphp
             @foreach ($stats as $i => $stat)

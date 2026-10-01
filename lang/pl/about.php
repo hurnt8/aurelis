@@ -3,14 +3,14 @@
 return [
     // Hero / wprowadzenie
     'hero_tagline' => 'nasza historia',
-    'hero_title' => 'Bank internetowy stworzony, by działać szybciej niż tradycyjne banki',
-    'hero_text' => 'Od 8 lat ' . site_name() . ' pomaga osobom prywatnym i firmom realizować projekty finansowe, kierując się jedną prostą zasadą: uzyskanie pożyczki nigdy nie powinno być skomplikowane.',
+    'hero_title' => 'Ugruntowana firma finansowa, wspierająca Twoje projekty od ponad 30 lat',
+    'hero_text' => site_name() . ' to francuska uproszczona spółka akcyjna (SAS) założona w 1995 roku. Działając z Francji, wspiera dziś osoby prywatne i firmy w ich projektach finansowych, kierując się jedną prostą zasadą: uzyskanie pożyczki nigdy nie powinno być skomplikowane.',
 
     // Misja / historia
     'mission_tagline' => 'nasza misja',
     'mission_title' => 'Sprawiamy, że kredyt jest prosty, szybki i dostępny',
-    'mission_p1' => site_name() . ' powstał z frustracji podzielanej przez tysiące pożyczkobiorców: tradycyjne procedury kredytowe są powolne, nieprzejrzyste i często zniechęcające. Wizyty w oddziale, papierowa dokumentacja, tygodnie oczekiwania na odpowiedź... postanowiliśmy stworzyć alternatywę zaprojektowaną w pełni z myślą o kliencie.',
-    'mission_p2' => 'Dziś każdego roku pomagamy tysiącom klientów w całej Europie finansować ich projekty osobiste, mieszkaniowe, biznesowe i samochodowe. Nasza platforma online umożliwia złożenie wniosku od początku do końca z domu, z odpowiedzią w ciągu 48 godzin i dedykowanym opiekunem na każdym etapie.',
+    'mission_p1' => site_name() . ' jest zarejestrowana od 1 marca 1995 roku i prowadzi działalność siedziby oraz finansowania ze swojej placówki w Montigny-le-Bretonneux, we Francji. Ponad trzy dekady doświadczenia nauczyły nas upraszczać to, co gdzie indziej pozostaje powolne, nieprzejrzyste i zniechęcające: wizyty w oddziale, papierowa dokumentacja, tygodnie oczekiwania na odpowiedź.',
+    'mission_p2' => 'Dziś każdego roku pomagamy klientom indywidualnym i firmom finansować ich projekty osobiste, mieszkaniowe, zawodowe i samochodowe. Nasza platforma online umożliwia złożenie wniosku od początku do końca z domu, z szybką odpowiedzią i dedykowanym opiekunem na każdym etapie.',
 
     // Wartości
     'values_tagline' => 'nasze wartości',
@@ -18,11 +18,11 @@ return [
     'value1_title' => 'Przejrzystość',
     'value1_desc' => 'Oprocentowanie, opłaty i warunki są jasno przedstawiane przed podpisaniem umowy. Żadnych niemiłych niespodzianek, żadnych ukrytych klauzul.',
     'value2_title' => 'Szybkość',
-    'value2_desc' => 'Wniosek w 100% online, decyzja w ciągu 48 godzin i szybka wypłata środków zaraz po podpisaniu umowy.',
+    'value2_desc' => 'Wniosek w 100% online, szybka decyzja i wypłata środków zaraz po podpisaniu umowy.',
     'value3_title' => 'Wsparcie ludzi',
     'value3_desc' => 'Za każdym wnioskiem stoi dedykowany doradca dostępny na pytania, od pierwszego kontaktu aż po spłatę.',
-    'value4_title' => 'Bezpieczeństwo',
-    'value4_desc' => 'Certyfikowana instytucja kredytowa działająca zgodnie z normami europejskimi. Twoje dane i wniosek są chronione na każdym etapie.',
+    'value4_title' => 'Stabilność',
+    'value4_desc' => 'Firma zarejestrowana od 1995 roku, działająca zgodnie z obowiązującymi normami. Twoje dane i wniosek są chronione na każdym etapie.',
 
     // Nasze podejście / jak pracujemy
     'approach_tagline' => 'nasze podejście',
@@ -41,7 +41,7 @@ return [
     // CTA końcowe
     'cta_tagline' => 'przejdź do działania',
     'cta_title' => 'Gotowy, by rozpocząć swój projekt z nami?',
-    'cta_text' => 'Zasymuluj swoją pożyczkę w kilka minut i otrzymaj spersonalizowaną odpowiedź w ciągu 48 godzin.',
+    'cta_text' => 'Zasymuluj swoją pożyczkę w kilka minut i szybko otrzymaj spersonalizowaną odpowiedź.',
 
     'faq_title' => 'Często zadawane pytania',
 ];

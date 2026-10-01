@@ -9,10 +9,10 @@
 
 .preview-sidebar { display:flex; flex-direction:column; gap:1rem }
 
-.tpl-banner { background:linear-gradient(135deg,#2A1967,#3A2A72); border-radius:14px; padding:1.375rem 1.25rem; color:#fff }
+.tpl-banner { background:linear-gradient(135deg,#0F2438,#1A3348); border-radius:14px; padding:1.375rem 1.25rem; color:#fff }
 .tpl-banner-name { font-size:.9375rem; font-weight:800; margin-bottom:.375rem; line-height:1.3 }
-.tpl-banner-type { display:inline-flex; align-items:center; gap:.35rem; background:rgba(38, 130, 38,.15); border:1px solid rgba(38, 130, 38,.3); border-radius:999px; padding:.2rem .65rem; font-size:.68rem; font-weight:700; color:#268226; margin-bottom:1rem }
-.tpl-banner-type.html-type { background:rgba(38, 130, 38,.15); border-color:rgba(38, 130, 38,.3); color:#379627 }
+.tpl-banner-type { display:inline-flex; align-items:center; gap:.35rem; background:rgba(12, 122, 118,.15); border:1px solid rgba(12, 122, 118,.3); border-radius:999px; padding:.2rem .65rem; font-size:.68rem; font-weight:700; color:#0C7A76; margin-bottom:1rem }
+.tpl-banner-type.html-type { background:rgba(12, 122, 118,.15); border-color:rgba(12, 122, 118,.3); color:#3D9591 }
 
 .meta-row { display:flex; align-items:center; justify-content:space-between; padding:.45rem 0; border-bottom:1px solid rgba(255,255,255,.07) }
 .meta-row:last-child { border-bottom:0 }

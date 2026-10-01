@@ -3,14 +3,14 @@
 return [
     // Hero / įvadas
     'hero_tagline' => 'mūsų istorija',
-    'hero_title' => 'Internetinis bankas, sukurtas veikti greičiau nei tradiciniai bankai',
-    'hero_text' => 'Jau 8 metų ' . site_name() . ' padeda privatiems asmenims ir įmonėms įgyvendinti savo finansavimo projektus, vadovaudamiesi paprastu įsitikinimu: gauti paskolą niekada neturėtų būti sudėtinga.',
+    'hero_title' => 'Įsitvirtinusi finansavimo bendrovė, jau daugiau nei 30 metų tarnaujanti jūsų projektams',
+    'hero_text' => site_name() . ' yra 1995 metais įkurta prancūzų supaprastinta akcinė bendrovė (SAS). Įsikūrusi Prancūzijoje, ji šiandien padeda privatiems asmenims ir įmonėms įgyvendinti savo finansavimo projektus, vadovaudamasi paprastu įsitikinimu: gauti paskolą niekada neturėtų būti sudėtinga.',
 
     // Misija / istorija
     'mission_tagline' => 'mūsų misija',
     'mission_title' => 'Kreditą padarome paprastą, greitą ir prieinamą',
-    'mission_p1' => site_name() . ' gimė iš nusivylimo, kurį patiria tūkstančiai skolininkų: tradicinės paskolų procedūros yra lėtos, neaiškios ir dažnai atgraso. Vizitai skyriuje, popieriniai dokumentai, savaitės laukiant atsakymo... mes norėjome sukurti alternatyvą, sukurtą visiškai orientuotą į klientą.',
-    'mission_p2' => 'Šiandien kasmet padedame tūkstančiams klientų visoje Europoje finansuoti jų asmeninius, nekilnojamojo turto, verslo ir automobilių projektus. Mūsų internetinė platforma leidžia pateikti paraišką nuo pradžios iki pabaigos iš namų, gauti atsakymą per 48 valandas ir turėti asmeninį konsultantą kiekviename etape.',
+    'mission_p1' => site_name() . ' yra registruota nuo 1995 m. kovo 1 d. ir savo būstinės bei finansavimo veiklą vykdo iš savo padalinio Montigny-le-Bretonneux mieste, Prancūzijoje. Daugiau nei trys dešimtmečiai patirties išmokė mus supaprastinti tai, kas kitur išlieka lėta, neaišku ir atgraso: vizitai skyriuje, popieriniai dokumentai, savaitės laukiant atsakymo.',
+    'mission_p2' => 'Šiandien kasmet padedame privatiems ir verslo klientams finansuoti jų asmeninius, nekilnojamojo turto, profesinius ir automobilių projektus. Mūsų internetinė platforma leidžia pateikti paraišką nuo pradžios iki pabaigos iš namų, gauti greitą atsakymą ir turėti asmeninį konsultantą kiekviename etape.',
 
     // Vertybės
     'values_tagline' => 'mūsų vertybės',
@@ -18,11 +18,11 @@ return [
     'value1_title' => 'Skaidrumas',
     'value1_desc' => 'Palūkanos, mokesčiai ir sąlygos aiškiai pateikiamos prieš pasirašant bet kokią sutartį. Jokių nemalonių staigmenų, jokių paslėptų sąlygų.',
     'value2_title' => 'Greitis',
-    'value2_desc' => '100 % internetinė paraiška, sprendimas per 48 valandas ir greitas lėšų pervedimas iš karto pasirašius sutartį.',
+    'value2_desc' => '100 % internetinė paraiška, greitas sprendimas ir lėšų pervedimas iš karto pasirašius sutartį.',
     'value3_title' => 'Žmogiškas palaikymas',
     'value3_desc' => 'Už kiekvienos bylos stovi asmeninis konsultantas, pasiekiamas jūsų klausimams nuo pirmojo kontakto iki paskolos grąžinimo.',
-    'value4_title' => 'Saugumas',
-    'value4_desc' => 'Sertifikuota kredito įstaiga, veikianti pagal Europos standartus. Jūsų duomenys ir byla saugomi kiekviename etape.',
+    'value4_title' => 'Stabilumas',
+    'value4_desc' => 'Bendrovė, registruota nuo 1995 metų ir veikianti pagal galiojančius standartus. Jūsų duomenys ir byla saugomi kiekviename etape.',
 
     // Mūsų požiūris / kaip mes dirbame
     'approach_tagline' => 'mūsų požiūris',
@@ -41,7 +41,7 @@ return [
     // Baigiamasis CTA
     'cta_tagline' => 'imkitės veiksmų',
     'cta_title' => 'Pasiruošę pradėti savo projektą kartu su mumis?',
-    'cta_text' => 'Susimuliuokite savo paskolą per kelias minutes ir gaukite asmeninį atsakymą per 48 valandas.',
+    'cta_text' => 'Susimuliuokite savo paskolą per kelias minutes ir greitai gaukite asmeninį atsakymą.',
 
     'faq_title' => 'Dažniausiai užduodami klausimai',
 ];

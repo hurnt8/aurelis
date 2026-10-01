@@ -18,11 +18,11 @@
 }
 .promo-slide::before {
     content:''; position:absolute; inset:0;
-    background:linear-gradient(90deg, rgba(42,25,103,.96) 0%, rgba(42,25,103,.88) 38%, rgba(42,25,103,.4) 68%, rgba(42,25,103,.15) 100%);
+    background:linear-gradient(90deg, rgba(15,36,56,.96) 0%, rgba(15,36,56,.88) 38%, rgba(15,36,56,.4) 68%, rgba(15,36,56,.15) 100%);
 }
 @media (max-width:768px) {
     .promo-slide { min-height:520px; }
-    .promo-slide::before { background:linear-gradient(180deg, rgba(42,25,103,.75) 0%, rgba(42,25,103,.94) 55%, var(--navy) 100%); }
+    .promo-slide::before { background:linear-gradient(180deg, rgba(15,36,56,.75) 0%, rgba(15,36,56,.94) 55%, var(--navy) 100%); }
 }
 .promo-slide__inner {
     position:relative; z-index:1;

@@ -3,7 +3,7 @@
 return [
     'general_title' => site_name() . ' – A legjobb online hitelezők Németországban, Spanyolországban, Magyarországon stb.',
     'banner_title' => 'Szerezze meg a tökéletes kölcsönt minden online igényéhez.',
-    'banner_text' => 'Emberek milliói használják a Solberg Grupót projektjeik megvalósítására.',
+    'banner_text' => 'Emberek milliói használják a ' . site_name() . ' szolgáltatásait projektjeik megvalósítására.',
     'get_loan_now' => 'Kölcsön kérése most',
     'popular_loans' => 'Népszerű hiteltípusok:',
     'personal_loan' => 'Személyi kölcsön',
@@ -62,7 +62,7 @@ return [
 
     'custom_loan_services' => 'Használja ki személyre szabott hitelszolgáltatásainkat',
     'reliability_quality' => 'Átláthatóság és megbízhatóság',
-    'reliability_quality_description' => 'A Solberg Grupónál egyértelmű és megbízható hitelezési megoldásokat kínálunk, amelyeket pozitív vásárlói vélemények és teljes átláthatóság támogatnak.',
+    'reliability_quality_description' => 'A ' . site_name() . ' egyértelmű és megbízható hitelezési megoldásokat kínál, amelyeket pozitív vásárlói vélemények és teljes átláthatóság támogatnak.',
     'financial_transparency' => 'Nincsenek rejtett költségek',
     'financial_transparency_description' => 'Tekintse át feltételeinket, beszélje meg a díjakat, és csak a hitel jóváhagyása után fizessen.',
     'optimal_security' => 'Biztonság és adatvédelem',
@@ -190,11 +190,11 @@ return [
     'sl' => 'szlovén',
 
     // Hero subtitle
-    'hero_subtitle' => 'Nincs bonyolult folyamat, nincsenek rejtett díjak. 8 éve finanszírozzuk személyes, ingatlan-, autó- és üzleti projektjeit átláthatóan és gyorsan.',
+    'hero_subtitle' => 'Nincs bonyolult folyamat, nincsenek rejtett díjak. 31 éve finanszírozzuk személyes, ingatlan-, autó- és üzleti projektjeit átláthatóan és gyorsan.',
 
     // Slide
     'slide_1' => [
-        'title' => ' 8 év tapasztalat · Engedélyes · Válasz 24 órán belül',
+        'title' => ' 31 év tapasztalat · Engedélyes · Válasz 24 órán belül',
         'text1' => 'Finanszírozza összes projektjét,',
         'text2' => 'akár 5 000 000 € 24 órán belül.',
     ],
@@ -223,9 +223,9 @@ return [
 
     'about' => [
         'exptitle' => 'év tapasztalat',
-        'sectagline' => 'Üdvözlünk a Solberg Grupónál',
+        'sectagline' => 'Üdvözlünk a ' . site_name() . 'nál',
         'sectitle' => 'Személyi hitelek, hogy valóra váltsd az álmaidat',
-        'text1' => '8 éve vagyunk jelen az üzletben, és a legjobb szolgáltatásokat kínáljuk.',
+        'text1' => '31 éve vagyunk jelen az üzletben, és a legjobb szolgáltatásokat kínáljuk.',
         'text2' => 'A ' . site_name() . ' a megbízható platformod hitelekhez, kivételes ügyfélszolgálattal. Elkötelezettek vagyunk abban, hogy egyszerű, biztonságos és gyors pénzügyi megoldásokat kínáljunk.',
         'check1' => 'kisvállalkozói hitel',
         'check2' => 'külföldi tanulmányi hitel',
@@ -321,7 +321,7 @@ return [
     'chooses' => [
         'sectagline' => 'előnyeink',
         'sectitle' => 'Miért válassz minket',
-        'text1' => '8 éve vagyunk jelen az üzletben, és a legjobb szolgáltatásokat kínáljuk.',
+        'text1' => '31 éve vagyunk jelen az üzletben, és a legjobb szolgáltatásokat kínáljuk.',
         'item1' => 'alacsonyabb kamatok',
         'item2' => 'gyors és egyszerű',
         'progress1' => 'hitel folyamat',

@@ -2,10 +2,10 @@
 
 return [
     'general_title' => site_name() . ' – Najlepsze kredyty online w Europie.',
-    'hero_subtitle' => 'Bez skomplikowanych procedur, bez ukrytych opłat. Od 8 lat finansujemy projekty osobiste, nieruchomości, samochodowe i biznesowe z pełną przejrzystością i szybkością.',
+    'hero_subtitle' => 'Bez skomplikowanych procedur, bez ukrytych opłat. Od 31 lat finansujemy projekty osobiste, nieruchomości, samochodowe i biznesowe z pełną przejrzystością i szybkością.',
 
     'slide_1' => [
-        'title' => ' 8 lat doświadczenia · Licencjonowany · Gwarantowana odpowiedź',
+        'title' => ' 31 lat doświadczenia · Licencjonowany · Gwarantowana odpowiedź',
         'text1' => 'Sfinansuj wszystkie swoje projekty,',
         'text2' => 'do 5 000 000 € w 48h.',
     ],
@@ -36,7 +36,7 @@ return [
         'exptitle' => 'lat doświadczenia',
         'sectagline' => 'Witamy w ' . site_name(),
         'sectitle' => 'Kredyty osobiste spełniające Twoje marzenia',
-        'text1' => 'Działamy w tej branży od 8 lat i oferujemy najlepsze usługi.',
+        'text1' => 'Działamy w tej branży od 31 lat i oferujemy najlepsze usługi.',
         'text2' => site_name() . ' to Twoja zaufana platforma kredytowa z wyjątkową obsługą klienta. Jesteśmy zobowiązani do zapewniania prostych, bezpiecznych i szybkich rozwiązań finansowych.',
         'check1' => 'kredyt dla małych firm',
         'check2' => 'kredyt na studia za granicą',
@@ -154,7 +154,7 @@ return [
     'chooses' => [
         'sectagline' => 'nasze zalety',
         'sectitle' => 'dlaczego warto nas wybrać',
-        'text1' => 'Działamy w tej branży od 8 lat i oferujemy najlepsze usługi.',
+        'text1' => 'Działamy w tej branży od 31 lat i oferujemy najlepsze usługi.',
         'item1' => 'niższe oprocentowanie',
         'item2' => 'szybko i łatwo',
         'progress1' => 'proces kredytowy',

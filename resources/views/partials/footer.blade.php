@@ -110,7 +110,13 @@
 
         {{-- ── Barre du bas ── --}}
         <div class="footer-bottom">
-            <p>&copy; {{ date('Y') }} <a href="{{ route('home', ['locale' => $locale]) }}">{{ $siteContact->name }}</a>. @lang('menu.rights_reserved')</p>
+            <p>
+                &copy; {{ date('Y') }} <a href="{{ route('home', ['locale' => $locale]) }}">{{ $siteContact->name }}</a>. @lang('menu.rights_reserved')
+                @if($siteContact->siren)
+                <span style="color:rgba(255,255,255,.2);margin:0 .5rem">·</span>
+                <span style="color:rgba(255,255,255,.45);">SIREN {{ $siteContact->siren }}</span>
+                @endif
+            </p>
             <p>
                 <a href="{{ route('terms',   ['locale' => $locale]) }}">@lang('menu.terms')</a>
                 <span style="color:rgba(255,255,255,.2);margin:0 .5rem">·</span>

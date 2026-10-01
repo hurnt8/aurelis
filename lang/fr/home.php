@@ -163,11 +163,11 @@ return [
     'sl' => 'Slovène',
 
     // Hero subtitle
-    'hero_subtitle' => 'Pas de démarche complexe, pas de frais cachés. Depuis 8 ans, nous finançons vos projets personnels, immobiliers, auto et professionnels avec transparence et rapidité.',
+    'hero_subtitle' => 'Pas de démarche complexe, pas de frais cachés. Depuis 31 ans, nous finançons vos projets personnels, immobiliers, auto et professionnels avec transparence et rapidité.',
 
     // Slide
     'slide_1' => [
-        'title' => ' Depuis 8 ans · Agréé · Réponse garantie',
+        'title' => ' Depuis 31 ans · Agréé · Réponse garantie',
         'text1' => 'Financez tous vos projets,',
         'text2' => 'jusqu\'à 5 000 000 € en 48h.',
     ],
@@ -200,7 +200,7 @@ return [
         'exptitle' => 'années d\'expérience',
         'sectagline' => 'bienvenue chez ' . site_name(),
         'sectitle' => 'Prêts personnels pour réaliser vos rêves',
-        'text1' => 'Nous sommes dans ce domaine depuis 8 ans et offrons les meilleurs services.',
+        'text1' => 'Nous sommes dans ce domaine depuis 31 ans et offrons les meilleurs services.',
         'text2' => site_name() . ' est votre plateforme de confiance pour des prêts avec une expérience client exceptionnelle. Nous nous engageons à vous fournir des solutions financières simples, sécurisées et rapides.',
         'check1' => 'prêt pour petite entreprise',
         'check2' => 'prêt pour étudier à l\'étranger',
@@ -299,7 +299,7 @@ return [
     'chooses' => [
         'sectagline' => 'nos avantages',
         'sectitle' => 'pourquoi nous choisir',
-        'text1' => 'Nous sommes dans ce domaine depuis 8 ans et offrons les meilleurs services.',
+        'text1' => 'Nous sommes dans ce domaine depuis 31 ans et offrons les meilleurs services.',
         'item1' => 'taux bas',
         'item2' => 'rapide et facile',
         'progress1' => 'processus de prêt',

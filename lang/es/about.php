@@ -3,14 +3,14 @@
 return [
     // Hero / introducción
     'hero_tagline' => 'nuestra historia',
-    'hero_title' => 'Un banco online pensado para ir más rápido que la banca tradicional',
-    'hero_text' => 'Desde hace 8 años, ' . site_name() . ' acompaña a particulares y empresas en sus proyectos de financiación, con una convicción simple: conseguir un préstamo nunca debería ser complicado.',
+    'hero_title' => 'Una sociedad de financiación consolidada, al servicio de tus proyectos desde hace más de 30 años',
+    'hero_text' => site_name() . ' es una sociedad por acciones simplificada (SAS) francesa creada en 1995. Con sede en Francia, acompaña hoy a particulares y empresas en sus proyectos de financiación, con una convicción simple: conseguir un préstamo nunca debería ser complicado.',
 
     // Misión / historia
     'mission_tagline' => 'nuestra misión',
     'mission_title' => 'Hacer que el crédito sea simple, rápido y accesible',
-    'mission_p1' => site_name() . ' nació de una frustración compartida por miles de solicitantes: los trámites de préstamo tradicionales son lentos, poco transparentes y a menudo desalentadores. Citas en oficina, expedientes en papel, semanas de espera para una respuesta... quisimos construir una alternativa pensada íntegramente para el cliente.',
-    'mission_p2' => 'Hoy acompañamos cada año a miles de clientes en toda Europa en la financiación de sus proyectos personales, inmobiliarios, profesionales o de automóvil. Nuestra plataforma online permite realizar la solicitud de principio a fin desde casa, con una respuesta en 48 horas y un interlocutor dedicado en cada etapa.',
+    'mission_p1' => site_name() . ' está registrada desde el 1 de marzo de 1995 y ejerce su actividad de sede social y de financiación desde su establecimiento de Montigny-le-Bretonneux, en Francia. Más de tres décadas de experiencia nos han enseñado a simplificar lo que, en otros lugares, sigue siendo lento, opaco y desalentador: citas en oficina, expedientes en papel, semanas de espera para una respuesta.',
+    'mission_p2' => 'Hoy acompañamos cada año a clientes particulares y profesionales en la financiación de sus proyectos personales, inmobiliarios, profesionales o de automóvil. Nuestra plataforma online permite realizar la solicitud de principio a fin desde casa, con una respuesta rápida y un interlocutor dedicado en cada etapa.',
 
     // Valores
     'values_tagline' => 'nuestros valores',
@@ -18,11 +18,11 @@ return [
     'value1_title' => 'Transparencia',
     'value1_desc' => 'Tasas, comisiones y condiciones se comunican con claridad antes de cualquier firma. Sin sorpresas desagradables, sin cláusulas ocultas.',
     'value2_title' => 'Rapidez',
-    'value2_desc' => 'Una solicitud 100 % online, una decisión en 48 horas y fondos abonados rápidamente en cuanto se firma el contrato.',
+    'value2_desc' => 'Una solicitud 100 % online, una decisión rápida y fondos abonados en cuanto se firma el contrato.',
     'value3_title' => 'Acompañamiento humano',
     'value3_desc' => 'Detrás de cada expediente hay un asesor dedicado disponible para responder tus preguntas, desde el primer contacto hasta el reembolso.',
-    'value4_title' => 'Seguridad',
-    'value4_desc' => 'Entidad de crédito certificada y sujeta a las normas europeas. Tus datos y tu expediente están protegidos en cada etapa.',
+    'value4_title' => 'Estabilidad',
+    'value4_desc' => 'Una sociedad registrada desde 1995, sujeta a las normas vigentes. Tus datos y tu expediente están protegidos en cada etapa.',
 
     // Nuestro enfoque / cómo trabajamos
     'approach_tagline' => 'nuestro enfoque',
@@ -41,7 +41,7 @@ return [
     // CTA final
     'cta_tagline' => 'pasa a la acción',
     'cta_title' => '¿Listo para empezar tu proyecto con nosotros?',
-    'cta_text' => 'Simula tu préstamo en pocos minutos y recibe una respuesta personalizada en 48 horas.',
+    'cta_text' => 'Simula tu préstamo en pocos minutos y recibe una respuesta personalizada rápidamente.',
 
     'faq_title' => 'Preguntas frecuentes',
 ];

@@ -186,11 +186,11 @@ return [
     'sl' => 'slovenski',
 
     // Hero subtitle
-    'hero_subtitle' => 'Bez složenih postupaka, bez skrivenih naknada. Već 8 godina financiramo vaše osobne, stambene, auto i poslovne projekte transparentno i brzo.',
+    'hero_subtitle' => 'Bez složenih postupaka, bez skrivenih naknada. Već 31 godinu financiramo vaše osobne, stambene, auto i poslovne projekte transparentno i brzo.',
 
     // Slide
     'slide_1' => [
-        'title' => ' 8 godina iskustva · Licencirano · Odgovor za 48h',
+        'title' => ' 31 godina iskustva · Licencirano · Odgovor za 48h',
         'text1' => 'Financirajte sve svoje projekte,',
         'text2' => 'do 500.000 € za 48h.',
     ],
@@ -221,7 +221,7 @@ return [
         'exptitle' => 'godina iskustva',
         'sectagline' => 'dobrodošli u ' . site_name(),
         'sectitle' => 'Osobni krediti za ostvarenje vaših snova',
-        'text1' => 'U ovom poslu smo već 8 godina i pružamo najbolje usluge.',
+        'text1' => 'U ovom poslu smo već 31 godinu i pružamo najbolje usluge.',
         'text2' => site_name() . ' je vaša pouzdana platforma za kredite s iznimnim korisničkim iskustvom. Posvećeni smo pružanju jednostavnih, sigurnih i brzih financijskih rješenja.',
         'check1' => 'kredit za mala poduzeća',
         'check2' => 'kredit za studiranje u inozemstvu',
@@ -302,7 +302,7 @@ return [
     'chooses' => [
         'sectagline' => 'naše prednosti',
         'sectitle' => 'Zašto odabrati nas?',
-        'text1' => 'U ovom poslu smo već 8 godina i pružamo najbolje usluge.',
+        'text1' => 'U ovom poslu smo već 31 godinu i pružamo najbolje usluge.',
         'item1' => 'niži kamatni postoci',
         'item2' => 'brzo i jednostavno',
         'progress1' => 'postupak odobrenja kredita',

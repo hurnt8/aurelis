@@ -3,14 +3,14 @@
 return [
     // Hero / inleiding
     'hero_tagline' => 'ons verhaal',
-    'hero_title' => 'Een online bank die sneller werkt dan traditionele banken',
-    'hero_text' => 'Al 8 jaar begeleidt ' . site_name() . ' particulieren en bedrijven bij hun financieringsprojecten, vanuit één simpele overtuiging: een lening afsluiten zou nooit ingewikkeld mogen zijn.',
+    'hero_title' => 'Een gevestigde financieringsmaatschappij, al meer dan 30 jaar in dienst van uw projecten',
+    'hero_text' => site_name() . ' is een Franse vereenvoudigde naamloze vennootschap (SAS), opgericht in 1995. Gevestigd in Frankrijk, begeleidt zij vandaag particulieren en bedrijven bij hun financieringsprojecten, vanuit één simpele overtuiging: een lening afsluiten zou nooit ingewikkeld mogen zijn.',
 
     // Missie / geschiedenis
     'mission_tagline' => 'onze missie',
     'mission_title' => 'Krediet eenvoudig, snel en toegankelijk maken',
-    'mission_p1' => site_name() . ' is ontstaan uit een frustratie die duizenden aanvragers delen: traditionele leenprocedures zijn traag, ondoorzichtig en vaak ontmoedigend. Afspraken op kantoor, papieren dossiers, weken wachten op een antwoord... wij wilden een alternatief bouwen dat volledig rond de klant is opgebouwd.',
-    'mission_p2' => 'Vandaag begeleiden we elk jaar duizenden klanten in heel Europa bij de financiering van hun persoonlijke, vastgoed-, zakelijke en autoprojecten. Ons online platform maakt het mogelijk om de aanvraag volledig van thuis uit te doen, met een antwoord binnen 48 uur en een vaste contactpersoon bij elke stap.',
+    'mission_p1' => site_name() . ' is ingeschreven sinds 1 maart 1995 en oefent haar activiteit als hoofdzetel en financieringsmaatschappij uit vanuit haar vestiging in Montigny-le-Bretonneux, Frankrijk. Meer dan drie decennia ervaring hebben ons geleerd te vereenvoudigen wat elders traag, ondoorzichtig en ontmoedigend blijft: afspraken op kantoor, papieren dossiers, weken wachten op een antwoord.',
+    'mission_p2' => 'Vandaag begeleiden we elk jaar particuliere en zakelijke klanten bij de financiering van hun persoonlijke, vastgoed-, zakelijke en autoprojecten. Ons online platform maakt het mogelijk om de aanvraag volledig van thuis uit te doen, met een snel antwoord en een vaste contactpersoon bij elke stap.',
 
     // Waarden
     'values_tagline' => 'onze waarden',
@@ -18,11 +18,11 @@ return [
     'value1_title' => 'Transparantie',
     'value1_desc' => 'Rentes, kosten en voorwaarden worden duidelijk gecommuniceerd vóór elke ondertekening. Geen vervelende verrassingen, geen verborgen clausules.',
     'value2_title' => 'Snelheid',
-    'value2_desc' => 'Een 100% online aanvraag, een beslissing binnen 48 uur en snel uitbetaalde middelen zodra het contract is ondertekend.',
+    'value2_desc' => 'Een 100% online aanvraag, een snelle beslissing en uitbetaalde middelen zodra het contract is ondertekend.',
     'value3_title' => 'Persoonlijke begeleiding',
     'value3_desc' => 'Achter elk dossier staat een vaste adviseur die bereikbaar is voor uw vragen, van het eerste contact tot de volledige terugbetaling.',
-    'value4_title' => 'Veiligheid',
-    'value4_desc' => 'Gecertificeerde kredietinstelling die onderworpen is aan Europese normen. Uw gegevens en dossier worden bij elke stap beschermd.',
+    'value4_title' => 'Stabiliteit',
+    'value4_desc' => 'Een maatschappij die sinds 1995 is ingeschreven en voldoet aan de geldende normen. Uw gegevens en dossier worden bij elke stap beschermd.',
 
     // Onze aanpak / hoe wij werken
     'approach_tagline' => 'onze aanpak',
@@ -41,7 +41,7 @@ return [
     // Laatste CTA
     'cta_tagline' => 'kom in actie',
     'cta_title' => 'Klaar om uw project met ons te starten?',
-    'cta_text' => 'Simuleer uw lening in enkele minuten en ontvang een persoonlijk antwoord binnen 48 uur.',
+    'cta_text' => 'Simuleer uw lening in enkele minuten en ontvang snel een persoonlijk antwoord.',
 
     'faq_title' => 'Veelgestelde Vragen',
 ];

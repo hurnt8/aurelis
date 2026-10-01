@@ -190,11 +190,11 @@ return [
     'sl' => 'Slowenisch',
 
     // Hero subtitle
-    'hero_subtitle' => 'Kein aufwändiges Verfahren, keine versteckten Gebühren. Wir finanzieren Ihre persönlichen, Immobilien-, Auto- und Geschäftsprojekte seit 8 Jahren transparent und schnell.',
+    'hero_subtitle' => 'Kein aufwändiges Verfahren, keine versteckten Gebühren. Wir finanzieren Ihre persönlichen, Immobilien-, Auto- und Geschäftsprojekte seit 31 Jahren transparent und schnell.',
 
     // Slide
     'slide_1' => [
-        'title' => ' Seit 8 Jahren · Lizenziert · Antwort in 48h',
+        'title' => ' Seit 31 Jahren · Lizenziert · Antwort in 48h',
         'text1' => 'Finanzieren Sie alle Projekte,',
         'text2' => 'bis zu 500.000 € in 48h.',
     ],
@@ -225,7 +225,7 @@ return [
         'exptitle' => 'Jahre Erfahrung',
         'sectagline' => 'Willkommen bei ' . site_name(),
         'sectitle' => 'Persönliche Kredite, um Ihre Träume zu erfüllen',
-        'text1' => 'Wir sind seit 8 Jahren in diesem Geschäft und bieten die besten Dienstleistungen.',
+        'text1' => 'Wir sind seit 31 Jahren in diesem Geschäft und bieten die besten Dienstleistungen.',
         'text2' => site_name() . ' ist Ihre vertrauenswürdige Plattform für Kredite mit einer außergewöhnlichen Kundenerfahrung. Wir bieten einfache, sichere und schnelle Finanzlösungen.',
         'check1' => 'Kredit für kleine Unternehmen',
         'check2' => 'Kredit für Auslandsstudium',
@@ -321,7 +321,7 @@ return [
     'chooses' => [
         'sectagline' => 'unsere Vorteile',
         'sectitle' => 'warum uns wählen',
-        'text1' => 'Wir sind seit 8 Jahren in diesem Geschäft und bieten die besten Dienstleistungen.',
+        'text1' => 'Wir sind seit 31 Jahren in diesem Geschäft und bieten die besten Dienstleistungen.',
         'item1' => 'niedrigere Zinsen',
         'item2' => 'schnell und einfach',
         'progress1' => 'Kreditprozess',
